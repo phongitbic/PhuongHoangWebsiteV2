@@ -1,0 +1,32 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   policies.css — V2 policy page styles (shared across 7 policy pages)
+   Uses V2 design tokens from design-system.css
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Policy Hero ── */
+.ph-policy-hero { text-align: center; padding: clamp(4rem, 7vw, 5.5rem) 0 clamp(1.25rem, 2.5vw, 2rem); }
+.ph-policy-hero .ph-policy-badge { display: inline-flex; align-items: center; gap: .35rem; padding: .3rem .9rem; border-radius: 99px; background: var(--ph-accent-subtle); color: var(--ph-accent); font-size: .8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 1rem; }
+.ph-policy-hero h1 { font: var(--ph-text-h1); color: var(--ph-text-primary); margin-bottom: .75rem; }
+.ph-policy-hero .ph-policy-hero-desc { max-width: 640px; margin: 0 auto; color: var(--ph-text-secondary); font-size: 1.0625rem; line-height: 1.7; }
+
+/* ── Policy Grid (card layout) ── */
+.ph-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 900px; margin: 2rem auto 0; }
+@media (max-width: 768px) { .ph-policy-grid { grid-template-columns: 1fr; } }
+.ph-policy-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; transition: border-color .2s; }
+.ph-policy-card:hover { border-color: var(--ph-accent); }
+.ph-policy-card h2 { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .75rem; }
+.ph-policy-card ul { padding-left: 1.25rem; margin: 0; }
+.ph-policy-card li { color: var(--ph-text-secondary); line-height: 1.7; margin-bottom: .5rem; }
+.ph-policy-card li::marker { color: var(--ph-accent); }
+
+/* ── CTA Section ── */
+.ph-policy-cta { text-align: center; margin-top: 2.5rem; margin-bottom: 2rem; padding: 2rem; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); max-width: 700px; margin-left: auto; margin-right: auto; }
+.ph-policy-cta h2 { font: var(--ph-text-h3); color: var(--ph-text-primary); margin-bottom: .5rem; }
+.ph-policy-cta p { color: var(--ph-text-secondary); margin-bottom: 1.25rem; font-size: .9375rem; line-height: 1.65; }
+
+/* ── Related Policies ── */
+.ph-policy-related { text-align: center; margin-bottom: 3rem; }
+.ph-policy-related h3 { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .875rem; }
+.ph-related-links { display: flex; gap: .625rem; justify-content: center; flex-wrap: wrap; }
+.ph-related-link { display: inline-block; padding: .5rem 1rem; border: 1px solid var(--ph-border-default); border-radius: 99px; color: var(--ph-text-secondary); font-size: .8125rem; text-decoration: none; transition: all .2s; }
+.ph-related-link:hover { border-color: var(--ph-accent); color: var(--ph-accent); background: var(--ph-accent-subtle); }

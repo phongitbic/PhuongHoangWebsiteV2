@@ -1,0 +1,77 @@
+/* ═══════════════════════════════════════════════════════
+   distribution-system.css — V2 Distribution System page
+   Uses --ph-* tokens from design-system.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Page Hero ── */
+.ph-dist-hero { padding: clamp(4rem, 7vw, 5.5rem) 0 clamp(1.25rem, 2.5vw, 2rem); text-align: center; }
+
+/* ── Current Area Section ── */
+.ph-area-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.ph-area-map { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; text-align: center; }
+.ph-area-map-icon { font-size: 4rem; margin-bottom: .75rem; opacity: .9; }
+.ph-area-map-title { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .35rem; }
+.ph-area-map-sub { font-size: .875rem; color: var(--ph-text-secondary); line-height: 1.6; max-width: 360px; }
+.ph-area-detail { display: flex; flex-direction: column; gap: 1rem; }
+.ph-area-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.25rem; display: flex; gap: .85rem; align-items: flex-start; transition: border-color .2s; }
+.ph-area-card:hover { border-color: var(--ph-accent); }
+.ph-area-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; background: var(--ph-accent-subtle); color: var(--ph-accent); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; }
+.ph-area-card h4 { font: var(--ph-text-h5); color: var(--ph-text-primary); margin-bottom: .25rem; font-size: .9375rem; }
+.ph-area-card p { font-size: .8125rem; color: var(--ph-text-secondary); line-height: 1.55; }
+
+/* ── Partner Model ── */
+.ph-model-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+.ph-model-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; transition: border-color .2s; }
+.ph-model-card:hover { border-color: var(--ph-accent); }
+.ph-model-icon { font-size: 2rem; margin-bottom: .75rem; display: block; }
+.ph-model-card h3 { font: var(--ph-text-h5); color: var(--ph-text-primary); margin-bottom: .5rem; font-size: .9375rem; }
+.ph-model-card p { font-size: .8125rem; color: var(--ph-text-secondary); line-height: 1.55; }
+
+/* ── Benefits Grid ── */
+.ph-dist-benefits-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+.ph-dist-benefit { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; text-align: center; transition: border-color .2s; }
+.ph-dist-benefit:hover { border-color: var(--ph-accent); }
+.ph-dist-benefit-icon { font-size: 2rem; margin-bottom: .75rem; display: block; }
+.ph-dist-benefit h4 { font: var(--ph-text-h5); color: var(--ph-text-primary); margin-bottom: .35rem; }
+.ph-dist-benefit p { font-size: .8125rem; color: var(--ph-text-secondary); line-height: 1.55; }
+
+/* ── Cooperation Process ── */
+.ph-process-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
+.ph-process-item { text-align: center; padding: 1.5rem 1rem; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); transition: border-color .2s; position: relative; }
+.ph-process-item:first-child { border-radius: var(--ph-radius-md) 0 0 var(--ph-radius-md); }
+.ph-process-item:last-child { border-radius: 0 var(--ph-radius-md) var(--ph-radius-md) 0; }
+.ph-process-item:not(:last-child) { border-right: none; }
+.ph-process-item:hover { border-color: var(--ph-accent); z-index: 1; }
+.ph-process-num { width: 36px; height: 36px; border-radius: 50%; background: var(--ph-accent-subtle); color: var(--ph-accent); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .875rem; margin: 0 auto .75rem; }
+.ph-process-icon { font-size: 1.5rem; display: block; margin-bottom: .5rem; }
+.ph-process-item h4 { font: var(--ph-text-h5); color: var(--ph-text-primary); margin-bottom: .35rem; font-size: .875rem; }
+.ph-process-item p { font-size: .75rem; color: var(--ph-text-secondary); line-height: 1.5; }
+.ph-process-arrow { position: absolute; right: -.75rem; top: 50%; transform: translateY(-50%); color: var(--ph-accent); font-size: 1.25rem; z-index: 2; opacity: .4; pointer-events: none; }
+
+/* ── CTA Block ── */
+.ph-dist-cta { text-align: center; padding: clamp(2rem, 4vw, 3rem) 2rem; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); }
+.ph-dist-cta h2 { font: var(--ph-text-h3); color: var(--ph-text-primary); margin-bottom: .75rem; }
+.ph-dist-cta p { color: var(--ph-text-secondary); font-size: 1rem; margin-bottom: 1.5rem; max-width: 540px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+.ph-dist-cta .ph-cta-btns { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .ph-process-list { grid-template-columns: repeat(5, 1fr); }
+  .ph-process-item { padding: 1rem .5rem; }
+  .ph-process-item h4 { font-size: .8125rem; }
+}
+
+@media (max-width: 768px) {
+  .ph-area-wrap { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ph-area-map { min-height: 220px; }
+  .ph-model-grid, .ph-dist-benefits-grid { grid-template-columns: 1fr; }
+  .ph-process-list { grid-template-columns: 1fr; gap: .75rem; }
+  .ph-process-item, .ph-process-item:first-child, .ph-process-item:last-child { border-radius: var(--ph-radius-md); border-right: 1px solid var(--ph-border-default); }
+  .ph-process-arrow { display: none; }
+}
+
+@media (max-width: 480px) {
+  .ph-dist-hero { padding-top: clamp(3rem, 6vw, 4.5rem); }
+  .ph-dist-cta { padding: 1.5rem 1.25rem; }
+  .ph-dist-cta h2 { font-size: 1.25rem; }
+}

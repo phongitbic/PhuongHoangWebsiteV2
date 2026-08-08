@@ -1,0 +1,34 @@
+/* ═══════════════════════════════════════════════════════
+   about-us.css — V2 About Us page styles
+   Uses --ph-* tokens from design-system.css
+   ═══════════════════════════════════════════════════════ */
+
+/* Mission/Vision cards */
+.ph-mv-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.ph-mv-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); padding: 2rem; text-align: center; transition: border-color .2s; }
+.ph-mv-card:hover { border-color: var(--ph-accent); }
+.ph-mv-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+.ph-mv-card h3 { font: var(--ph-text-h3); color: var(--ph-text-primary); margin-bottom: .75rem; }
+.ph-mv-card p { color: var(--ph-text-secondary); line-height: 1.7; font-size: .9375rem; }
+
+/* Core values */
+.ph-values-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+.ph-value-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; text-align: center; transition: border-color .2s; }
+.ph-value-card:hover { border-color: var(--ph-accent); }
+.ph-value-icon { font-size: 2rem; margin-bottom: .75rem; display: block; }
+.ph-value-card h4 { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .5rem; }
+.ph-value-card p { font-size: .8125rem; color: var(--ph-text-secondary); line-height: 1.55; }
+
+/* Why choose us */
+.ph-why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+.ph-why-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; transition: border-color .2s; }
+.ph-why-card:hover { border-color: var(--ph-accent); }
+.ph-why-icon { flex-shrink: 0; font-size: 1.75rem; width: 48px; height: 48px; border-radius: 12px; background: var(--ph-accent-subtle); display: flex; align-items: center; justify-content: center; }
+.ph-why-body h4 { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .35rem; }
+.ph-why-body p { font-size: .8125rem; color: var(--ph-text-secondary); line-height: 1.55; }
+
+@media (max-width: 640px) {
+  .ph-mv-grid { grid-template-columns: 1fr; }
+  .ph-values-grid { grid-template-columns: 1fr; }
+  .ph-why-grid { grid-template-columns: 1fr; }
+}

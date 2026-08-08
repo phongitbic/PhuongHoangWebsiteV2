@@ -1,0 +1,156 @@
+/* ================================
+   Buttons — Phượng Hoàng V2
+   Primary, Secondary, Ghost, Danger,
+   Icon buttons, Floating Zalo
+   ================================ */
+
+/* ── Base Button ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ph-space-2xs);
+  height: 44px;
+  padding: 0 var(--ph-space-md);
+  font: var(--ph-text-button);
+  border: none;
+  border-radius: var(--ph-radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--ph-duration-fast) var(--ph-ease-out),
+              transform var(--ph-duration-instant) var(--ph-ease-in-out),
+              box-shadow var(--ph-duration-fast) var(--ph-ease-out);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled,
+.btn.disabled {
+  opacity: var(--ph-opacity-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
+/* ── Button Sizes ── */
+.btn-sm {
+  height: 36px;
+  padding: 0 var(--ph-space-sm);
+  font: var(--ph-text-button-sm);
+}
+
+.btn-lg {
+  height: 52px;
+  padding: 0 var(--ph-space-lg);
+  font: var(--ph-text-button);
+  font-size: 1.0625rem;
+}
+
+/* ── Primary Button ── */
+.btn-primary {
+  background: var(--ph-accent);
+  color: var(--ph-text-on-accent);
+}
+
+.btn-primary:hover {
+  background: var(--ph-accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* ── Secondary Button ── */
+.btn-secondary {
+  background: transparent;
+  color: var(--ph-accent);
+  border: var(--ph-border-width-medium) solid var(--ph-accent);
+}
+
+.btn-secondary:hover {
+  background: var(--ph-accent-subtle);
+  transform: translateY(-1px);
+}
+
+/* ── Ghost Button ── */
+.btn-ghost {
+  background: transparent;
+  color: var(--ph-text-secondary);
+}
+
+.btn-ghost:hover {
+  background: var(--ph-surface-secondary);
+  color: var(--ph-text-primary);
+  transform: translateY(-1px);
+}
+
+/* ── Danger Button ── */
+.btn-danger {
+  background: var(--ph-danger);
+  color: var(--ph-text-on-accent);
+}
+
+.btn-danger:hover {
+  background: var(--ph-danger);
+  transform: translateY(-1px);
+}
+
+/* ── Icon Button ── */
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: var(--ph-border-width-thin) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-sm);
+  color: var(--ph-text-secondary);
+  cursor: pointer;
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.btn-icon:hover {
+  border-color: var(--ph-border-hover);
+  color: var(--ph-accent);
+}
+
+.btn-icon:active {
+  transform: scale(0.95);
+}
+
+/* ── Loading Spinner ── */
+.btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: btn-spin 0.6s linear infinite;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Button Group ── */
+.btn-group {
+  display: flex;
+  gap: var(--ph-space-sm);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .btn-group {
+    flex-direction: column;
+  }
+  .btn-group .btn {
+    width: 100%;
+  }
+}

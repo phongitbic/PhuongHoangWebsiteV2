@@ -1,0 +1,152 @@
+/* ================================
+   Modal & Video Modal — Phượng Hoàng V2
+   ================================ */
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: var(--ph-z-modal);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--ph-space-md);
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-overlay.active .modal-card {
+  animation: modal-in var(--ph-duration-normal) var(--ph-ease-out) both;
+}
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh;
+  background: var(--ph-surface-elevated);
+  border: var(--ph-border-width-thin) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-lg);
+  box-shadow: var(--ph-shadow-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--ph-space-sm);
+  right: var(--ph-space-sm);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ph-surface-secondary);
+  border: var(--ph-border-width-thin) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-sm);
+  color: var(--ph-text-secondary);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.modal-close:hover {
+  background: var(--ph-danger-subtle);
+  border-color: var(--ph-danger);
+  color: var(--ph-danger);
+}
+
+.modal-header {
+  padding: var(--ph-space-lg) var(--ph-space-lg) var(--ph-space-md);
+  border-bottom: var(--ph-border-width-thin) solid var(--ph-divider);
+}
+
+.modal-header h2 {
+  font: var(--ph-text-h2);
+}
+
+.modal-body {
+  padding: var(--ph-space-lg);
+  flex: 1;
+}
+
+.modal-footer {
+  padding: var(--ph-space-md) var(--ph-space-lg);
+  border-top: var(--ph-border-width-thin) solid var(--ph-divider);
+  display: flex;
+  gap: var(--ph-space-sm);
+  justify-content: flex-end;
+}
+
+/* ── Video Modal ── */
+.video-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: var(--ph-z-modal);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--ph-space-md);
+}
+
+.video-modal-overlay.active {
+  display: flex;
+}
+
+.video-modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: black;
+  border-radius: var(--ph-radius-lg);
+  overflow: hidden;
+}
+
+.video-modal-box video {
+  width: 100%;
+  display: block;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: var(--ph-space-sm);
+  right: var(--ph-space-sm);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border: var(--ph-border-width-thin) solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--ph-radius-sm);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.video-modal-close:hover {
+  background: var(--ph-danger-subtle);
+  border-color: var(--ph-danger);
+}

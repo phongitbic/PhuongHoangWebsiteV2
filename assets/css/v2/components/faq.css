@@ -1,0 +1,271 @@
+/* ================================
+   FAQ Accordion — Phượng Hoàng V2
+   JS: faq.js (critically locked)
+   ================================ */
+
+.ph-faq-section {
+  padding: var(--ph-space-2xl) 0;
+  background: var(--ph-bg-secondary);
+}
+
+.ph-faq-container {
+  max-width: var(--ph-container-default);
+  margin: 0 auto;
+  padding: 0 var(--ph-space-sm);
+}
+
+@media (min-width: 768px) {
+  .ph-faq-container {
+    padding: 0 var(--ph-space-md);
+  }
+}
+
+.ph-faq-header {
+  text-align: center;
+  margin-bottom: var(--ph-space-lg);
+}
+
+.ph-faq-tag {
+  display: inline-block;
+  padding: var(--ph-space-2xs) var(--ph-space-sm);
+  background: var(--ph-accent-subtle);
+  color: var(--ph-accent);
+  border-radius: var(--ph-radius-full);
+  font: var(--ph-text-caption);
+  font-weight: 600;
+  margin-bottom: var(--ph-space-sm);
+}
+
+.ph-faq-title {
+  font: var(--ph-text-h2);
+  color: var(--ph-text-primary);
+  margin-bottom: var(--ph-space-sm);
+}
+
+.ph-faq-subtitle {
+  font: var(--ph-text-body-lg);
+  color: var(--ph-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Search ── */
+.ph-faq-search-wrap {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto var(--ph-space-md);
+}
+
+.ph-faq-search-wrap input {
+  width: 100%;
+  height: 44px;
+  padding: 0 var(--ph-space-sm) 0 44px;
+  background: var(--ph-surface-primary);
+  border: var(--ph-border-width-medium) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-full);
+  font: var(--ph-text-body);
+  color: var(--ph-text-primary);
+  transition: border-color var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.ph-faq-search-wrap input::placeholder {
+  color: var(--ph-text-muted);
+}
+
+.ph-faq-search-wrap input:focus {
+  border-color: var(--ph-border-active);
+}
+
+.ph-faq-search-icon {
+  position: absolute;
+  left: var(--ph-space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ph-text-muted);
+  pointer-events: none;
+}
+
+/* ── Filters ── */
+.ph-faq-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ph-space-2xs);
+  justify-content: center;
+  margin-bottom: var(--ph-space-lg);
+}
+
+@media (max-width: 767px) {
+  .ph-faq-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: var(--ph-space-2xs);
+  }
+}
+
+.ph-faq-filter-btn {
+  height: 36px;
+  padding: 0 var(--ph-space-sm);
+  font: var(--ph-text-caption);
+  font-weight: 600;
+  background: transparent;
+  border: var(--ph-border-width-thin) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-full);
+  color: var(--ph-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.ph-faq-filter-btn:hover {
+  border-color: var(--ph-border-hover);
+  color: var(--ph-text-primary);
+}
+
+.ph-faq-filter-btn.active {
+  background: var(--ph-accent);
+  border-color: var(--ph-accent);
+  color: var(--ph-text-inverse);
+}
+
+/* ── FAQ List ── */
+.ph-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ph-space-xs);
+}
+
+/* ── FAQ Item ── */
+.ph-faq-item {
+  background: var(--ph-surface-primary);
+  border: var(--ph-border-width-thin) solid var(--ph-border-default);
+  border-radius: var(--ph-radius-md);
+  overflow: hidden;
+  transition: border-color var(--ph-duration-fast) var(--ph-ease-out),
+              box-shadow var(--ph-duration-fast) var(--ph-ease-out);
+  box-shadow: var(--ph-shadow-inner-highlight);
+}
+.ph-faq-item:hover {
+  border-color: var(--ph-border-hover);
+}
+.ph-faq-item.open {
+  border-color: var(--ph-border-active);
+  border-left: 3px solid var(--ph-accent);
+  box-shadow: var(--ph-shadow-inner-highlight), 0 0 0 1px var(--ph-accent-subtle);
+}
+
+/* ── Question Button ── */
+.ph-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--ph-space-xs);
+  padding: var(--ph-space-sm) var(--ph-space-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: var(--ph-text-body);
+  font-weight: 500;
+  color: var(--ph-text-secondary);
+  transition: color var(--ph-duration-fast) var(--ph-ease-out),
+              background var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.ph-faq-question:hover {
+  color: var(--ph-accent);
+  background: var(--ph-accent-subtle);
+}
+
+.ph-faq-q-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ph-accent-subtle);
+  color: var(--ph-accent);
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ph-faq-q-text {
+  flex: 1;
+}
+
+.ph-faq-arrow {
+  width: 20px;
+  height: 20px;
+  color: var(--ph-text-muted);
+  flex-shrink: 0;
+  transition: transform var(--ph-duration-normal) var(--ph-ease-in-out);
+}
+
+.ph-faq-item.open .ph-faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* ── Answer Panel ── */
+.ph-faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--ph-duration-normal) var(--ph-ease-out);
+}
+
+.ph-faq-answer[hidden] {
+  display: grid;
+}
+
+.ph-faq-item.open .ph-faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.ph-faq-answer-inner {
+  overflow: hidden;
+  padding: 0 var(--ph-space-md) var(--ph-space-md);
+  font: var(--ph-text-body-sm);
+  color: var(--ph-text-secondary);
+  line-height: 1.6;
+}
+
+.ph-faq-category-badge {
+  display: inline-block;
+  margin-top: var(--ph-space-xs);
+  padding: var(--ph-space-3xs) var(--ph-space-xs);
+  background: var(--ph-accent-subtle);
+  color: var(--ph-accent);
+  border-radius: var(--ph-radius-full);
+  font: var(--ph-text-caption);
+}
+
+/* ── No Results ── */
+.ph-faq-no-results {
+  display: none;
+  text-align: center;
+  padding: var(--ph-space-xl);
+  color: var(--ph-text-muted);
+}
+
+.ph-faq-no-results.show {
+  display: block;
+}
+
+/* ── FAQ CTA ── */
+.ph-faq-cta {
+  text-align: center;
+  margin-top: var(--ph-space-xl);
+  padding-top: var(--ph-space-xl);
+  border-top: var(--ph-border-width-thin) solid var(--ph-divider);
+}
+
+.ph-faq-cta p {
+  font: var(--ph-text-body);
+  color: var(--ph-text-secondary);
+  margin-bottom: var(--ph-space-md);
+}
+
+.ph-faq-cta .btn-group {
+  justify-content: center;
+}
