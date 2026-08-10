@@ -11,6 +11,13 @@
   gap: 1.25rem;
 }
 
+/* ── Gallery description ── */
+.ph-cert-gallery-desc { text-align:center; color:var(--ph-text-secondary); font-size:.9375rem; margin-bottom:1.75rem; }
+
+/* ── CTA subtitle ── */
+.ph-cert-cta-sub { margin-top:.85rem; color:var(--ph-text-muted); font-size:.875rem; }
+.ph-cert-cta-sub a { color:var(--ph-accent); font-weight:500; }
+
 /* ── Card — framed document presentation ── */
 .ph-cert-card {
   background: var(--ph-surface-primary);

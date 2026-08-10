@@ -62,8 +62,12 @@
     ]
   }
   </script>
-  <meta name="theme-color" content="#0B1929">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B1929" media="(prefers-color-scheme: dark)">
   <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script>(function(){var t=localStorage.getItem('ph-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
@@ -80,12 +84,7 @@
   <link rel="stylesheet" href="assets/css/v2/components/footer.css">
   <link rel="stylesheet" href="assets/css/v2/components/blueprint.css">
   <link rel="stylesheet" href="assets/css/v2/pages/certificates.css">
-  <style>
-    .ph-cert-gallery-desc { text-align:center; color:var(--ph-text-secondary); font-size:.9375rem; margin-bottom:1.75rem; }
-    .ph-cert-cta-sub { margin-top:.85rem; color:var(--ph-text-muted); font-size:.875rem; }
-    .ph-cert-cta-sub a { color:var(--ph-accent); font-weight:500; }
-  </style>
-</head>
+
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skipLink">Bỏ qua nội dung</a>
   <div id="shared-header"></div>
@@ -412,11 +411,13 @@ window._phPageMeta = {
         else if (e.key === 'ArrowRight') { changeLightbox(1); }
       });
 
-      /* Inject V2 shared header/footer (synchronous — before DOMContentLoaded fires) */
-      var h = document.getElementById('shared-header');
-      var f = document.getElementById('shared-footer');
-      if (h && window.__PH_COMPONENTS__ && window.__PH_COMPONENTS__.header) h.innerHTML = window.__PH_COMPONENTS__.header;
-      if (f && window.__PH_COMPONENTS__ && window.__PH_COMPONENTS__.footer) f.innerHTML = window.__PH_COMPONENTS__.footer;
+      /* Inject V2 shared header/footer (deferred until DOMContentLoaded to avoid race condition) */
+      document.addEventListener('DOMContentLoaded', function () {
+        var h2 = document.getElementById('shared-header');
+        var f2 = document.getElementById('shared-footer');
+        if (h2 && window.__PH_COMPONENTS__ && window.__PH_COMPONENTS__.header) h2.innerHTML = window.__PH_COMPONENTS__.header;
+        if (f2 && window.__PH_COMPONENTS__ && window.__PH_COMPONENTS__.footer) f2.innerHTML = window.__PH_COMPONENTS__.footer;
+      });
 
       /* Wrap setLanguage after i18n-v2.js defines it, before its DOMContentLoaded handler fires.
          i18n-v2.js calls setLanguage(saved) on DOMContentLoaded — our wrapper handles initial render. */

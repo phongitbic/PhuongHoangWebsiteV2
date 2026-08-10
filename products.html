@@ -65,6 +65,9 @@
   <meta name="theme-color" content="#FFFFFF">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1929">
   <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="Cong ty TNHH Khoa Học Kỹ Thuật Phượng Hoang">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script>(function(){var t=localStorage.getItem('ph-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
@@ -81,33 +84,8 @@
   <link rel="stylesheet" href="assets/css/v2/components/footer.css">
   <link rel="stylesheet" href="assets/css/v2/components/blueprint.css">
   <link rel="stylesheet" href="assets/css/v2/pages/products.css">
-  <style>
-    /* ── Hero ── */
-    .ph-prod-hero-sub { max-width:700px; margin:1rem auto 0; color:var(--ph-text-secondary); font-size:1.0625rem; line-height:1.7; }
-    /* ── Sidebar arrow ── */
-    .ph-sidebar-arrow { transition:transform .2s; }
-    /* ── No results ── */
-    .ph-no-results { display:none; }
-    .ph-no-results-icon { font-size:3rem; margin-bottom:1rem; opacity:.4; }
-    .ph-no-results-msg { color:var(--ph-text-secondary); margin-bottom:.5rem; }
-    .ph-no-results-hint { color:var(--ph-text-muted); font-size:.875rem; }
-    .ph-no-results-hint a { color:var(--ph-accent); }
-    /* ── CTA section ── */
-    .ph-prod-cta-sec { margin-top:clamp(2.5rem,5vw,4rem); padding:clamp(3rem,6vw,5rem) 0; }
-    .ph-prod-cta-wrap { text-align:center; }
-    .ph-prod-cta-head { font:var(--ph-text-h2); color:var(--ph-text-primary); margin-bottom:1rem; }
-    .ph-prod-cta-desc { color:var(--ph-text-secondary); margin-bottom:2rem; font-size:1.0625rem; }
-    /* ── FAQ section ── */
-    .ph-faq-sec { padding-bottom:clamp(3rem,6vw,5rem); }
-    .ph-faq-sub { color:var(--ph-text-secondary); }
-    .ph-faq-filters-wrap { margin-top:1.5rem; text-align:center; }
-    .ph-faq-list-wrap { margin-top:1.5rem; }
-    .ph-faq-foot { text-align:center; margin-top:2rem; }
-    .ph-faq-foot-text { color:var(--ph-text-muted); margin-bottom:.75rem; }
-    /* ── Shared CTA sub ── */
-    .ph-cta-sub { margin-top:1rem; color:var(--ph-text-muted); font-size:.875rem; }
-    .ph-cta-sub a { color:var(--ph-accent); }
-  </style>
+
+
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skipLink">Bỏ qua nội dung</a>
@@ -294,7 +272,7 @@ window._phPageMeta = {
 
           html += '<a class="ph-product-card" href="product-detail.html?id=' + p.id + '">';
           html += '<div class="ph-card-img-wrap">';
-          html += '<img src="' + imgSrc + '" alt="' + name + '" loading="lazy">';
+          html += '<img src="' + imgSrc + '" alt="' + name + '" loading="lazy" width="300" height="300">';
           html += '<span class="ph-card-badge ' + statusClass + '">' + statusText + '</span>';
           html += '</div>';
           html += '<div class="ph-card-body">';

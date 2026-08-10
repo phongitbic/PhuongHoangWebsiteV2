@@ -89,3 +89,16 @@
 @media (max-width: 1024px) { .ld-features-grid { grid-template-columns: repeat(2, 1fr); } .ld-apps-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 768px) { .ld-intro { grid-template-columns: 1fr; } .ld-features-grid { grid-template-columns: 1fr; } .ld-apps-grid { grid-template-columns: 1fr; } .ld-specs-grid { grid-template-columns: 1fr; } .ld-spec-row:nth-last-child(-n+1) { border-bottom: none; } }
 @media (max-width: 640px) { .ld-cta-buttons { flex-direction: column; align-items: center; } .ld-cta-btn { width: 100%; justify-content: center; } }
+
+/* ── Breadcrumb current ── */
+.ld-breadcrumb-current { color:var(--ph-accent); }
+
+/* ── Section heading ── */
+.ld-section-heading { text-align:center; }
+
+/* ── Intro ── */
+.ld-intro-heading { font:var(--ph-text-h2); margin-bottom:1rem; }
+.ld-intro-visual { width:100%; aspect-ratio:1; max-width:300px; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:5rem; background:var(--ph-surface-secondary); border-radius:var(--ph-radius-md); }
+
+/* ── FAQ section ── */
+.ld-faq-sec { padding-bottom:clamp(3rem,6vw,5rem); }

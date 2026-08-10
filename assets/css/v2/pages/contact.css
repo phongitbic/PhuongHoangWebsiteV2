@@ -1,0 +1,20 @@
+/* ═══════════════════════════════════════════════════════
+   Contact Page Styles — Phượng Hoàng V2
+   Extracted from contact.html inline <style> block
+   ═══════════════════════════════════════════════════════ */
+
+.ph-contact-list { display:flex; flex-direction:column; gap:1.5rem; }
+.ph-contact-item { display:flex; gap:1rem; align-items:flex-start; }
+.ph-contact-icon { flex-shrink:0; width:44px; height:44px; background:var(--ph-accent-subtle); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--ph-accent); }
+.ph-contact-label { color:var(--ph-text-primary); display:block; margin-bottom:.25rem; font-weight:700; }
+.ph-contact-val { color:var(--ph-text-secondary); line-height:1.6; margin:0; }
+.ph-contact-hotline { color:var(--ph-accent); font:var(--ph-text-h3); text-decoration:none; display:block; }
+.ph-contact-sub { color:var(--ph-text-muted); font-size:.875rem; margin:.25rem 0 0; }
+.ph-contact-link { color:var(--ph-accent); text-decoration:none; font-weight:600; }
+.ph-contact-link-plain { color:var(--ph-accent); text-decoration:none; }
+.ph-map-wrap { background:var(--ph-surface-primary); border:1px solid var(--ph-border-default); border-radius:var(--ph-radius-lg); overflow:hidden; aspect-ratio:4/3; }
+.ph-map-wrap iframe { border: 0; }
+.ph-map-note { color:var(--ph-text-muted); font-size:.875rem; margin-top:.75rem; }
+.ph-cta-sub { margin-top:1rem; color:var(--ph-text-muted); font-size:.875rem; }
+.ph-cta-sub a { color:var(--ph-accent); }
+.bp-section-heading-left { text-align:left; }

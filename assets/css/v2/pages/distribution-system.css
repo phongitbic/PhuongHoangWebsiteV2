@@ -75,3 +75,23 @@
   .ph-dist-cta { padding: 1.5rem 1.25rem; }
   .ph-dist-cta h2 { font-size: 1.25rem; }
 }
+
+/* ── Section variants ── */
+.ph-dist-sec { padding:clamp(2.5rem,5vw,3.5rem) 0; }
+.ph-dist-sec-alt { background:var(--ph-surface-secondary); padding:clamp(2.5rem,5vw,3.5rem) 0; }
+.ph-dist-sec-cta { padding-bottom:clamp(3rem,6vw,5rem); }
+
+/* ── Section body (grid/wrap wrappers) ── */
+.ph-dist-sec-body { margin-top:2rem; }
+
+/* ── Section subtitle ── */
+.ph-dist-sec-desc { color:var(--ph-text-secondary); max-width:680px; margin:.5rem 0 0; }
+
+/* ── Hero ── */
+.ph-dist-hero-wrap { text-align:center; }
+.ph-dist-hero-desc { max-width:680px; margin:1rem auto 0; color:var(--ph-text-secondary); font-size:1.0625rem; line-height:1.7; }
+.ph-dist-hero-btns { margin-top:2rem; display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+.ph-dist-hero-btn-zalo { font-size:.9375rem; padding:.75rem 1.75rem; }
+
+/* ── CTA footer ── */
+.ph-dist-cta-footer { margin-top:1.25rem; color:var(--ph-text-muted); font-size:.875rem; }

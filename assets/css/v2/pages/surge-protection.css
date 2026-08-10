@@ -1,0 +1,12 @@
+/* ============================================================
+   V2 Surge Protection Redirect Page
+   Uses --ph-* tokens from design-system.css
+   ============================================================ */
+
+.redirect-wrap { display: flex; align-items: center; justify-content: center; min-height: 70vh; padding: clamp(6rem,10vw,8rem) 1.5rem 4rem; text-align: center; }
+.redirect-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-accent); border-radius: var(--ph-radius-lg); padding: clamp(2rem,4vw,3rem) clamp(1.5rem,3vw,2.5rem); box-shadow: 0 0 30px rgba(0,212,255,.15); max-width: 560px; width: 100%; margin: 0 auto; }
+.redirect-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
+.redirect-card h1 { font: var(--ph-text-h2); margin-bottom: .75rem; }
+.redirect-card p { color: var(--ph-text-secondary); margin-bottom: 1.5rem; font-size: .9375rem; line-height: 1.7; }
+.redirect-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .875rem 2rem; border-radius: 99px; background: linear-gradient(135deg, var(--ph-accent), #0099cc); color: #fff; font-weight: 700; font-size: .9375rem; text-decoration: none; transition: all .25s; box-shadow: 0 10px 26px rgba(0,160,220,.25); }
+.redirect-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(0,160,220,.35); }

@@ -64,6 +64,9 @@
   </script>
   <meta name="theme-color" content="#FFFFFF">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1929">
+  <meta name="author" content="Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="format-detection" content="telephone=no">
   <script>(function(){var t=localStorage.getItem('ph-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
@@ -80,75 +83,7 @@
   <link rel="stylesheet" href="assets/css/v2/components/buttons.css">
   <link rel="stylesheet" href="assets/css/v2/components/footer.css">
   <link rel="stylesheet" href="assets/css/v2/components/blueprint.css">
-  <style>
-    /* ── Project Cards ── */
-    .ph-project-card {
-      background: var(--ph-surface-primary);
-      border: 1px solid var(--ph-border-default);
-      border-radius: var(--ph-radius-lg);
-      overflow: hidden;
-      transition: box-shadow .3s, transform .3s;
-    }
-    .ph-project-card:hover {
-      box-shadow: 0 8px 30px rgba(0,0,0,.08);
-      transform: translateY(-2px);
-    }
-    .ph-project-img {
-      width: 100%;
-      aspect-ratio: 16/10;
-      background: var(--ph-surface-secondary);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ph-project-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 1.5rem;
-    }
-    .ph-project-body {
-      padding: 1.5rem 1.75rem 1.75rem;
-    }
-    .ph-project-tag {
-      display: inline-block;
-      background: var(--ph-accent-subtle);
-      color: var(--ph-accent);
-      padding: .25rem .75rem;
-      border-radius: 99px;
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .02em;
-      text-transform: uppercase;
-      margin-bottom: .75rem;
-    }
-    .ph-project-title {
-      font: var(--ph-text-h3);
-      color: var(--ph-text-primary);
-      margin: 0 0 .5rem;
-    }
-    .ph-project-desc {
-      color: var(--ph-text-secondary);
-      font-size: .9375rem;
-      line-height: 1.7;
-      margin: 0 0 1.25rem;
-    }
-    .ph-project-link {
-      color: var(--ph-accent);
-      font-weight: 600;
-      font-size: .875rem;
-      text-decoration: none;
-      transition: color .2s;
-    }
-    .ph-project-link:hover {
-      color: var(--ph-accent-hover);
-    }
-    .ph-cta-sub { margin-top:1rem; color:var(--ph-text-muted); font-size:.875rem; }
-    .ph-cta-sub a { color:var(--ph-accent); }
-    .ph-proj-grid-wrap { max-width:1100px; }
-    .ph-proj-subtitle { text-align:center; max-width:700px; margin:0 auto 2.5rem; }
-  </style>
+  <link rel="stylesheet" href="assets/css/v2/pages/projects.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skipLink">Bỏ qua nội dung</a>
@@ -172,7 +107,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/125_11zon.webp" data-i18n-alt="page_projects.proj1Alt" alt="Thiết bị an toàn điện trong nhà máy công nghiệp" loading="lazy">
+              <img src="assets/images/products/125_11zon.webp" alt="Thiết bị an toàn điện trong nhà máy công nghiệp" loading="lazy" data-i18n-alt="page_projects.proj1Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--industrial" data-i18n="page_projects.proj1Tag">Công nghiệp</span>
@@ -184,7 +119,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/250_11zon.webp" data-i18n-alt="page_projects.proj2Alt" alt="Thiết bị an toàn điện cho chung cư và hộ gia đình" loading="lazy">
+              <img src="assets/images/products/250_11zon.webp" alt="Thiết bị an toàn điện cho chung cư và hộ gia đình" loading="lazy" data-i18n-alt="page_projects.proj2Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--domestic" data-i18n="page_projects.proj2Tag">Dân dụng</span>
@@ -196,7 +131,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/400_11zon.webp" data-i18n-alt="page_projects.proj3Alt" alt="Thiết bị an toàn điện cho trường học và cơ sở giáo dục" loading="lazy">
+              <img src="assets/images/products/400_11zon.webp" alt="Thiết bị an toàn điện cho trường học và cơ sở giáo dục" loading="lazy" data-i18n-alt="page_projects.proj3Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--education" data-i18n="page_projects.proj3Tag">Giáo dục</span>
@@ -208,7 +143,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/630_11zon.webp" data-i18n-alt="page_projects.proj4Alt" alt="Thiết bị an toàn điện cho bệnh viện và cơ sở y tế" loading="lazy">
+              <img src="assets/images/products/630_11zon.webp" alt="Thiết bị an toàn điện cho bệnh viện và cơ sở y tế" loading="lazy" data-i18n-alt="page_projects.proj4Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--medical" data-i18n="page_projects.proj4Tag">Y tế</span>
@@ -220,7 +155,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/800A_11zon.webp" data-i18n-alt="page_projects.proj5Alt" alt="Thiết bị chống sét và an toàn điện cho trung tâm thương mại" loading="lazy">
+              <img src="assets/images/products/800A_11zon.webp" alt="Thiết bị chống sét và an toàn điện cho trung tâm thương mại" loading="lazy" data-i18n-alt="page_projects.proj5Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--commercial" data-i18n="page_projects.proj5Tag">Thương mại</span>
@@ -232,7 +167,7 @@
 
           <article class="ph-project-card">
             <div class="ph-project-img">
-              <img src="assets/images/products/125_11zon.webp" data-i18n-alt="page_projects.proj6Alt" alt="Thiết bị an toàn điện cho công trình hạ tầng công cộng" loading="lazy">
+              <img src="assets/images/products/125_11zon.webp" alt="Thiết bị an toàn điện cho công trình hạ tầng công cộng" loading="lazy" data-i18n-alt="page_projects.proj6Alt" width="400" height="300">
             </div>
             <div class="ph-project-body">
               <span class="ph-project-tag ph-project-tag--infrastructure" data-i18n="page_projects.proj6Tag">Hạ tầng</span>
