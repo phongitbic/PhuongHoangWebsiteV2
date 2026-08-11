@@ -93,14 +93,14 @@ var productData = {
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP54' },
         { label: { vi: 'Nhiệt độ hoạt động', en: 'Operating Temp', zh: '工作温度' }, value: '-5°C ~ 55°C' }
       ],
-      mainImage: 'assets/images/products/125_11zon.webp',
+      mainImage: 'assets/images/products/processed/125_11zon.webp',
       galleryImages: [
-        'assets/images/products/250_11zon.webp',
-        'assets/images/products/400_11zon.webp',
-        'assets/images/products/630_11zon.webp',
-        'assets/images/products/800A_11zon.webp',
+        'assets/images/products/processed/250_11zon.webp',
+        'assets/images/products/processed/400_11zon.webp',
+        'assets/images/products/processed/630_11zon.webp',
+        'assets/images/products/processed/800A_11zon.webp',
       ],
-      specsImage: 'assets/images/products/125_11zon.webp',
+      specsImage: 'assets/images/products/processed/125_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -135,7 +135,7 @@ var productData = {
           current: '125A',
           overloadRange: '1-125A',
           desc: { vi: 'Phù hợp nhà xưởng nhỏ, trạm bơm, tòa nhà vừa', en: 'Ideal for small workshops, pump stations, medium buildings', zh: '适用于小型车间、泵站、中型建筑' },
-          image: 'assets/images/products/125_11zon.webp',
+          image: 'assets/images/products/processed/125_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị an toàn thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-SD4R-125' },
@@ -157,7 +157,7 @@ var productData = {
           current: '250A',
           overloadRange: '1-250A',
           desc: { vi: 'Phù hợp nhà máy vừa, khu sản xuất', en: 'Ideal for medium factories, production areas', zh: '适用于中型工厂、生产区' },
-          image: 'assets/images/products/250_11zon.webp',
+          image: 'assets/images/products/processed/250_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị an toàn thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-SD4R-250' },
@@ -179,7 +179,7 @@ var productData = {
           current: '400A',
           overloadRange: '1-400A',
           desc: { vi: 'Phù hợp nhà máy lớn, khu công nghiệp', en: 'Ideal for large factories, industrial parks', zh: '适用于大型工厂、工业园区' },
-          image: 'assets/images/products/400_11zon.webp',
+          image: 'assets/images/products/processed/400_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị an toàn thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-SD4R-400' },
@@ -201,7 +201,7 @@ var productData = {
           current: '630A',
           overloadRange: '1-630A',
           desc: { vi: 'Phù hợp nhà máy trọng điểm, trung tâm dữ liệu', en: 'Ideal for key factories, data centers', zh: '适用于重点工厂、数据中心' },
-          image: 'assets/images/products/630_11zon.webp',
+          image: 'assets/images/products/processed/630_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị an toàn thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-SD4R-630' },
@@ -223,7 +223,7 @@ var productData = {
           current: '800A',
           overloadRange: '1-800A',
           desc: { vi: 'Phù hợp nhà máy siêu lớn, khu công nghệ cao', en: 'Ideal for mega factories, high-tech parks', zh: '适用于超大型工厂、高科技园区' },
-          image: 'assets/images/products/800A_11zon.webp',
+          image: 'assets/images/products/processed/800A_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị an toàn thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-SD4R-800' },
@@ -283,11 +283,11 @@ var productData = {
         { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / RS485' },
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
       ],
-      mainImage: 'assets/images/products/220_11zon.webp',
+      mainImage: 'assets/images/products/processed/220_11zon.webp',
       galleryImages: [
-        'assets/images/products/220_11zon.webp'
+        'assets/images/products/processed/220_11zon.webp'
       ],
-      specsImage: 'assets/images/products/220_11zon.webp',
+      specsImage: 'assets/images/products/processed/220_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -315,7 +315,7 @@ var productData = {
           current: '2KW',
           overloadRange: '1-9A',
           desc: { vi: 'Phù hợp khu vực thương mại nhỏ, văn phòng, xưởng sản xuất quy mô nhỏ', en: 'Ideal for small commercial areas, offices, small-scale production workshops', zh: '适用于小型商业区域、办公室、小规模生产车间' },
-          image: 'assets/images/products/220_11zon.webp',
+          image: 'assets/images/products/processed/220_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị thương mại thông minh' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MB-2KW' },
@@ -374,11 +374,11 @@ var productData = {
         { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / RS485' },
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
       ],
-      mainImage: 'assets/images/products/50mh_11zon.webp',
+      mainImage: 'assets/images/products/processed/50mh_11zon.webp',
       galleryImages: [
-        'assets/images/products/80mh_11zon.webp'
+        'assets/images/products/processed/80mh_11zon.webp'
       ],
-      specsImage: 'assets/images/products/80mh_11zon.webp',
+      specsImage: 'assets/images/products/processed/80mh_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -407,7 +407,7 @@ var productData = {
           current: '50KW',
           overloadRange: '1-50KW',
           desc: { vi: 'Phù hợp nhà máy vừa, khu sản xuất công nghiệp', en: 'Ideal for medium factories, industrial production areas', zh: '适用于中型工厂、工业生产区' },
-          image: 'assets/images/products/50mh_11zon.webp',
+          image: 'assets/images/products/processed/50mh_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị công nghiệp thông minh' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMC-50KW' },
@@ -429,7 +429,7 @@ var productData = {
           current: '80KW',
           overloadRange: '1-80KW',
           desc: { vi: 'Phù hợp nhà máy lớn, khu công nghiệp, xí nghiệp', en: 'Ideal for large factories, industrial parks, plants', zh: '适用于大型工厂、工业园区、企业' },
-          image: 'assets/images/products/80mh_11zon.webp',
+          image: 'assets/images/products/processed/80mh_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị công nghiệp thông minh' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMC-80KW' },
@@ -488,12 +488,12 @@ var productData = {
         { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / RS485' },
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
       ],
-      mainImage: 'assets/images/products/30kw_11zon.webp',
+      mainImage: 'assets/images/products/processed/30kw_11zon.webp',
       galleryImages: [
-        'assets/images/products/50kw_11zon.webp',
-        'assets/images/products/100kw_11zon.webp',
+        'assets/images/products/processed/50kw_11zon.webp',
+        'assets/images/products/processed/100kw_11zon.webp',
       ],
-      specsImage: 'assets/images/products/630_11zon.webp',
+      specsImage: 'assets/images/products/processed/630_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -523,7 +523,7 @@ var productData = {
           current: '30KW',
           overloadRange: '1-30KW',
           desc: { vi: 'Phù hợp nhà xưởng vừa và nhỏ, trạm bơm', en: 'Ideal for small to medium workshops, pump stations', zh: '适用于中小型车间、泵站' },
-          image: 'assets/images/products/30kw_11zon.webp',
+          image: 'assets/images/products/processed/30kw_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị công nghiệp thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MC-30KW' },
@@ -545,7 +545,7 @@ var productData = {
           current: '50KW',
           overloadRange: '1-50KW',
           desc: { vi: 'Phù hợp nhà máy vừa, khu sản xuất công nghiệp', en: 'Ideal for medium factories, industrial production areas', zh: '适用于中型工厂、工业生产区' },
-          image: 'assets/images/products/50kw_11zon.webp',
+          image: 'assets/images/products/processed/50kw_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị công nghiệp thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MC-50KW' },
@@ -567,7 +567,7 @@ var productData = {
           current: '100KW',
           overloadRange: '1-100KW',
           desc: { vi: 'Phù hợp nhà máy lớn, khu công nghiệp trọng điểm', en: 'Ideal for large factories, key industrial parks', zh: '适用于大型工厂、重点工业园区' },
-          image: 'assets/images/products/100kw_11zon.webp',
+          image: 'assets/images/products/processed/100kw_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '380V thiết bị công nghiệp thông minh 3 pha' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MC-100KW' },
@@ -628,11 +628,11 @@ var productData = {
         { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / RS485' },
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
       ],
-      mainImage: 'assets/images/products/220-thuongmai_11zon.webp',
+      mainImage: 'assets/images/products/processed/220-thuongmai_11zon.webp',
       galleryImages: [
-        'assets/images/products/220-thuongmai_11zon.webp'
+        'assets/images/products/processed/220-thuongmai_11zon.webp'
       ],
-      specsImage: 'assets/images/products/220-thuongmai_11zon.webp',
+      specsImage: 'assets/images/products/processed/220-thuongmai_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -656,7 +656,7 @@ var productData = {
           current: '10kW',
           overloadRange: '1-45A',
           desc: { vi: 'Phù hợp cửa hàng, văn phòng, nhà hàng và trung tâm thương mại', en: 'Ideal for shops, offices, restaurants and shopping centers', zh: '适用于商店、办公室、餐厅和购物中心' },
-          image: 'assets/images/products/220-thuongmai_11zon.webp',
+          image: 'assets/images/products/processed/220-thuongmai_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị thương mại thông minh' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MB-10KW' },
@@ -719,11 +719,11 @@ var productData = {
         { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / Wi-Fi' },
         { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
       ],
-      mainImage: 'assets/images/products/63-3_11zon.webp',
+      mainImage: 'assets/images/products/processed/63-3_11zon.webp',
       galleryImages: [
-        'assets/images/products/63-3_11zon.webp'
+        'assets/images/products/processed/63-3_11zon.webp'
       ],
-      specsImage: 'assets/images/products/63-3_11zon.webp',
+      specsImage: 'assets/images/products/processed/63-3_11zon.webp',
       price: 'Liên hệ báo giá',
       status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
       inStock: true,
@@ -753,7 +753,7 @@ var productData = {
           current: '63A',
           overloadRange: '1-63A',
           desc: { vi: 'Phiên bản 3 mạch nhánh, phù hợp hộ gia đình, căn hộ', en: '3-Branch version, ideal for homes and apartments', zh: '3支路版本，适用于家庭和公寓' },
-          image: 'assets/images/products/63-3_11zon.webp',
+          image: 'assets/images/products/processed/63-3_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị 3 mạch nhánh thông minh' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'KHKT-63A' },
@@ -807,13 +807,13 @@ var productData = {
         en: 'The WDMA series 220V smart electrical safety device is a new-generation comprehensive electrical protection solution, integrating advanced 220V arc suppression technology. With multi-layer protection, it prevents electric shock, short circuit, overload, overvoltage, undervoltage, leakage, water immersion and surge. 4G connectivity enables remote monitoring and control via smartphone app.',
         zh: 'WDMA系列220V智能电气安全设备是新一代综合电气保护解决方案，集成了先进的220V灭弧技术。通过多层保护，防止触电、短路、过载、过压、欠压、漏电、浸水和浪涌。4G连接可通过智能手机应用进行远程监控和控制。'
       },
-      mainImage: 'assets/images/products/32_11zon.webp',
+      mainImage: 'assets/images/products/processed/32_11zon.webp',
       galleryImages: [
-        'assets/images/products/45_11zon.webp',
-        'assets/images/products/63_11zon.webp',
-        'assets/images/products/100_11zon.webp'
+        'assets/images/products/processed/45_11zon.webp',
+        'assets/images/products/processed/63_11zon.webp',
+        'assets/images/products/processed/100_11zon.webp'
       ],
-      specsImage: 'assets/images/products/32_11zon.webp',
+      specsImage: 'assets/images/products/processed/32_11zon.webp',
       specs: [
         { label: { vi: 'Điện áp định mức', en: 'Rated Voltage', zh: '额定电压' }, value: '220V AC' },
         { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50/60 Hz' },
@@ -854,7 +854,7 @@ var productData = {
           current: '32A',
           overloadRange: '1-32A',
           desc: { vi: 'Phù hợp hộ gia đình, căn hộ nhỏ', en: 'Ideal for homes, small apartments', zh: '适用于家庭、小型公寓' },
-          image: 'assets/images/products/32_11zon.webp',
+          image: 'assets/images/products/processed/32_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-32A' },
@@ -876,7 +876,7 @@ var productData = {
           current: '45A',
           overloadRange: '1-45A',
           desc: { vi: 'Phù hợp nhà lớn, biệt thự', en: 'Ideal for large homes, villas', zh: '适用于大房子、别墅' },
-          image: 'assets/images/products/45_11zon.webp',
+          image: 'assets/images/products/processed/45_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-45A' },
@@ -898,7 +898,7 @@ var productData = {
           current: '63A',
           overloadRange: '1-63A',
           desc: { vi: 'Phù hợp văn phòng, cửa hàng, doanh nghiệp nhỏ', en: 'Ideal for offices, shops, small businesses', zh: '适用于办公室、商店、小型企业' },
-          image: 'assets/images/products/63_11zon.webp',
+          image: 'assets/images/products/processed/63_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-63A' },
@@ -920,7 +920,7 @@ var productData = {
           current: '100A',
           overloadRange: '1-100A',
           desc: { vi: 'Phù hợp nhà xưởng, doanh nghiệp, tòa nhà lớn', en: 'Ideal for factories, businesses, large buildings', zh: '适用于工厂、企业、大型建筑' },
-          image: 'assets/images/products/100_11zon.webp',
+          image: 'assets/images/products/processed/100_11zon.webp',
           specs: [
             { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
             { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-100A' },
@@ -1009,19 +1009,19 @@ var productData = {
       const name = this.t(p.name);
       const desc = this.t(p.shortDesc);
       const imgSrc = p.mainImage || this.getPlaceholder(name);
-      html += '<a class="product-card" href="product-detail.html?id=' + p.id + '">';
-      html += '<div class="product-card-img"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy"></div>';
-      html += '<div class="product-card-body">';
-      html += '<span class="product-badge ' + statusClass + '">' + statusText + '</span>';
+      html += '<a class="ph-product-card" href="product-detail.html?id=' + p.id + '">';
+      html += '<div class="ph-card-img-wrap"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy"></div>';
+      html += '<div class="ph-card-body">';
+      html += '<span class="ph-card-badge ' + statusClass + '">' + statusText + '</span>';
       html += '<h3>' + name + '</h3>';
       html += '<p>' + desc + '</p>';
-      html += '<div class="product-card-specs">';
+      html += '<div class="ph-card-specs">';
       const specsToShow = p.specs.slice(0, 3);
       for (let j = 0; j < specsToShow.length; j++) {
-        html += '<span class="spec-chip">' + specsToShow[j].value + '</span>';
+        html += '<span class="ph-card-spec">' + specsToShow[j].value + '</span>';
       }
       html += '</div>';
-      html += '<span class="product-card-btn">Xem chi tiết →</span>';
+      html += '<span class="ph-card-cta">Xem chi tiết →</span>';
       html += '</div></a>';
     }
     container.innerHTML = html;

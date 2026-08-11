@@ -96,20 +96,29 @@
     <section class="ph-catalogue-hero bp-reveal">
       <div class="container-wide ph-hero-split">
         <div class="ph-hero-content">
+          <div class="ph-hero-eyebrow">
+            <span class="ph-hero-eyebrow-dot"></span>
+            <span data-i18n="page_products.heroEyebrow">SẢN PHẨM</span>
+          </div>
           <h1 class="bp-section-title" data-i18n="page_products.heroTitle">Sản phẩm</h1>
-          <p class="bp-section-subtitle ph-hero-desc" data-i18n="page_products.heroDesc">Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.</p>
+          <p class="ph-hero-desc" data-i18n="page_products.heroDesc">Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.</p>
+          <div class="ph-hero-cta-row">
+            <a href="#ph-product-section" class="ph-hero-cta-primary" data-i18n="page_products.heroCTA">Xem sản phẩm</a>
+            <a href="contact.html" class="ph-hero-cta-secondary" data-i18n="page_products.heroContact">Liên hệ tư vấn</a>
+          </div>
         </div>
         <div class="ph-hero-visual" aria-hidden="true">
+          <div class="ph-hero-visual-bg ph-hero-visual-glow"></div>
+          <div class="ph-hero-visual-bg ph-hero-visual-ring"></div>
           <div class="ph-hero-img-frame">
-            <img src="assets/images/products/220_11zon.webp" alt="Thiết bị an toàn điện thông minh Phượng Hoàng" width="500" height="500" loading="eager">
+            <img src="assets/images/products/processed/hero-image.webp" alt="Thiết bị an toàn điện thông minh Phượng Hoàng" width="480" height="480" loading="eager" data-i18n-alt="page_phong.heroProductAlt">
           </div>
-          <div class="ph-hero-accent" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
     <!-- Product Layout: Sidebar + Grid -->
-    <section class="bp-section bp-reveal">
+    <section class="bp-section bp-reveal" id="ph-product-section" style="padding-top:0;">
     <div class="container-wide ph-products-layout">
       <!-- Sidebar -->
       <aside class="ph-products-sidebar" id="phProductsSidebar">
@@ -124,7 +133,17 @@
 
       <!-- Product Grid -->
       <div class="ph-products-main">
-        <div class="ph-products-count" id="phProductsCount"></div>
+        <div class="ph-toolbar">
+          <span class="ph-toolbar-count" id="phProductsCount"></span>
+          <div class="ph-toolbar-sort">
+            <label for="phSortSelect">Sắp xếp:</label>
+            <select id="phSortSelect" onchange="sortProducts(this.value)">
+              <option value="default">Mới nhất</option>
+              <option value="name-asc">Tên A-Z</option>
+              <option value="name-desc">Tên Z-A</option>
+            </select>
+          </div>
+        </div>
         <div class="ph-product-grid" id="phProductGrid"></div>
         <div class="ph-no-results" id="phNoResults">
           <div class="ph-no-results-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
@@ -135,8 +154,36 @@
     </div>
     </section>
 
+    <!-- Support Strip — 4 trust points -->
+    <section class="ph-support-strip bp-reveal">
+      <div class="container-wide">
+        <div class="ph-support-grid">
+          <div class="ph-support-item">
+            <div class="ph-support-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h4 data-i18n="page_products.supportTestedTitle">Kiểm định nghiêm ngặt</h4>
+            <p data-i18n="page_products.supportTestedDesc">Mỗi thiết bị được kiểm tra riêng trước khi xuất kho. Đạt chuẩn ISO 9001:2015.</p>
+          </div>
+          <div class="ph-support-item">
+            <div class="ph-support-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+            <h4 data-i18n="page_products.supportSmartTitle">Công nghệ thông minh</h4>
+            <p data-i18n="page_products.supportSmartDesc">Tích hợp IoT và giám sát từ xa qua ứng dụng di động. Cảnh báo sự cố tức thời.</p>
+          </div>
+          <div class="ph-support-item">
+            <div class="ph-support-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h4 data-i18n="page_products.supportDurableTitle">Độ bền vượt trội</h4>
+            <p data-i18n="page_products.supportDurableDesc">Thiết kế theo tiêu chuẩn công nghiệp. Hoạt động ổn định trong điều kiện khắc nghiệt.</p>
+          </div>
+          <div class="ph-support-item">
+            <div class="ph-support-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h4 data-i18n="page_products.supportServiceTitle">Hỗ trợ toàn diện</h4>
+            <p data-i18n="page_products.supportServiceDesc">Tư vấn, khảo sát, lắp đặt, đào tạo và bảo trì. Đồng hành trọn vòng đời sản phẩm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="bp-offer bp-reveal ph-prod-cta-sec">
+    <section class="bp-reveal ph-prod-cta-sec">
       <div class="container-default ph-prod-cta-wrap">
         <h2 class="ph-prod-cta-head" data-i18n="page_products.ctaHeading">Bạn cần tư vấn chọn sản phẩm phù hợp?</h2>
         <p class="ph-prod-cta-desc" data-i18n="page_products.ctaDesc">Kỹ sư Phượng Hoàng tư vấn miễn phí giải pháp phù hợp với nhu cầu và ngân sách của bạn. Gọi ngay 1800 888 638.</p>
@@ -357,6 +404,28 @@ window._phPageMeta = {
       } else {
         if (arrow) arrow.style.transform = '';
       }
+    }
+
+    /* ── Sort products ── */
+    var _originalProducts = null; /* preserved original order for "default" */
+    function sortProducts(sortBy) {
+      if (typeof productData === 'undefined') return;
+      /* Preserve original order on first call */
+      if (!_originalProducts) {
+        _originalProducts = productData.products.slice();
+      }
+      if (sortBy === 'default') {
+        productData.products = _originalProducts.slice();
+      } else {
+        productData.products.sort(function(a, b) {
+          var nameA = productData.t(a.name).toLowerCase();
+          var nameB = productData.t(b.name).toLowerCase();
+          if (sortBy === 'name-asc') return nameA.localeCompare(nameB, 'vi');
+          if (sortBy === 'name-desc') return nameB.localeCompare(nameA, 'vi');
+          return 0;
+        });
+      }
+      renderProductCards(currentCategory);
     }
 
     /* ── Initialize ── */

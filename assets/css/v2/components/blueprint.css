@@ -159,7 +159,7 @@
 
 .bp-section-alt {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: var(--ph-bg-secondary);
+  background: #F3F7F3;
   position: relative;
 }
 
@@ -180,7 +180,7 @@
 
 .bp-section-dark {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: var(--ph-bg-tertiary);
+  background: #F3F7F3;
   position: relative;
 }
 
@@ -322,8 +322,8 @@
     radial-gradient(ellipse 45% 55% at 78% 35%, rgba(196, 160, 64, 0.07) 0%, transparent 55%),
     /* Brand green — prevention/coolness, lower-left */
     radial-gradient(ellipse 35% 45% at 22% 65%, rgba(29, 139, 44, 0.05) 0%, transparent 50%),
-    /* Rising thermal gradient — bottom warm → top cool */
-    linear-gradient(180deg, rgba(196, 160, 64, 0.03) 0%, transparent 35%, var(--ph-bg-primary) 70%, var(--ph-bg-secondary) 100%);
+    /* Rising thermal gradient — bottom warm → top cool, sage-toned */
+    linear-gradient(180deg, rgba(196, 160, 64, 0.03) 0%, transparent 35%, #F3F7F3 70%, #E8EFE8 100%);
 }
 
 .bp-hero-grid {
@@ -1472,9 +1472,9 @@
 
 [data-theme="light"] .bp-tier-img {
   background:
-    radial-gradient(ellipse 55% 60% at 50% 55%, rgba(29, 139, 44, 0.04) 0%, transparent 65%),
-    radial-gradient(ellipse 80% 15% at 50% 92%, rgba(29, 139, 44, 0.06) 0%, transparent 50%),
-    linear-gradient(180deg, #EEF1F6 0%, #E4E8F0 60%, #D8DDE6 100%);
+    radial-gradient(ellipse 55% 60% at 50% 55%, rgba(22, 138, 58, 0.04) 0%, transparent 65%),
+    radial-gradient(ellipse 80% 15% at 50% 92%, rgba(22, 138, 58, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #F3F6F1 0%, #E8F0E9 60%, #DCE8DF 100%);
 }
 
 [data-theme="light"] .bp-tier-img::after {
@@ -1559,7 +1559,7 @@
   color: var(--ph-text-muted);
   font-weight: 500;
   letter-spacing: 0.04em;
-  background: var(--ph-bg-secondary);
+  background: var(--ph-surface-primary);
   padding: var(--ph-space-2xs) var(--ph-space-sm);
   border: 1px solid var(--ph-border-subtle);
   border-radius: var(--ph-radius-full);
@@ -2022,7 +2022,7 @@
   gap: var(--ph-space-sm);
   width: 100%;
   padding: var(--ph-space-md) var(--ph-space-lg);
-  background: var(--ph-bg-secondary);
+  background: var(--ph-surface-primary);
   border: none;
   text-align: left;
   cursor: pointer;
