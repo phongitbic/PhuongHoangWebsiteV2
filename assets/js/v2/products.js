@@ -1190,9 +1190,8 @@ var productData = {
       orderHTML += '<button onclick="productData.cart.submitCheckout()" style="width:100%;padding:14px;border:none;border-radius:999px;background:linear-gradient(135deg,var(--color-accent),#0099cc);color:var(--color-bg-primary);font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:var(--shadow-glow);">Gửi yêu cầu báo giá</button>';
 
       body.innerHTML = orderHTML;
-      document.getElementById('checkoutModal').style.display = 'flex';
-      document.getElementById('checkoutModal').style.opacity = '1';
-      document.getElementById('checkoutModal').style.visibility = 'visible';
+      var chkModal = document.getElementById('checkoutModal');
+      if (chkModal) { chkModal.style.display = 'flex'; chkModal.style.opacity = '1'; chkModal.style.visibility = 'visible'; }
     },
 
     submitCheckout: function () {
@@ -1202,7 +1201,8 @@ var productData = {
         alert('Vui lòng nhập họ tên và số điện thoại.');
         return;
       }
-      document.getElementById('checkoutModal').style.display = 'none';
+      var chkModal2 = document.getElementById('checkoutModal');
+      if (chkModal2) chkModal2.style.display = 'none';
       // Order saved to localStorage for reference
       try {
         const orders = JSON.parse(localStorage.getItem('ph_checkout_orders') || '[]');
@@ -1226,9 +1226,8 @@ var productData = {
         console.warn('Failed to save checkout order to localStorage:', e);
       }
 
-      document.getElementById('confirmModal').style.display = 'flex';
-      document.getElementById('confirmModal').style.opacity = '1';
-      document.getElementById('confirmModal').style.visibility = 'visible';
+      var cfmModal = document.getElementById('confirmModal');
+      if (cfmModal) { cfmModal.style.display = 'flex'; cfmModal.style.opacity = '1'; cfmModal.style.visibility = 'visible'; }
       productData.cart.clear();
     }
   }

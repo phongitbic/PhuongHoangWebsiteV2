@@ -9,6 +9,19 @@
   background: var(--ph-surface-primary);
   border: 1px solid var(--ph-border-default);
   border-radius: var(--ph-radius-lg);
+  transition: border-color .3s var(--ph-ease-out), transform .3s var(--ph-ease-out), box-shadow .3s var(--ph-ease-out);
+}
+.ph-about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(11,25,41,.08);
+  border-color: var(--ph-accent-subtle);
+}
+.ph-about-card:focus-visible {
+  outline: 2px solid var(--ph-accent);
+  outline-offset: 2px;
+}
+.ph-about-card:active {
+  transform: scale(.985);
 }
 .ph-about-card-title {
   color: var(--ph-accent);
@@ -45,6 +58,42 @@
   object-fit: contain;
 }
 
+/* ── Why Choose Us — Editorial Numbered Rows ── */
+.ph-about-why-list {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.ph-about-why-row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--ph-border-subtle);
+}
+.ph-about-why-row:first-child {
+  border-top: 1px solid var(--ph-border-subtle);
+}
+.ph-about-why-num {
+  font: var(--ph-text-mono-value);
+  color: var(--ph-accent);
+  opacity: .2;
+  line-height: 1;
+  text-align: center;
+}
+.ph-about-why-body h3 {
+  font: var(--ph-text-h3);
+  color: var(--ph-text-primary);
+  margin: 0 0 .5rem;
+}
+.ph-about-why-body p {
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
 /* ── CTA subtext ── */
 .ph-cta-sub {
   margin-top: 1rem;
@@ -52,3 +101,9 @@
   font-size: .875rem;
 }
 .ph-cta-sub a { color: var(--ph-accent); }
+
+@media (prefers-reduced-motion:reduce) {
+  .ph-about-card { transition:none; }
+  .ph-about-card:hover,
+  .ph-about-card:active { transform:none; }
+}

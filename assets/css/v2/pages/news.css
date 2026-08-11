@@ -6,18 +6,21 @@
 
 /* ── Category Filter Tabs ── */
 .ph-news-filters { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; margin-bottom: 2.5rem; }
-.news-filter-btn { padding: .45rem 1rem; border: 1px solid var(--ph-border-default); border-radius: 99px; background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .8125rem; font-weight: 500; cursor: pointer; transition: all .2s; font-family: inherit; white-space: nowrap; }
+.news-filter-btn { padding: .45rem 1rem; border: 1px solid var(--ph-border-default); border-radius: 99px; background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .8125rem; font-weight: 500; cursor: pointer; transition: background-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); font-family: inherit; white-space: nowrap; }
 .news-filter-btn:hover { border-color: var(--ph-accent); color: var(--ph-accent); }
+.news-filter-btn:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
 .news-filter-btn.active { background: var(--ph-accent); color: #fff; border-color: var(--ph-accent); }
 
 /* ── News Grid (populated by news.js renderNews) ── */
 .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
 
 /* ── News Card (news.js builds these) ── */
-.news-card { display: flex; flex-direction: column; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); overflow: hidden; transition: transform .2s, box-shadow .2s; }
-.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.12); }
+.news-card { display: flex; flex-direction: column; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); overflow: hidden; transition: transform .3s var(--ph-ease-out), box-shadow .3s var(--ph-ease-out), border-color .3s var(--ph-ease-out); }
+.news-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(11,25,41,.08); }
+.news-card:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
+.news-card:active { transform: scale(.985); }
 .news-card-img-link { display: block; }
-.news-card-img { aspect-ratio: 16/10; background: var(--ph-surface-secondary); overflow: hidden; }
+.news-card-img { aspect-ratio: 16/10; background: var(--ph-surface-primary); overflow: hidden; }
 .news-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
 .news-card:hover .news-card-img img { transform: scale(1.05); }
 .news-card-body { padding: 1.25rem 1.25rem 1.5rem; flex: 1; display: flex; flex-direction: column; }
@@ -48,7 +51,7 @@
 
 /* ── Pagination (news.js builds these) ── */
 .pagination { display: flex; justify-content: center; align-items: center; gap: .35rem; margin-top: 2.5rem; flex-wrap: wrap; }
-.pagination-btn { height: 38px; min-width: 38px; padding: 0 .6rem; border-radius: 8px; border: 1px solid var(--ph-border-default); background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .875rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .2s; font-family: inherit; }
+.pagination-btn { height: 38px; min-width: 38px; padding: 0 .6rem; border-radius: 8px; border: 1px solid var(--ph-border-default); background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .875rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); font-family: inherit; }
 .pagination-btn:hover { border-color: var(--ph-accent); color: var(--ph-accent); }
 .pagination-btn.active { background: var(--ph-accent); color: #fff; border-color: var(--ph-accent); }
 .pagination-btn:disabled { opacity: .35; cursor: default; pointer-events: none; }
@@ -70,7 +73,7 @@
 .detail-breadcrumb .sep { margin: 0 .5rem; }
 
 /* Article header */
-.article-cover { aspect-ratio: 21/9; border-radius: var(--ph-radius-lg); overflow: hidden; background: var(--ph-surface-secondary); margin-bottom: 1.5rem; }
+.article-cover { aspect-ratio: 21/9; border-radius: var(--ph-radius-lg); overflow: hidden; background: var(--ph-surface-primary); margin-bottom: 1.5rem; }
 .article-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .article-meta { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: .75rem; font-size: .8125rem; color: var(--ph-text-muted); }
 .article-cat { display: inline-block; padding: .15rem .6rem; border-radius: 99px; background: var(--ph-accent-subtle); color: var(--ph-accent); font-size: .7rem; font-weight: 600; text-transform: uppercase; }
@@ -113,7 +116,7 @@
 .sidebar-product-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); padding: 1.25rem; margin-bottom: 1rem; }
 .sidebar-product-card h4 { font: var(--ph-text-h5); color: var(--ph-text-primary); margin-bottom: .5rem; }
 .sidebar-product-subtitle { font-size: .75rem; color: var(--ph-text-secondary); margin-bottom: .75rem; line-height: 1.5; }
-.sidebar-product-link { display: block; padding: .5rem .75rem; border-radius: var(--ph-radius-sm); color: var(--ph-text-secondary); text-decoration: none; font-size: .8125rem; transition: all .2s; margin-bottom: .25rem; }
+.sidebar-product-link { display: block; padding: .5rem .75rem; border-radius: var(--ph-radius-sm); color: var(--ph-text-secondary); text-decoration: none; font-size: .8125rem; transition: color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); margin-bottom: .25rem; }
 .sidebar-product-link:hover { background: var(--ph-accent-subtle); color: var(--ph-accent); }
 
 .back-news { display: inline-flex; align-items: center; gap: .3rem; color: var(--ph-text-secondary); text-decoration: none; font-size: .8125rem; margin-top: .75rem; transition: color .2s; }
@@ -123,9 +126,11 @@
 .related-articles-section { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--ph-border-default); }
 .related-articles-section h2 { font: var(--ph-text-h3); color: var(--ph-text-primary); margin-bottom: 1.25rem; }
 .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
-.rel-card { display: flex; flex-direction: column; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); overflow: hidden; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
-.rel-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
-.rel-card-img { aspect-ratio: 16/10; background: var(--ph-surface-secondary); overflow: hidden; }
+.rel-card { display: flex; flex-direction: column; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); overflow: hidden; text-decoration: none; color: inherit; transition: transform .3s var(--ph-ease-out), box-shadow .3s var(--ph-ease-out), border-color .3s var(--ph-ease-out); }
+.rel-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(11,25,41,.08); }
+.rel-card:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
+.rel-card:active { transform: scale(.985); }
+.rel-card-img { aspect-ratio: 16/10; background: var(--ph-surface-primary); overflow: hidden; }
 .rel-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
 .rel-card:hover .rel-card-img img { transform: scale(1.05); }
 .rel-card-body { padding: 1rem; }
@@ -153,3 +158,9 @@
 /* ── Breadcrumb & fallback ── */
 .ph-breadcrumb-current { color:var(--ph-accent); }
 .ph-fallback-msg { text-align:center; padding:5rem 0; color:var(--ph-text-secondary); font-size:1.125rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .news-card, .rel-card { transition: none; }
+  .news-card:hover, .rel-card:hover { transform: none; }
+  .news-filter-btn, .pagination-btn, .sidebar-product-link { transition: none; }
+}

@@ -92,16 +92,25 @@
   <div id="shared-header"></div>
   <main id="main-content" tabindex="-1">
 
-    <!-- Hero -->
-    <section class="ph-products-hero bp-reveal">
-      <div class="container-default">
-        <h1 class="bp-section-title" data-i18n="page_products.heroTitle">Sản phẩm</h1>
-        <p class="bp-section-subtitle ph-prod-hero-sub" data-i18n="page_products.heroDesc">Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.</p>
+    <!-- Hero: asymmetric split — left content, right product visual -->
+    <section class="ph-catalogue-hero bp-reveal">
+      <div class="container-wide ph-hero-split">
+        <div class="ph-hero-content">
+          <h1 class="bp-section-title" data-i18n="page_products.heroTitle">Sản phẩm</h1>
+          <p class="bp-section-subtitle ph-hero-desc" data-i18n="page_products.heroDesc">Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.</p>
+        </div>
+        <div class="ph-hero-visual" aria-hidden="true">
+          <div class="ph-hero-img-frame">
+            <img src="assets/images/products/220_11zon.webp" alt="Thiết bị an toàn điện thông minh Phượng Hoàng" width="500" height="500" loading="eager">
+          </div>
+          <div class="ph-hero-accent" aria-hidden="true"></div>
+        </div>
       </div>
     </section>
 
     <!-- Product Layout: Sidebar + Grid -->
-    <div class="ph-products-layout container-default">
+    <section class="bp-section bp-reveal">
+    <div class="container-wide ph-products-layout">
       <!-- Sidebar -->
       <aside class="ph-products-sidebar" id="phProductsSidebar">
         <h2 class="ph-sidebar-title" data-i18n="page_products.sidebarTitle">Danh mục</h2>
@@ -124,10 +133,11 @@
         </div>
       </div>
     </div>
+    </section>
 
     <!-- CTA Section -->
     <section class="bp-offer bp-reveal ph-prod-cta-sec">
-      <div class="container-tight ph-prod-cta-wrap">
+      <div class="container-default ph-prod-cta-wrap">
         <h2 class="ph-prod-cta-head" data-i18n="page_products.ctaHeading">Bạn cần tư vấn chọn sản phẩm phù hợp?</h2>
         <p class="ph-prod-cta-desc" data-i18n="page_products.ctaDesc">Kỹ sư Phượng Hoàng tư vấn miễn phí giải pháp phù hợp với nhu cầu và ngân sách của bạn. Gọi ngay 1800 888 638.</p>
         <a href="tel:1800888638" class="bp-btn-magnetic" data-i18n="page_products.ctaButton">Gọi 1800 888 638</a>
@@ -137,7 +147,7 @@
 
     <!-- FAQ Section -->
     <section class="bp-section bp-reveal ph-faq-sec">
-      <div class="container-tight">
+      <div class="container-default">
         <div class="bp-section-header">
           <h2 class="bp-section-title" data-i18n="page_products.faqHeading">Câu hỏi thường gặp</h2>
           <p class="bp-section-subtitle ph-faq-sub" data-i18n="page_products.faqSubtitle">Giải đáp thắc mắc về sản phẩm, đặt hàng và chính sách bảo hành thiết bị điện an toàn Phượng Hoàng.</p>
@@ -270,7 +280,7 @@ window._phPageMeta = {
           var modelCount = p.models ? p.models.length : 0;
           var modelLabel = modelCount + getTranslation('page_products.modelCount');
 
-          html += '<a class="ph-product-card" href="product-detail.html?id=' + p.id + '">';
+          html += '<a class="ph-product-card" href="product-detail.html?id=' + p.id + '" style="--card-index:' + i + '">';
           html += '<div class="ph-card-img-wrap">';
           html += '<img src="' + imgSrc + '" alt="' + name + '" loading="lazy" width="300" height="300">';
           html += '<span class="ph-card-badge ' + statusClass + '">' + statusText + '</span>';

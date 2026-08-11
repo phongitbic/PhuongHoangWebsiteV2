@@ -54,6 +54,11 @@
 .ph-dist-cta p { color: var(--ph-text-secondary); font-size: 1rem; margin-bottom: 1.5rem; max-width: 540px; margin-left: auto; margin-right: auto; line-height: 1.6; }
 .ph-dist-cta .ph-cta-btns { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
 
+/* ── Dist Card (interactive) ── */
+.ph-dist-card:hover { border-color: var(--ph-accent); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(11,25,41,.08); transition: border-color .3s var(--ph-ease-out), transform .3s var(--ph-ease-out), box-shadow .3s var(--ph-ease-out); }
+.ph-dist-card:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
+.ph-dist-card:active { transform: scale(.985); }
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .ph-process-list { grid-template-columns: repeat(5, 1fr); }
@@ -95,3 +100,11 @@
 
 /* ── CTA footer ── */
 .ph-dist-cta-footer { margin-top:1.25rem; color:var(--ph-text-muted); font-size:.875rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .ph-dist-card:hover,
+  .ph-dist-card:active { transform: none !important; }
+}

@@ -36,7 +36,6 @@
   border-color: var(--ph-accent);
   box-shadow: var(--ph-shadow-3);
 }
-.ph-cert-card:active { transform: scale(.985); }
 .ph-cert-card:focus-visible {
   outline: 2px solid var(--ph-accent);
   outline-offset: 2px;
@@ -51,7 +50,7 @@
   border-radius: var(--ph-radius-md);
   overflow: hidden;
   margin-bottom: 0.75rem;
-  background: var(--ph-surface-primary);
+  background: var(--ph-bg-secondary);
   border: 1px solid var(--ph-border-subtle);
   box-shadow: inset 0 0 0 3px rgba(255,255,255,0.03);
 }
@@ -142,9 +141,7 @@
   color: var(--ph-text-primary);
   font-size: 1.25rem; line-height: 1;
   cursor: pointer;
-  transition: background var(--ph-duration-fast) var(--ph-ease-out),
-              border-color var(--ph-duration-fast) var(--ph-ease-out),
-              color var(--ph-duration-fast) var(--ph-ease-out);
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
   display: flex; align-items: center; justify-content: center;
 }
 .ph-lightbox-close:hover { background: var(--ph-danger); border-color: var(--ph-danger); color: #fff; }
@@ -157,9 +154,7 @@
   color: var(--ph-text-primary);
   font-size: 1.375rem; line-height: 1;
   cursor: pointer;
-  transition: background var(--ph-duration-fast) var(--ph-ease-out),
-              border-color var(--ph-duration-fast) var(--ph-ease-out),
-              color var(--ph-duration-fast) var(--ph-ease-out);
+  transition: all var(--ph-duration-fast) var(--ph-ease-out);
   display: flex; align-items: center; justify-content: center;
 }
 .ph-lightbox-nav:hover { background: var(--ph-accent-subtle); border-color: var(--ph-accent); color: var(--ph-accent); }
@@ -225,17 +220,4 @@
 
 @media (max-width: 480px) {
   .ph-cert-gallery { max-width: 100%; }
-}
-
-/* ── Reduced motion ── */
-@media (prefers-reduced-motion: reduce) {
-  .ph-cert-card,
-  .ph-cert-card:hover,
-  .ph-cert-card:active { transition: none; transform: none; }
-  .ph-cert-thumb img,
-  .ph-cert-card:hover .ph-cert-thumb img { transition: none; transform: none; }
-  .ph-cert-thumb::after { transition: none; }
-  .ph-lightbox-close,
-  .ph-lightbox-nav { transition: none; }
-  .ph-quality-process .ph-quality-item { transition: none; }
 }
