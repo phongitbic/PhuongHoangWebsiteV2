@@ -92,33 +92,29 @@
   <div id="shared-header"></div>
   <main id="main-content" tabindex="-1">
 
-    <!-- Hero: asymmetric split — left content, right product visual -->
+    <!-- Hero: 1280px banner, matching phong.html container-wide -->
     <section class="ph-catalogue-hero bp-reveal">
-      <div class="container-wide ph-hero-split">
-        <div class="ph-hero-content">
-          <div class="ph-hero-eyebrow">
-            <span class="ph-hero-eyebrow-dot"></span>
-            <span data-i18n="page_products.heroEyebrow">SẢN PHẨM</span>
-          </div>
-          <h1 class="bp-section-title" data-i18n="page_products.heroTitle">Sản phẩm</h1>
-          <p class="ph-hero-desc" data-i18n="page_products.heroDesc">Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.</p>
-          <div class="ph-hero-cta-row">
-            <a href="#ph-product-section" class="ph-hero-cta-primary" data-i18n="page_products.heroCTA">Xem sản phẩm</a>
-            <a href="contact.html" class="ph-hero-cta-secondary" data-i18n="page_products.heroContact">Liên hệ tư vấn</a>
-          </div>
-        </div>
-        <div class="ph-hero-visual" aria-hidden="true">
-          <div class="ph-hero-visual-bg ph-hero-visual-glow"></div>
-          <div class="ph-hero-visual-bg ph-hero-visual-ring"></div>
-          <div class="ph-hero-img-frame">
-            <img src="assets/images/products/test.png" alt="Thiết bị an toàn điện thông minh Phượng Hoàng" width="480" height="480" loading="eager" data-i18n-alt="page_phong.heroProductAlt">
-          </div>
+      <div class="container-wide">
+        <div class="ph-hero-visual-full">
+          <img src="assets/images/products/test.png"
+               alt="Thiết bị bảo vệ điện Phượng Hoàng"
+               width="1280"
+               height="400"
+               loading="eager"
+               data-i18n-alt="page_phong.heroProductAlt">
         </div>
       </div>
     </section>
 
+    <!-- Browse Header -->
+    <section class="ph-browse-header bp-section-alt bp-reveal">
+      <div class="container-wide">
+        <h2 class="bp-section-title" data-i18n="page_products.browseTitle">Danh mục</h2>
+      </div>
+    </section>
+
     <!-- Product Layout: Sidebar + Grid -->
-    <section class="bp-section bp-reveal" id="ph-product-section" style="padding-top:0;">
+    <section class="bp-section bp-reveal" id="ph-product-section">
     <div class="container-wide ph-products-layout">
       <!-- Sidebar -->
       <aside class="ph-products-sidebar" id="phProductsSidebar">
@@ -136,11 +132,11 @@
         <div class="ph-toolbar">
           <span class="ph-toolbar-count" id="phProductsCount"></span>
           <div class="ph-toolbar-sort">
-            <label for="phSortSelect">Sắp xếp:</label>
+            <label for="phSortSelect" data-i18n="page_products.sortLabel">Sắp xếp:</label>
             <select id="phSortSelect" onchange="sortProducts(this.value)">
-              <option value="default">Mới nhất</option>
-              <option value="name-asc">Tên A-Z</option>
-              <option value="name-desc">Tên Z-A</option>
+              <option value="default" data-i18n="page_products.sortDefault">Mới nhất</option>
+              <option value="name-asc" data-i18n="page_products.sortNameAsc">Tên A-Z</option>
+              <option value="name-desc" data-i18n="page_products.sortNameDesc">Tên Z-A</option>
             </select>
           </div>
         </div>
@@ -193,8 +189,8 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="bp-section bp-reveal ph-faq-sec">
-      <div class="container-default">
+    <section class="bp-section-alt bp-reveal ph-faq-sec">
+      <div class="container-wide">
         <div class="bp-section-header">
           <h2 class="bp-section-title" data-i18n="page_products.faqHeading">Câu hỏi thường gặp</h2>
           <p class="bp-section-subtitle ph-faq-sub" data-i18n="page_products.faqSubtitle">Giải đáp thắc mắc về sản phẩm, đặt hàng và chính sách bảo hành thiết bị điện an toàn Phượng Hoàng.</p>

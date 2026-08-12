@@ -120,7 +120,7 @@ var phFaqData = {
       id: "faq-distributor-find",
       category: "service",
       q: "Làm sao tìm nhà phân phối Phượng Hoàng gần nhất?",
-      a: "Phượng Hoàng có mạng lưới phân phối toàn quốc. Bạn có thể tra cứu nhà phân phối gần nhất trên trang Hệ thống phân phối của chúng tôi bằng cách nhập tên tỉnh/thành phố hoặc chọn khu vực, hoặc gọi hotline 1800 888 638 để được hỗ trợ.",
+      a: "Phượng Hoàng có mạng lưới phân phối toàn quốc. Bạn có thể tra cứu nhà phân phối gần nhất trên trang nhà phân phối của chúng tôi bằng cách nhập tên tỉnh/thành phố hoặc chọn khu vực, hoặc gọi hotline 1800 888 638 để được hỗ trợ.",
       keywords: "tìm nhà phân phối, đại lý thiết bị điện, nhà phân phối gần nhất, phân phối Phượng Hoàng, mạng lưới phân phối",
       intent: "Transactional — khách muốn tìm nơi mua hàng gần nhất",
       internalLink: "distribution-system.html",

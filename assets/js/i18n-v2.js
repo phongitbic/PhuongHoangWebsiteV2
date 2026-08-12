@@ -396,6 +396,7 @@ ctaFooterNationwide: '服务全国客户'
     page_products: {
       heroTitle: '产品',
       heroDesc: '适用于所有设施的全面用电安全解决方案——从家庭到工业厂房。每件产品在交付客户前均经过严格检验。',
+      browseTitle: '目录',
       sidebarTitle: '分类',
       filterLabel: '筛选分类',
       noResults: '此分类中未找到产品。',
@@ -418,7 +419,20 @@ ctaFooterNationwide: '服务全国客户'
       faqWarranty: '保修',
       faqNoResults: '未找到匹配的问题。请尝试其他关键词或直接联系我们。',
       faqFooter: '没有找到答案？',
-      faqFooterButton: '提交问题'
+      faqFooterButton: '提交问题',
+      sortLabel: '排序:',
+      sortDefault: '最新',
+      sortNameAsc: '名称 A-Z',
+      sortNameDesc: '名称 Z-A',
+      supportTestedTitle: '严格测试',
+      supportTestedDesc: '每台设备在出厂前都经过单独测试。符合ISO 9001:2015标准。',
+      supportSmartTitle: '智能技术',
+      supportSmartDesc: '通过移动应用程序集成物联网和远程监控。即时故障报警。',
+      supportDurableTitle: '卓越耐用',
+      supportDurableDesc: '按照工业标准设计。在恶劣条件下稳定运行。',
+      supportServiceTitle: '全面支持',
+      supportServiceDesc: '咨询、勘察、安装、培训和维护。全程产品生命周期支持。',
+      contactPrice: '联系报价'
     },
     page_productDetail: {
       breadcrumbHome: '首页',
@@ -506,7 +520,9 @@ ctaFooterNationwide: '服务全国客户'
       conclusionTitle: '结论',
       fallbackMsg: '文章不存在。',
       articleDefault: '文章',
-      categoryDefault: '分类'
+      categoryDefault: '分类',
+      ctaHeading: '您需要用电安全解决方案咨询吗？',
+      ctaDesc: '凤凰科技专家团队随时准备为您提供最适合您需求的解决方案建议。'
     },
     page_leakageDetector: {
       breadcrumbHome: '首页',
@@ -1152,6 +1168,7 @@ ctaFooterNationwide: 'Serving customers nationwide'
     page_products: {
       heroTitle: 'Products',
       heroDesc: 'Comprehensive electrical safety solutions for all facilities — from homes to industrial plants. Every product rigorously tested before delivery to customers.',
+      browseTitle: 'Catalog',
       sidebarTitle: 'Categories',
       filterLabel: 'Filter by category',
       noResults: 'No products found in this category.',
@@ -1174,7 +1191,20 @@ ctaFooterNationwide: 'Serving customers nationwide'
       faqWarranty: 'Warranty',
       faqNoResults: 'No matching questions found. Try another keyword or contact us directly.',
       faqFooter: "Didn't find an answer?",
-      faqFooterButton: 'Submit a question'
+      faqFooterButton: 'Submit a question',
+      sortLabel: 'Sort:',
+      sortDefault: 'Latest',
+      sortNameAsc: 'Name A-Z',
+      sortNameDesc: 'Name Z-A',
+      supportTestedTitle: 'Rigorously Tested',
+      supportTestedDesc: 'Each device is individually tested before leaving the warehouse. ISO 9001:2015 certified.',
+      supportSmartTitle: 'Smart Technology',
+      supportSmartDesc: 'IoT integration and remote monitoring via mobile app. Instant fault alerts.',
+      supportDurableTitle: 'Superior Durability',
+      supportDurableDesc: 'Designed to industrial standards. Stable operation under harsh conditions.',
+      supportServiceTitle: 'Comprehensive Support',
+      supportServiceDesc: 'Consulting, surveying, installation, training and maintenance. Full product lifecycle support.',
+      contactPrice: 'Contact for pricing'
     },
     page_productDetail: {
       breadcrumbHome: 'Home',
@@ -1262,7 +1292,9 @@ ctaFooterNationwide: 'Serving customers nationwide'
       conclusionTitle: 'Conclusion',
       fallbackMsg: 'Article not found.',
       articleDefault: 'Article',
-      categoryDefault: 'Category'
+      categoryDefault: 'Category',
+      ctaHeading: 'Need consultation on electrical safety solutions?',
+      ctaDesc: 'Phuong Hoang\'s expert team is ready to advise on the best solution for your needs.'
     },
     page_leakageDetector: {
       breadcrumbHome: 'Home',
@@ -1908,6 +1940,7 @@ ctaFooterNationwide: 'Phục vụ khách hàng toàn quốc'
     page_products: {
       heroTitle: 'Sản phẩm',
       heroDesc: 'Giải pháp an toàn điện toàn diện cho mọi công trình — từ hộ gia đình đến nhà máy công nghiệp. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.',
+      browseTitle: 'Danh mục',
       sidebarTitle: 'Danh mục',
       filterLabel: 'Lọc danh mục',
       noResults: 'Không tìm thấy sản phẩm trong danh mục này.',
@@ -1930,7 +1963,20 @@ ctaFooterNationwide: 'Phục vụ khách hàng toàn quốc'
       faqWarranty: 'Bảo hành',
       faqNoResults: 'Không tìm thấy câu hỏi phù hợp. Vui lòng thử từ khóa khác hoặc liên hệ trực tiếp với chúng tôi.',
       faqFooter: 'Chưa tìm được câu trả lời?',
-      faqFooterButton: 'Gửi câu hỏi'
+      faqFooterButton: 'Gửi câu hỏi',
+      sortLabel: 'Sắp xếp:',
+      sortDefault: 'Mới nhất',
+      sortNameAsc: 'Tên A-Z',
+      sortNameDesc: 'Tên Z-A',
+      supportTestedTitle: 'Kiểm định nghiêm ngặt',
+      supportTestedDesc: 'Mỗi thiết bị được kiểm tra riêng trước khi xuất kho. Đạt chuẩn ISO 9001:2015.',
+      supportSmartTitle: 'Công nghệ thông minh',
+      supportSmartDesc: 'Tích hợp IoT và giám sát từ xa qua ứng dụng di động. Cảnh báo sự cố tức thời.',
+      supportDurableTitle: 'Độ bền vượt trội',
+      supportDurableDesc: 'Thiết kế theo tiêu chuẩn công nghiệp. Hoạt động ổn định trong điều kiện khắc nghiệt.',
+      supportServiceTitle: 'Hỗ trợ toàn diện',
+      supportServiceDesc: 'Tư vấn, khảo sát, lắp đặt, đào tạo và bảo trì. Đồng hành trọn vòng đời sản phẩm.',
+      contactPrice: 'Liên hệ báo giá'
     },
     page_productDetail: {
       breadcrumbHome: 'Trang chủ',
@@ -2018,7 +2064,9 @@ ctaFooterNationwide: 'Phục vụ khách hàng toàn quốc'
       conclusionTitle: 'Kết luận',
       fallbackMsg: 'Bài viết không tồn tại.',
       articleDefault: 'Bài viết',
-      categoryDefault: 'Danh mục'
+      categoryDefault: 'Danh mục',
+      ctaHeading: 'Bạn cần tư vấn về giải pháp an toàn điện?',
+      ctaDesc: 'Đội ngũ chuyên gia của Phượng Hoàng sẵn sàng tư vấn giải pháp phù hợp nhất cho nhu cầu của bạn.'
     },
     page_leakageDetector: {
       breadcrumbHome: 'Trang chủ',

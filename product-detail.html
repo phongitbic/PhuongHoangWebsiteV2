@@ -83,6 +83,7 @@
   <link rel="stylesheet" href="assets/css/v2/components/footer.css">
   <link rel="stylesheet" href="assets/css/v2/components/blueprint.css">
   <link rel="stylesheet" href="assets/css/v2/pages/products.css">
+  <link rel="stylesheet" href="assets/css/v2/pages/product-detail.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skipLink">Bỏ qua nội dung</a>
@@ -90,19 +91,21 @@
   <main id="main-content" tabindex="-1">
 
     <!-- Breadcrumb -->
-    <div class="ph-detail-wrap ph-products-hero">
-      <nav class="ph-detail-breadcrumb" aria-label="breadcrumb">
-        <a href="phong.html" data-i18n="page_productDetail.breadcrumbHome">Trang chủ</a><span class="sep">/</span>
-        <a href="products.html" data-i18n="page_productDetail.breadcrumbProducts">Sản phẩm</a><span class="sep">/</span>
-        <a href="products.html" id="breadcrumbCat" data-i18n="page_productDetail.breadcrumbCategory">Danh mục</a><span class="sep">/</span>
-        <span id="breadcrumbProduct" class="current" data-i18n="page_productDetail.breadcrumbDetail">Chi tiết</span>
-      </nav>
-    </div>
+    <section class="ph-breadcrumb-sec">
+      <div class="container-wide">
+        <nav class="ph-detail-breadcrumb" aria-label="breadcrumb">
+          <a href="phong.html" data-i18n="page_productDetail.breadcrumbHome">Trang chủ</a><span class="sep">/</span>
+          <a href="products.html" data-i18n="page_productDetail.breadcrumbProducts">Sản phẩm</a><span class="sep">/</span>
+          <a href="products.html" id="breadcrumbCat" data-i18n="page_productDetail.breadcrumbCategory">Danh mục</a><span class="sep">/</span>
+          <span id="breadcrumbProduct" class="current" data-i18n="page_productDetail.breadcrumbDetail">Chi tiết</span>
+        </nav>
+      </div>
+    </section>
 
     <!-- ===== SECTION 1: Product Hero ===== -->
-    <section class="ph-detail-wrap">
-      <div class="ph-detail-hero">
-        <!-- Gallery -->
+    <section class="bp-section bp-reveal ph-hero-detail-sec">
+      <div class="container-wide ph-detail-hero">
+        <!-- Left: Gallery -->
         <div class="ph-detail-gallery">
           <div class="ph-detail-main-img" onclick="openLightbox()">
             <img src="" alt="Sản phẩm" id="mainImage" fetchpriority="high" width="600" height="600">
@@ -110,7 +113,7 @@
           </div>
           <div class="ph-detail-thumbs" id="galleryThumbs"></div>
         </div>
-        <!-- Info -->
+        <!-- Right: Info -->
         <div class="ph-detail-info">
           <span class="ph-info-cat" id="infoCategory">Danh mục</span>
           <h1 id="infoTitle">Tên sản phẩm</h1>
@@ -122,7 +125,7 @@
             <div class="ph-model-btns" id="modelOptions"></div>
             <div class="ph-model-desc" id="modelDesc" data-i18n="page_productDetail.selectModelHint">Vui lòng chọn model</div>
           </div>
-          <!-- Quick spec highlights (compact, not full table) -->
+          <!-- Quick spec highlights -->
           <div class="ph-quick-specs" id="quickSpecs">
             <div class="ph-quick-spec"><span class="ph-quick-spec-label" data-i18n="page_productDetail.specVoltage">Điện áp</span><span class="ph-quick-spec-value" id="qsVoltage">---</span></div>
             <div class="ph-quick-spec"><span class="ph-quick-spec-label" data-i18n="page_productDetail.specCurrent">Dòng điện</span><span class="ph-quick-spec-value" id="qsCurrent">---</span></div>
@@ -145,21 +148,25 @@
     </section>
 
     <!-- ===== SECTION 2: Key Benefits ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec-alt" id="sectionBenefits">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagBenefits">Lợi ích chính</span>
-        <h2 data-i18n="page_productDetail.headingBenefits">Tại sao chọn sản phẩm này?</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subBenefits">Những lợi ích vượt trội mang lại an toàn tối đa cho hệ thống điện của bạn</p>
+    <section class="bp-section bp-section-alt bp-reveal" id="sectionBenefits">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagBenefits">Lợi ích chính</span>
+          <h2 data-i18n="page_productDetail.headingBenefits">Tại sao chọn sản phẩm này?</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subBenefits">Những lợi ích vượt trội mang lại an toàn tối đa cho hệ thống điện của bạn</p>
+        </div>
         <div class="ph-benefits-grid" id="benefitsGrid"></div>
       </div>
     </section>
 
     <!-- ===== SECTION 3: Technical Specs + Diagram ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec" id="sectionSpecsFull">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagSpecs">Thông số kỹ thuật</span>
-        <h2 data-i18n="page_productDetail.headingSpecs">Thông số kỹ thuật chi tiết</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subSpecs">Thông số của model đang chọn</p>
+    <section class="bp-section bp-reveal" id="sectionSpecsFull">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagSpecs">Thông số kỹ thuật</span>
+          <h2 data-i18n="page_productDetail.headingSpecs">Thông số kỹ thuật chi tiết</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subSpecs">Thông số của model đang chọn</p>
+        </div>
         <div class="ph-specs-full-grid">
           <div class="ph-specs-image-wrap">
             <img src="" alt="Sơ đồ thông số" id="specsImageDisplay" width="600" height="400">
@@ -172,48 +179,56 @@
     </section>
 
     <!-- ===== SECTION 4: Features ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec-alt" id="sectionFeatures">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagFeatures">Tính năng nổi bật</span>
-        <h2 data-i18n="page_productDetail.headingFeatures">Tính năng sản phẩm</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subFeatures">Các tính năng bảo vệ toàn diện cho an toàn điện</p>
+    <section class="bp-section bp-section-alt bp-reveal" id="sectionFeatures">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagFeatures">Tính năng nổi bật</span>
+          <h2 data-i18n="page_productDetail.headingFeatures">Tính năng sản phẩm</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subFeatures">Các tính năng bảo vệ toàn diện cho an toàn điện</p>
+        </div>
         <div class="ph-features-grid" id="featuresGrid"></div>
       </div>
     </section>
 
     <!-- ===== SECTION 5: Applications ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec" id="sectionApps">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagApps">Ứng dụng thực tế</span>
-        <h2 data-i18n="page_productDetail.headingApps">Ứng dụng</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subApps">Phù hợp với nhiều môi trường và hệ thống điện</p>
+    <section class="bp-section bp-reveal" id="sectionApps">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagApps">Ứng dụng thực tế</span>
+          <h2 data-i18n="page_productDetail.headingApps">Ứng dụng</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subApps">Phù hợp với nhiều môi trường và hệ thống điện</p>
+        </div>
         <div class="ph-apps-grid" id="appsGrid"></div>
       </div>
     </section>
 
     <!-- ===== SECTION 6: Working Steps ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec-alt" id="sectionWorking">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagWorking">Nguyên lý hoạt động</span>
-        <h2 data-i18n="page_productDetail.headingWorking">Nguyên lý hoạt động</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subWorking">Quy trình vận hành bảo vệ tối đa cho người và thiết bị</p>
+    <section class="bp-section bp-section-alt bp-reveal" id="sectionWorking">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagWorking">Nguyên lý hoạt động</span>
+          <h2 data-i18n="page_productDetail.headingWorking">Nguyên lý hoạt động</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subWorking">Quy trình vận hành bảo vệ tối đa cho người và thiết bị</p>
+        </div>
         <div class="ph-steps-list" id="workingSteps"></div>
       </div>
     </section>
 
     <!-- ===== SECTION 7: Related Products ===== -->
-    <section class="bp-section bp-reveal ph-detail-sec" id="sectionRelated">
-      <div class="ph-detail-wrap">
-        <span class="ph-section-tag" data-i18n="page_productDetail.tagRelated">Sản phẩm liên quan</span>
-        <h2 data-i18n="page_productDetail.headingRelated">Sản phẩm liên quan</h2>
-        <p class="ph-detail-sub" data-i18n="page_productDetail.subRelated">Khám phá thêm các sản phẩm khác</p>
+    <section class="bp-section bp-reveal" id="sectionRelated">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-i18n="page_productDetail.tagRelated">Sản phẩm liên quan</span>
+          <h2 data-i18n="page_productDetail.headingRelated">Sản phẩm liên quan</h2>
+          <p class="ph-detail-sub" data-i18n="page_productDetail.subRelated">Khám phá thêm các sản phẩm khác</p>
+        </div>
         <div class="ph-related-grid" id="relatedGrid"></div>
       </div>
     </section>
 
     <!-- ===== SECTION 8: CTA ===== -->
-    <section class="bp-offer bp-reveal ph-detail-sec-cta">
-      <div class="container-tight ph-detail-cta-center">
+    <section class="ph-detail-cta-section bp-reveal">
+      <div class="container-wide ph-detail-cta-center">
         <h2 class="ph-detail-cta-heading" data-i18n="page_productDetail.ctaHeading">Bạn cần tư vấn thêm?</h2>
         <p class="ph-detail-cta-desc" data-i18n="page_productDetail.ctaDesc">Kỹ sư Phượng Hoàng tư vấn miễn phí giải pháp phù hợp. Gọi ngay 1800 888 638.</p>
         <div class="ph-detail-cta-actions">

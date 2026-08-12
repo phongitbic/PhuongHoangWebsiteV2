@@ -153,7 +153,7 @@ toc = [
     ("3.", "Sản phẩm", "5"),
     ("4.", "Chứng nhận & Tiêu chuẩn", "8"),
     ("5.", "Dự án tiêu biểu", "9"),
-    ("6.", "Hệ thống phân phối", "11"),
+    ("6.", "Nhà phân phối", "11"),
     ("7.", "Chính sách hợp tác", "11"),
     ("8.", "Liên hệ", "12"),
 ]
@@ -302,7 +302,7 @@ for i, (name, loc, desc) in enumerate([
 story.append(PageBreak())
 
 # ═══ 6. DISTRIBUTION ═══
-story.extend(make_section_title("6. Hệ thống phân phối"))
+story.extend(make_section_title("6. Nhà phân phối"))
 story.append(Paragraph(
     "Mạng lưới phân phối phủ khắp <b>63 tỉnh thành</b> với hơn <b>100 đối tác</b> trên toàn quốc:", S['body']))
 story.append(Spacer(1, 10))

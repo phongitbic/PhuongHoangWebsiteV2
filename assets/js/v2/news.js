@@ -1,13 +1,13 @@
 /**
  * news.js — News system loader & renderer with pagination
  * Loads from news-data.json, supports vi/en/zh with real-time switching
- * Pagination: 6 articles per page
+ * Pagination: 7 articles per page (1 featured + 6 grid)
  */
 var newsArticles = [];
 var newsCategories = {};
 let currentNewsCat = 'all';
 let currentPage = 1;
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 7;
 
 /**
  * Read page & category from URL search params and apply them.

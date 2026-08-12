@@ -1089,7 +1089,7 @@ var productData = {
           selectedModel: modelName || (product.models && product.models[0] ? product.models[0].name : ''),
           mainImage: product.mainImage || productData.getPlaceholder(productData.t(product.name)),
           quantity: quantity,
-          price: product.price || 'Liên hệ báo giá'
+          price: (product.price && product.price !== 'Liên hệ báo giá') ? product.price : getTranslation('page_products.contactPrice')
         });
       }
       this.save();

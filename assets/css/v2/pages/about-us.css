@@ -58,10 +58,81 @@
   object-fit: contain;
 }
 
+/* ── Hero Description ── */
+.ph-about-hero-desc {
+  font-size: 1.0625rem;
+  color: var(--ph-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 .25rem;
+  max-width: 56ch;
+}
+
+/* ── CTA Section (page-scoped, replaces banned bp-offer gradient) ── */
+.ph-about-cta {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  background: var(--ph-bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+.ph-about-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 35% 45%, rgba(22,138,58,.025), transparent 55%),
+    radial-gradient(ellipse at 65% 35%, rgba(22,138,58,.012), transparent 50%);
+  pointer-events: none;
+}
+.ph-about-cta-wrap {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.ph-about-cta-panel h2 {
+  font: var(--ph-text-h2);
+  color: var(--ph-text-primary);
+  margin-bottom: .75rem;
+}
+.ph-about-cta-panel > p {
+  font-size: .9375rem;
+  color: var(--ph-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ph-about-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.ph-about-cta-actions .bp-btn-magnetic {
+  background: var(--ph-accent);
+  color: var(--ph-text-on-accent);
+  border: none;
+  padding: .8rem 2rem;
+  font-size: .9375rem;
+  font-weight: 600;
+  border-radius: var(--ph-radius-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--ph-font-body);
+  box-shadow: 0 2px 14px rgba(22,138,58,.14);
+  transition: filter var(--ph-duration-fast) var(--ph-ease-out),
+              transform var(--ph-duration-fast) var(--ph-ease-out);
+}
+.ph-about-cta-actions .bp-btn-magnetic:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
 /* ── Why Choose Us — Editorial Numbered Rows ── */
 .ph-about-why-list {
-  max-width: 780px;
-  margin: 0 auto;
+  /* container-wide handles external alignment; no inner max-width constraint */
 }
 .ph-about-why-row {
   display: grid;

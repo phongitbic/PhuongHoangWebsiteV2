@@ -40,7 +40,7 @@
           </a>
         </div>
       </div>
-      <a class="nav-link" href="distribution-system.html" data-i18n="header.distribution">Hệ thống phân phối</a>
+      <a class="nav-link" href="distribution-system.html" data-i18n="header.distribution">Nhà phân phối</a>
       <a class="nav-link" href="certificates.html" data-i18n="header.certificates">Chứng chỉ</a>
       <a class="nav-link" href="projects.html" data-i18n="header.projects">Công trình</a>
       <a class="nav-link" href="news.html" data-i18n="header.news">Tin tức</a>
@@ -82,7 +82,7 @@
         <a class="mobile-sub-link" href="products.html?category=arc" onclick="closeMobileMenu()">Dập hồ quang</a>
       </div>
     </li>
-    <li><a class="mobile-nav-link" href="distribution-system.html" onclick="closeMobileMenu()">Hệ thống phân phối</a></li>
+    <li><a class="mobile-nav-link" href="distribution-system.html" onclick="closeMobileMenu()">Nhà phân phối</a></li>
     <li><a class="mobile-nav-link" href="certificates.html" onclick="closeMobileMenu()">Chứng chỉ</a></li>
     <li><a class="mobile-nav-link" href="projects.html" onclick="closeMobileMenu()">Công trình</a></li>
     <li><a class="mobile-nav-link" href="news.html" onclick="closeMobileMenu()">Tin tức</a></li>

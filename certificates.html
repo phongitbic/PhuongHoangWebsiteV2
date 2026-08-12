@@ -91,26 +91,34 @@
   <main id="main-content" tabindex="-1">
 
     <!-- Hero -->
-    <section class="bp-internal-hero bp-reveal">
-      <div class="container-default">
-        <h1 class="bp-section-title" data-cert-i18n="title">Chứng nhận sản phẩm</h1>
-        <p class="bp-internal-hero-desc" data-cert-i18n="subtitle">Các chứng nhận và tài liệu thể hiện chất lượng, độ an toàn và tiêu chuẩn của sản phẩm Phượng Hoàng.</p>
+    <section class="bp-section bp-reveal">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <h1 class="bp-section-title" data-cert-i18n="title">Chứng nhận sản phẩm</h1>
+        </div>
+        <p class="ph-cert-hero-desc" data-cert-i18n="subtitle">Các chứng nhận và tài liệu thể hiện chất lượng, độ an toàn và tiêu chuẩn của sản phẩm Phượng Hoàng.</p>
       </div>
     </section>
 
     <!-- Certificate Gallery -->
-    <section class="bp-section-md bp-reveal">
-      <div class="bp-content-default">
-        <h2 class="bp-section-heading" data-cert-i18n="galleryTitle">Danh mục chứng nhận</h2>
+    <section class="bp-section-alt bp-reveal">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-cert-i18n="galleryEyebrow">Tiêu chuẩn & chứng nhận</span>
+          <h2 class="bp-section-title" data-cert-i18n="galleryTitle">Danh mục chứng nhận</h2>
+        </div>
         <p class="ph-cert-gallery-desc" data-cert-i18n="galleryDesc">Nhấp vào từng chứng nhận để xem chi tiết ở chế độ phóng to.</p>
         <div class="ph-cert-gallery" id="certGallery"></div>
       </div>
     </section>
 
     <!-- Quality Process -->
-    <section class="bp-section-sm bp-reveal">
-      <div class="bp-content-default">
-        <h2 class="bp-section-heading" data-cert-i18n="processTitle">Quy trình kiểm định chất lượng</h2>
+    <section class="bp-section bp-reveal">
+      <div class="container-wide">
+        <div class="bp-section-header">
+          <span class="ph-section-tag" data-cert-i18n="processEyebrow">Cam kết chất lượng</span>
+          <h2 class="bp-section-title" data-cert-i18n="processTitle">Quy trình kiểm định chất lượng</h2>
+        </div>
         <div class="ph-quality-process">
           <div class="ph-quality-item">
             <div class="ph-quality-num">1</div>
@@ -138,12 +146,12 @@
     </section>
 
     <!-- CTA -->
-    <section class="bp-section-md bp-reveal">
-      <div class="bp-content-tight">
-        <div class="bp-cta-panel">
+    <section class="ph-cert-cta-section bp-reveal">
+      <div class="container-default">
+        <div class="ph-cert-cta-panel">
           <h2 data-cert-i18n="ctaTitle">Bạn muốn tìm hiểu thêm về sản phẩm?</h2>
           <p data-cert-i18n="ctaDesc">Liên hệ với chúng tôi để được tư vấn chi tiết về các giải pháp an toàn điện phù hợp với nhu cầu của bạn.</p>
-          <div class="bp-cta-actions">
+          <div class="ph-cert-cta-actions">
             <a href="tel:1800888638" class="bp-btn-magnetic" data-cert-i18n="ctaBtn">Liên hệ tư vấn</a>
           </div>
           <p class="ph-cert-cta-sub"><span data-cert-i18n="ctaOr">Hoặc</span> <a href="contact.html" data-cert-i18n="ctaEmail">gửi yêu cầu qua email</a></p>
@@ -201,6 +209,7 @@ window._phPageMeta = {
         vi: {
           title: 'Chứng nhận sản phẩm',
           subtitle: 'Các chứng nhận và tài liệu thể hiện chất lượng, độ an toàn và tiêu chuẩn của sản phẩm Phượng Hoàng.',
+          galleryEyebrow: 'Tiêu chuẩn & chứng nhận',
           galleryTitle: 'Danh mục chứng nhận',
           galleryDesc: 'Nhấp vào từng chứng nhận để xem chi tiết ở chế độ phóng to.',
           item1Title: 'Chứng nhận bằng sáng chế sản phẩm',
@@ -216,6 +225,7 @@ window._phPageMeta = {
           item6Title: 'Chứng nhận uy tín',
           item6Desc: 'Giúp khách hàng yên tâm khi lựa chọn giải pháp của Phượng Hoàng.',
           processTitle: 'Quy trình kiểm định chất lượng',
+          processEyebrow: 'Cam kết chất lượng',
           process1Title: 'Kiểm định nguyên liệu đầu vào',
           process1Desc: '100% linh kiện được kiểm tra trước khi đưa vào sản xuất. Chỉ sử dụng linh kiện đạt chứng nhận từ nhà cung cấp uy tín.',
           process2Title: 'Kiểm định tại phòng thí nghiệm độc lập',
@@ -234,6 +244,7 @@ window._phPageMeta = {
         en: {
           title: 'Product Certifications',
           subtitle: 'Certifications and documents demonstrating the quality, safety, and standards of Phuong Hoang products.',
+          galleryEyebrow: 'Standards & Certifications',
           galleryTitle: 'Certificate Gallery',
           galleryDesc: 'Click on each certificate to view details in enlarged mode.',
           item1Title: 'Product Patent Certification',
@@ -249,6 +260,7 @@ window._phPageMeta = {
           item6Title: 'Credibility Certification',
           item6Desc: 'Gives customers confidence when choosing Phuong Hoang solutions.',
           processTitle: 'Quality Inspection Process',
+          processEyebrow: 'Quality Commitment',
           process1Title: 'Incoming Material Inspection',
           process1Desc: '100% of components are inspected before production. Only certified components from reputable suppliers are used.',
           process2Title: 'Independent Laboratory Testing',
@@ -267,6 +279,7 @@ window._phPageMeta = {
         zh: {
           title: '产品认证',
           subtitle: '展示凤凰产品在质量、安全及相关标准方面的认证与证明文件。',
+          galleryEyebrow: '标准与认证',
           galleryTitle: '认证目录',
           galleryDesc: '点击每个证书以详细查看放大模式。',
           item1Title: '产品达标认证',
@@ -282,6 +295,7 @@ window._phPageMeta = {
           item6Title: '信誉认证',
           item6Desc: '让客户在选择凤凰公司解决方案时更加放心。',
           processTitle: '质量检验流程',
+          processEyebrow: '质量承诺',
           process1Title: '来料检验',
           process1Desc: '100% 的元器件在生产前经过检验。仅使用来自信誉良好供应商的认证元器件。',
           process2Title: '独立实验室检测',
