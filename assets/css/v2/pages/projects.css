@@ -82,28 +82,6 @@
   max-width: 460px;
 }
 
-/* CTA row — green shadow, not navy */
-.ph-proj-hero-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .8rem 1.75rem;
-  background: var(--ph-accent);
-  color: var(--ph-text-on-accent);
-  border-radius: var(--ph-radius-md);
-  font-weight: 600;
-  font-size: .9375rem;
-  text-decoration: none;
-  font-family: var(--ph-font-body);
-  transition: filter var(--ph-duration-fast) var(--ph-ease-out),
-              transform var(--ph-duration-fast) var(--ph-ease-out);
-  box-shadow: 0 2px 14px rgba(22,138,58,.16);
-}
-.ph-proj-hero-cta:hover {
-  filter: brightness(1.08);
-  transform: translateY(-1px);
-}
-
 /* ── Right visual: building image, no overlay, no filter ── */
 .ph-proj-hero-visual {
   position: relative;
@@ -132,10 +110,12 @@
   background: #FFFFFF;
   border: 1px solid var(--ph-border-default);
   border-radius: 20px;
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 2rem;
   box-shadow: 0 2px 18px rgba(22,138,58,.05);
   position: relative;
   z-index: 2;
+  margin-top: -85px;
+  margin-left: 17%;
 }
 .ph-proj-stat {
   text-align: center;
@@ -169,78 +149,145 @@
   line-height: 1.4;
 }
 
-/* ═══════════ SECTORS ═══════════ */
+/* ═══════════ SECTORS — Left-anchored editorial heading + compact horizontal cards ═══════════ */
 .ph-proj-sectors {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
   background: var(--ph-bg-primary);
 }
+
+/* Header — left-aligned, matching hero text axis */
 .ph-proj-sectors-header {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 }
+
+/* Accent green line above title — matching bp-section-header .bp-section-title::before */
+.ph-proj-sectors-header .bp-section-title::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--ph-accent);
+  margin-bottom: var(--ph-space-sm);
+  border-radius: 1px;
+  opacity: 0.6;
+}
+
 .ph-proj-sectors-header .bp-section-title {
   font: var(--ph-text-h2);
   color: var(--ph-text-primary);
   margin-bottom: .5rem;
 }
+
 .ph-proj-sectors-subtitle {
   font: var(--ph-text-body);
   color: var(--ph-text-secondary);
   max-width: 560px;
 }
+
+/* Grid — 3 equal columns, full container width */
 .ph-proj-sectors-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: 1rem;
 }
+
+/* Sector item — horizontal row, compact, understated editorial feel */
 .ph-proj-sector-card {
-  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .85rem 1.05rem;
   background: var(--ph-surface-primary);
   border: 1px solid var(--ph-border-default);
   border-radius: var(--ph-radius-md);
   cursor: pointer;
-  transition: border-color var(--ph-duration-normal) var(--ph-ease-out),
-              transform var(--ph-duration-normal) var(--ph-ease-out),
-              box-shadow var(--ph-duration-normal) var(--ph-ease-out),
-              background var(--ph-duration-normal) var(--ph-ease-out);
+  transition: border-color var(--ph-duration-fast) var(--ph-ease-out),
+              transform var(--ph-duration-fast) var(--ph-ease-out),
+              box-shadow var(--ph-duration-fast) var(--ph-ease-out),
+              background var(--ph-duration-fast) var(--ph-ease-out);
 }
+
 .ph-proj-sector-card:hover {
   border-color: var(--ph-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(22,138,58,.10);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 12px rgba(22,138,58,.05);
 }
+
 .ph-proj-sector-card.active {
   background: var(--ph-accent);
   border-color: var(--ph-accent);
-  box-shadow: 0 4px 20px rgba(22,138,58,.15);
+  box-shadow: 0 2px 12px rgba(22,138,58,.10);
 }
-.ph-proj-sector-card.active .ph-proj-sector-card-icon {
-  background: rgba(255,255,255,.22);
-  color: #fff;
-}
-.ph-proj-sector-card.active h3 { color: #fff; }
-.ph-proj-sector-card.active p { color: rgba(255,255,255,.85); }
+
+/* Icon — small, contained */
 .ph-proj-sector-card-icon {
-  width: 44px; height: 44px;
-  border-radius: 10px;
+  width: 34px; height: 34px;
+  min-width: 34px;
+  border-radius: 8px;
   background: var(--ph-accent-subtle);
   color: var(--ph-accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: .85rem;
-  transition: background var(--ph-duration-normal) var(--ph-ease-out),
-              color var(--ph-duration-normal) var(--ph-ease-out);
+  transition: background var(--ph-duration-fast) var(--ph-ease-out),
+              color var(--ph-duration-fast) var(--ph-ease-out);
 }
-.ph-proj-sector-card h3 {
-  font: var(--ph-text-h4);
+
+.ph-proj-sector-card-icon svg {
+  width: 18px; height: 18px;
+}
+
+.ph-proj-sector-card.active .ph-proj-sector-card-icon {
+  background: rgba(255,255,255,.20);
+  color: #fff;
+}
+
+/* Body — title + description, flex-grows to fill space */
+.ph-proj-sector-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.ph-proj-sector-card-body h3 {
+  font-family: var(--ph-font-display);
+  font-size: .9375rem;
+  font-weight: 600;
   color: var(--ph-text-primary);
-  margin: 0 0 .4rem;
+  margin: 0 0 .15rem;
+  line-height: 1.3;
 }
-.ph-proj-sector-card p {
-  font: var(--ph-text-body-sm);
+
+.ph-proj-sector-card.active .ph-proj-sector-card-body h3 { color: #fff; }
+
+.ph-proj-sector-card-body p {
+  font: var(--ph-text-caption);
   color: var(--ph-text-secondary);
   margin: 0;
+  line-height: 1.4;
+}
+
+.ph-proj-sector-card.active .ph-proj-sector-card-body p { color: rgba(255,255,255,.82); }
+
+/* Arrow chevron — subtle, right-aligned */
+.ph-proj-sector-card-arrow {
+  color: var(--ph-accent);
+  opacity: 0.40;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transition: opacity var(--ph-duration-fast) var(--ph-ease-out),
+              transform var(--ph-duration-fast) var(--ph-ease-out);
+}
+
+.ph-proj-sector-card:hover .ph-proj-sector-card-arrow {
+  opacity: 0.75;
+  transform: translateX(1.5px);
+}
+
+.ph-proj-sector-card.active .ph-proj-sector-card-arrow {
+  color: #fff;
+  opacity: .70;
 }
 
 /* ═══════════ FILTER PILLS ═══════════ */
@@ -249,7 +296,7 @@
   flex-wrap: wrap;
   gap: .5rem;
   margin-bottom: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .ph-proj-filter-btn {
   padding: .5rem 1.15rem;
@@ -283,8 +330,8 @@
 
 .ph-proj-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 /* ── Project card — clean, light, green-tinted shadows ── */
@@ -522,9 +569,9 @@
   }
   .ph-proj-stat-value { font-size: 1.5rem; }
   .ph-proj-stat-label { font-size: .75rem; }
-  .ph-proj-grid { gap: 1.25rem; }
-  .ph-proj-sectors-grid { gap: 1rem; }
-  .ph-proj-sector-card { padding: 1.25rem; }
+  .ph-proj-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .ph-proj-sectors-grid { gap: .85rem; }
+  .ph-proj-sector-card { padding: .75rem .9rem; }
   .ph-proj-support-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 }
 
@@ -603,8 +650,6 @@
   .ph-proj-card-link svg { transition: none; }
   .ph-proj-sector-card,
   .ph-proj-sector-card:hover { transform: none; }
-  .ph-proj-hero-cta,
-  .ph-proj-hero-cta:hover { transition: none; transform: none; }
   .bp-reveal { opacity: 1; transform: none; transition: none; }
   .bp-reveal.revealed { opacity: 1; transform: none; }
 }

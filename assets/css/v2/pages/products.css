@@ -234,8 +234,8 @@
 
 .ph-product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 /* ═══════════ PRODUCT CARD — Clean, light ═══════════ */
@@ -458,7 +458,7 @@
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 1200px) {
   .ph-products-layout { grid-template-columns: 200px 1fr; gap: 1.5rem; }
-  .ph-product-grid { gap: 1.25rem; }
+  .ph-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 }
 
 @media (max-width: 1024px) {

@@ -99,7 +99,6 @@
           </div>
           <h1 class="ph-proj-hero-title" data-i18n="page_projects.heroTitle">Giải pháp an toàn điện cho mọi công trình</h1>
           <p class="ph-proj-hero-desc" data-i18n="page_projects.heroDescription">Thiết bị điện an toàn Phượng Hoàng được ứng dụng trong nhiều môi trường — từ nhà máy công nghiệp đến chung cư, trường học và bệnh viện — với giải pháp phù hợp cho từng loại hình công trình.</p>
-          <a href="#ph-proj-list" class="ph-proj-hero-cta" data-i18n="page_projects.heroCTA">Xem dự án</a>
         </div>
         <div class="ph-proj-hero-visual" aria-hidden="true">
           <img src="assets/images/products/anh-ngoi-nha.png" alt="Công trình an toàn điện Phượng Hoàng" width="620" height="400" loading="eager">
@@ -128,7 +127,7 @@
 
     <!-- Application Sector Cards -->
     <section class="ph-proj-sectors bp-reveal">
-      <div class="container-default">
+      <div class="container-wide">
         <div class="ph-proj-sectors-header">
           <h2 class="bp-section-title" data-i18n="page_projects.sectorsTitle">Lĩnh vực ứng dụng</h2>
           <p class="ph-proj-sectors-subtitle" data-i18n="page_projects.sectorsSubtitle">Thiết bị của chúng tôi được thiết kế để đáp ứng yêu cầu an toàn điện trong nhiều môi trường khác nhau.</p>
@@ -136,18 +135,27 @@
         <div class="ph-proj-sectors-grid" id="phProjSectorsGrid">
           <div class="ph-proj-sector-card active" data-sector="industrial" onclick="filterProjects('industrial', this)">
             <div class="ph-proj-sector-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V8l7-3 7 3v12"/></svg></div>
-            <h3 data-i18n="page_projects.sectorIndustrialTitle">Công nghiệp</h3>
-            <p data-i18n="page_projects.sectorIndustrialDesc">Nhà máy sản xuất, xí nghiệp và khu công nghiệp.</p>
+            <div class="ph-proj-sector-card-body">
+              <h3 data-i18n="page_projects.sectorIndustrialTitle">Công nghiệp</h3>
+              <p data-i18n="page_projects.sectorIndustrialDesc">Nhà máy sản xuất, xí nghiệp và khu công nghiệp.</p>
+            </div>
+            <span class="ph-proj-sector-card-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l4 4-4 4"/></svg></span>
           </div>
           <div class="ph-proj-sector-card" data-sector="domestic" onclick="filterProjects('domestic', this)">
             <div class="ph-proj-sector-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-            <h3 data-i18n="page_projects.sectorDomesticTitle">Dân dụng</h3>
-            <p data-i18n="page_projects.sectorDomesticDesc">Chung cư, hộ gia đình và khu dân cư.</p>
+            <div class="ph-proj-sector-card-body">
+              <h3 data-i18n="page_projects.sectorDomesticTitle">Dân dụng</h3>
+              <p data-i18n="page_projects.sectorDomesticDesc">Chung cư, hộ gia đình và khu dân cư.</p>
+            </div>
+            <span class="ph-proj-sector-card-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l4 4-4 4"/></svg></span>
           </div>
           <div class="ph-proj-sector-card" data-sector="education" onclick="filterProjects('education', this)">
             <div class="ph-proj-sector-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></div>
-            <h3 data-i18n="page_projects.sectorEducationTitle">Giáo dục</h3>
-            <p data-i18n="page_projects.sectorEducationDesc">Trường học và cơ sở giáo dục các cấp.</p>
+            <div class="ph-proj-sector-card-body">
+              <h3 data-i18n="page_projects.sectorEducationTitle">Giáo dục</h3>
+              <p data-i18n="page_projects.sectorEducationDesc">Trường học và cơ sở giáo dục các cấp.</p>
+            </div>
+            <span class="ph-proj-sector-card-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l4 4-4 4"/></svg></span>
           </div>
         </div>
       </div>
@@ -155,7 +163,7 @@
 
     <!-- Filter Pills -->
     <section class="bp-section-sm bp-reveal" id="ph-proj-list">
-      <div class="container-default">
+      <div class="container-wide">
         <div class="ph-proj-filters" id="phProjFilters">
           <button class="ph-proj-filter-btn active" data-filter="all" onclick="filterByType('all', this)" data-i18n="page_projects.filterAll">Tất cả dự án</button>
           <button class="ph-proj-filter-btn" data-filter="industrial" onclick="filterByType('industrial', this)" data-i18n="page_projects.filterIndustrial">Nhà máy</button>
