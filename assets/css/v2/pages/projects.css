@@ -107,7 +107,7 @@
   grid-template-columns: repeat(4, 1fr);
   max-width: min(960px, 82%);
   margin: -2.75rem auto 0;
-  background: #FFFFFF;
+  background: var(--ph-surface-primary);
   border: 1px solid var(--ph-border-default);
   border-radius: 20px;
   padding: 0.5rem 2rem;
@@ -115,7 +115,6 @@
   position: relative;
   z-index: 2;
   margin-top: -85px;
-  margin-left: 17%;
 }
 .ph-proj-stat {
   text-align: center;
@@ -152,7 +151,7 @@
 /* ═══════════ SECTORS — Left-anchored editorial heading + compact horizontal cards ═══════════ */
 .ph-proj-sectors {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: var(--ph-bg-primary);
+  background: #F3F7F3;
 }
 
 /* Header — left-aligned, matching hero text axis */
@@ -291,6 +290,34 @@
 }
 
 /* ═══════════ FILTER PILLS ═══════════ */
+.ph-proj-list-header {
+  text-align: left;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.ph-proj-list-header .bp-section-title::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--ph-accent);
+  margin-bottom: var(--ph-space-sm);
+  border-radius: 1px;
+  opacity: 0.6;
+}
+
+.ph-proj-list-header .bp-section-title {
+  font: var(--ph-text-h2);
+  color: var(--ph-text-primary);
+  margin-bottom: .5rem;
+}
+
+.ph-proj-list-header .ph-proj-sectors-subtitle {
+  font: var(--ph-text-body);
+  color: var(--ph-text-secondary);
+  max-width: 560px;
+}
+
 .ph-proj-filters {
   display: flex;
   flex-wrap: wrap;
@@ -448,7 +475,7 @@
 /* ═══════════ SUPPORT / TRUST STRIP ═══════════ */
 .ph-proj-support-strip {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: var(--ph-bg-primary);
+  background: #F3F7F3;
   border-top: 1px solid var(--ph-divider);
 }
 .ph-proj-support-grid {
@@ -486,7 +513,7 @@
 /* ═══════════ CTA SECTION ═══════════ */
 .ph-proj-cta-sec {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: #F3F7F3;
+  background: var(--ph-bg-primary);
   position: relative;
   overflow: hidden;
 }
