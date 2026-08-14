@@ -1,0 +1,4456 @@
+{
+  "generated": "2026-08-14 16:30:27",
+  "base": "http://127.0.0.1:5500",
+  "rootStatus": 200,
+  "rootCheck": {
+    "status": 200,
+    "redirectOk": true,
+    "isListing": false,
+    "hasCanonicalRoot": true
+  },
+  "sitemapCheck": {
+    "status": 200,
+    "urlCount": 40,
+    "dupes": [],
+    "surgePresent": true,
+    "pdCount": 6,
+    "ndCount": 17
+  },
+  "pages": [
+    {
+      "name": "phong",
+      "url": "http://127.0.0.1:5500/phong.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "banner",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-hero",
+            "id": "hero"
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "compare",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "objections",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-dark bp-reveal visible",
+            "id": "products",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "certifications",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-faq bp-reveal visible",
+            "id": "faq",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-0",
+          "aria-selected": "false",
+          "status": "pass"
+        },
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-1",
+          "aria-selected": "false",
+          "status": "pass"
+        },
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-2",
+          "aria-selected": "false",
+          "status": "pass"
+        },
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-3",
+          "aria-selected": "false",
+          "status": "pass"
+        },
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-4",
+          "aria-selected": "false",
+          "status": "pass"
+        },
+        {
+          "name": "faq-tab",
+          "id": "faq-tab-5",
+          "aria-selected": "true",
+          "status": "pass"
+        },
+        {
+          "name": "language",
+          "action": "to-EN",
+          "clicked": true,
+          "htmlLang": "en",
+          "status": "pass"
+        },
+        {
+          "name": "mobile-menu",
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "phong_1280_s00.jpg",
+        "phong_1280_s01.jpg",
+        "phong_1280_s02.jpg",
+        "phong_1280_s03.jpg",
+        "phong_1280_s04.jpg",
+        "phong_1280_s05.jpg",
+        "phong_1280_s06.jpg",
+        "phong_1280_s07.jpg",
+        "phong_1280_s08.jpg",
+        "phong_1280_full.jpg",
+        "phong_768_fold.jpg",
+        "phong_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Thiết bị chống giật, chống cháy điện an toàn thông minh | Phượng Hoàng",
+        "metaDescription": "Thiết bị chống giật, chống cháy điện an toàn thông minh. Phát hiện và ngắt sự cố trong 0,03 giây, nhanh gấp 10 lần thiết bị truyền thống.",
+        "canonical": "https://khktphuonghoang.com/",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Giải pháp an toàn điện thông minh"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Giải pháp an toàn điện thông minh",
+          "h2: 4.000\n            vụ cháy do điện mỗi năm tại Việt Nam.\n            Đừng để bạn ",
+          "h2: Tại sao thiết bị truyền thống không đủ để bảo vệ bạn",
+          "h2: Có thể bạn đang băn khoăn",
+          "h3: Chi phí bao nhiêu?",
+          "h3: Lắp đặt có phức tạp không?",
+          "h3: Tôi được bảo hành như thế nào?",
+          "h3: Có thật sự an toàn không?",
+          "h3: Tôi cần loại nào?",
+          "h2: Dù bạn là ai, Phượng Hoàng có giải pháp",
+          "h3: Dân dụng",
+          "h3: Thương mại",
+          "h3: Công nghiệp",
+          "h2: Chất lượng được kiểm chứng",
+          "h3: ISO 9001:2015",
+          "h3: TCVN",
+          "h3: CE Marking",
+          "h3: IEC 61008-1",
+          "h2: Câu hỏi thường gặp",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 16,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 1,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 7789,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=OK",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "phong_header_1280.jpg",
+        "phong_header_390.jpg"
+      ]
+    },
+    {
+      "name": "products",
+      "url": "http://127.0.0.1:5500/products.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-browse-header bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "ph-product-section",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-support-strip bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-reveal ph-prod-cta-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal ph-faq-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "category-filter",
+          "cardsBefore": 6,
+          "cardsAfter": 3,
+          "cat": "industrial",
+          "status": "pass"
+        },
+        {
+          "name": "sort",
+          "status": "pass"
+        },
+        {
+          "name": "mobile-menu",
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "products_1280_s00.jpg",
+        "products_1280_s01.jpg",
+        "products_1280_s02.jpg",
+        "products_1280_s03.jpg",
+        "products_1280_s04.jpg",
+        "products_1280_s05.jpg",
+        "products_1280_s06.jpg",
+        "products_1280_full.jpg",
+        "products_768_fold.jpg",
+        "products_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Sản Phẩm Thiết Bị Điện An Toàn: Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
+        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly, dập hồ quang. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
+        "canonical": "https://khktphuonghoang.com/products.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Danh mục"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Danh mục",
+          "h2: Danh mục",
+          "h3: Thiết bị an toàn điện thông minh 380V",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản giao thông",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản công nghiệp",
+          "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản thương mại",
+          "h3: Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh",
+          "h4: Kiểm định nghiêm ngặt",
+          "h4: Công nghệ thông minh",
+          "h4: Độ bền vượt trội",
+          "h4: Hỗ trợ toàn diện",
+          "h2: Cần hỗ trợ chọn sản phẩm phù hợp?",
+          "h2: Câu hỏi thường gặp",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 11,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 8192,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "products_header_1280.jpg",
+        "products_header_390.jpg"
+      ]
+    },
+    {
+      "name": "product-detail",
+      "url": "http://127.0.0.1:5500/product-detail.html?id=ind-001",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-breadcrumb-sec",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal ph-hero-detail-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "sectionBenefits",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "sectionSpecsFull",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "sectionFeatures",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "sectionApps",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "sectionWorking",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "sectionRelated",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "product-detail_1280_s00.jpg",
+        "product-detail_1280_s01.jpg",
+        "product-detail_1280_s02.jpg",
+        "product-detail_1280_s03.jpg",
+        "product-detail_1280_s04.jpg",
+        "product-detail_1280_s05.jpg",
+        "product-detail_1280_s06.jpg",
+        "product-detail_1280_s07.jpg",
+        "product-detail_1280_s08.jpg",
+        "product-detail_1280_s09.jpg",
+        "product-detail_1280_full.jpg",
+        "product-detail_768_fold.jpg",
+        "product-detail_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Thiết bị an toàn điện thông minh 380V: Phượng Hoàng | Thiết Bị Điện An Toàn Thông Minh",
+        "metaDescription": "Thiết bị an toàn điện thông minh 380V dòng KHKT-SD4R là giải pháp bảo vệ điện 3 pha toàn diện cho các nhà máy, xí nghiệp và khu công nghiệp. Tích hợp công",
+        "canonical": "https://khktphuonghoang.com/product-detail.html?id=ind-001",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Thiết bị an toàn điện thông minh 380V"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Thiết bị an toàn điện thông minh 380V",
+          "h2: Tại sao chọn sản phẩm này?",
+          "h4: Điện áp định mức",
+          "h4: Tần số",
+          "h4: Tiêu chuẩn",
+          "h4: Cấp bảo vệ",
+          "h4: Nhiệt độ hoạt động",
+          "h2: Thông số kỹ thuật chi tiết",
+          "h2: Tính năng sản phẩm",
+          "h4: Vi xử lý ARM 32-bit",
+          "h4: Màn hình LCD trực quan",
+          "h4: Bảo vệ dòng dư",
+          "h4: Giám sát dòng dư thông minh",
+          "h4: Bảo vệ 3 cấp",
+          "h4: Bảo vệ ngắn mạch",
+          "h4: Bảo vệ quá áp, thấp áp và mất pha",
+          "h4: Hiển thị thông số thời gian thực",
+          "h4: Cài đặt thông số trực tuyến",
+          "h4: Quản lý lịch sử sự cố",
+          "h4: Giám sát từ xa",
+          "h4: Đo lường điện chính xác",
+          "h2: Ứng dụng",
+          "h4: Nhà máy / Xí nghiệp",
+          "h4: Công trình xây dựng",
+          "h4: Trung tâm thương mại",
+          "h4: Tòa nhà văn phòng",
+          "h2: Nguyên lý hoạt động",
+          "h4: Phát hiện sự cố",
+          "h4: Kích hoạt bảo vệ",
+          "h4: Cách ly nguồn sự cố",
+          "h4: Ngắt nguồn tự động",
+          "h4: Giảm rủi ro vận hành",
+          "h2: Sản phẩm liên quan",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản công nghiệp",
+          "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng",
+          "h3: Giỏ hàng",
+          "h3: Gửi yêu cầu báo giá",
+          "h3: Đã gửi yêu cầu báo giá!"
+        ],
+        "imgsTotal": 15,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 5667,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=OK",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "product-detail_header_1280.jpg",
+        "product-detail_header_390.jpg"
+      ]
+    },
+    {
+      "name": "product-detail-fallback",
+      "url": "http://127.0.0.1:5500/product-detail.html?id=khong-ton-tai-xyz",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-breadcrumb-sec",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal ph-hero-detail-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "product-detail-fallback_1280_s00.jpg",
+        "product-detail-fallback_1280_s01.jpg",
+        "product-detail-fallback_1280_s02.jpg",
+        "product-detail-fallback_1280_s03.jpg",
+        "product-detail-fallback_1280_full.jpg",
+        "product-detail-fallback_768_fold.jpg",
+        "product-detail-fallback_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Không tìm thấy sản phẩm | Phượng Hoàng | Thiết Bị Điện An Toàn Thông Minh",
+        "metaDescription": "Sản phẩm bạn tìm không tồn tại, đã đổi mã hoặc đường dẫn không chính xác. Vui lòng kiểm tra lại URL hoặc xem danh mục sản phẩm của chúng tôi.",
+        "canonical": "https://khktphuonghoang.com/products.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Không tìm thấy sản phẩm"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Không tìm thấy sản phẩm",
+          "h2: Tại sao chọn sản phẩm này?",
+          "h2: Thông số kỹ thuật chi tiết",
+          "h2: Tính năng sản phẩm",
+          "h2: Ứng dụng",
+          "h2: Nguyên lý hoạt động",
+          "h2: Sản phẩm liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng",
+          "h3: Giỏ hàng",
+          "h3: Gửi yêu cầu báo giá",
+          "h3: Đã gửi yêu cầu báo giá!"
+        ],
+        "imgsTotal": 7,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 1487,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": true,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "product-detail-fallback_header_1280.jpg",
+        "product-detail-fallback_header_390.jpg"
+      ]
+    },
+    {
+      "name": "projects",
+      "url": "http://127.0.0.1:5500/projects.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-reveal ph-proj-hero visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-proj-sectors bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-sm bp-reveal visible",
+            "id": "ph-proj-list",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal ph-proj-process visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-proj-support-strip bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-proj-cta-sec bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "sector-filter",
+          "cardsBefore": 6,
+          "cardsAfter": 1,
+          "status": "pass"
+        },
+        {
+          "name": "mobile-menu",
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "projects_1280_s00.jpg",
+        "projects_1280_s01.jpg",
+        "projects_1280_s02.jpg",
+        "projects_1280_s03.jpg",
+        "projects_1280_s04.jpg",
+        "projects_1280_s05.jpg",
+        "projects_1280_s06.jpg",
+        "projects_1280_s07.jpg",
+        "projects_1280_full.jpg",
+        "projects_768_fold.jpg",
+        "projects_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Dự Án Tiêu Biểu: Công Trình An Toàn Điện | Phượng Hoàng",
+        "metaDescription": "Các dự án tiêu biểu đã triển khai thiết bị chống giật, chống cháy điện Phượng Hoàng: nhà máy, chung cư, trường học, bệnh viện trên toàn quốc.",
+        "canonical": "https://khktphuonghoang.com/projects.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Dự án tiêu biểu"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Dự án tiêu biểu",
+          "h2: Lĩnh vực ứng dụng",
+          "h3: Công nghiệp",
+          "h3: Dân dụng",
+          "h3: Giáo dục",
+          "h2: Giải pháp theo lĩnh vực",
+          "h3: Nhà máy & Khu công nghiệp",
+          "h3: Chung cư & Hộ gia đình",
+          "h3: Trường học & Cơ sở giáo dục",
+          "h3: Bệnh viện & Cơ sở y tế",
+          "h3: Trung tâm thương mại & Văn phòng",
+          "h3: Công trình công cộng & Hạ tầng",
+          "h2: Quy trình triển khai dự án",
+          "h3: Khảo sát & Đánh giá",
+          "h3: Thiết kế giải pháp",
+          "h3: Cung cấp thiết bị",
+          "h3: Lắp đặt & Giám sát",
+          "h3: Nghiệm thu & Bảo hành",
+          "h4: Chất lượng kiểm định",
+          "h4: An toàn tuyệt đối",
+          "h4: Giám sát thông minh",
+          "h4: Đội ngũ chuyên nghiệp",
+          "h2: Bạn có dự án cần bảo vệ an toàn điện?",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 12,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 4734,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=OK",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "projects_header_1280.jpg",
+        "projects_header_390.jpg"
+      ]
+    },
+    {
+      "name": "about-us",
+      "url": "http://127.0.0.1:5500/about-us.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal ph-about-hero visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "about-us_1280_s00.jpg",
+        "about-us_1280_s01.jpg",
+        "about-us_1280_s02.jpg",
+        "about-us_1280_s03.jpg",
+        "about-us_1280_s04.jpg",
+        "about-us_1280_s05.jpg",
+        "about-us_1280_s06.jpg",
+        "about-us_1280_s07.jpg",
+        "about-us_1280_full.jpg",
+        "about-us_768_fold.jpg",
+        "about-us_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Giới Thiệu Phượng Hoàng: Thiết Bị Điện An Toàn Thông Minh",
+        "metaDescription": "Tìm hiểu về Công ty TNHH KHKT Phượng Hoàng: sứ mệnh, tầm nhìn, giá trị cốt lõi. Thành lập 2018, chuyên thiết bị chống giật, chống cháy điện an toàn thông minh.",
+        "canonical": "https://khktphuonghoang.com/about-us.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Về Phượng Hoàng"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Về Phượng Hoàng",
+          "h2: Chủ động nâng cao an toàn điện",
+          "h2: Sứ mệnh & Tầm nhìn",
+          "h3: Tầm nhìn",
+          "h3: Sứ mệnh",
+          "h2: Giá trị cốt lõi",
+          "h3: An toàn",
+          "h3: Đổi mới",
+          "h3: Chất lượng",
+          "h3: Trách nhiệm",
+          "h3: Phát triển bền vững",
+          "h2: Tại sao chọn Phượng Hoàng",
+          "h3: Đội ngũ chuyên môn",
+          "h3: Cam kết chất lượng",
+          "h3: Hỗ trợ toàn diện",
+          "h2: Chứng nhận chất lượng",
+          "h3: ISO 9001:2015",
+          "h3: Chứng nhận sản phẩm",
+          "h3: Tiêu chuẩn IEC",
+          "h3: Sở hữu trí tuệ",
+          "h2: Giải pháp an toàn điện",
+          "h3: Chống giật cách ly",
+          "h3: Chống sét lan truyền",
+          "h3: Dập hồ quang",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 13,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 4805,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "about-us_header_1280.jpg",
+        "about-us_header_390.jpg"
+      ]
+    },
+    {
+      "name": "distribution-system",
+      "url": "http://127.0.0.1:5500/distribution-system.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "distribution-system_1280_s00.jpg",
+        "distribution-system_1280_s01.jpg",
+        "distribution-system_1280_s02.jpg",
+        "distribution-system_1280_s03.jpg",
+        "distribution-system_1280_s04.jpg",
+        "distribution-system_1280_s05.jpg",
+        "distribution-system_1280_s06.jpg",
+        "distribution-system_1280_s07.jpg",
+        "distribution-system_1280_full.jpg",
+        "distribution-system_768_fold.jpg",
+        "distribution-system_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Nhà Phân Phối: Thiết Bị Điện An Toàn | Phượng Hoàng",
+        "metaDescription": "Nhà phân phối thiết bị điện an toàn Phượng Hoàng tại Bắc Ninh và khu vực phía Bắc. Hợp tác phân phối, mua hàng trực tiếp, tư vấn kỹ thuật.",
+        "canonical": "https://khktphuonghoang.com/distribution-system.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Nhà phân phối"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Nhà phân phối",
+          "h2: Khu vực hoạt động hiện tại",
+          "h3: Bắc Ninh: Trụ sở chính",
+          "h3: Trung tâm phân phối Bắc Ninh",
+          "h3: Vận chuyển toàn quốc",
+          "h3: Mở rộng đối tác",
+          "h2: Thiết bị an toàn điện: sẵn sàng cung ứng",
+          "h3: Chống giật cách ly",
+          "h3: Chống sét lan truyền",
+          "h3: Dập hồ quang",
+          "h3: Chống sốc cách ly",
+          "h2: Cách thức làm việc với Phượng Hoàng",
+          "h3: Mua hàng trực tiếp",
+          "h3: Hợp tác phân phối",
+          "h3: Hợp tác dự án",
+          "h3: Tư vấn kỹ thuật",
+          "h2: Quyền lợi khi hợp tác phân phối",
+          "h3: Sản phẩm chính hãng",
+          "h3: Chính sách chiết khấu",
+          "h3: Hỗ trợ kỹ thuật",
+          "h3: Đào tạo sản phẩm",
+          "h2: Quy trình hợp tác phân phối",
+          "h3: Đăng ký",
+          "h3: Tư vấn",
+          "h3: Lựa chọn sản phẩm",
+          "h3: Báo giá & Ký kết",
+          "h3: Giao hàng & Hỗ trợ",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 10,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 4788,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "distribution-system_header_1280.jpg",
+        "distribution-system_header_390.jpg"
+      ]
+    },
+    {
+      "name": "certificates",
+      "url": "http://127.0.0.1:5500/certificates.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section ph-cert-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "lightbox-open",
+          "status": "pass"
+        },
+        {
+          "name": "lightbox-close",
+          "status": "pass"
+        },
+        {
+          "name": "mobile-menu",
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "certificates_1280_s00.jpg",
+        "certificates_1280_s01.jpg",
+        "certificates_1280_s02.jpg",
+        "certificates_1280_s03.jpg",
+        "certificates_1280_s04.jpg",
+        "certificates_1280_full.jpg",
+        "certificates_768_fold.jpg",
+        "certificates_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Chứng nhận sản phẩm | Phượng Hoàng",
+        "metaDescription": "Chứng nhận chất lượng sản phẩm Phượng Hoàng: chứng nhận công nghệ, bằng sáng chế, an toàn, triển khai, năng lực, uy tín. Mỗi thiết bị được kiểm định riêng trước khi giao.",
+        "canonical": "https://khktphuonghoang.com/certificates.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Chứng nhận sản phẩm"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Chứng nhận sản phẩm",
+          "h2: Năng lực cốt lõi",
+          "h2: Danh mục chứng nhận",
+          "h3: Chứng nhận công nghệ",
+          "h3: Chứng nhận bằng sáng chế sản phẩm",
+          "h3: Chứng nhận an toàn",
+          "h3: Chứng nhận triển khai",
+          "h3: Chứng nhận năng lực",
+          "h3: Chứng nhận uy tín",
+          "h2: Quy trình kiểm định chất lượng",
+          "h3: Kiểm định nguyên liệu đầu vào",
+          "h3: Kiểm định tại phòng thí nghiệm độc lập",
+          "h3: Kiểm định trước xuất kho",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 12,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 1,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2667,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "certificates_header_1280.jpg",
+        "certificates_header_390.jpg"
+      ]
+    },
+    {
+      "name": "news",
+      "url": "http://127.0.0.1:5500/news.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section ph-news-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "news-card-link",
+          "href": "news-detail.html?id=news-011&page=1&category=all",
+          "status": "pass"
+        },
+        {
+          "name": "mobile-menu",
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "news_1280_s00.jpg",
+        "news_1280_s01.jpg",
+        "news_1280_s02.jpg",
+        "news_1280_s03.jpg",
+        "news_1280_full.jpg",
+        "news_768_fold.jpg",
+        "news_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Tin Tức: An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng",
+        "metaDescription": "Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn mới, công nghệ giám sát điện thông minh. Cập nhật từ Phượng Hoàng.",
+        "canonical": "https://khktphuonghoang.com/news.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Tin tức"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Tin tức",
+          "h2: Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam",
+          "h3: Hướng dẫn chi tiết cách xử lý sự cố điện một cách an toàn trong gia đình",
+          "h3: Cách bảo vệ hệ thống điện trước sự cố chập cháy",
+          "h3: Những lưu ý quan trọng khi sử dụng thiết bị điện trong môi trường ẩm ướt",
+          "h3: Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạ",
+          "h3: Cách lắp đặt và bảo quản ổ cắm cho xe điện",
+          "h3: 7 nguyên nhân cháy nổ điện phổ biến và cách phòng tránh hiệu quả",
+          "h2: Sản phẩm nổi bật",
+          "h2: Bài viết mới nhất",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 15,
+        "imgsMissingAlt": 3,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 5315,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "news_header_1280.jpg",
+        "news_header_390.jpg"
+      ],
+      "_newsDetailHref": "news-detail.html?id=news-011&page=1&category=all"
+    },
+    {
+      "name": "contact",
+      "url": "http://127.0.0.1:5500/contact.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-md bp-reveal visible",
+            "id": ""
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-md bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 24,
+              "right": 1256,
+              "width": 1232
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [
+        {
+          "name": "form-fields",
+          "formExists": true,
+          "novalidate": true,
+          "fields": {
+            "cf-name": {
+              "tag": "input",
+              "required": true,
+              "ariaRequired": "true",
+              "labelFor": true,
+              "hasErrorEl": true,
+              "errorRoleAlert": "alert",
+              "ariaDescribedPattern": true
+            },
+            "cf-phone": {
+              "tag": "input",
+              "required": true,
+              "ariaRequired": "true",
+              "labelFor": true,
+              "hasErrorEl": true,
+              "errorRoleAlert": "alert",
+              "ariaDescribedPattern": true
+            },
+            "cf-email": {
+              "tag": "input",
+              "required": true,
+              "ariaRequired": "true",
+              "labelFor": true,
+              "hasErrorEl": true,
+              "errorRoleAlert": "alert",
+              "ariaDescribedPattern": true
+            },
+            "cf-need": {
+              "tag": "select",
+              "required": true,
+              "ariaRequired": "true",
+              "labelFor": true,
+              "hasErrorEl": true,
+              "errorRoleAlert": "alert",
+              "ariaDescribedPattern": true
+            },
+            "cf-msg": {
+              "tag": "textarea",
+              "required": true,
+              "ariaRequired": "true",
+              "labelFor": true,
+              "hasErrorEl": true,
+              "errorRoleAlert": "alert",
+              "ariaDescribedPattern": true
+            }
+          },
+          "submitBtn": true,
+          "sendingEl": true,
+          "successRegion": {
+            "role": "status",
+            "ariaLive": "polite",
+            "hidden": true
+          },
+          "formNote": "Yêu cầu được soạn thành email gửi tới info@khktphuonghoang.com qua ứng dụng email của bạn. Thông tin của bạn được bảo mật.",
+          "mailtoNote": true,
+          "hasValidationJs": true,
+          "hasBuildMailto": true,
+          "failures": [],
+          "status": "pass"
+        }
+      ],
+      "screenshots": [
+        "contact_1280_s00.jpg",
+        "contact_1280_s01.jpg",
+        "contact_1280_s02.jpg",
+        "contact_1280_s03.jpg",
+        "contact_1280_s04.jpg",
+        "contact_1280_full.jpg",
+        "contact_768_fold.jpg",
+        "contact_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Liên Hệ Phượng Hoàng: Hotline 1800 888 638 | Tư Vấn Miễn Phí",
+        "metaDescription": "Liên hệ Phượng Hoàng: địa chỉ 30 Lý Thái Tổ, Bắc Ninh. Hotline 1800 888 638. Email info@khktphuonghoang.com. Tư vấn thiết bị chống giật, chống cháy điện miễn phí.",
+        "canonical": "https://khktphuonghoang.com/contact.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Liên hệ"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Liên hệ",
+          "h2: Thông tin liên hệ",
+          "h2: Gửi yêu cầu tư vấn",
+          "h3: Email đã được soạn xong!",
+          "h2: Vị trí của chúng tôi",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2096,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "contact_header_1280.jpg",
+        "contact_header_390.jpg"
+      ]
+    },
+    {
+      "name": "leakage-detector",
+      "url": "http://127.0.0.1:5500/leakage-detector.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-offer bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal ld-faq-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "leakage-detector_1280_s00.jpg",
+        "leakage-detector_1280_s01.jpg",
+        "leakage-detector_1280_s02.jpg",
+        "leakage-detector_1280_s03.jpg",
+        "leakage-detector_1280_s04.jpg",
+        "leakage-detector_1280_s05.jpg",
+        "leakage-detector_1280_s06.jpg",
+        "leakage-detector_1280_s07.jpg",
+        "leakage-detector_1280_s08.jpg",
+        "leakage-detector_1280_s09.jpg",
+        "leakage-detector_1280_full.jpg",
+        "leakage-detector_768_fold.jpg",
+        "leakage-detector_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Thiết bị phát hiện rò điện: Phượng Hoàng | Thiết bị điện an toàn thông minh",
+        "metaDescription": "Thiết bị phát hiện rò điện của Phượng Hoàng: phát hiện sớm dòng rò, cảnh báo tức thời, giám sát từ xa. Bảo vệ an toàn cho người và thiết bị.",
+        "canonical": "https://khktphuonghoang.com/leakage-detector.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Thiết bị phát hiện rò điện"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Thiết bị phát hiện rò điện",
+          "h2: Thiết bị phát hiện rò điện thông minh",
+          "h2: Tính năng nổi bật",
+          "h3: Phát hiện chính xác",
+          "h3: Cảnh báo tức thời",
+          "h3: Giám sát từ xa",
+          "h3: Tự động ngắt",
+          "h3: Lưu trữ dữ liệu",
+          "h3: Dễ dàng lắp đặt",
+          "h2: Thông số kỹ thuật",
+          "h2: Ứng dụng",
+          "h3: Gia đình",
+          "h3: Văn phòng",
+          "h3: Nhà máy",
+          "h3: Bệnh viện",
+          "h2: Quan tâm đến sản phẩm?",
+          "h2: Câu hỏi thường gặp về thiết bị phát hiện rò điện",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 3932,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "leakage-detector_header_1280.jpg",
+        "leakage-detector_header_390.jpg"
+      ]
+    },
+    {
+      "name": "surge-protection",
+      "url": "http://127.0.0.1:5500/surge-protection.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-browse-header bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "ph-product-section",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "ph-support-strip bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-reveal ph-prod-cta-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section-alt bp-reveal ph-faq-sec visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "surge-protection_1280_s00.jpg",
+        "surge-protection_1280_s01.jpg",
+        "surge-protection_1280_s02.jpg",
+        "surge-protection_1280_s03.jpg",
+        "surge-protection_1280_s04.jpg",
+        "surge-protection_1280_s05.jpg",
+        "surge-protection_1280_s06.jpg",
+        "surge-protection_1280_full.jpg",
+        "surge-protection_768_fold.jpg",
+        "surge-protection_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Sản Phẩm Thiết Bị Điện An Toàn: Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
+        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly, dập hồ quang. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
+        "canonical": "https://khktphuonghoang.com/products.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Danh mục"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Danh mục",
+          "h2: Danh mục",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản giao thông",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản thương mại",
+          "h4: Kiểm định nghiêm ngặt",
+          "h4: Công nghệ thông minh",
+          "h4: Độ bền vượt trội",
+          "h4: Hỗ trợ toàn diện",
+          "h2: Cần hỗ trợ chọn sản phẩm phù hợp?",
+          "h2: Câu hỏi thường gặp",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 7,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 7112,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "surge-protection_header_1280.jpg",
+        "surge-protection_header_390.jpg"
+      ]
+    },
+    {
+      "name": "purchase-policy",
+      "url": "http://127.0.0.1:5500/purchase-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "purchase-policy_1280_s00.jpg",
+        "purchase-policy_1280_s01.jpg",
+        "purchase-policy_1280_s02.jpg",
+        "purchase-policy_1280_s03.jpg",
+        "purchase-policy_1280_s04.jpg",
+        "purchase-policy_1280_s05.jpg",
+        "purchase-policy_1280_s06.jpg",
+        "purchase-policy_768_fold.jpg",
+        "purchase-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Hướng Dẫn Mua Hàng | Phượng Hoàng",
+        "metaDescription": "Hướng dẫn mua hàng của Công ty TNHH KHKT Phượng Hoàng. Quy trình đặt hàng, thanh toán, vận chuyển thiết bị điện an toàn.",
+        "canonical": "https://khktphuonghoang.com/purchase-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Quy trình mua hàng rõ ràng, nhanh chóng và an toàn"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Quy trình mua hàng rõ ràng, nhanh chóng và an toàn",
+          "h2: 1. Quy trình đặt hàng",
+          "h2: 2. Phương thức thanh toán",
+          "h2: 3. Vận chuyển và giao nhận",
+          "h2: 4. Bảo hành và đổi trả",
+          "h2: 5. Hỗ trợ sau bán hàng",
+          "h2: 6. Bảo mật thông tin",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 3512,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "purchase-policy_header_1280.jpg",
+        "purchase-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "warranty-policy",
+      "url": "http://127.0.0.1:5500/warranty-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "warranty-policy_1280_s00.jpg",
+        "warranty-policy_1280_s01.jpg",
+        "warranty-policy_1280_s02.jpg",
+        "warranty-policy_1280_s03.jpg",
+        "warranty-policy_1280_s04.jpg",
+        "warranty-policy_1280_s05.jpg",
+        "warranty-policy_1280_s06.jpg",
+        "warranty-policy_768_fold.jpg",
+        "warranty-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Chính Sách Bảo Hành | Phượng Hoàng",
+        "metaDescription": "Chính sách bảo hành của Công ty TNHH KHKT Phượng Hoàng: phạm vi, thời gian, điều kiện và quy trình bảo hành thiết bị điện an toàn. Hotline 1800 888 638.",
+        "canonical": "https://khktphuonghoang.com/warranty-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Cam kết bảo hành minh bạch và tận tâm"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Cam kết bảo hành minh bạch và tận tâm",
+          "h2: 1. Phạm vi bảo hành",
+          "h2: 2. Thời gian bảo hành",
+          "h2: 3. Điều kiện bảo hành",
+          "h2: 4. Trường hợp không áp dụng",
+          "h2: 5. Quy trình bảo hành",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2883,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "warranty-policy_header_1280.jpg",
+        "warranty-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "exchange-policy",
+      "url": "http://127.0.0.1:5500/exchange-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "exchange-policy_1280_s00.jpg",
+        "exchange-policy_1280_s01.jpg",
+        "exchange-policy_1280_s02.jpg",
+        "exchange-policy_1280_s03.jpg",
+        "exchange-policy_1280_s04.jpg",
+        "exchange-policy_1280_s05.jpg",
+        "exchange-policy_768_fold.jpg",
+        "exchange-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Quy Định Đổi Hàng | Phượng Hoàng",
+        "metaDescription": "Quy định đổi hàng của Công ty TNHH KHKT Phượng Hoàng. Điều kiện, thời gian và quy trình đổi trả sản phẩm thiết bị điện.",
+        "canonical": "https://khktphuonghoang.com/exchange-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Quy định đổi hàng rõ ràng và thuận tiện"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Quy định đổi hàng rõ ràng và thuận tiện",
+          "h2: 1. Điều kiện đổi hàng",
+          "h2: 2. Thời gian đổi hàng",
+          "h2: 3. Trường hợp không áp dụng",
+          "h2: 4. Quy trình đổi hàng",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2541,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "exchange-policy_header_1280.jpg",
+        "exchange-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "shipping-policy",
+      "url": "http://127.0.0.1:5500/shipping-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "shipping-policy_1280_s00.jpg",
+        "shipping-policy_1280_s01.jpg",
+        "shipping-policy_1280_s02.jpg",
+        "shipping-policy_1280_s03.jpg",
+        "shipping-policy_1280_s04.jpg",
+        "shipping-policy_1280_s05.jpg",
+        "shipping-policy_1280_s06.jpg",
+        "shipping-policy_768_fold.jpg",
+        "shipping-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Chính Sách Vận Chuyển | Phượng Hoàng",
+        "metaDescription": "Chính sách vận chuyển của Công ty TNHH KHKT Phượng Hoàng: phương thức, phí vận chuyển và thời gian giao hàng thiết bị điện an toàn.",
+        "canonical": "https://khktphuonghoang.com/shipping-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Chính sách vận chuyển và giao nhận hàng"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Chính sách vận chuyển và giao nhận hàng",
+          "h2: 1. Phương thức vận chuyển",
+          "h2: 2. Phí vận chuyển",
+          "h2: 3. Thời gian giao hàng",
+          "h2: 4. Quy trình giao nhận",
+          "h2: 5. Lưu ý khi nhận hàng",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2352,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "shipping-policy_header_1280.jpg",
+        "shipping-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "payment-policy",
+      "url": "http://127.0.0.1:5500/payment-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "payment-policy_1280_s00.jpg",
+        "payment-policy_1280_s01.jpg",
+        "payment-policy_1280_s02.jpg",
+        "payment-policy_1280_s03.jpg",
+        "payment-policy_1280_s04.jpg",
+        "payment-policy_1280_s05.jpg",
+        "payment-policy_1280_s06.jpg",
+        "payment-policy_768_fold.jpg",
+        "payment-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Hướng Dẫn Thanh Toán | Phượng Hoàng",
+        "metaDescription": "Hướng dẫn thanh toán của Công ty TNHH KHKT Phượng Hoàng. Phương thức thanh toán linh hoạt khi mua thiết bị điện an toàn.",
+        "canonical": "https://khktphuonghoang.com/payment-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Thanh toán linh hoạt, an toàn và minh bạch"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Thanh toán linh hoạt, an toàn và minh bạch",
+          "h2: 1. Phương thức thanh toán",
+          "h2: 2. Thanh toán theo tiến độ",
+          "h2: 3. Thông tin chuyển khoản",
+          "h2: 4. Lưu ý khi thanh toán",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2637,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "payment-policy_header_1280.jpg",
+        "payment-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "privacy-policy",
+      "url": "http://127.0.0.1:5500/privacy-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "privacy-policy_1280_s00.jpg",
+        "privacy-policy_1280_s01.jpg",
+        "privacy-policy_1280_s02.jpg",
+        "privacy-policy_1280_s03.jpg",
+        "privacy-policy_1280_s04.jpg",
+        "privacy-policy_768_fold.jpg",
+        "privacy-policy_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Bảo Mật Thông Tin | Phượng Hoàng",
+        "metaDescription": "Chính sách bảo mật thông tin của Công ty TNHH KHKT Phượng Hoàng. Cam kết bảo vệ thông tin khách hàng khi sử dụng thiết bị điện an toàn.",
+        "canonical": "https://khktphuonghoang.com/privacy-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Cam kết bảo vệ thông tin khách hàng"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Cam kết bảo vệ thông tin khách hàng",
+          "h2: 1. Thông tin thu thập",
+          "h2: 2. Mục đích sử dụng",
+          "h2: 3. Bảo vệ thông tin",
+          "h2: 4. Quyền của khách hàng",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2612,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "privacy-policy_header_1280.jpg",
+        "privacy-policy_header_390.jpg"
+      ]
+    },
+    {
+      "name": "sales-policy",
+      "url": "http://127.0.0.1:5500/sales-policy.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-section-alt bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section bp-reveal visible",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "sales-policy_1280_s00.jpg",
+        "sales-policy_1280_s01.jpg",
+        "sales-policy_1280_s02.jpg",
+        "sales-policy_1280_s03.jpg",
+        "sales-policy_1280_s04.jpg",
+        "sales-policy_1280_s05.jpg",
+        "sales-policy_768_fold.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Chính Sách Cộng Tác Viên | Phượng Hoàng",
+        "metaDescription": "Chính sách cộng tác viên của Công ty TNHH KHKT Phượng Hoàng. Hợp tác cùng phát triển và phân phối thiết bị điện an toàn thông minh.",
+        "canonical": "https://khktphuonghoang.com/sales-policy.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Hợp tác cùng phát triển và chia sẻ lợi ích"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Hợp tác cùng phát triển và chia sẻ lợi ích",
+          "h2: 1. Điều kiện tham gia",
+          "h2: 2. Quyền lợi cộng tác viên",
+          "h2: 3. Chính sách hoa hồng",
+          "h2: 4. Trách nhiệm của cộng tác viên",
+          "h3: Chính sách liên quan",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 2609,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
+      "headerStrips": [
+        "sales-policy_header_1280.jpg",
+        "sales-policy_header_390.jpg"
+      ],
+      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+    },
+    {
+      "name": "404",
+      "url": "http://127.0.0.1:5500/404.html",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [
+        "FAILED http://127.0.0.1:5500/404.html"
+      ],
+      "alignment": {
+        "analysis": {
+          "refLeft": null,
+          "refRight": null,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {},
+      "overflowEls": {},
+      "actions": [],
+      "screenshots": [],
+      "seo": {},
+      "headerStrips": [
+        "404_header_1280.jpg",
+        "404_header_390.jpg"
+      ],
+      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+    },
+    {
+      "name": "news-detail",
+      "url": "http://127.0.0.1:5500/news-detail.html?id=news-011&page=1&category=all",
+      "status": 200,
+      "console_errors": [],
+      "failed_requests": [],
+      "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "header",
+            "cls": "article-header",
+            "id": "articleContainer"
+          },
+          {
+            "tag": "section",
+            "cls": "article-content",
+            "id": "detailContent"
+          },
+          {
+            "tag": "section",
+            "cls": "related-articles-section",
+            "id": "relatedArticles"
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
+        "analysis": {
+          "refLeft": 0,
+          "refRight": 1280,
+          "mismatches": [],
+          "mismatchCount": 0
+        }
+      },
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
+      "actions": [],
+      "screenshots": [
+        "news-detail_1280_s00.jpg",
+        "news-detail_1280_s01.jpg",
+        "news-detail_1280_s02.jpg",
+        "news-detail_1280_s03.jpg",
+        "news-detail_1280_s04.jpg",
+        "news-detail_1280_full.jpg",
+        "news-detail_768_fold.jpg",
+        "news-detail_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam: Phượng Hoàng | Tin Tức An Toàn Điện",
+        "metaDescription": "Phân tích chuyên sâu về tác động của hiện tượng nồm ẩm đặc trưng miền Bắc Việt Nam đến hệ thống điện gia đình: từ cơ chế ngưng tụ hơi nước gây rò điện, oxy",
+        "canonical": "https://khktphuonghoang.com/news-detail.html?id=news-011",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam",
+          "h2: Hiện tượng nồm ẩm ở miền Bắc và cơ chế tác động đến hệ thống điện",
+          "h2: Các nguy cơ mất an toàn điện cụ thể trong mùa nồm",
+          "h2: Các khu vực trong nhà cần đặc biệt kiểm tra trong mùa nồm",
+          "h2: Biện pháp phòng ngừa và bảo vệ hệ thống điện trong mùa nồm",
+          "h2: Cách xử lý khi phát hiện sự cố điện trong mùa nồm",
+          "h2: Giải pháp dài hạn cho hệ thống điện chống chịu nồm ẩm",
+          "h3: Kết luận",
+          "h4: Mục lục",
+          "h4: Danh mục sản phẩm",
+          "h2: Bài viết liên quan",
+          "h3: Hướng dẫn chi tiết cách xử lý sự cố điện một cách an toàn trong gia đình",
+          "h3: Cách bảo vệ hệ thống điện trước sự cố chập cháy",
+          "h3: Những lưu ý quan trọng khi sử dụng thiết bị điện trong môi trường ẩm ướt",
+          "h3: Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạ",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 16,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 12218,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": true,
+          "header": true,
+          "content": true,
+          "aside": true,
+          "related": true
+        }
+      },
+      "headerStrips": []
+    }
+  ]
+}

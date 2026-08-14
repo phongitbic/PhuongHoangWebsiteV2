@@ -1,5 +1,5 @@
 /**
- * news.js — News system loader & renderer with pagination
+ * news.js: News system loader & renderer with pagination
  * Loads from news-data.json, supports vi/en/zh with real-time switching
  * Pagination: 7 articles per page (1 featured + 6 grid)
  */
@@ -35,7 +35,7 @@ function readUrlParams() {
     }
   }
 
-  // Clamp page to valid range (articles may not be loaded yet – clamping happens after load)
+  // Clamp page to valid range (articles may not be loaded yet; clamping happens after load)
   // Sync filter button UI so the active category pill matches
   syncFilterButtons();
 }
@@ -55,7 +55,7 @@ function updateUrl() {
 }
 
 /**
- * Update the active class on filter buttons to match currentNewsCat.
+ * Update the active class + aria-pressed on filter buttons to match currentNewsCat.
  * Useful when restoring state from URL on page load.
  */
 function syncFilterButtons() {
@@ -67,8 +67,10 @@ function syncFilterButtons() {
     if (match) {
       if (match[1] === currentNewsCat) {
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
       } else {
         btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
       }
     }
   }
@@ -84,7 +86,7 @@ function saveScrollState(articleId) {
       articleId: articleId,
       scrollY: window.scrollY
     }));
-  } catch (e) { /* quota exceeded or unavailable — silently ignore */ }
+  } catch (e) { /* quota exceeded or unavailable: silently ignore */ }
 }
 
 /**
@@ -98,7 +100,7 @@ function restoreScrollPosition() {
   try { raw = sessionStorage.getItem('newsScrollRestore'); } catch (e) { return; }
   if (!raw) return;
 
-  // Only restore on back/forward navigation — skip direct URL access, refresh, etc.
+  // Only restore on back/forward navigation: skip direct URL access, refresh, etc.
   var navEntries = performance.getEntriesByType('navigation');
   if (navEntries.length > 0 && navEntries[0].type !== 'back_forward') {
     sessionStorage.removeItem('newsScrollRestore');
@@ -145,6 +147,20 @@ function initScrollRestore() {
   });
 }
 
+/**
+ * Sort articles newest-first by their localized date ("dd/mm/yyyy" in vi).
+ * Stable: articles sharing a date keep their original relative order.
+ */
+function sortArticlesByDateDesc(list) {
+  function parseDate(dateObj) {
+    var raw = (dateObj && dateObj.vi) ? dateObj.vi : String(dateObj || '');
+    var m = raw.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if (!m) return 0;
+    return new Date(parseInt(m[3], 10), parseInt(m[2], 10) - 1, parseInt(m[1], 10)).getTime();
+  }
+  return list.slice().sort(function (a, b) { return parseDate(b.date) - parseDate(a.date); });
+}
+
 function loadNewsData(callback) {
   fetch('assets/js/news-data.json')
     .then(function (response) {
@@ -156,7 +172,7 @@ function loadNewsData(callback) {
     })
     .then(function (json) {
       if (!json) return;
-      newsArticles = json.articles || [];
+      newsArticles = sortArticlesByDateDesc(json.articles || []);
       newsCategories = json.categories || {};
       if (callback) callback();
     })
@@ -173,23 +189,62 @@ function tNews(obj) {
 
 function getPaginationText(key) {
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'vi';
-  if (typeof translations !== 'undefined' && translations[lang] && translations[lang].news && translations[lang].news.pagination) {
-    return translations[lang].news.pagination[key] || '';
+  if (typeof translations !== 'undefined' && translations[lang] && translations[lang].page_news && translations[lang].page_news.pagination) {
+    return translations[lang].page_news.pagination[key] || '';
   }
   // Fallback
   const defaults = {
-    vi: { prev: '← Trước', next: 'Tiếp →', noArticles: 'Không có bài viết nào.', featuredBadge: 'BÀI VIẾT NỔI BẬT' },
-    en: { prev: '← Previous', next: 'Next →', noArticles: 'No articles found.', featuredBadge: 'FEATURED ARTICLE' },
-    zh: { prev: '← 上一页', next: '下一页 →', noArticles: '未找到文章。', featuredBadge: '精选文章' }
+    vi: { prev: '← Trước', next: 'Tiếp →', noArticles: 'Không có bài viết nào.' },
+    en: { prev: '← Previous', next: 'Next →', noArticles: 'No articles found.' },
+    zh: { prev: '← 上一页', next: '下一页 →', noArticles: '未找到文章。' }
   };
   return (defaults[lang] || defaults.vi)[key] || '';
+}
+
+/* ── Hero stats: real library size computed from loaded data ── */
+function renderNewsStats() {
+  var elA = document.getElementById('newsStatsArticles');
+  var elC = document.getElementById('newsStatsCategories');
+  if (elA) elA.textContent = newsArticles ? newsArticles.length : 0;
+  if (elC) elC.textContent = newsCategories ? Object.keys(newsCategories).length : 0;
+}
+
+/* ── Sidebar "Bài viết mới nhất": up to 3 most recent not on current page.
+      Hides the card when the filtered set fits on one page (nothing new to show). ── */
+function renderLatestList(filtered, pageArticles) {
+  var card = document.getElementById('newsLatestCard');
+  var list = document.getElementById('newsLatestList');
+  if (!card || !list) return;
+
+  var shown = {};
+  for (var i = 0; i < pageArticles.length; i++) shown[pageArticles[i].id] = true;
+
+  var candidates = [];
+  for (var j = 0; j < filtered.length; j++) {
+    if (!shown[filtered[j].id]) candidates.push(filtered[j]);
+    if (candidates.length >= 3) break;
+  }
+
+  if (candidates.length === 0) {
+    card.style.display = 'none';
+    list.innerHTML = '';
+    return;
+  }
+  card.style.display = 'block';
+
+  var html = '';
+  for (var k = 0; k < candidates.length; k++) {
+    var a = candidates[k];
+    html += '<li><a class="latest-link" href="news-detail.html?id=' + a.id + '&page=' + currentPage + '&category=' + currentNewsCat + '"><span class="latest-date">' + tNews(a.date) + '</span>' + tNews(a.title) + '</a></li>';
+  }
+  list.innerHTML = html;
 }
 
 function filterNews(cat, btn) {
   currentNewsCat = cat;
   currentPage = 1;
-  document.querySelectorAll('.news-filter-btn').forEach(function (b) { b.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
+  document.querySelectorAll('.news-filter-btn').forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true'); }
   renderNews();
   updateUrl();
 }
@@ -202,12 +257,11 @@ function buildArticleHTML(article, isFeatured) {
   const catName = newsCategories[article.category] ? tNews(newsCategories[article.category]) : '';
   const date = tNews(article.date);
   const readTime = tNews(article.readTime);
-  const featBadgeText = getPaginationText('featuredBadge');
 
   if (isFeatured) {
-    return '<div class="featured-article" id="news-card-' + article.id + '"><div class="featured-inner"><a class="featured-img-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '" aria-label="' + imgAlt + '"><div class="featured-img"><img src="' + (article.featuredImage || article.image) + '" alt="' + imgAlt + '" loading="lazy"><div class="feat-img-glow"></div></div></a><div class="featured-body"><div class="feat-badge" data-i18n="news.pagination.featuredBadge">' + featBadgeText + '</div><span class="news-tag">' + catName + '</span><div class="news-meta"><span>' + date + '</span><span>' + readTime + '</span></div><a class="featured-title-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '"><h2>' + tNews(article.title) + '</h2></a><p>' + tNews(article.excerpt) + '</p><a class="read-more" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '">' + readmore + ' →</a></div></div></div>';
+    return '<div class="featured-article" id="news-card-' + article.id + '"><div class="featured-inner"><a class="featured-img-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '" aria-label="' + imgAlt + '"><div class="featured-img"><img src="' + (article.featuredImage || article.image) + '" alt="' + imgAlt + '" loading="lazy" width="640" height="400"></div></a><div class="featured-body"><span class="news-tag">' + catName + '</span><div class="news-meta"><span>' + date + '</span><span>' + readTime + '</span></div><a class="featured-title-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '"><h2>' + tNews(article.title) + '</h2></a><p>' + tNews(article.excerpt) + '</p><a class="read-more" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '">' + readmore + ' →</a></div></div></div>';
   }
-  return '<article class="news-card" id="news-card-' + article.id + '"><a class="news-card-img-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '" aria-label="' + imgAlt + '"><div class="news-card-img"><img src="' + article.image + '" alt="' + imgAlt + '" loading="lazy"></div></a><div class="news-card-body"><span class="news-tag">' + catName + '</span><div class="news-meta"><span>' + date + '</span><span>' + readTime + '</span></div><a class="news-card-title-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '"><h3>' + tNews(article.title) + '</h3></a><p>' + tNews(article.excerpt) + '</p><a class="news-card-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '">' + readmore + ' →</a></div></article>';
+  return '<article class="news-card" id="news-card-' + article.id + '"><a class="news-card-img-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '" aria-label="' + imgAlt + '"><div class="news-card-img"><img src="' + article.image + '" alt="' + imgAlt + '" loading="lazy" width="640" height="400"></div></a><div class="news-card-body"><span class="news-tag">' + catName + '</span><div class="news-meta"><span>' + date + '</span><span>' + readTime + '</span></div><a class="news-card-title-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '"><h3>' + tNews(article.title) + '</h3></a><p>' + tNews(article.excerpt) + '</p><a class="news-card-link" href="news-detail.html?id=' + article.id + '&page=' + currentPage + '&category=' + currentNewsCat + '">' + readmore + ' →</a></div></article>';
 }
 
 function getFilteredArticles() {
@@ -251,7 +305,7 @@ function renderPagination(totalItems) {
   // Previous button
   html += '<button class="pagination-btn pagination-prev" onclick="goToPage(' + (currentPage - 1) + ')"';
   if (prevDisabled) html += ' disabled style="opacity:0.35;cursor:default;pointer-events:none"';
-  html += ' data-i18n="news.pagination.prev">' + prevText + '</button>';
+  html += ' data-i18n="page_news.pagination.prev">' + prevText + '</button>';
 
   // Page number buttons
   for (var p = 1; p <= totalPages; p++) {
@@ -264,7 +318,7 @@ function renderPagination(totalItems) {
   // Next button
   html += '<button class="pagination-btn pagination-next" onclick="goToPage(' + (currentPage + 1) + ')"';
   if (nextDisabled) html += ' disabled style="opacity:0.35;cursor:default;pointer-events:none"';
-  html += ' data-i18n="news.pagination.next">' + nextText + '</button>';
+  html += ' data-i18n="page_news.pagination.next">' + nextText + '</button>';
 
   container.innerHTML = html;
 
@@ -293,6 +347,10 @@ function renderNews() {
   var endIdx = Math.min(startIdx + ITEMS_PER_PAGE, totalFiltered);
   var pageArticles = filtered.slice(startIdx, endIdx);
 
+  // Hero stats + sidebar latest list (language-independent counts, localized content)
+  renderNewsStats();
+  renderLatestList(filtered, pageArticles);
+
   var featContainer = document.getElementById('newsFeatured');
   var grid = document.getElementById('newsGrid');
 
@@ -301,7 +359,7 @@ function renderNews() {
     if (featContainer) featContainer.style.display = 'none';
     if (grid) {
       var noArticlesText = getPaginationText('noArticles');
-      grid.innerHTML = '<div class="no-articles" data-i18n="news.pagination.noArticles">' + noArticlesText + '</div>';
+      grid.innerHTML = '<div class="news-empty" data-i18n="page_news.pagination.noArticles">' + noArticlesText + '</div>';
     }
     renderPagination(0);
     return;
@@ -397,6 +455,8 @@ if (window.PhuongHoang) {
   window.PhuongHoang.goToPage = goToPage;
   window.PhuongHoang.initNews = initNews;
   window.PhuongHoang.refreshNewsLanguage = refreshNewsLanguage;
+  window.PhuongHoang.renderNewsStats = renderNewsStats;
+  window.PhuongHoang.renderLatestList = renderLatestList;
   window.PhuongHoang.readUrlParams = readUrlParams;
   window.PhuongHoang.updateUrl = updateUrl;
   window.PhuongHoang.syncFilterButtons = syncFilterButtons;

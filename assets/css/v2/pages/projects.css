@@ -1,19 +1,20 @@
 /* ═══════════════════════════════════════════════════════
-   Projects Page Styles — Phượng Hoàng Design System
+   Projects Page Styles: Phượng Hoàng Design System
    Matches phong.html: white/sage/navy/green palette
    Flow-based layout, no absolute positioning, no dark sections
    Structure: Hero(+Stats) → Sectors → Filters → Project Grid → Support Strip → CTA
    ═══════════════════════════════════════════════════════ */
 
-/* ═══════════ HERO — Clean split, flow-based, stats overlap ═══════════ */
+/* ═══════════ HERO: Clean split, flow-based, stats overlap
+   First section: clears chrome (top bar + fixed header) ═══════════ */
 .ph-proj-hero {
-  padding: clamp(2.5rem, 5vw, 5rem) 0 clamp(2rem, 3vw, 4rem);
+  padding: calc(var(--ph-header-h) + clamp(2rem, 3.5vw, 3rem)) 0 clamp(2rem, 3vw, 4rem);
   position: relative;
   overflow: hidden;
   background: var(--ph-bg-primary);
 }
 
-/* Subtle sage ambient — understated, matching phong.html hero language */
+/* Subtle sage ambient: understated, matching phong.html hero language */
 .ph-proj-hero::before {
   content: '';
   position: absolute;
@@ -22,13 +23,13 @@
   width: 55%;
   height: 110%;
   background:
-    radial-gradient(ellipse at 65% 35%, rgba(22,138,58,.025), transparent 50%),
-    radial-gradient(ellipse at 80% 60%, rgba(22,138,58,.015), transparent 45%);
+    radial-gradient(ellipse at 65% 35%, rgba(29,139,44,.025), transparent 50%),
+    radial-gradient(ellipse at 80% 60%, rgba(29,139,44,.015), transparent 45%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Grid: content left, visual right — matching bp-hero-grid pattern */
+/* Grid: content left, visual right: matching bp-hero-grid pattern */
 .ph-proj-hero-inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -68,7 +69,7 @@
   background: var(--ph-accent);
 }
 
-/* H1 — matching bp-hero-title scale */
+/* H1: matching bp-hero-title scale */
 .ph-proj-hero-title {
   font: var(--ph-text-h1);
   color: var(--ph-text-primary);
@@ -101,7 +102,7 @@
   border-radius: var(--ph-radius-lg);
 }
 
-/* ═══════════ STATS CARD — Single row, overlaps hero visual bottom ═══════════ */
+/* ═══════════ STATS CARD: Single row, overlaps hero visual bottom ═══════════ */
 .ph-proj-stats-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -111,7 +112,7 @@
   border: 1px solid var(--ph-border-default);
   border-radius: 20px;
   padding: 0.5rem 2rem;
-  box-shadow: 0 2px 18px rgba(22,138,58,.05);
+  box-shadow: 0 2px 18px rgba(29,139,44,.05);
   position: relative;
   z-index: 2;
   margin-top: -85px;
@@ -148,19 +149,19 @@
   line-height: 1.4;
 }
 
-/* ═══════════ SECTORS — Left-anchored editorial heading + compact horizontal cards ═══════════ */
+/* ═══════════ SECTORS: Left-anchored editorial heading + compact horizontal cards ═══════════ */
 .ph-proj-sectors {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: #F3F7F3;
+  background: var(--ph-section-alt-bg);
 }
 
-/* Header — left-aligned, matching hero text axis */
+/* Header: left-aligned, matching hero text axis */
 .ph-proj-sectors-header {
   text-align: left;
   margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 }
 
-/* Accent green line above title — matching bp-section-header .bp-section-title::before */
+/* Accent green line above title: matching bp-section-header .bp-section-title::before */
 .ph-proj-sectors-header .bp-section-title::before {
   content: '';
   display: block;
@@ -184,14 +185,14 @@
   max-width: 560px;
 }
 
-/* Grid — 3 equal columns, full container width */
+/* Grid: 3 equal columns, full container width */
 .ph-proj-sectors-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-/* Sector item — horizontal row, compact, understated editorial feel */
+/* Sector item: horizontal row, compact, understated editorial feel */
 .ph-proj-sector-card {
   display: flex;
   align-items: center;
@@ -210,16 +211,16 @@
 .ph-proj-sector-card:hover {
   border-color: var(--ph-accent);
   transform: translateY(-1px);
-  box-shadow: 0 2px 12px rgba(22,138,58,.05);
+  box-shadow: 0 2px 12px rgba(29,139,44,.05);
 }
 
 .ph-proj-sector-card.active {
   background: var(--ph-accent);
   border-color: var(--ph-accent);
-  box-shadow: 0 2px 12px rgba(22,138,58,.10);
+  box-shadow: 0 2px 12px rgba(29,139,44,.10);
 }
 
-/* Icon — small, contained */
+/* Icon: small, contained */
 .ph-proj-sector-card-icon {
   width: 34px; height: 34px;
   min-width: 34px;
@@ -242,7 +243,7 @@
   color: #fff;
 }
 
-/* Body — title + description, flex-grows to fill space */
+/* Body: title + description, flex-grows to fill space */
 .ph-proj-sector-card-body {
   flex: 1;
   min-width: 0;
@@ -268,7 +269,7 @@
 
 .ph-proj-sector-card.active .ph-proj-sector-card-body p { color: rgba(255,255,255,.82); }
 
-/* Arrow chevron — subtle, right-aligned */
+/* Arrow chevron: subtle, right-aligned */
 .ph-proj-sector-card-arrow {
   color: var(--ph-accent);
   opacity: 0.40;
@@ -349,7 +350,7 @@
   border-color: var(--ph-accent);
 }
 
-/* ═══════════ PROJECT GRID — Clean background, matching design system ═══════════ */
+/* ═══════════ PROJECT GRID: Clean background, matching design system ═══════════ */
 #ph-proj-list {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
   background: var(--ph-bg-primary);
@@ -361,7 +362,7 @@
   gap: 1rem;
 }
 
-/* ── Project card — clean, light, green-tinted shadows ── */
+/* ── Project card: clean, light, green-tinted shadows ── */
 .ph-proj-card {
   display: flex;
   flex-direction: column;
@@ -371,18 +372,18 @@
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 1px 4px rgba(22,138,58,.05);
+  box-shadow: 0 1px 4px rgba(29,139,44,.05);
   transition: transform var(--ph-duration-normal) var(--ph-ease-out),
               box-shadow var(--ph-duration-normal) var(--ph-ease-out),
               border-color var(--ph-duration-fast) var(--ph-ease-out);
 }
 .ph-proj-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 24px rgba(22,138,58,.10);
+  box-shadow: 0 6px 24px rgba(29,139,44,.10);
   border-color: var(--ph-accent);
 }
 
-/* Card image — 16:10, clean, NO background, NO overlay, NO filter */
+/* Card image: 16:10, clean, NO background, NO overlay, NO filter */
 .ph-proj-card-img {
   aspect-ratio: 16 / 10;
   background: transparent;
@@ -475,7 +476,7 @@
 /* ═══════════ SUPPORT / TRUST STRIP ═══════════ */
 .ph-proj-support-strip {
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: #F3F7F3;
+  background: var(--ph-bg-primary);
   border-top: 1px solid var(--ph-divider);
 }
 .ph-proj-support-grid {
@@ -522,8 +523,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 35% 50%, rgba(22,138,58,.03), transparent 55%),
-    radial-gradient(ellipse at 65% 40%, rgba(22,138,58,.02), transparent 50%);
+    radial-gradient(ellipse at 35% 50%, rgba(29,139,44,.03), transparent 55%),
+    radial-gradient(ellipse at 65% 40%, rgba(29,139,44,.02), transparent 50%);
   pointer-events: none;
 }
 .ph-proj-cta-wrap {
@@ -557,7 +558,7 @@
   align-items: center;
   gap: .5rem;
   font-family: var(--ph-font-body);
-  box-shadow: 0 2px 14px rgba(22,138,58,.16);
+  box-shadow: 0 2px 14px rgba(29,139,44,.16);
   transition: filter var(--ph-duration-fast) var(--ph-ease-out),
               transform var(--ph-duration-fast) var(--ph-ease-out);
 }
@@ -578,6 +579,79 @@
 .ph-cta-sub a { color: var(--ph-accent); }
 
 /* ═══════════ RESPONSIVE ═══════════ */
+
+/* Implementation process: 5-step editorial flow */
+.ph-proj-process { padding: var(--bp-section-pad, 4.5rem 0); }
+.ph-proj-process-list {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  counter-reset: none;
+}
+.ph-proj-process-step {
+  position: relative;
+  background: var(--ph-surface-primary, #fff);
+  border: 1px solid var(--ph-border-subtle, #e3ebe4);
+  border-radius: var(--ph-radius-lg, 16px);
+  padding: 1.4rem 1.25rem 1.35rem;
+  box-shadow: 0 1px 2px rgba(11, 25, 41, .04);
+  transition: transform var(--ph-duration-fast, .2s) var(--ph-ease-out, ease), box-shadow var(--ph-duration-fast, .2s) var(--ph-ease-out, ease);
+}
+.ph-proj-process-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(11, 25, 41, .08);
+}
+.ph-proj-process-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 1rem;
+  height: 1px;
+  background: var(--ph-accent, #1d8b2c);
+  opacity: .45;
+}
+.ph-proj-process-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  padding: 0 .5rem;
+  border-radius: 99px;
+  background: var(--ph-accent-subtle, #e5f2e8);
+  color: var(--ph-accent, #1d8b2c);
+  font-family: var(--ph-font-mono, monospace);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .4px;
+  margin-bottom: .9rem;
+}
+.ph-proj-process-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ph-text-primary, #0b1929);
+  margin: 0 0 .4rem;
+  letter-spacing: .1px;
+}
+.ph-proj-process-body p {
+  font-size: .83rem;
+  line-height: 1.55;
+  color: var(--ph-text-muted, #5a6b7a);
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .ph-proj-process-list { grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .ph-proj-process-step:not(:last-child)::after { display: none; }
+}
+@media (max-width: 767px) {
+  .ph-proj-process-list { grid-template-columns: 1fr; gap: .9rem; margin-top: 1.75rem; }
+  .ph-proj-process-step { padding: 1.15rem 1.1rem; }
+}
+
 @media (max-width: 1200px) {
   .ph-proj-hero-inner { gap: 2rem; }
   .ph-proj-stats-card { max-width: min(860px, 88%); }
@@ -603,7 +677,8 @@
 }
 
 @media (max-width: 767px) {
-  .ph-proj-hero { padding-top: 1.5rem; }
+  /* Header stays FIXED at all widths: clear it with the real header token */
+  .ph-proj-hero { padding-top: calc(var(--ph-header-h) + clamp(1.5rem, 4vw, 2rem)); }
   .ph-proj-hero-inner {
     grid-template-columns: 1fr;
     gap: 1.25rem;

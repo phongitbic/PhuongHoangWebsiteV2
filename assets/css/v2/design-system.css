@@ -1,5 +1,5 @@
 /* ===================================
-   Phượng Hoàng V2 — Design System
+   Phượng Hoàng V2: Design System
    Premium Enterprise Industrial Technology
    Dark-first · Spring Physics · Asymmetric
    =================================== */
@@ -9,13 +9,17 @@ html:not([data-theme]) { visibility: hidden; }
 
 /* ═══════════ CUSTOM PROPERTIES ═══════════ */
 :root {
-  /* Typography — Outfit (display), Plus Jakarta Sans (body), JetBrains Mono (data) */
-  --ph-font-display: 'Outfit', system-ui, -apple-system, sans-serif;
-  --ph-font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --ph-font-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', monospace;
+  /* Typography: Plus Jakarta Sans (display + body), JetBrains Mono (data).
+     Display switched from Outfit (2026-08-13): Outfit ships no vietnamese
+     subset on Google Fonts, so headings rendered with mixed system-font
+     glyphs on every Vietnamese word. Plus Jakarta Sans has a full
+     vietnamese subset (Google + '… Local' self-hosted fallback). */
+  --ph-font-display: 'Plus Jakarta Sans', 'Plus Jakarta Sans Local', system-ui, -apple-system, sans-serif;
+  --ph-font-body: 'Plus Jakarta Sans', 'Plus Jakarta Sans Local', system-ui, -apple-system, sans-serif;
+  --ph-font-mono: 'JetBrains Mono', 'JetBrains Mono Local', 'SF Mono', 'Cascadia Code', monospace;
   --ph-font-cjk: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 
-  /* Spacing Scale (4px base — Apple-level breathing room) */
+  /* Spacing Scale (4px base: Apple-level breathing room) */
   --ph-space-3xs: 0.25rem;
   --ph-space-2xs: 0.5rem;
   --ph-space-xs: 0.75rem;
@@ -32,6 +36,15 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-container-default: 960px;
   --ph-container-narrow: 720px;
   --ph-container-tight: 560px;
+
+  /* Header Chrome: top bar + fixed header. --ph-chrome-h clears BOTH
+     from the viewport top (scroll anchors); first sections sit in flow
+     BELOW the top bar, so they clear only the fixed header height:
+     --ph-header-h = chrome minus top bar (68px desktop, 58px ≤479).
+     Using full --ph-chrome-h there double-counts the top bar. */
+  --ph-topbar-h: 36px;
+  --ph-chrome-h: 104px;
+  --ph-header-h: calc(var(--ph-chrome-h) - var(--ph-topbar-h));
 
   /* Grid */
   --ph-grid-gap-desktop: 2rem;
@@ -53,12 +66,12 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-text-mono-value: 600 clamp(1.75rem, 4vw, 2.5rem)/1 var(--ph-font-mono);
   --ph-text-mono-label: 500 0.75rem/1 var(--ph-font-mono);
 
-  /* Tracking — premium, tighter display tracking */
+  /* Tracking: premium, tighter display tracking */
   --ph-tracking-tight: -0.03em;
   --ph-tracking-normal: -0.01em;
   --ph-tracking-wide: 0.06em;
 
-  /* Border Radius — consistent 12px/16px system */
+  /* Border Radius: consistent 12px/16px system */
   --ph-radius-sm: 0.5rem;
   --ph-radius-md: 0.75rem;
   --ph-radius-lg: 1rem;
@@ -101,7 +114,7 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-icon-2xl: 2.5rem;
 
   /* ═══════════ DARK THEME (Brand Default) ═══════════ */
-  /* Brand — Logo green (#228f22) + professional navy */
+  /* Brand: Logo green (#228f22) + professional navy */
   --ph-accent: #1d8b2c;
   --ph-accent-hover: #25a838;
   --ph-accent-dark: #167a24;
@@ -111,13 +124,14 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-accent-warm-subtle: rgba(196, 160, 64, 0.06);
   --ph-accent-warm-glow: rgba(196, 160, 64, 0.08);
 
-  /* Backgrounds — brand navy with professional depth */
+  /* Backgrounds: brand navy with professional depth */
   --ph-bg-primary: #0b1929;
   --ph-bg-secondary: #101f33;
   --ph-bg-tertiary: #152540;
   --ph-bg-footer: #020d17;
+  --ph-section-alt-bg: #132538;
 
-  /* Surfaces — layered depth progression */
+  /* Surfaces: layered depth progression */
   --ph-surface-primary: #152540;
   --ph-surface-secondary: #1a2d52;
   --ph-surface-elevated: #203860;
@@ -128,7 +142,7 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-text-secondary: #94A6BE;
   --ph-text-muted: #7E94AE;
   --ph-text-accent: #25a838;
-  --ph-text-inverse: #0b1929;
+  --ph-text-inverse: #FFFFFF; /* CTA bands + accent buttons: white text on navy/green in BOTH themes */
   --ph-text-on-accent: #FFFFFF;
 
   /* Borders */
@@ -174,14 +188,14 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-gauge-success: #10C68D;
   --ph-led-glow: rgba(16, 198, 141, 0.45);
 
-  /* Product Glow — brand green radial, supporting product photography */
+  /* Product Glow: brand green radial, supporting product photography */
   --ph-product-glow: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(29, 139, 44, 0.08) 0%, rgba(196, 160, 64, 0.03) 35%, transparent 70%);
 
   /* Ken Burns */
   --ph-kenburns-scale: 1.06;
   --ph-kenburns-duration: 10s;
 
-  /* Comparison Section — Traditional (muted grayscale, always subdued) */
+  /* Comparison Section: Traditional (muted grayscale, always subdued) */
   --ph-comparison-traditional-bg-start: #1A1A1E;
   --ph-comparison-traditional-bg-end: #252528;
   /* Phone Frame (device chrome, always dark) */
@@ -198,10 +212,10 @@ html:not([data-theme]) { visibility: hidden; }
   scrollbar-width: thin;
 }
 
-/* ═══════════ LIGHT THEME — Light Industrial / Premium Enterprise ═══════════ */
+/* ═══════════ LIGHT THEME: Light Industrial / Premium Enterprise ═══════════ */
 /* Brand: navy #08335A · green #1D8B2C · white surfaces · cool-toned depth */
 [data-theme="light"] {
-  /* ── Brand Accent — Phượng Hoàng green ── */
+  /* ── Brand Accent: Phượng Hoàng green ── */
   --ph-accent: #1D8B2C;
   --ph-accent-hover: #167a24;
   --ph-accent-dark: #0f5e1c;
@@ -211,34 +225,35 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-accent-warm-subtle: rgba(184, 148, 48, 0.05);
   --ph-accent-warm-glow: rgba(184, 148, 48, 0.06);
 
-  /* ── Backgrounds — clean white with cool-blue undertones (not SaaS grey) ── */
+  /* ── Backgrounds: clean white with cool-blue undertones (not SaaS grey) ── */
   --ph-bg-primary: #FFFFFF;
   --ph-bg-secondary: #EEF1F6;
   --ph-bg-tertiary: #E4E8F0;
-  --ph-bg-footer: #f8f9fb;
+  --ph-bg-footer: #020d17; /* Navy closing band: footer + CTA sections always dark in both themes (matches .footer hardcode) */
+  --ph-section-alt-bg: #F3F7F3;
 
-  /* ── Surfaces — white cards with subtle layering ── */
+  /* ── Surfaces: white cards with subtle layering ── */
   --ph-surface-primary: #FFFFFF;
   --ph-surface-secondary: #F0F3F8;
   --ph-surface-elevated: #E8ECF4;
   --ph-surface-overlay: rgba(255, 255, 255, 0.95);
 
-  /* ── Text — navy hierarchy with strong WCAG AA contrast ── */
-  --ph-text-primary: #041C32;      /* deep navy — headings · 17.5:1 on white (AAA) */
-  --ph-text-secondary: #2C4B6E;    /* navy-blue — body · 9.8:1 on white (AAA) */
-  --ph-text-muted: #5B7191;        /* slate — captions · 5.7:1 on white (AA) */
+  /* ── Text: navy hierarchy with strong WCAG AA contrast ── */
+  --ph-text-primary: #041C32;      /* deep navy: headings · 17.5:1 on white (AAA) */
+  --ph-text-secondary: #2C4B6E;    /* navy-blue: body · 9.8:1 on white (AAA) */
+  --ph-text-muted: #5B7191;        /* slate: captions · 5.7:1 on white (AA) */
   --ph-text-accent: #1D8B2C;       /* brand green on light */
   --ph-text-inverse: #FFFFFF;
   --ph-text-on-accent: #FFFFFF;
 
-  /* ── Borders — navy-based, subtle, never harsh ── */
+  /* ── Borders: navy-based, subtle, never harsh ── */
   --ph-border-default: rgba(8, 51, 90, 0.08);
   --ph-border-hover: rgba(8, 51, 90, 0.16);
   --ph-border-active: rgba(29, 139, 44, 0.42);
   --ph-border-subtle: rgba(8, 51, 90, 0.04);
   --ph-divider: rgba(8, 51, 90, 0.06);
 
-  /* ── Shadows — delicate depth, no heavy dark glow ── */
+  /* ── Shadows: delicate depth, no heavy dark glow ── */
   --ph-shadow-1: 0 1px 2px rgba(8, 51, 90, 0.04);
   --ph-shadow-2: 0 4px 16px rgba(8, 51, 90, 0.06);
   --ph-shadow-3: 0 12px 32px rgba(8, 51, 90, 0.08);
@@ -246,7 +261,7 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-shadow-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
   --ph-shadow-glow: 0 0 40px rgba(29, 139, 44, 0.06);
 
-  /* ── Semantic — keep functional colors distinct ── */
+  /* ── Semantic: keep functional colors distinct ── */
   --ph-success: #059669;
   --ph-success-subtle: rgba(5, 150, 105, 0.07);
   --ph-warning: #D97706;
@@ -262,7 +277,7 @@ html:not([data-theme]) { visibility: hidden; }
 
   --ph-focus-ring: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--ph-accent);
 
-  /* ── Dashboard / Gauge — light industrial panels ── */
+  /* ── Dashboard / Gauge: light industrial panels ── */
   --ph-dashboard-bg: #F0F3F7;
   --ph-dashboard-grid: rgba(8, 51, 90, 0.04);
   --ph-dashboard-border: rgba(8, 51, 90, 0.08);
@@ -274,7 +289,7 @@ html:not([data-theme]) { visibility: hidden; }
   --ph-led-glow: rgba(5, 150, 105, 0.4);
   --ph-product-glow: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(29, 139, 44, 0.04) 0%, transparent 70%);
 
-  /* ── Comparison section — traditional column stays muted ── */
+  /* ── Comparison section: traditional column stays muted ── */
   --ph-comparison-traditional-bg-start: #E5E7EB;
   --ph-comparison-traditional-bg-end: #D1D5DB;
 
@@ -368,13 +383,13 @@ h1, h2, h3, h4, h5, h6 { font: inherit; color: inherit; }
   pointer-events: none;
 }
 
-/* Skip-link target offset to clear fixed header */
+/* Skip-link target offset to clear chrome (top bar + fixed header) */
 #main-content {
-  scroll-margin-top: 84px;
+  scroll-margin-top: calc(var(--ph-chrome-h) + 16px);
 }
 
 @media (max-width: 479px) {
-  #main-content { scroll-margin-top: 74px; }
+  #main-content { scroll-margin-top: calc(var(--ph-chrome-h) + 16px); }
 }
 
 /* ═══════════ UTILITY CONTAINERS ═══════════ */
@@ -386,6 +401,14 @@ h1, h2, h3, h4, h5, h6 { font: inherit; color: inherit; }
 @media (max-width: 767px) {
   .container-wide, .container-default, .container-narrow, .container-tight {
     padding: 0 var(--ph-space-sm);
+  }
+}
+
+/* Mobile chrome: top bar 32px + header 58px */
+@media (max-width: 479px) {
+  :root {
+    --ph-topbar-h: 32px;
+    --ph-chrome-h: 90px;
   }
 }
 

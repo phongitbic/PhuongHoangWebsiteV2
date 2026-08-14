@@ -1,0 +1,143 @@
+[
+  {
+    "title": "Thiết bị an toàn điện thông minh dập hồ quang 220V: Phượng Hoàng | Thiết Bị Điện An Toàn Thông Minh",
+    "h1": [
+      "Thiết bị an toàn điện thông minh dập hồ quang 220V"
+    ],
+    "h1Count": 1,
+    "emDashTitle": 0,
+    "emDashBody": 0,
+    "emDashMeta": 0,
+    "fallbackPanel": false,
+    "fallbackCat": null,
+    "fallbackCtas": [],
+    "infoTitle": "Thiết bị an toàn điện thông minh dập hồ quang 220V",
+    "infoSku": "WDMA",
+    "qs": [
+      "220V AC",
+      "50/60 Hz",
+      "32A / 45A / 63A / 100A",
+      "IEC 61008-1"
+    ],
+    "featureCards": 12,
+    "benefitCards": 5,
+    "specRows": 12,
+    "appCards": 8,
+    "steps": 5,
+    "modelBtns": 4,
+    "activeModel": "WDMA-32A 32A",
+    "thumbs": 4,
+    "relatedCards": 2,
+    "mainImgSrc": "http://127.0.0.1:5500/assets/images/products/processed/32_11zon.webp",
+    "canonical": "https://khktphuonghoang.com/product-detail.html?id=wdma-series",
+    "productSchema": true,
+    "fontsCheck": [
+      "Plus Jakarta Sans=OK",
+      "JetBrains Mono=OK",
+      "Noto Sans SC=UNUSED"
+    ],
+    "overflowX": 0,
+    "brokenImgs": 0,
+    "url": "http://127.0.0.1:5500/product-detail.html?id=wdma-series",
+    "console": [],
+    "_check": {
+      "failures": [],
+      "status": "PASS"
+    }
+  },
+  {
+    "title": "Thiết bị an toàn điện thông minh 380V: Phượng Hoàng | Thiết Bị Điện An Toàn Thông Minh",
+    "h1": [
+      "Thiết bị an toàn điện thông minh 380V"
+    ],
+    "h1Count": 1,
+    "emDashTitle": 0,
+    "emDashBody": 0,
+    "emDashMeta": 0,
+    "fallbackPanel": false,
+    "fallbackCat": null,
+    "fallbackCtas": [],
+    "infoTitle": "Thiết bị an toàn điện thông minh 380V",
+    "infoSku": "KHKT-SD4R",
+    "qs": [
+      "380V AC 3 pha",
+      "50/60 Hz",
+      "IEC 61439",
+      "IP54"
+    ],
+    "featureCards": 12,
+    "benefitCards": 5,
+    "specRows": 12,
+    "appCards": 4,
+    "steps": 5,
+    "modelBtns": 5,
+    "activeModel": "KHKT-SD4R-125 125A",
+    "thumbs": 5,
+    "relatedCards": 0,
+    "mainImgSrc": "http://127.0.0.1:5500/assets/images/products/processed/125_11zon.webp",
+    "canonical": "https://khktphuonghoang.com/product-detail.html?id=ind-001",
+    "productSchema": true,
+    "fontsCheck": [
+      "Plus Jakarta Sans=OK",
+      "JetBrains Mono=OK",
+      "Noto Sans SC=UNUSED"
+    ],
+    "overflowX": 0,
+    "brokenImgs": 0,
+    "url": "http://127.0.0.1:5500/product-detail.html?id=khkt-125",
+    "console": [],
+    "_check": {
+      "failures": [],
+      "status": "PASS"
+    }
+  },
+  {
+    "title": "Không tìm thấy sản phẩm | Phượng Hoàng | Thiết Bị Điện An Toàn Thông Minh",
+    "h1": [
+      "Không tìm thấy sản phẩm"
+    ],
+    "h1Count": 1,
+    "emDashTitle": 0,
+    "emDashBody": 0,
+    "emDashMeta": 0,
+    "fallbackPanel": true,
+    "fallbackCat": "404",
+    "fallbackCtas": [
+      "products.html",
+      "https://zalo.me/0981019381"
+    ],
+    "infoTitle": null,
+    "infoSku": null,
+    "qs": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "featureCards": 0,
+    "benefitCards": 0,
+    "specRows": 0,
+    "appCards": 0,
+    "steps": 0,
+    "modelBtns": 0,
+    "activeModel": null,
+    "thumbs": 0,
+    "relatedCards": 0,
+    "mainImgSrc": "",
+    "canonical": "https://khktphuonghoang.com/products.html",
+    "productSchema": false,
+    "fontsCheck": [
+      "Plus Jakarta Sans=OK",
+      "JetBrains Mono=UNUSED",
+      "Noto Sans SC=UNUSED"
+    ],
+    "overflowX": 0,
+    "brokenImgs": 0,
+    "url": "http://127.0.0.1:5500/product-detail.html?id=khong-ton-tai-xyz",
+    "console": [],
+    "_check": {
+      "failures": [],
+      "status": "PASS"
+    }
+  }
+]

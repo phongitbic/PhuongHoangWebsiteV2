@@ -17,5 +17,5 @@
   <!-- Ground line -->
   <line x1="40" y1="340" x2="760" y2="340" stroke="#203860" stroke-width="1"/>
   <!-- Label -->
-  <text x="400" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5B7191" opacity="0.5">PLACEHOLDER — thay bằng ảnh thực tế</text>
+  <text x="400" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5B7191" opacity="0.5">PLACEHOLDER: thay bằng ảnh thực tế</text>
 </svg>

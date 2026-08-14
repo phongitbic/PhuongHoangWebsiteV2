@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Tin Tức — An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng</title>
+  <title>Tin Tức | An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng</title>
   <meta name="description" content="Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn mới, công nghệ giám sát điện thông minh. Cập nhật từ Phượng Hoàng.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://khktphuonghoang.com/news.html">
@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="x-default" href="https://khktphuonghoang.com/news.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://khktphuonghoang.com/news.html">
-  <meta property="og:title" content="Tin Tức — An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng">
+  <meta property="og:title" content="Tin Tức | An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng">
   <meta property="og:description" content="Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn mới, công nghệ giám sát điện thông minh.">
   <meta property="og:image" content="https://khktphuonghoang.com/assets/logo/Logo.png">
   <meta property="og:image:width" content="390">
@@ -47,7 +47,7 @@
         "@type": "WebSite",
         "@id": "https://khktphuonghoang.com/#website",
         "url": "https://khktphuonghoang.com",
-        "name": "Phượng Hoàng — Thiết bị điện an toàn thông minh",
+        "name": "Phượng Hoàng: Thiết bị điện an toàn thông minh",
         "inLanguage": "vi"
       },
       {
@@ -58,6 +58,13 @@
         "description": "Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn, công nghệ giám sát điện thông minh.",
         "inLanguage": "vi",
         "isPartOf": {"@id": "https://khktphuonghoang.com/#website"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://khktphuonghoang.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Tin tức", "item": "https://khktphuonghoang.com/news.html"}
+        ]
       }
     ]
   }
@@ -77,7 +84,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/v2/fonts.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/v2/design-system.css">
   <link rel="stylesheet" href="assets/css/v2/components/navbar.css">
   <link rel="stylesheet" href="assets/css/v2/components/buttons.css">
@@ -92,44 +100,73 @@
   <div id="shared-header"></div>
   <main id="main-content" tabindex="-1">
 
-    <section class="bp-internal-hero bp-reveal">
-      <div class="bp-content-wide">
-        <h1 class="bp-section-title" data-i18n="page_news.heroTitle">Tin tức</h1>
-        <p class="bp-internal-hero-desc" data-i18n="page_news.heroDesc">Kiến thức và cập nhật mới nhất về an toàn điện, công nghệ chống giật, chống cháy và giải pháp giám sát điện thông minh.</p>
-      </div>
-    </section>
-
-    <section class="bp-section-md bp-reveal">
-      <div class="bp-content-wide">
-        <h2 class="bp-section-heading" data-i18n="page_news.sectionHeading">Danh mục tin tức</h2>
-        <div class="ph-news-filters">
-          <button class="news-filter-btn active" type="button" onclick="filterNews('all', this)">Tất cả</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('electrical-knowledge', this)">Kiến thức điện</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('electrical-safety', this)">An toàn điện</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('tech', this)">Công nghệ</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('guide', this)">Hướng dẫn</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('industrial-solutions', this)">Giải pháp CN</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('smart-monitor', this)">Giám sát TM</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('maintenance', this)">Bảo trì</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('applications', this)">Ứng dụng</button>
-          <button class="news-filter-btn" type="button" onclick="filterNews('trends', this)">Xu hướng</button>
-        </div>
-
-        <div id="newsFeatured"></div>
-        <div class="news-grid" id="newsGrid"></div>
-        <div class="pagination" id="newsPagination"></div>
-      </div>
-    </section>
-
-    <section class="bp-section-md bp-reveal">
-      <div class="bp-content-wide">
-        <div class="bp-cta-panel">
-          <h2 data-i18n="page_news.ctaHeading">Bạn muốn tư vấn về giải pháp an toàn điện?</h2>
-          <p data-i18n="page_news.ctaDesc">Gọi 1800 888 638 — kỹ sư Phượng Hoàng tư vấn miễn phí và đề xuất giải pháp phù hợp.</p>
-          <div class="bp-cta-actions">
-            <a href="tel:1800888638" class="bp-btn-magnetic" data-i18n="page_news.ctaButton">Gọi 1800 888 638</a>
+    <!-- Hero: split copy + live stats; filters integrated (no separate toolbar band) -->
+    <section class="bp-section ph-news-hero bp-reveal">
+      <div class="container-wide">
+        <div class="ph-news-hero-grid">
+          <div class="ph-news-hero-copy">
+            <span class="ph-section-tag" data-i18n="page_news.heroEyebrow">Trung tâm kiến thức</span>
+            <h1 class="bp-section-title" data-i18n="page_news.heroTitle">Tin tức</h1>
+            <p class="ph-news-hero-desc" data-i18n="page_news.heroDesc">Kiến thức và cập nhật mới nhất về an toàn điện, công nghệ chống giật, chống cháy và giải pháp giám sát điện thông minh.</p>
           </div>
-          <p class="ph-cta-sub"><span data-i18n="page_news.ctaSub">Hoặc</span> <a href="contact.html" data-i18n="page_news.ctaSubLink">gửi câu hỏi qua email</a></p>
+          <div class="ph-news-hero-stats">
+            <div class="ph-news-stat">
+              <span class="ph-news-stat-num" id="newsStatsArticles">0</span>
+              <span class="ph-news-stat-label" data-i18n="page_news.statsArticles">Bài viết</span>
+            </div>
+            <div class="ph-news-stat">
+              <span class="ph-news-stat-num" id="newsStatsCategories">0</span>
+              <span class="ph-news-stat-label" data-i18n="page_news.statsCategories">Chủ đề</span>
+            </div>
+          </div>
+        </div>
+        <div class="ph-news-filters" role="group" data-i18n-aria="page_news.filterLabel" aria-label="Lọc bài viết theo danh mục">
+          <button class="news-filter-btn active" type="button" aria-pressed="true" onclick="filterNews('all', this)" data-i18n="page_news.filterAll">Tất cả</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('electrical-knowledge', this)" data-i18n="page_news.filterElectricalKnowledge">Kiến thức điện</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('electrical-safety', this)" data-i18n="page_news.filterElectricalSafety">An toàn điện</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('tech', this)" data-i18n="page_news.filterTech">Công nghệ</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('guide', this)" data-i18n="page_news.filterGuide">Hướng dẫn</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('industrial-solutions', this)" data-i18n="page_news.filterIndustrial">Giải pháp CN</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('smart-monitor', this)" data-i18n="page_news.filterSmartMonitor">Giám sát TM</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('maintenance', this)" data-i18n="page_news.filterMaintenance">Bảo trì</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('applications', this)" data-i18n="page_news.filterApplications">Ứng dụng</button>
+          <button class="news-filter-btn" type="button" aria-pressed="false" onclick="filterNews('trends', this)" data-i18n="page_news.filterTrends">Xu hướng</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- News listing: featured → split layout (grid + conversion sidebar) -->
+    <section class="bp-section-alt bp-reveal">
+      <div class="container-wide">
+        <div id="newsFeatured"></div>
+        <div class="news-layout">
+          <div class="news-main">
+            <div class="news-grid" id="newsGrid"></div>
+            <div class="pagination" id="newsPagination"></div>
+          </div>
+          <aside class="news-sidebar" aria-labelledby="newsSidebarProductsTitle">
+            <div class="sidebar-card sidebar-products-card">
+              <h2 id="newsSidebarProductsTitle" data-i18n="page_news.sidebarProductsHeading">Sản phẩm nổi bật</h2>
+              <p class="sidebar-product-subtitle" data-i18n="page_news.sidebarProductsSub">Thiết bị an toàn điện thông minh cho gia đình và công nghiệp.</p>
+              <a class="sidebar-product-item" href="product-detail.html?id=ind-001">
+                <span class="sidebar-product-img"><img src="assets/images/products/processed/125_11zon.webp" alt="" width="56" height="56" loading="lazy"></span>
+                <span class="sidebar-product-name" data-i18n="page_news.sidebarProduct1Name">Thiết bị an toàn điện thông minh 380V</span>
+              </a>
+              <a class="sidebar-product-item" href="product-detail.html?id=dom-001">
+                <span class="sidebar-product-img"><img src="assets/images/products/processed/63-3_11zon.webp" alt="" width="56" height="56" loading="lazy"></span>
+                <span class="sidebar-product-name" data-i18n="page_news.sidebarProduct2Name">Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh</span>
+              </a>
+              <a class="sidebar-product-item" href="product-detail.html?id=arc-004">
+                <span class="sidebar-product-img"><img src="assets/images/products/processed/220-thuongmai_11zon.webp" alt="" width="56" height="56" loading="lazy"></span>
+                <span class="sidebar-product-name" data-i18n="page_news.sidebarProduct3Name">Thiết bị an toàn điện thông minh 220V phiên bản thương mại</span>
+              </a>
+              <a class="sidebar-products-more" href="products.html" data-i18n="page_news.sidebarAllProducts">Xem tất cả sản phẩm</a>
+            </div>
+            <div class="sidebar-card sidebar-latest-card" id="newsLatestCard">
+              <h2 data-i18n="page_news.sidebarLatestHeading">Bài viết mới nhất</h2>
+              <ul class="latest-list" id="newsLatestList"></ul>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -141,9 +178,9 @@
   <script src="assets/js/menu.js" defer></script>
   <script>
 window._phPageMeta = {
-  vi: { title: "Tin Tức — An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng", description: "Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn mới, công nghệ giám sát điện thông minh. Cập nhật từ Phượng Hoàng." },
-  en: { title: "News — Electrical Safety, Technology & Solutions | Phuong Hoang", description: "News and knowledge about electrical safety: shock prevention, fire protection, new standards, smart electrical monitoring technology. Updates from Phuong Hoang." },
-  zh: { title: "新闻资讯 — 用电安全、技术与解决方案 | 凤凰科技", description: "用电安全新闻与知识：防触电、防火、新标准、智能电力监控技术。来自凤凰科技的最新资讯。" }
+  vi: { title: "Tin Tức: An Toàn Điện, Công Nghệ & Giải Pháp | Phượng Hoàng", description: "Tin tức và kiến thức về an toàn điện: chống giật, chống cháy, tiêu chuẩn mới, công nghệ giám sát điện thông minh. Cập nhật từ Phượng Hoàng." },
+  en: { title: "News: Electrical Safety, Technology & Solutions | Phuong Hoang", description: "News and knowledge about electrical safety: shock prevention, fire protection, new standards, smart electrical monitoring technology. Updates from Phuong Hoang." },
+  zh: { title: "新闻资讯：用电安全、技术与解决方案 | 凤凰科技", description: "用电安全新闻与知识：防触电、防火、新标准、智能电力监控技术。来自凤凰科技的最新资讯。" }
 };
 </script>
   <script src="assets/js/i18n-v2.js"></script>

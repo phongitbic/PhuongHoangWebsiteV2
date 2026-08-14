@@ -1,5 +1,5 @@
 /**
- * products.js — Mock data for product catalog
+ * products.js: Mock data for product catalog
  * Used by product listing pages and product detail page.
  * No backend required; all data is static sample data.
  */
@@ -602,6 +602,7 @@ var productData = {
     {
       id: 'arc-004',
       category: 'surge',
+      categories: ['surge', 'arc'],
       sku: 'MB-10KW',
       brand: 'Phượng Hoàng',
       name: {
@@ -786,168 +787,6 @@ var productData = {
         { step: 5, icon: '', title: { vi: 'An toàn tối đa', en: 'Maximum Safety', zh: '最大安全' }, desc: { vi: 'Nguy cơ sự cố điện được giảm thiểu, gia đình vận hành an toàn.', en: 'Electrical risks minimized, home operates safely.', zh: '电气风险最小化，家庭安全运行。' } }
       ]
     },
-    {
-      id: 'wdma-series',
-      category: 'arc',
-      categories: ['arc', 'domestic'],
-      sku: 'WDMA',
-      brand: 'Phượng Hoàng',
-      name: {
-        vi: 'Thiết bị an toàn điện thông minh dập hồ quang 220V',
-        en: '220V Smart Arc Suppression Safety Device',
-        zh: '220V智能灭弧安全电气设备'
-      },
-      shortDesc: {
-        vi: 'Thiết bị chống điện giật, dập hồ quang, chống rò, quá tải, quá áp, ngập nước. Kết nối 4G, giám sát từ xa.',
-        en: 'Electric shock protection, arc suppression, leakage, overload, overvoltage, water immersion protection. 4G connectivity, remote monitoring.',
-        zh: '触电保护、灭弧、漏电、过载、过压、浸水保护。4G连接，远程监控。'
-      },
-      description: {
-        vi: 'Thiết bị điện an toàn thông minh 220V dòng WDMA là giải pháp bảo vệ điện toàn diện thế hệ mới, tích hợp công nghệ dập hồ quang 220V tiên tiến. Với khả năng bảo vệ đa lớp, thiết bị giúp chống điện giật, ngắn mạch, quá tải, quá áp, thấp áp, rò điện, ngập nước và chống sét lan truyền. Kết nối 4G cho phép giám sát và điều khiển từ xa qua ứng dụng điện thoại thông minh, mang đến sự an tâm tuyệt đối cho người sử dụng.',
-        en: 'The WDMA series 220V smart electrical safety device is a new-generation comprehensive electrical protection solution, integrating advanced 220V arc suppression technology. With multi-layer protection, it prevents electric shock, short circuit, overload, overvoltage, undervoltage, leakage, water immersion and surge. 4G connectivity enables remote monitoring and control via smartphone app.',
-        zh: 'WDMA系列220V智能电气安全设备是新一代综合电气保护解决方案，集成了先进的220V灭弧技术。通过多层保护，防止触电、短路、过载、过压、欠压、漏电、浸水和浪涌。4G连接可通过智能手机应用进行远程监控和控制。'
-      },
-      mainImage: 'assets/images/products/processed/32_11zon.webp',
-      galleryImages: [
-        'assets/images/products/processed/45_11zon.webp',
-        'assets/images/products/processed/63_11zon.webp',
-        'assets/images/products/processed/100_11zon.webp'
-      ],
-      specsImage: 'assets/images/products/processed/32_11zon.webp',
-      specs: [
-        { label: { vi: 'Điện áp định mức', en: 'Rated Voltage', zh: '额定电压' }, value: '220V AC' },
-        { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50/60 Hz' },
-        { label: { vi: 'Dòng điện', en: 'Current', zh: '电流' }, value: '32A / 45A / 63A / 100A' },
-        { label: { vi: 'Tiêu chuẩn', en: 'Standard', zh: '标准' }, value: 'IEC 61008-1' },
-        { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
-      ],
-      price: 'Liên hệ báo giá',
-      status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
-      inStock: true,
-      // All features (shared across models)
-      allFeatures: [
-        { icon: '', title: { vi: 'Chống điện giật', en: 'Shock Protection', zh: '触电保护' }, desc: { vi: 'Bảo vệ chống điện giật ngoài ý muốn trong mọi tình huống.', en: 'Protection against accidental electric shock in all situations.', zh: '在所有情况下防止意外触电。' } },
-        { icon: '', title: { vi: 'Dập hồ quang', en: 'Arc Suppression', zh: '灭弧' }, desc: { vi: 'Giảm hồ quang khi ngắn mạch dây pha và dây trung tính.', en: 'Reduces arcing during phase and neutral short circuits.', zh: '减少相线和中性线短路时的电弧。' } },
-        { icon: '', title: { vi: 'Chống cháy nổ', en: 'Fire Prevention', zh: '防火' }, desc: { vi: 'Phòng chống cháy nổ điện toàn diện.', en: 'Comprehensive electrical fire prevention.', zh: '全面的电气火灾预防。' } },
-        { icon: '', title: { vi: 'Che chắn rò điện', en: 'Leakage Shielding', zh: '漏电屏蔽' }, desc: { vi: 'Chức năng che chắn rò điện thông minh.', en: 'Smart leakage current shielding function.', zh: '智能漏电屏蔽功能。' } },
-        { icon: '', title: { vi: 'Bảo vệ quá/thấp áp', en: 'Voltage Protection', zh: '电压保护' }, desc: { vi: 'Bảo vệ quá áp và thấp áp tự động.', en: 'Automatic overvoltage and undervoltage protection.', zh: '自动过压和欠压保护。' } },
-        { icon: '', title: { vi: 'Chống ngập nước', en: 'Water Immersion', zh: '浸水保护' }, desc: { vi: 'Bảo vệ an toàn khi ngập nước và ẩm ướt.', en: 'Safety protection during water immersion and humidity.', zh: '浸水和潮湿时的安全保护。' } },
-        { icon: '', title: { vi: 'Phát hiện dây cũ', en: 'Old Wire Detection', zh: '旧线检测' }, desc: { vi: 'Phát hiện và bảo vệ đường dây cũ hỏng.', en: 'Detects and protects aging/damaged wiring.', zh: '检测和保护老化/损坏的线路。' } },
-        { icon: '', title: { vi: 'Cảnh báo sự cố', en: 'Fault Alert', zh: '故障报警' }, desc: { vi: 'Hệ thống cảnh báo sự cố tức thời.', en: 'Instant fault alert system.', zh: '即时故障报警系统。' } },
-        { icon: '', title: { vi: 'Bảo vệ quá tải', en: 'Overload Protection', zh: '过载保护' }, desc: { vi: 'Bảo vệ quá tải chính xác cao.', en: 'High-precision overload protection.', zh: '高精度过载保护。' } },
-        { icon: '', title: { vi: 'Chống sét', en: 'Surge Protection', zh: '浪涌保护' }, desc: { vi: 'Che chắn và chống sét hiệu quả.', en: 'Effective surge and lightning protection.', zh: '有效的浪涌和雷电保护。' } },
-        { icon: '', title: { vi: 'Tự động đóng cắt', en: 'Auto Reclose', zh: '自动重合' }, desc: { vi: 'Chức năng đóng cầu dao tự động.', en: 'Automatic circuit breaker reclose function.', zh: '自动断路器重合功能。' } },
-        { icon: '', title: { vi: 'Giám sát từ xa', en: 'Remote Monitor', zh: '远程监控' }, desc: { vi: 'Giám sát và điều khiển từ xa qua điện thoại di động, kết nối 4G.', en: 'Remote monitoring and control via mobile phone, 4G connectivity.', zh: '通过手机远程监控和控制，4G连接。' } }
-      ],
-      // Available features per model (by index into allFeatures, 0-based)
-      modelFeatures: {
-        'wdma-32a': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-        'wdma-45a': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-        'wdma-63a': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-        'wdma-100a': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-      },
-      // Multi-model support
-      models: [
-        {
-          id: 'wdma-32a',
-          name: 'WDMA-32A',
-          current: '32A',
-          overloadRange: '1-32A',
-          desc: { vi: 'Phù hợp hộ gia đình, căn hộ nhỏ', en: 'Ideal for homes, small apartments', zh: '适用于家庭、小型公寓' },
-          image: 'assets/images/products/processed/32_11zon.webp',
-          specs: [
-            { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
-            { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-32A' },
-            { label: { vi: 'Kích thước', en: 'Dimensions', zh: '尺寸' }, value: 'Dài 13 × Rộng 9,9 × Cao 7,2 cm' },
-            { label: { vi: 'Điện áp đầu vào / đầu ra', en: 'Input / Output Voltage', zh: '输入/输出电压' }, value: '220V' },
-            { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Một pha' },
-            { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 32A' },
-            { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '0,45 kg' },
-            { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
-            { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
-            { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat nhựa' },
-            { label: { vi: 'Chế độ kết nối mạng', en: 'Network Connection', zh: '网络连接方式' }, value: '4G' }
-          ]
-        },
-        {
-          id: 'wdma-45a',
-          name: 'WDMA-45A',
-          current: '45A',
-          overloadRange: '1-45A',
-          desc: { vi: 'Phù hợp nhà lớn, biệt thự', en: 'Ideal for large homes, villas', zh: '适用于大房子、别墅' },
-          image: 'assets/images/products/processed/45_11zon.webp',
-          specs: [
-            { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
-            { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-45A' },
-            { label: { vi: 'Kích thước', en: 'Dimensions', zh: '尺寸' }, value: 'Dài 13 × Rộng 9,9 × Cao 7,2 cm' },
-            { label: { vi: 'Điện áp đầu vào / đầu ra', en: 'Input / Output Voltage', zh: '输入/输出电压' }, value: '220V' },
-            { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Một pha' },
-            { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 45A' },
-            { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '0,48 kg' },
-            { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
-            { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
-            { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat nhựa' },
-            { label: { vi: 'Chế độ kết nối mạng', en: 'Network Connection', zh: '网络连接方式' }, value: '4G' }
-          ]
-        },
-        {
-          id: 'wdma-63a',
-          name: 'WDMA-63A',
-          current: '63A',
-          overloadRange: '1-63A',
-          desc: { vi: 'Phù hợp văn phòng, cửa hàng, doanh nghiệp nhỏ', en: 'Ideal for offices, shops, small businesses', zh: '适用于办公室、商店、小型企业' },
-          image: 'assets/images/products/processed/63_11zon.webp',
-          specs: [
-            { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
-            { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-63A' },
-            { label: { vi: 'Kích thước', en: 'Dimensions', zh: '尺寸' }, value: 'Dài 13 × Rộng 9,9 × Cao 7,2 cm' },
-            { label: { vi: 'Điện áp đầu vào / đầu ra', en: 'Input / Output Voltage', zh: '输入/输出电压' }, value: '220V' },
-            { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Một pha' },
-            { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 63A' },
-            { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '0,52 kg' },
-            { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
-            { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
-            { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat nhựa' },
-            { label: { vi: 'Chế độ kết nối mạng', en: 'Network Connection', zh: '网络连接方式' }, value: '4G' }
-          ]
-        },
-        {
-          id: 'wdma-100a',
-          name: 'WDMA-100A',
-          current: '100A',
-          overloadRange: '1-100A',
-          desc: { vi: 'Phù hợp nhà xưởng, doanh nghiệp, tòa nhà lớn', en: 'Ideal for factories, businesses, large buildings', zh: '适用于工厂、企业、大型建筑' },
-          image: 'assets/images/products/processed/100_11zon.webp',
-          specs: [
-            { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V loại dập hồ quang' },
-            { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'WDMA-100A' },
-            { label: { vi: 'Kích thước', en: 'Dimensions', zh: '尺寸' }, value: 'Dài 15 × Rộng 10,5 × Cao 8,5 cm' },
-            { label: { vi: 'Điện áp đầu vào / đầu ra', en: 'Input / Output Voltage', zh: '输入/输出电压' }, value: '220V' },
-            { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Một pha' },
-            { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 100A' },
-            { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '0,68 kg' },
-            { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
-            { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
-            { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat nhựa' },
-            { label: { vi: 'Chế độ kết nối mạng', en: 'Network Connection', zh: '网络连接方式' }, value: '4G' }
-          ]
-        }
-      ],
-      applications: [
-        { icon: '', title: { vi: 'Gia đình / Nhà ở', en: 'Home / Residence', zh: '家庭/住宅' }, desc: { vi: 'Bảo vệ toàn diện cho hệ thống điện gia đình.', en: 'Comprehensive protection for home electrical systems.', zh: '为家庭电气系统提供全面保护。' } },
-        { icon: '', title: { vi: 'Cửa hàng / Tạp hóa', en: 'Shop / Grocery', zh: '商店/杂货店' }, desc: { vi: 'An toàn điện cho các cửa hàng bán lẻ.', en: 'Electrical safety for retail stores.', zh: '为零售店提供电气安全保护。' } },
-        { icon: '', title: { vi: 'Quán ăn / Nhà hàng', en: 'Restaurant / Eatery', zh: '餐厅/小吃店' }, desc: { vi: 'Bảo vệ thiết bị điện trong môi trường ẩm ướt.', en: 'Protect electrical equipment in humid environments.', zh: '在潮湿环境中保护电气设备。' } },
-        { icon: '', title: { vi: 'Văn phòng / Doanh nghiệp', en: 'Office / Business', zh: '办公室/企业' }, desc: { vi: 'Giải pháp an toàn cho không gian làm việc.', en: 'Safety solutions for workspaces.', zh: '为工作空间提供安全解决方案。' } },
-        { icon: '', title: { vi: 'Trung tâm thương mại', en: 'Shopping Center', zh: '购物中心' }, desc: { vi: 'Bảo vệ tập trung cho khu vực công cộng.', en: 'Centralized protection for public areas.', zh: '为公共区域提供集中保护。' } },
-        { icon: '', title: { vi: 'Trường học', en: 'School / Education', zh: '学校/教育机构' }, desc: { vi: 'An toàn điện cho môi trường giáo dục.', en: 'Electrical safety for educational environments.', zh: '为教育环境提供电气安全保护。' } },
-        { icon: '', title: { vi: 'Khu vực công cộng', en: 'Public Area', zh: '公共区域' }, desc: { vi: 'Bảo vệ hệ thống điện khu vực đông người.', en: 'Protect electrical systems in crowded areas.', zh: '保护拥挤区域的电气系统。' } },
-        { icon: '', title: { vi: 'Cơ sở y tế', en: 'Medical Facility', zh: '医疗机构' }, desc: { vi: 'An toàn tuyệt đối cho thiết bị y tế nhạy cảm.', en: 'Absolute safety for sensitive medical equipment.', zh: '为敏感医疗设备提供绝对安全保护。' } }
-      ]
-    },
   ],
 
   // Helper: get products by category (supports both single category and categories array)
@@ -965,12 +804,48 @@ var productData = {
     return null;
   },
 
-  // Helper: get related products (same category, excluding current)
+  // Helper: resolve a URL id that may be a PRODUCT id or a MODEL id.
+  // Returns { product, modelIndex } : modelIndex is -1 for direct hits,
+  // or the matched model's index when the id is a model id (e.g. khkt-125
+  // inside ind-001). Returns null when nothing matches.
+  getByIdOrModel: function (productId) {
+    const direct = this.getById(productId);
+    if (direct) return { product: direct, modelIndex: -1 };
+    if (!productId) return null;
+    for (let i = 0; i < this.products.length; i++) {
+      const p = this.products[i];
+      if (p.models && p.models.length) {
+        for (let m = 0; m < p.models.length; m++) {
+          if (p.models[m].id === productId) return { product: p, modelIndex: m };
+        }
+      }
+    }
+    return null;
+  },
+
+  // Helper: get related products (union over all categories the product
+  // belongs to, excluding current). Honors both `category` (single) and
+  // `categories` (array) fields.
   getRelated: function (productId, limit) {
     limit = limit || 4;
     const product = this.getById(productId);
     if (!product) return [];
-    return this.getByCategory(product.category).filter(function (p) { return p.id !== productId; }).slice(0, limit);
+    const cats = (product.categories && product.categories.length)
+      ? product.categories
+      : [product.category];
+    const seen = {};
+    const related = [];
+    for (let c = 0; c < cats.length && related.length < limit; c++) {
+      const inCat = this.getByCategory(cats[c]);
+      for (let i = 0; i < inCat.length && related.length < limit; i++) {
+        const p = inCat[i];
+        if (p.id !== productId && !seen[p.id]) {
+          seen[p.id] = true;
+          related.push(p);
+        }
+      }
+    }
+    return related;
   },
 
   // Helper: get category info
@@ -1010,7 +885,7 @@ var productData = {
       const desc = this.t(p.shortDesc);
       const imgSrc = p.mainImage || this.getPlaceholder(name);
       html += '<a class="ph-product-card" href="product-detail.html?id=' + p.id + '">';
-      html += '<div class="ph-card-img-wrap"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy"></div>';
+      html += '<div class="ph-card-img-wrap"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy" width="600" height="600"></div>';
       html += '<div class="ph-card-body">';
       html += '<span class="ph-card-badge ' + statusClass + '">' + statusText + '</span>';
       html += '<h3>' + name + '</h3>';
@@ -1040,7 +915,7 @@ var productData = {
       const desc = this.t(p.shortDesc);
       const imgSrc = p.mainImage || this.getPlaceholder(name);
       html += '<a class="related-card" href="product-detail.html?id=' + p.id + '">';
-      html += '<div class="related-card-img"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy"></div>';
+      html += '<div class="related-card-img"><img src="' + imgSrc + '" alt="' + name + '" loading="lazy" width="600" height="600"></div>';
       html += '<div class="related-card-body">';
       html += '<h3>' + name + '</h3>';
       html += '<p>' + desc + '</p>';

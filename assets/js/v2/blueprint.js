@@ -1,5 +1,5 @@
 /**
- * Phượng Hoàng V2 — Blueprint JavaScript
+ * Phượng Hoàng V2: Blueprint JavaScript
  * IntersectionObserver-driven. GPU-safe only.
  * All JS contracts preserved.
  */

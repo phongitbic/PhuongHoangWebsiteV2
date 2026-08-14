@@ -3,6 +3,10 @@
    Uses --ph-* tokens from design-system.css
    ═══════════════════════════════════════════════════════ */
 
+/* First section: <section class="bp-internal-hero bp-reveal">, covered by
+   blueprint.css main > section:first-child.bp-internal-hero (--ph-header-h).
+   No page-level rule needed here. */
+
 /* Hero */
 .ld-hero { position: relative; z-index: 1; padding: clamp(4rem, 7vw, 5.5rem) 1.5rem clamp(1.25rem, 2.5vw, 2rem); text-align: center; overflow: hidden; }
 .ld-hero::before { content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(29,139,44,.08) 0%, transparent 70%); pointer-events: none; }
@@ -35,7 +39,7 @@
 .ld-feature-card p { color: var(--ph-text-secondary); font-size: .875rem; line-height: 1.6; }
 
 /* Specs */
-.ld-specs-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); padding: clamp(1.5rem,3vw,2.5rem); }
+.ld-specs-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); padding: clamp(1.5rem,3vw,2.5rem); max-width: 900px; margin-left: auto; margin-right: auto; }
 .ld-specs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; margin-top: 1.25rem; }
 .ld-spec-row { display: flex; justify-content: space-between; align-items: center; padding: .875rem .75rem; border-bottom: 1px solid var(--ph-border-default); gap: 1rem; }
 .ld-spec-row:nth-last-child(-n+2) { border-bottom: none; }
@@ -50,12 +54,12 @@
 .ld-app-card p { color: var(--ph-text-secondary); font-size: .8125rem; line-height: 1.5; }
 
 /* CTA */
-.ld-cta { background: linear-gradient(135deg, var(--ph-accent-subtle) 0%, transparent 100%); border: 1px solid var(--ph-accent); border-radius: var(--ph-radius-lg); padding: clamp(2rem,4vw,3rem); text-align: center; }
+.ld-cta { background: linear-gradient(135deg, var(--ph-accent-subtle) 0%, transparent 100%); border: 1px solid var(--ph-accent); border-radius: var(--ph-radius-lg); padding: clamp(2rem,4vw,3rem); text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
 .ld-cta h2 { font: var(--ph-text-h2); margin-bottom: .75rem; }
 .ld-cta p { color: var(--ph-text-secondary); margin-bottom: 1.5rem; font-size: .9375rem; }
 .ld-cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.ld-cta-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .875rem 2rem; border-radius: 99px; background: var(--ph-accent); color: #fff; font-weight: 700; font-size: .9375rem; text-decoration: none; transition: background-color .25s var(--ph-ease-out), filter .25s var(--ph-ease-out); }
-.ld-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,160,220,.3); }
+.ld-cta-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .875rem 2rem; border-radius: 99px; background: var(--ph-accent); color: var(--ph-text-on-accent); font-weight: 700; font-size: .9375rem; text-decoration: none; transition: background-color .25s var(--ph-ease-out), filter .25s var(--ph-ease-out); }
+.ld-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--ph-accent-glow); }
 .ld-cta-btn.outline { background: transparent; border: 1px solid var(--ph-accent); color: var(--ph-accent); }
 .ld-cta-btn.outline:hover { background: var(--ph-accent-subtle); }
 .ld-cta-btn:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 3px; }
@@ -69,11 +73,11 @@
 .ld-faq-filters { display: flex; flex-wrap: wrap; gap: .375rem; justify-content: center; margin-bottom: 1.5rem; }
 .ld-faq-filter-btn { padding: .4rem .9rem; border: 1px solid var(--ph-border-default); border-radius: 99px; background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .8125rem; font-weight: 500; cursor: pointer; transition: background-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); font-family: inherit; white-space: nowrap; }
 .ld-faq-filter-btn:hover { border-color: var(--ph-accent); color: var(--ph-accent); }
-.ld-faq-filter-btn.active { background: var(--ph-accent); color: #fff; border-color: var(--ph-accent); }
+.ld-faq-filter-btn.active { background: var(--ph-accent); color: var(--ph-text-on-accent); border-color: var(--ph-accent); }
 .ld-faq-search { margin-bottom: 1rem; text-align: center; }
 .ld-faq-search input { width: 100%; max-width: 480px; padding: .7rem 1rem; border-radius: 99px; border: 1px solid var(--ph-border-default); background: var(--ph-surface-primary); color: var(--ph-text-primary); font-size: .875rem; font-family: inherit; outline: none; transition: border-color .2s; }
 .ld-faq-search input:focus { border-color: var(--ph-accent); }
-.ld-faq-list { display: grid; gap: .75rem; }
+.ld-faq-list { display: grid; gap: .75rem; max-width: 800px; margin: 0 auto; }
 .ld-faq-item { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); overflow: hidden; transition: border-color .2s; }
 .ld-faq-item[open] { border-color: var(--ph-accent); }
 .ld-faq-item summary { padding: 1rem 1.25rem; font-weight: 600; font-size: .9375rem; cursor: pointer; color: var(--ph-text-primary); display: flex; justify-content: space-between; align-items: center; }
@@ -84,7 +88,7 @@
 .ld-faq-cta { text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--ph-border-default); }
 .ld-faq-cta p { color: var(--ph-text-secondary); font-size: .875rem; margin-bottom: 1rem; }
 .ld-faq-cta a { display: inline-flex; align-items: center; gap: .375rem; padding: .7rem 1.5rem; border-radius: 99px; font-size: .875rem; font-weight: 600; text-decoration: none; margin: 0 .375rem; transition: filter .2s var(--ph-ease-out); }
-.ld-faq-cta .cta-primary { background: var(--ph-accent); color: #fff; }
+.ld-faq-cta .cta-primary { background: var(--ph-accent); color: var(--ph-text-on-accent); }
 .ld-faq-cta .cta-primary:hover { opacity: .9; }
 .ld-faq-cta .cta-outline { border: 1px solid var(--ph-accent); color: var(--ph-accent); }
 .ld-faq-cta .cta-outline:hover { background: var(--ph-accent-subtle); }

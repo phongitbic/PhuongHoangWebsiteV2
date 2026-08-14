@@ -1,7 +1,44 @@
 /* ═══════════════════════════════════════════════════════
-   About Us Page Styles — Phượng Hoàng V2
+   About Us Page Styles: Phượng Hoàng V2
    Extracted from about-us.html inline <style> block
    ═══════════════════════════════════════════════════════ */
+
+/* ── Hero Split Layout ── */
+/* First section: clears the fixed header (top bar is in flow, NOT double-counted) */
+main > section:first-child.bp-section.ph-about-hero {
+  padding-top: calc(var(--ph-header-h) + clamp(2rem, 3.5vw, 3rem));
+}
+
+.ph-about-hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.ph-about-hero-text {
+  max-width: 580px;
+}
+.ph-about-hero-text .bp-section-title {
+  text-align: left;
+  margin-bottom: .75rem;
+}
+/* Open letter: tighter header gap so H1 flows into the letter subject */
+.ph-about-hero-text .bp-section-header {
+  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: left;
+}
+.ph-about-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ph-about-hero-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--ph-radius-lg);
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
 
 /* ── About Page Cards ── */
 .ph-about-card {
@@ -45,92 +82,144 @@
 }
 
 /* ── Hero Visual ── */
-.ph-about-hero-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 280px;
-  margin: 2rem auto 0;
+/* (inherited by split hero) */
+
+/* ── Open Letter Body ── */
+.ph-about-letter-title {
+  font: var(--ph-text-h3);
+  color: var(--ph-text-primary);
+  margin: 0 0 clamp(1rem, 2vw, 1.35rem);
 }
-.ph-about-hero-visual img {
+.ph-about-letter-body p {
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.75;
+  margin: 0 0 .85rem;
+}
+.ph-about-letter-body .ph-about-letter-salutation {
+  margin-bottom: 1rem;
+  color: var(--ph-text-primary);
+  font-weight: 600;
+}
+.ph-about-letter-body .ph-about-letter-lead {
+  color: var(--ph-text-primary);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.ph-about-letter-body .ph-about-letter-note {
+  margin-top: 1.1rem;
+  padding-left: .875rem;
+  border-left: 2px solid var(--ph-border-default);
+  color: var(--ph-text-muted);
+  font-size: .8125rem;
+  line-height: 1.65;
+}
+.ph-about-letter-sign {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ph-border-subtle);
+}
+.ph-about-letter-sign p {
+  margin: 0;
+  color: var(--ph-text-muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+.ph-about-letter-sign .ph-about-letter-name {
+  margin-top: .35rem;
+  color: var(--ph-text-primary);
+  font-weight: 600;
+}
+
+/* ── Certification Showcase ── */
+.ph-about-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.ph-about-cert-item {
+  background: var(--ph-surface-primary);
+  border: 1px solid var(--ph-border-default);
+  border-radius: var(--ph-radius-md);
+  padding: 1.25rem;
+  text-align: center;
+  transition: border-color .3s var(--ph-ease-out), transform .3s var(--ph-ease-out);
+}
+.ph-about-cert-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--ph-accent);
+  box-shadow: 0 8px 28px rgba(11,25,41,.08);
+}
+.ph-about-cert-item img {
   width: 100%;
   height: auto;
+  max-height: 180px;
   object-fit: contain;
-}
-
-/* ── Hero Description ── */
-.ph-about-hero-desc {
-  font-size: 1.0625rem;
-  color: var(--ph-text-secondary);
-  line-height: 1.7;
-  margin: 0 0 .25rem;
-  max-width: 56ch;
-}
-
-/* ── CTA Section (page-scoped, replaces banned bp-offer gradient) ── */
-.ph-about-cta {
-  padding: clamp(2.5rem, 5vw, 4rem) 0;
-  background: var(--ph-bg-primary);
-  position: relative;
-  overflow: hidden;
-}
-.ph-about-cta::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 35% 45%, rgba(22,138,58,.025), transparent 55%),
-    radial-gradient(ellipse at 65% 35%, rgba(22,138,58,.012), transparent 50%);
-  pointer-events: none;
-}
-.ph-about-cta-wrap {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-.ph-about-cta-panel h2 {
-  font: var(--ph-text-h2);
-  color: var(--ph-text-primary);
   margin-bottom: .75rem;
 }
-.ph-about-cta-panel > p {
-  font-size: .9375rem;
+.ph-about-cert-item h3 {
+  font: var(--ph-text-h5);
+  color: var(--ph-text-primary);
+  margin-bottom: .25rem;
+  font-size: .875rem;
+}
+.ph-about-cert-item p {
+  font-size: .75rem;
   color: var(--ph-text-secondary);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.ph-about-cta-actions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.ph-about-cta-actions .bp-btn-magnetic {
-  background: var(--ph-accent);
-  color: var(--ph-text-on-accent);
-  border: none;
-  padding: .8rem 2rem;
-  font-size: .9375rem;
-  font-weight: 600;
-  border-radius: var(--ph-radius-md);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  font-family: var(--ph-font-body);
-  box-shadow: 0 2px 14px rgba(22,138,58,.14);
-  transition: filter var(--ph-duration-fast) var(--ph-ease-out),
-              transform var(--ph-duration-fast) var(--ph-ease-out);
-}
-.ph-about-cta-actions .bp-btn-magnetic:hover {
-  filter: brightness(1.08);
-  transform: translateY(-1px);
+  line-height: 1.5;
 }
 
-/* ── Why Choose Us — Editorial Numbered Rows ── */
+/* ── Product Showcase Strip ── */
+.ph-about-products-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.ph-about-prod-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--ph-surface-primary);
+  border: 1px solid var(--ph-border-default);
+  border-radius: var(--ph-radius-md);
+  padding: 1.25rem;
+  transition: border-color .3s var(--ph-ease-out), transform .3s var(--ph-ease-out);
+  text-decoration: none;
+}
+.ph-about-prod-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--ph-accent);
+  box-shadow: 0 8px 28px rgba(11,25,41,.08);
+}
+.ph-about-prod-img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ph-accent-subtle);
+}
+.ph-about-prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ph-about-prod-info h3 {
+  font: var(--ph-text-h5);
+  color: var(--ph-text-primary);
+  margin-bottom: .25rem;
+  font-size: .875rem;
+}
+.ph-about-prod-info p {
+  font-size: .75rem;
+  color: var(--ph-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Why Choose Us: Editorial Numbered Rows ── */
 .ph-about-why-list {
   /* container-wide handles external alignment; no inner max-width constraint */
 }
@@ -165,16 +254,51 @@
   max-width: 520px;
 }
 
-/* ── CTA subtext ── */
-.ph-cta-sub {
-  margin-top: 1rem;
-  color: var(--ph-text-muted);
-  font-size: .875rem;
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .ph-about-cert-grid { grid-template-columns: repeat(2, 1fr); }
 }
-.ph-cta-sub a { color: var(--ph-accent); }
+@media (max-width: 768px) {
+  .ph-about-hero-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .ph-about-hero-text {
+    max-width: 100%;
+  }
+  .ph-about-hero-visual {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .ph-about-hero-visual img {
+    aspect-ratio: 16/10;
+  }
+  .ph-about-products-strip {
+    grid-template-columns: 1fr;
+  }
+  .ph-about-why-row {
+    grid-template-columns: 48px 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 480px) {
+  .ph-about-cert-grid { grid-template-columns: 1fr; }
+  .ph-about-why-row {
+    grid-template-columns: 1fr;
+  }
+  .ph-about-why-num {
+    text-align: left;
+    font-size: .875rem;
+  }
+}
 
 @media (prefers-reduced-motion:reduce) {
-  .ph-about-card { transition:none; }
+  .ph-about-card,
+  .ph-about-cert-item,
+  .ph-about-prod-item { transition:none; }
   .ph-about-card:hover,
-  .ph-about-card:active { transform:none; }
+  .ph-about-card:active,
+  .ph-about-cert-item:hover,
+  .ph-about-prod-item:hover { transform:none; }
 }

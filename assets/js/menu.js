@@ -1,5 +1,5 @@
 /**
- * menu.js — Shared mobile menu functions
+ * menu.js: Shared mobile menu functions
  * Used by all pages that have the mobile hamburger menu.
  * Previously duplicated inline in 19 HTML files.
  */

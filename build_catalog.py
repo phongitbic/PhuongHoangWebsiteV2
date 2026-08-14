@@ -172,7 +172,7 @@ story.extend(make_section_title("1. Giới thiệu công ty"))
 story.append(Paragraph(
     "Công ty TNHH Khoa Học Kỹ Thuật <b>Phượng Hoàng</b> được thành lập năm 2018, "
     "chuyên nghiên cứu, phát triển và cung cấp các giải pháp <b>thiết bị điện an toàn thông minh</b> "
-    "hàng đầu tại Việt Nam. Chúng tôi mang đến giải pháp bảo vệ toàn diện cho mọi công trình — "
+    "hàng đầu tại Việt Nam. Chúng tôi mang đến giải pháp bảo vệ toàn diện cho mọi công trình, "
     "từ hộ gia đình, chung cư, văn phòng đến nhà máy công nghiệp quy mô lớn.", S['body']))
 story.append(Paragraph(
     "Với hệ thống quản lý chất lượng được chứng nhận <b>ISO 9001:2015</b>, mỗi thiết bị của Phượng Hoàng "
@@ -266,10 +266,10 @@ story.append(Paragraph(
 story.append(Spacer(1, 12))
 
 for name, desc in [
-    ("ISO 9001:2015", "Hệ thống quản lý chất lượng — áp dụng cho toàn bộ quy trình thiết kế, sản xuất và phân phối."),
-    ("TCVN", "Tiêu chuẩn Quốc gia Việt Nam — đáp ứng các yêu cầu kỹ thuật và an toàn theo quy định Việt Nam."),
-    ("CE", "Dấu CE — tuân thủ các yêu cầu về sức khỏe, an toàn và bảo vệ môi trường của Liên minh Châu Âu."),
-    ("IEC", "Tiêu chuẩn Ủy ban Kỹ thuật Điện Quốc tế — đáp ứng tiêu chuẩn quốc tế về an toàn và hiệu suất."),
+    ("ISO 9001:2015", "Hệ thống quản lý chất lượng, áp dụng cho toàn bộ quy trình thiết kế, sản xuất và phân phối."),
+    ("TCVN", "Tiêu chuẩn Quốc gia Việt Nam, đáp ứng các yêu cầu kỹ thuật và an toàn theo quy định Việt Nam."),
+    ("CE", "Dấu CE, tuân thủ các yêu cầu về sức khỏe, an toàn và bảo vệ môi trường của Liên minh Châu Âu."),
+    ("IEC", "Tiêu chuẩn Ủy ban Kỹ thuật Điện Quốc tế, đáp ứng tiêu chuẩn quốc tế về an toàn và hiệu suất."),
 ]:
     story.append(Paragraph(f"<b>{name}</b>", S['h3']))
     story.append(Paragraph(desc, S['body']))
@@ -289,14 +289,14 @@ story.append(Paragraph(
 story.append(Spacer(1, 12))
 
 for i, (name, loc, desc) in enumerate([
-    ("Nhà máy sản xuất linh kiện điện tử", "Bắc Ninh — 2025", "Hệ thống chống giật và giám sát điện thông minh cho toàn bộ phân xưởng. Bảo vệ 200+ công nhân và thiết bị."),
-    ("Chung cư cao cấp", "Hà Nội — 2025", "Thiết bị chống giật cho 300 căn hộ. Tích hợp hệ thống giám sát và cảnh báo sớm qua ứng dụng di động."),
-    ("Trường học liên cấp", "Bắc Ninh — 2024", "Thiết bị chống giật cách ly cho toàn bộ phòng học và khu thí nghiệm. Bảo vệ 1,000+ học sinh và giáo viên."),
-    ("Bệnh viện đa khoa", "Hải Phòng — 2024", "Giải pháp chống sốc cách ly tại khu điều trị tích cực và phòng mổ. An toàn tuyệt đối cho bệnh nhân."),
-    ("Nhà máy chế biến thực phẩm", "Đồng Nai — 2024", "Hệ thống chống cháy điện và dập hồ quang cho toàn bộ khu vực sản xuất và kho lạnh."),
-    ("Trung tâm thương mại", "TP. HCM — 2024", "Giải pháp an toàn điện tổng thể cho trung tâm thương mại 5 tầng. Giám sát tập trung và cảnh báo thời gian thực."),
+    ("Nhà máy sản xuất linh kiện điện tử", "Bắc Ninh, 2025", "Hệ thống chống giật và giám sát điện thông minh cho toàn bộ phân xưởng. Bảo vệ 200+ công nhân và thiết bị."),
+    ("Chung cư cao cấp", "Hà Nội, 2025", "Thiết bị chống giật cho 300 căn hộ. Tích hợp hệ thống giám sát và cảnh báo sớm qua ứng dụng di động."),
+    ("Trường học liên cấp", "Bắc Ninh, 2024", "Thiết bị chống giật cách ly cho toàn bộ phòng học và khu thí nghiệm. Bảo vệ 1,000+ học sinh và giáo viên."),
+    ("Bệnh viện đa khoa", "Hải Phòng, 2024", "Giải pháp chống sốc cách ly tại khu điều trị tích cực và phòng mổ. An toàn tuyệt đối cho bệnh nhân."),
+    ("Nhà máy chế biến thực phẩm", "Đồng Nai, 2024", "Hệ thống chống cháy điện và dập hồ quang cho toàn bộ khu vực sản xuất và kho lạnh."),
+    ("Trung tâm thương mại", "TP. HCM, 2024", "Giải pháp an toàn điện tổng thể cho trung tâm thương mại 5 tầng. Giám sát tập trung và cảnh báo thời gian thực."),
 ], 1):
-    story.append(Paragraph(f"<b>{i}. {name}</b> — <i>{loc}</i>", S['h3']))
+    story.append(Paragraph(f"<b>{i}. {name}</b>, <i>{loc}</i>", S['h3']))
     story.append(Paragraph(desc, S['body']))
     story.append(Spacer(1, 4))
 story.append(PageBreak())
@@ -319,10 +319,10 @@ story.append(Paragraph(
     "Phượng Hoàng luôn chào đón các đối tác mới. Quy trình trở thành đối tác:", S['body']))
 story.append(Spacer(1, 8))
 for s in [
-    "<b>Bước 1 — Đăng ký:</b> Gửi thông tin qua hotline 1800 888 638 hoặc email",
-    "<b>Bước 2 — Thẩm định:</b> Đánh giá năng lực và khu vực phân phối",
-    "<b>Bước 3 — Ký kết:</b> Ký hợp đồng, nhận chính sách hỗ trợ và đào tạo",
-    "<b>Bước 4 — Kinh doanh:</b> Nhận hàng và hưởng chiết khấu theo doanh số",
+    "<b>Bước 1, Đăng ký:</b> Gửi thông tin qua hotline 1800 888 638 hoặc email",
+    "<b>Bước 2, Thẩm định:</b> Đánh giá năng lực và khu vực phân phối",
+    "<b>Bước 3, Ký kết:</b> Ký hợp đồng, nhận chính sách hỗ trợ và đào tạo",
+    "<b>Bước 4, Kinh doanh:</b> Nhận hàng và hưởng chiết khấu theo doanh số",
 ]:
     story.append(Paragraph(s, S['body']))
 story.append(Spacer(1, 8))
@@ -349,11 +349,11 @@ contact_items = [
     Paragraph("Email: info@khktphuonghoang.com", cb),
     Paragraph("Website: khktphuonghoang.com", cb),
     Spacer(1, 8),
-    Paragraph("Giờ làm việc: Thứ 2 – Thứ 7, 8:00 – 17:30", cb),
+    Paragraph("Giờ làm việc: Thứ 2 đến Thứ 7, 8:00 đến 17:30", cb),
     Spacer(1, 20),
     Paragraph("<i>Liên hệ ngay để được tư vấn giải pháp và nhận báo giá chi tiết.</i>", cb),
     Spacer(1, 10),
-    Paragraph("<b>Phượng Hoàng — An toàn cho mọi công trình.</b>", cb),
+    Paragraph("<b>Phượng Hoàng, An toàn cho mọi công trình.</b>", cb),
 ]
 
 ct2 = Table([[dark_section(contact_items)]], colWidths=[A4[0]])

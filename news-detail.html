@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Chi Tiết Bài Viết — Phượng Hoàng | Tin Tức An Toàn Điện</title>
+  <title>Chi Tiết Bài Viết | Phượng Hoàng | Tin Tức An Toàn Điện</title>
   <meta name="description" content="Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh, giải pháp bảo vệ điện và công nghệ mới nhất.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://khktphuonghoang.com/news-detail.html">
@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="x-default" href="https://khktphuonghoang.com/news-detail.html">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://khktphuonghoang.com/news-detail.html">
-  <meta property="og:title" content="Chi Tiết Bài Viết — Phượng Hoàng | Tin Tức An Toàn Điện">
+  <meta property="og:title" content="Chi Tiết Bài Viết | Phượng Hoàng | Tin Tức An Toàn Điện">
   <meta property="og:description" content="Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh, giải pháp bảo vệ điện và công nghệ mới nhất.">
   <meta property="og:image" content="https://khktphuonghoang.com/assets/logo/Logo.png">
   <meta property="og:image:width" content="390">
@@ -21,7 +21,7 @@
   <meta property="og:locale" content="vi_VN">
   <meta property="og:site_name" content="Phượng Hoàng">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Chi Tiết Bài Viết — Phượng Hoàng">
+  <meta name="twitter:title" content="Chi Tiết Bài Viết | Phượng Hoàng">
   <meta name="twitter:description" content="Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh.">
   <meta name="twitter:image" content="https://khktphuonghoang.com/assets/logo/Logo.png">
   <script type="application/ld+json">
@@ -47,7 +47,7 @@
         "@type": "WebSite",
         "@id": "https://khktphuonghoang.com/#website",
         "url": "https://khktphuonghoang.com",
-        "name": "Phượng Hoàng — Thiết bị điện an toàn thông minh",
+        "name": "Phượng Hoàng: Thiết bị điện an toàn thông minh",
         "inLanguage": "vi"
       },
       {
@@ -80,7 +80,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/v2/fonts.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/v2/design-system.css">
   <link rel="stylesheet" href="assets/css/v2/components/navbar.css">
   <link rel="stylesheet" href="assets/css/v2/components/buttons.css">
@@ -95,14 +96,14 @@
   <div id="shared-header"></div>
   <main id="main-content" tabindex="-1">
 
-    <div class="article-wrap">
+    <article class="article-wrap">
       <nav class="detail-breadcrumb" aria-label="breadcrumb">
         <a href="phong.html" data-i18n="page_newsDetail.breadcrumbHome">Trang chủ</a><span class="sep">/</span>
         <a href="news.html" class="back-news-link" data-i18n="page_newsDetail.breadcrumbNews">Tin tức</a><span class="sep">/</span>
         <span id="detailBreadcrumb" class="ph-breadcrumb-current" data-i18n="page_newsDetail.breadcrumbArticle">Bài viết</span>
       </nav>
 
-      <div id="articleContainer">
+      <header class="article-header" id="articleContainer">
         <div class="article-cover"><img src="" alt="Ảnh bài viết" id="detailImage" fetchpriority="high" width="800" height="450"></div>
         <div class="article-meta">
           <span class="article-cat" id="detailCategory">Danh mục</span>
@@ -111,18 +112,18 @@
         </div>
         <h1 class="article-title" id="detailTitle">Bài viết</h1>
         <div class="article-excerpt" id="detailExcerpt"></div>
-      </div>
+      </header>
 
       <div class="detail-layout">
-        <div class="article-content" id="detailContent"></div>
+        <section class="article-content" id="detailContent" data-i18n-aria="page_newsDetail.articleContent" aria-label="Nội dung bài viết"></section>
 
         <aside class="detail-sidebar">
           <div class="sidebar-card" id="tocCard">
-            <h2 data-i18n="page_newsDetail.tocHeading">Mục lục</h2>
+            <h4 data-i18n="page_newsDetail.tocHeading">Mục lục</h4>
             <ul class="toc-list" id="tocList"></ul>
           </div>
           <div class="sidebar-product-card">
-            <h2 data-i18n="page_newsDetail.sidebarProductHeading">Danh mục sản phẩm</h2>
+            <h4 data-i18n="page_newsDetail.sidebarProductHeading">Danh mục sản phẩm</h4>
             <p class="sidebar-product-subtitle" data-i18n="page_newsDetail.sidebarProductSub">4 danh mục chính, đáp ứng mọi nhu cầu bảo vệ an toàn điện.</p>
             <a class="sidebar-product-link" href="products.html?category=industrial" data-i18n="page_newsDetail.sidebarIndustrial">Công nghiệp</a>
             <a class="sidebar-product-link" href="products.html?category=domestic" data-i18n="page_newsDetail.sidebarDomestic">Dân dụng</a>
@@ -133,11 +134,11 @@
         </aside>
       </div>
 
-      <div class="related-articles-section" id="relatedArticles">
-        <h2 data-i18n="page_newsDetail.relatedHeading">Bài viết liên quan</h2>
+      <section class="related-articles-section" id="relatedArticles" aria-labelledby="related-articles-heading">
+        <h2 id="related-articles-heading" data-i18n="page_newsDetail.relatedHeading">Bài viết liên quan</h2>
         <div class="related-grid" id="relatedNewsGrid"></div>
-      </div>
-    </div>
+      </section>
+    </article>
 
   </main>
   <div id="shared-footer"></div>
@@ -147,9 +148,9 @@
   <script src="assets/js/menu.js" defer></script>
   <script>
 window._phPageMeta = {
-  vi: { title: "Chi Tiết Bài Viết — Phượng Hoàng | Tin Tức An Toàn Điện", description: "Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh, giải pháp bảo vệ điện và công nghệ mới nhất." },
-  en: { title: "Article — Phuong Hoang | Electrical Safety News", description: "Read articles from Phuong Hoang about smart electrical safety devices, protection solutions, and the latest technology." },
-  zh: { title: "文章详情 — 凤凰科技 | 用电安全资讯", description: "阅读凤凰科技关于智能用电安全设备、保护解决方案和最新技术的文章。" }
+  vi: { title: "Chi Tiết Bài Viết: Phượng Hoàng | Tin Tức An Toàn Điện", description: "Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh, giải pháp bảo vệ điện và công nghệ mới nhất." },
+  en: { title: "Article: Phuong Hoang | Electrical Safety News", description: "Read articles from Phuong Hoang about smart electrical safety devices, protection solutions, and the latest technology." },
+  zh: { title: "文章详情：凤凰科技 | 用电安全资讯", description: "阅读凤凰科技关于智能用电安全设备、保护解决方案和最新技术的文章。" }
 };
 </script>
   <script src="assets/js/i18n-v2.js"></script>
@@ -276,7 +277,7 @@ window._phPageMeta = {
       var pageUrl = siteUrl + '/news-detail.html?id=' + id;
       var logoUrl = siteUrl + '/assets/logo/Logo.png';
 
-      var seoTitle = articleTitle + ' — Phượng Hoàng | Tin Tức An Toàn Điện';
+      var seoTitle = articleTitle + ': Phượng Hoàng | Tin Tức An Toàn Điện';
       document.title = seoTitle;
 
       var shortDesc = (articleExcerpt || '').replace(/<[^>]*>/g, '').substring(0, 155).trim();

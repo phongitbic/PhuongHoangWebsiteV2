@@ -1,30 +1,454 @@
 /* ═══════════════════════════════════════════════════════════════════════
-   policies.css — V2 policy page styles (shared across 7 policy pages)
-   Uses V2 design tokens from design-system.css
+   policies.css V3: shared styles for 7 policy pages
+   Same design system, per-page content layouts:
+   purchase = timeline + editorial columns
+   warranty = coverage/conditions/process/exclusions
+   exchange = eligibility/conditions/procedure
+   shipping = delivery specs + timeline + notes
+   payment  = methods/process/notes
+   privacy  = legal reading column
+   sales    = conditions/benefits/responsibility
    ═══════════════════════════════════════════════════════════════════════ */
 
-/* ── Policy Hero ── */
-.ph-policy-hero { text-align: center; padding: clamp(4rem, 7vw, 5.5rem) 0 clamp(1.25rem, 2.5vw, 2rem); }
-.ph-policy-hero .ph-policy-badge { display: inline-flex; align-items: center; gap: .35rem; padding: .3rem .9rem; border-radius: 99px; background: var(--ph-accent-subtle); color: var(--ph-accent); font-size: .8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 1rem; }
-.ph-policy-hero h1 { font: var(--ph-text-h1); color: var(--ph-text-primary); margin-bottom: .75rem; }
-.ph-policy-hero .ph-policy-hero-desc { max-width: 640px; margin: 0 auto; color: var(--ph-text-secondary); font-size: 1.0625rem; line-height: 1.7; }
+/* ── Hero: breadcrumb + badge + title + summary ── */
+/* ── Hero: compact policy intro ──
+   Split grid: copy (breadcrumb + badge + H1 + desc) left,
+   quick-summary panel right; policy nav band closes the intro.
+   Compact by design: this is a document header, not a marketing hero. ── */
+.bp-internal-hero {
+  padding: 0 0 clamp(1rem, 2vw, 1.5rem);
+  text-align: left;
+}
 
-/* ── Policy Grid (card layout) ── */
-.ph-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 900px; margin: 2rem auto 0; }
-@media (max-width: 768px) { .ph-policy-grid { grid-template-columns: 1fr; } }
-.ph-policy-card { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); padding: 1.5rem; transition: border-color .2s var(--ph-ease-out), transform .2s var(--ph-ease-out), box-shadow .2s var(--ph-ease-out); }
-.ph-policy-card:hover { border-color: var(--ph-accent); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(11,25,41,.08); }
-.ph-policy-card:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
-.ph-policy-card:active { transform: scale(.985); }
-.ph-policy-card h2 { font: var(--ph-text-h4); color: var(--ph-text-primary); margin-bottom: .75rem; }
-.ph-policy-card ul { padding-left: 1.25rem; margin: 0; }
-.ph-policy-card li { color: var(--ph-text-secondary); line-height: 1.7; margin-bottom: .5rem; }
-.ph-policy-card li::marker { color: var(--ph-accent); }
+/* First section clears the fixed header (top bar is in flow) */
+main > section:first-child.bp-internal-hero {
+  padding-top: calc(var(--ph-header-h) + clamp(1rem, 2.5vw, 1.5rem));
+}
 
-/* ── CTA Section ── */
-.ph-policy-cta { text-align: center; margin-top: 2.5rem; margin-bottom: 2rem; padding: 2rem; background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-lg); max-width: 700px; margin-left: auto; margin-right: auto; }
-.ph-policy-cta h2 { font: var(--ph-text-h3); color: var(--ph-text-primary); margin-bottom: .5rem; }
-.ph-policy-cta p { color: var(--ph-text-secondary); margin-bottom: 1.25rem; font-size: .9375rem; line-height: 1.65; }
+.ph-policy-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 430px);
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.ph-policy-hero-copy { max-width: 640px; }
+
+/* Policy H1: clearly above content H2 (h3 token), below marketing H1 */
+.bp-internal-hero .bp-section-title {
+  font: 600 clamp(1.625rem, 3vw, 2.125rem)/1.15 var(--ph-font-display);
+  letter-spacing: -0.025em;
+  max-width: none;
+  margin: 0;
+}
+
+.ph-policy-breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .7rem;
+  font-size: .8125rem;
+  color: var(--ph-text-muted);
+}
+
+.ph-policy-breadcrumb a {
+  color: var(--ph-text-muted);
+  text-decoration: none;
+  transition: color .2s var(--ph-ease-out);
+}
+
+.ph-policy-breadcrumb a:hover { color: var(--ph-accent); }
+.ph-policy-breadcrumb a:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; border-radius: 2px; }
+
+.ph-policy-breadcrumb .sep { color: var(--ph-border-default); }
+
+.ph-policy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .25rem .85rem;
+  border-radius: 99px;
+  background: var(--ph-accent-subtle);
+  color: var(--ph-text-accent);
+  font-size: .8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: .7rem;
+}
+
+.ph-policy-hero-desc {
+  max-width: 640px;
+  margin: .55rem 0 0;
+  color: var(--ph-text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Quick summary panel (right column of the hero grid) */
+.ph-policy-summary {
+  margin: 0;
+  padding: clamp(1.1rem, 2vw, 1.35rem);
+  background: var(--ph-section-alt-bg);
+  border: 1px solid var(--ph-border-subtle);
+  border-radius: var(--ph-radius-lg);
+  text-align: left;
+}
+
+.ph-policy-summary-label {
+  display: block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: var(--ph-text-accent);
+  margin-bottom: .7rem;
+}
+
+.ph-policy-summary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .6rem;
+}
+
+.ph-policy-summary li {
+  position: relative;
+  padding-left: 1.05rem;
+  font-size: .875rem;
+  line-height: 1.6;
+  color: var(--ph-text-secondary);
+}
+
+.ph-policy-summary li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .52em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ph-text-accent);
+}
+
+@media (max-width: 1023px) {
+  .ph-policy-hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ph-policy-summary { max-width: 640px; }
+}
+
+/* ── Policy navigation band: all 7 policies, compact pills ── */
+.ph-policy-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-top: clamp(1rem, 2.5vw, 1.25rem);
+  padding-top: clamp(.75rem, 2vw, 1rem);
+  border-top: 1px solid var(--ph-border-default);
+}
+
+.ph-policy-nav-label {
+  margin-right: .5rem;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: var(--ph-text-muted);
+}
+
+.ph-policy-nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: .42rem .95rem;
+  border: 1px solid var(--ph-border-default);
+  border-radius: 99px;
+  color: var(--ph-text-secondary);
+  font-size: .8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out), background .2s var(--ph-ease-out);
+}
+
+.ph-policy-nav-link:hover { color: var(--ph-text-accent); border-color: var(--ph-accent); }
+.ph-policy-nav-link:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
+
+.ph-policy-nav-link.is-active {
+  background: var(--ph-accent);
+  border-color: var(--ph-accent);
+  color: var(--ph-text-on-accent);
+}
+
+/* ── Section header (left aligned, with accent bar) ── */
+.ph-policy-section-head { margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
+.ph-policy-section-head h2 {
+  font: var(--ph-text-h3);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* ── Numbered steps (horizontal timeline) ── */
+.ph-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem 2rem;
+  counter-reset: phstep;
+}
+
+.ph-steps-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ph-steps-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.ph-step {
+  counter-increment: phstep;
+  position: relative;
+  padding-top: .25rem;
+}
+
+.ph-step::before {
+  content: counter(phstep, decimal-leading-zero);
+  display: block;
+  font-family: var(--ph-font-mono);
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ph-accent);
+  margin-bottom: .7rem;
+}
+
+.ph-step p {
+  margin: 0;
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .ph-steps-3,
+  .ph-steps-4 { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ph-step::before { margin-bottom: .45rem; }
+}
+
+/* Vertical variant (for side-by-side layouts) */
+.ph-steps-v {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: phstepv;
+}
+
+.ph-steps-v .ph-step {
+  counter-increment: phstepv;
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: .35rem;
+  padding: .85rem 0;
+  border-bottom: 1px solid var(--ph-border-default);
+}
+
+.ph-steps-v .ph-step:last-child { border-bottom: none; }
+.ph-steps-v .ph-step::before {
+  content: counter(phstepv, decimal-leading-zero);
+  grid-row: 1;
+  position: static; /* counter phải in-flow để chiếm cột 1 của grid — chống rò rỉ absolute từ rule khác */
+  font-size: 1rem;
+  font-weight: 600;
+  margin: .2rem 0 0;
+}
+
+/* ── Checklist (eligibility) ── */
+.ph-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ph-checklist li {
+  position: relative;
+  padding-left: 1.7rem;
+  margin-bottom: .6rem;
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+.ph-checklist li:last-child { margin-bottom: 0; }
+
+.ph-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--ph-accent);
+  font-weight: 700;
+}
+
+/* ── Spec rows (key facts, hairline dividers) ── */
+.ph-spec-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ph-spec-rows li {
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--ph-border-default);
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.65;
+}
+
+.ph-spec-rows li:last-child { border-bottom: none; padding-bottom: 0; }
+.ph-spec-rows li:first-child { padding-top: 0; }
+
+/* ── Note block (exclusions, warnings) ── */
+.ph-note {
+  background: var(--ph-surface-primary);
+  border: 1px solid var(--ph-border-default);
+  border-left: 3px solid var(--ph-accent);
+  border-radius: 0 var(--ph-radius-md) var(--ph-radius-md) 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.ph-note h2 {
+  font: var(--ph-text-h3);
+  letter-spacing: -0.02em;
+  color: var(--ph-text-primary);
+  margin-bottom: .8rem;
+}
+
+.ph-note ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ph-note li {
+  position: relative;
+  padding-left: 1.05rem;
+  margin-bottom: .55rem;
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+.ph-note li:last-child { margin-bottom: 0; }
+
+.ph-note li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .58em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ph-text-muted);
+}
+
+/* ── Editorial block (heading + list, no card chrome) ── */
+.ph-block h2 {
+  font: var(--ph-text-h3);
+  letter-spacing: -0.02em;
+  color: var(--ph-text-primary);
+  margin: 0 0 .85rem;
+}
+
+.ph-block-stack { margin-top: 2.25rem; }
+
+.ph-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bullets chỉ cho <ul> thường (không class) trực tiếp trong .ph-block.
+   KHÔNG áp cho ph-checklist / ph-spec-rows (tự style riêng); ol.ph-steps-v
+   nằm ngoài selector ul nên không bao giờ dính position:absolute ở đây.
+   (Rule cũ .ph-block li::before từng rò rỉ vào cả 3 component — đã loại bỏ.) */
+.ph-block > ul:not(.ph-checklist):not(.ph-spec-rows) li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-bottom: .6rem;
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+.ph-block > ul:not(.ph-checklist):not(.ph-spec-rows) li:last-child { margin-bottom: 0; }
+
+.ph-block > ul:not(.ph-checklist):not(.ph-spec-rows) li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ph-accent);
+  opacity: .55;
+}
+
+/* ── Layout helpers ── */
+.ph-col2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+/* Two-column grid, flow dọc theo cột: DOM 1,2,3,4 → trái 1|2, phải 3|4.
+   Gap đồng đều 2 trục; mobile chuyển 1 cột giữ nguyên thứ tự 1→2→3→4. */
+.ph-col2-flow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  gap: clamp(2rem, 3.5vw, 3rem);
+  align-items: start;
+}
+
+.ph-trio {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem 2.25rem;
+  align-items: start;
+}
+
+.ph-trio-item {
+  position: relative;
+  padding-left: 1.15rem;
+  color: var(--ph-text-secondary);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+.ph-trio-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ph-accent);
+  opacity: .55;
+}
+
+.ph-read-col { max-width: 720px; margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .ph-col2,
+  .ph-trio { grid-template-columns: 1fr; gap: 2rem; }
+  .ph-col2-flow {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    gap: 2rem;
+  }
+}
 
 /* ── Related Policies ── */
 .ph-policy-related { text-align: center; margin-bottom: 3rem; }
@@ -35,8 +459,7 @@
 .ph-related-link:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ph-policy-card,
-  .ph-related-link { transition: none; }
-  .ph-policy-card:hover { transform: none; }
-  .ph-policy-card:active { transform: none; }
+  .ph-related-link,
+  .ph-policy-nav-link,
+  .ph-policy-breadcrumb a { transition: none; }
 }

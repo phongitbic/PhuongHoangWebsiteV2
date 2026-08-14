@@ -1,27 +1,214 @@
 /* ================================
-   Navbar — Phượng Hoàng V2
-   Header, Mega Menu, Mobile Menu,
+   Navbar: Phượng Hoàng V2
+   Top Bar, Header, Mega Menu, Mobile Menu,
    Language Switcher, Theme Switcher
    JS: menu.js, phong.js
    ================================ */
 
+/* ═══════════ TOP BAR ═══════════
+   In document flow above the fixed header.
+   Owns the brand identity at every breakpoint:
+   brand + tagline left, contacts + social right.
+   Same box model as .container-wide / .header-inner (0 edge drift). */
+.top-bar {
+  height: var(--ph-topbar-h);
+  border-bottom: var(--ph-border-width-thin) solid var(--ph-divider);
+  font: var(--ph-text-caption);
+}
+
+.top-bar-inner {
+  max-width: var(--ph-container-wide);
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 var(--ph-space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ph-space-md);
+}
+
+@media (max-width: 767px) {
+  .top-bar-inner { padding: 0 var(--ph-space-sm); }
+  .top-bar-contact { gap: var(--ph-space-2xs); }
+  .top-bar-brand { gap: .5rem; }
+  .top-bar-brand-logo { height: 1.625rem; } /* 26px tablet */
+}
+
+/* Tight phones: less inner gap so brand + hotline always fit on one row */
+@media (max-width: 479px) {
+  .top-bar-inner { gap: var(--ph-space-2xs); }
+}
+
+/* ── Brand lockup: logo + two stacked lines = one identity cluster.
+   Logo sits BEFORE the text, centered on the 2-line block's height. ── */
+.top-bar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .625rem;
+  text-decoration: none;
+  flex-shrink: 0;
+  min-width: 0;
+}
+.top-bar-brand-logo {
+  height: 1.875rem; /* 30px desktop, spec 28-34 */
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+}
+.top-bar-brand-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1px;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.top-bar-brand-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--ph-text-primary);
+  white-space: nowrap;
+}
+
+.top-bar-tagline {
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--ph-text-muted);
+  white-space: nowrap;
+}
+
+/* Second line from desktop up; below that the brand line alone
+   keeps the bar compact (contacts take the right side) */
+@media (min-width: 1024px) {
+  .top-bar-tagline { display: block; }
+}
+
+/* ── Contact links: Hotline + Hotline 2 + Email ── */
+.top-bar-contact {
+  display: flex;
+  align-items: center;
+  gap: var(--ph-space-xs);
+  flex-shrink: 0;
+}
+
+.top-bar-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ph-space-2xs);
+  color: var(--ph-text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 200ms var(--ph-ease-out);
+}
+
+.top-bar-contact-link:hover {
+  color: var(--ph-accent);
+}
+
+.top-bar-contact-label {
+  color: var(--ph-text-muted);
+}
+
+.top-bar-icon {
+  flex-shrink: 0;
+  opacity: 0.65;
+  transition: opacity 200ms var(--ph-ease-out);
+}
+
+.top-bar-contact-link:hover .top-bar-icon {
+  opacity: 1;
+}
+
+/* Contact labels are a desktop nicety; below desktop, bare numbers
+   keep the bar from overflowing at tablet widths (768-1023) */
+@media (max-width: 1023px) {
+  .top-bar-contact-label { display: none; }
+}
+
+/* Phones: second hotline + its pipe hide; brand text shrinks and
+   ellipsizes rather than ever causing horizontal overflow */
+@media (max-width: 479px) {
+  .top-bar-contact-phone2 { display: none; }
+  .top-bar-brand { gap: .5rem; flex-shrink: 1; }
+  .top-bar-brand-logo { height: 1.5rem; } /* 24px */
+  .top-bar-brand-text { font-size: .8125rem; overflow: hidden; text-overflow: ellipsis; }
+}
+
+/* Email from tablet up; hotlines always visible (tap-to-call) */
+.top-bar-contact-email {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-bar-contact-email { display: inline-flex; }
+}
+
+/* ── Thin separators: email group from tablet, social from desktop ── */
+.top-bar-sep {
+  width: 1px;
+  height: 12px;
+  background: var(--ph-border-hover);
+  flex-shrink: 0;
+}
+
+.top-bar-sep-email { display: none; }
+@media (min-width: 768px) {
+  .top-bar-sep-email { display: block; }
+}
+
+.top-bar-sep-social { display: none; }
+@media (min-width: 1024px) {
+  .top-bar-sep-social { display: block; }
+}
+
+/* ── Social icons: Facebook · TikTok · YouTube ── */
+.top-bar-social {
+  display: none;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+@media (min-width: 1024px) {
+  .top-bar-social { display: flex; }
+}
+
+.top-bar-social-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ph-text-secondary);
+  opacity: 0.85;
+  transition: color 200ms var(--ph-ease-out),
+              opacity 200ms var(--ph-ease-out);
+}
+
+.top-bar-social-link:hover {
+  color: var(--ph-accent);
+  opacity: 1;
+}
+
 /* ── Header ── */
 .site-header {
   position: fixed;
-  top: 0;
+  top: var(--ph-topbar-h);
   left: 0;
   width: 100%;
   z-index: var(--ph-z-sticky);
-  padding: 0 var(--ph-space-md);
   height: 68px;
   background: transparent;
   border-bottom: 1px solid transparent;
   transition: background 350ms var(--ph-ease-out),
               border-color 350ms var(--ph-ease-out),
-              height 350ms var(--ph-ease-out);
+              height 350ms var(--ph-ease-out),
+              top 350ms var(--ph-ease-out);
 }
 
 .site-header.scrolled {
+  top: 0;
   background: rgba(11, 25, 41, 0.90);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -48,46 +235,27 @@
   max-width: var(--ph-container-wide);
   margin: 0 auto;
   height: 100%;
+  padding: 0 var(--ph-space-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--ph-space-lg);
 }
 
-/* ── Brand / Logo ── */
-.brand-mark {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  text-decoration: none;
+@media (max-width: 767px) {
+  .header-inner { padding: 0 var(--ph-space-sm); }
 }
 
-.brand-mark img {
-  height: 32px;
-  width: auto;
-  transition: height 350ms var(--ph-ease-out);
-}
-
-.site-header.scrolled .brand-mark img {
-  height: 28px;
-}
-
-.brand-text {
-  font: var(--ph-text-caption);
-  font-weight: 600;
-  color: var(--ph-text-secondary);
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-}
+/* ── No logo here: the top bar owns the brand identity ──
+   The header is a clean toolbar - navigation + actions only. */
 
 /* ── Desktop Nav Links ── */
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: clamp(12px, 1.5vw, 32px);
+  gap: clamp(16px, 2.5vw, 36px);
   flex: 1;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media (max-width: 1023px) {
@@ -102,12 +270,14 @@
 .dropdown-toggle {
   color: var(--ph-text-secondary);
   text-decoration: none;
-  font: var(--ph-text-caption);
+  /* +15% vs 0.8125rem base: roomier, still clearly navigation */
+  font-size: 0.9375rem;
   font-weight: 600;
+  line-height: 1.5;
   white-space: nowrap;
   background: transparent;
   border: none;
-  padding: 6px 0;
+  padding: 8px 0;
   cursor: pointer;
   transition: color 200ms var(--ph-ease-out);
   position: relative;
@@ -158,8 +328,10 @@
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 16px);
-  left: 50%;
-  transform: translateX(-50%) translateY(-4px);
+  /* Anchored to the toggle's left edge: centered on the button clipped the
+     menu's left column off-screen at 1024-1279px viewports */
+  left: 0;
+  transform: translateY(-4px);
   width: 540px;
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +353,16 @@
   -webkit-backdrop-filter: blur(16px);
 }
 
+/* Invisible hover bridge: keeps :hover continuous across the 16px gap */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
 [data-theme="light"] .dropdown-menu {
   border-color: rgba(8, 51, 90, 0.08);
   box-shadow: 0 16px 48px rgba(8, 51, 90, 0.10),
@@ -191,7 +373,7 @@
 .dropdown:focus-within .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -244,8 +426,9 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--ph-space-xs);
+  gap: var(--ph-space-sm);
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* ── Language Switcher ── */
@@ -301,6 +484,23 @@
 .theme-toggle-btn:hover {
   border-color: var(--ph-border-hover);
   color: var(--ph-accent);
+}
+
+/* Icon swap: each theme shows the icon of the theme you can switch TO */
+.theme-toggle-btn .icon-sun { display: block; }
+.theme-toggle-btn .icon-moon { display: none; }
+[data-theme="light"] .theme-toggle-btn .icon-sun { display: none; }
+[data-theme="light"] .theme-toggle-btn .icon-moon { display: block; }
+
+/* Compact tier 1024-1279px: keeps nav + actions on one line without overflow.
+   MUST stay AFTER the base rules it overrides (same specificity ->
+   source order decides the cascade). */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar-links { gap: 8px; }
+  .nav-link,
+  .dropdown-toggle { font-size: 0.8125rem; }
+  .header-inner { gap: 1.5rem; }
+  .lang-btn { padding: 0 0.5rem; }
 }
 
 /* ── Mobile Menu Toggle ── */
@@ -396,10 +596,6 @@
   margin-bottom: var(--ph-space-md);
   padding-bottom: var(--ph-space-sm);
   border-bottom: var(--ph-border-width-thin) solid var(--ph-divider);
-}
-
-.mobile-menu-header .brand-mark img {
-  height: 32px;
 }
 
 .mobile-menu-close {
@@ -530,15 +726,8 @@
 @media (max-width: 479px) {
   .site-header {
     height: 58px;
-    padding: 0 var(--ph-space-sm);
-  }
-  .brand-mark img {
-    height: 26px;
   }
   .site-header.scrolled {
     height: 52px;
-  }
-  .site-header.scrolled .brand-mark img {
-    height: 24px;
   }
 }
