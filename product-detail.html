@@ -95,7 +95,7 @@
     <section class="ph-breadcrumb-sec">
       <div class="container-wide">
         <nav class="ph-detail-breadcrumb" aria-label="breadcrumb">
-          <a href="phong.html" data-i18n="page_productDetail.breadcrumbHome">Trang chủ</a><span class="sep">/</span>
+          <a href="index.html" data-i18n="page_productDetail.breadcrumbHome">Trang chủ</a><span class="sep">/</span>
           <a href="products.html" data-i18n="page_productDetail.breadcrumbProducts">Sản phẩm</a><span class="sep">/</span>
           <a href="products.html" id="breadcrumbCat" data-i18n="page_productDetail.breadcrumbCategory">Danh mục</a><span class="sep">/</span>
           <span id="breadcrumbProduct" class="current" data-i18n="page_productDetail.breadcrumbDetail">Chi tiết</span>
@@ -278,7 +278,7 @@
       <h3 class="ph-confirm-title" data-i18n="page_productDetail.confirmTitle">Yêu cầu báo giá đã được gửi!</h3>
       <p class="ph-confirm-text" data-i18n="page_productDetail.confirmText">Đội ngũ Phượng Hoàng sẽ liên hệ trong thời gian sớm nhất.</p>
       <div class="ph-confirm-actions">
-        <a href="phong.html" class="ph-btn-quote" data-i18n="page_productDetail.confirmHome">Về trang chủ</a>
+        <a href="index.html" class="ph-btn-quote" data-i18n="page_productDetail.confirmHome">Về trang chủ</a>
         <button onclick="document.getElementById('confirmModal').classList.remove('open')" class="ph-modal-btn-outline" data-i18n="page_productDetail.confirmContinue">Tiếp tục mua sắm</button>
       </div>
     </div>
@@ -359,7 +359,8 @@ window._phPageMeta = {
     }
 
     function switchImage(index) {
-      var product = productData.getById(getProductId());
+      var resolved = productData.getByIdOrModel(getProductId());
+      var product = resolved ? resolved.product : null;
       if (!product) return;
       var allImages = buildImageList(product);
       if (!allImages || allImages.length === 0) return;
@@ -402,7 +403,11 @@ window._phPageMeta = {
 
     /* ── Model Selector ── */
     function selectModel(index) {
-      var product = productData.getById(getProductId());
+      /* getByIdOrModel: works for both product-id and model-id URLs
+         (getById only matched product ids, so model buttons were dead
+         when the page was opened with ?id=<model id>). */
+      var resolved = productData.getByIdOrModel(getProductId());
+      var product = resolved ? resolved.product : null;
       if (!product || !product.models || !product.models[index]) return;
       currentModelIndex = index;
       var model = product.models[index];
@@ -412,6 +417,8 @@ window._phPageMeta = {
       var descEl = document.getElementById('modelDesc');
       if (descEl) descEl.textContent = selectedText + ' ' + model.name + (model.desc ? ': ' + productData.t(model.desc) : '');
       if (model.image) { document.getElementById('mainImage').src = model.image; currentImageIndex = -1; }
+      var specsImg = document.getElementById('specsImageDisplay');
+      if (specsImg && model.image) specsImg.src = model.image;
       renderFeatures(product);
       renderSpecs(product);
       renderQuickSpecs(product);
@@ -578,9 +585,14 @@ window._phPageMeta = {
     }
 
     /* ── Specs Image ── */
+    /* Source of truth = ảnh của model đang chọn (giống hero gallery);
+       specsImage cấp sản phẩm chỉ dùng làm fallback khi model không có ảnh. */
     function renderSpecsImageSection(product) {
       var display = document.getElementById('specsImageDisplay');
-      if (display && product.specsImage) display.src = product.specsImage;
+      if (!display) return;
+      var m = (product.models && product.models[currentModelIndex]) ? product.models[currentModelIndex] : null;
+      var src = (m && m.image) ? m.image : (product.specsImage || '');
+      if (src) display.src = src;
     }
 
     /* ── Not Found Fallback (keeps h1, honest state, CTA back to catalog) ── */
@@ -726,7 +738,9 @@ window._phPageMeta = {
       var resolved = productData.getByIdOrModel(id);
       if (!resolved) { renderNotFoundFallback(); return; }
       var product = resolved.product;
-      if (resolved.modelIndex >= 0) currentModelIndex = resolved.modelIndex;
+      /* Language refresh only: never re-apply the URL's model id here; keep
+         the model the user selected (renderProductDetail already applied it
+         on initial load). */
       var name = productData.t(product.name);
       var fullDesc = productData.t(product.description);
       var cat = productData.getCategory(product.category);
@@ -757,7 +771,23 @@ window._phPageMeta = {
       _phUpdateProductDetailSEO(product, name, fullDesc);
     }
 
-    document.addEventListener('DOMContentLoaded', function() { renderProductDetail(); });
+    /* ── Realtime language switch (same UX as index.html): i18n-v2.js
+       updatePage() only updates static [data-i18n] content. Everything
+       below the hero is JS-rendered, so refreshProductDetailLanguage()
+       re-renders it in the new language while preserving the selected
+       model, gallery image index and lightbox state. ── */
+    var _phDetailBooted = false;
+    document.addEventListener('DOMContentLoaded', function() {
+      renderProductDetail();
+      _phDetailBooted = true;
+    });
+    var _phOrigSetLang = window.setLanguage;
+    if (typeof _phOrigSetLang === 'function') {
+      window.setLanguage = function(lang) {
+        _phOrigSetLang.call(window, lang);
+        if (_phDetailBooted) refreshProductDetailLanguage();
+      };
+    }
   </script>
 </body>
 </html>

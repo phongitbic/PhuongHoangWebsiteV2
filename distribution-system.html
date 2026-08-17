@@ -498,13 +498,19 @@ window._phPageMeta = {
 
     /* ── Apply i18n ── */
     function applyDistI18n() {
+      /* Order: ?lang= URL param (legacy) -> global currentLang (i18n-v2.js
+         setLanguage sets it right before this wrapper runs) -> saved 'app-lang'
+         (the key i18n-v2.js actually writes; 'ph-lang' never existed, so the
+         old code always fell back to 'vi' on every live language switch and
+         the [data-dist] sections never followed the chosen language). */
       var lang = 'vi';
       try {
         var params = new URLSearchParams(window.location.search);
         var urlLang = params.get('lang');
         if (urlLang && DIST_I18N[urlLang]) lang = urlLang;
+        else if (typeof window.currentLang === 'string' && DIST_I18N[window.currentLang]) lang = window.currentLang;
         else {
-          var saved = localStorage.getItem('ph-lang');
+          var saved = localStorage.getItem('app-lang');
           if (saved && DIST_I18N[saved]) lang = saved;
         }
       } catch(e) {}

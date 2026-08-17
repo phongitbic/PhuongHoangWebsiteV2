@@ -19,7 +19,7 @@ FILES = [
     '404.html', 'about-us.html', 'certificates.html', 'contact.html',
     'distribution-system.html', 'exchange-policy.html',
     'leakage-detector.html', 'news-detail.html', 'news.html',
-    'payment-policy.html', 'phong.html', 'privacy-policy.html',
+    'payment-policy.html', 'index.html', 'privacy-policy.html',
     'product-detail.html', 'products.html', 'projects.html',
     'purchase-policy.html', 'sales-policy.html', 'shipping-policy.html',
     'surge-protection.html', 'warranty-policy.html',

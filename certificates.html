@@ -475,7 +475,7 @@ window._phPageMeta = {
         else if (e.key === 'ArrowRight') { changeLightbox(1); }
       });
 
-      /* Inject V2 shared header/footer immediately (synchronous, same as phong.html).
+      /* Inject V2 shared header/footer immediately (synchronous, same as index.html).
          Must run at parse time so blueprint.js (defer) can bind its scroll handler
          to .site-header: a DOMContentLoaded injection happens after blueprint.js
          has already queried .site-header (null) → .scrolled never toggles → gap

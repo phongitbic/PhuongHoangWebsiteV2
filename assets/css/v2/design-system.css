@@ -41,9 +41,11 @@ html:not([data-theme]) { visibility: hidden; }
      from the viewport top (scroll anchors); first sections sit in flow
      BELOW the top bar, so they clear only the fixed header height:
      --ph-header-h = chrome minus top bar (68px desktop, 58px ≤479).
-     Using full --ph-chrome-h there double-counts the top bar. */
-  --ph-topbar-h: 36px;
-  --ph-chrome-h: 104px;
+     Using full --ph-chrome-h there double-counts the top bar.
+     Desktop top bar = 10px top padding + content + 10px bottom padding
+     (both paddings live in .top-bar-inner), hence 46px total. */
+  --ph-topbar-h: 46px;
+  --ph-chrome-h: 114px;
   --ph-header-h: calc(var(--ph-chrome-h) - var(--ph-topbar-h));
 
   /* Grid */
@@ -401,6 +403,16 @@ h1, h2, h3, h4, h5, h6 { font: inherit; color: inherit; }
 @media (max-width: 767px) {
   .container-wide, .container-default, .container-narrow, .container-tight {
     padding: 0 var(--ph-space-sm);
+  }
+}
+
+/* Tablet and below: the ≤767 reset in navbar.css removes the top/bottom
+   padding of .top-bar-inner, so the bar keeps its pre-padding 36px
+   (content stays vertically centered, exactly as before). */
+@media (max-width: 767px) {
+  :root {
+    --ph-topbar-h: 36px;
+    --ph-chrome-h: 104px;
   }
 }
 

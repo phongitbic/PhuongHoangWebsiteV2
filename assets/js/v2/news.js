@@ -9,6 +9,13 @@ let currentNewsCat = 'all';
 let currentPage = 1;
 const ITEMS_PER_PAGE = 7;
 
+/* Featured anchors (category=all only): each anchor id is pinned as the
+   featured article of the page with the same number: page 1 -> news-001,
+   page 2 -> news-007, page 3 -> news-013. The anchor is lifted to the head
+   of its own page; every other article keeps its existing date-desc order,
+   so nothing is lost, duplicated, or reordered relative to its peers. */
+var NEWS_FEATURED_ANCHORS = ['news-001', 'news-007', 'news-013'];
+
 /**
  * Read page & category from URL search params and apply them.
  * Called once on DOMContentLoaded before the first renderNews().
@@ -274,6 +281,44 @@ function getFilteredArticles() {
   return filtered;
 }
 
+/**
+ * Hoist the featured anchors to the head of their pages (category=all).
+ * Anchor pages keep ITEMS_PER_PAGE size: anchor + (N-1) regular articles;
+ * pages beyond the anchors flow from the remaining list as usual.
+ */
+function applyFeaturedAnchors(list) {
+  if (currentNewsCat !== 'all' || !list || list.length === 0) return list;
+
+  var anchorIdx = {};
+  for (var i = 0; i < NEWS_FEATURED_ANCHORS.length; i++) {
+    anchorIdx[NEWS_FEATURED_ANCHORS[i]] = i;
+  }
+
+  var anchors = [];   // slot i = anchor for page i+1 (may stay undefined)
+  var rest = [];
+  for (var j = 0; j < list.length; j++) {
+    var slot = anchorIdx[list[j].id];
+    if (slot === undefined) rest.push(list[j]);
+    else anchors[slot] = list[j];
+  }
+
+  var hasAnchors = false;
+  for (var k = 0; k < anchors.length; k++) {
+    if (anchors[k]) { hasAnchors = true; break; }
+  }
+  if (!hasAnchors) return list;
+
+  var result = [];
+  var r = 0;
+  for (var page = 0; page < anchors.length; page++) {
+    if (anchors[page]) result.push(anchors[page]);
+    var room = ITEMS_PER_PAGE - (anchors[page] ? 1 : 0);
+    for (var n = 0; n < room && r < rest.length; n++) result.push(rest[r++]);
+  }
+  while (r < rest.length) result.push(rest[r++]);
+  return result;
+}
+
 function goToPage(page) {
   currentPage = page;
   renderNews();
@@ -331,7 +376,7 @@ function renderPagination(totalItems) {
 function renderNews() {
   if (!newsArticles || newsArticles.length === 0) return;
 
-  var filtered = getFilteredArticles();
+  var filtered = applyFeaturedAnchors(getFilteredArticles());
   var totalFiltered = filtered.length;
 
   // Clamp currentPage in case it's out of bounds (e.g. from a stale URL after category switch)

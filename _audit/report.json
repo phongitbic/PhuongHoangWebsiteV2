@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14 16:30:27",
+  "generated": "2026-08-17 13:45:08",
   "base": "http://127.0.0.1:5500",
   "rootStatus": 200,
   "rootCheck": {
@@ -1487,8 +1487,37 @@
       "name": "distribution-system",
       "url": "http://127.0.0.1:5500/distribution-system.html",
       "status": 200,
-      "console_errors": [],
-      "failed_requests": [],
+      "console_errors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failed_requests": [
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2HRNg.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv27RNuzX.woff2",
+        "404 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2",
+        "FAILED https://fonts.gstatic.com/s/plusjakartasans/v12/LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU6vQTckyDQbQcCl6HUHv2_RNuzX.woff2"
+      ],
       "alignment": {
         "headerEdges": {
           "left": 0,
@@ -1707,7 +1736,7 @@
         "emDashBody": 0,
         "emDashMeta": 0,
         "fontsCheck": [
-          "Plus Jakarta Sans=OK",
+          "Plus Jakarta Sans=MISSING",
           "JetBrains Mono=UNUSED",
           "Noto Sans SC=UNUSED"
         ],
@@ -3525,16 +3554,6 @@
             }
           },
           {
-            "tag": "section",
-            "cls": "bp-section bp-reveal visible",
-            "id": "",
-            "content": {
-              "left": 0,
-              "right": 1280,
-              "width": 1280
-            }
-          },
-          {
             "tag": "footer",
             "cls": "footer",
             "id": ""
@@ -3596,7 +3615,6 @@
         "shipping-policy_1280_s03.jpg",
         "shipping-policy_1280_s04.jpg",
         "shipping-policy_1280_s05.jpg",
-        "shipping-policy_1280_s06.jpg",
         "shipping-policy_768_fold.jpg",
         "shipping-policy_390_full.jpg"
       ],
@@ -3647,7 +3665,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2352,
+        "bodyTextLen": 2353,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -4145,7 +4163,8 @@
       },
       "overflow": {
         "1280": 0,
-        "768": 0
+        "768": 0,
+        "390": 0
       },
       "overflowEls": {
         "768": [
@@ -4164,6 +4183,23 @@
           "li L1241 R1512",
           "span.mobile-nav-link L1241 R1512",
           "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
         ]
       },
       "actions": [],
@@ -4174,7 +4210,8 @@
         "sales-policy_1280_s03.jpg",
         "sales-policy_1280_s04.jpg",
         "sales-policy_1280_s05.jpg",
-        "sales-policy_768_fold.jpg"
+        "sales-policy_768_fold.jpg",
+        "sales-policy_390_full.jpg"
       ],
       "seo": {
         "lang": "vi",
@@ -4243,35 +4280,179 @@
       "headerStrips": [
         "sales-policy_header_1280.jpg",
         "sales-policy_header_390.jpg"
-      ],
-      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+      ]
     },
     {
       "name": "404",
       "url": "http://127.0.0.1:5500/404.html",
       "status": 200,
       "console_errors": [],
-      "failed_requests": [
-        "FAILED http://127.0.0.1:5500/404.html"
-      ],
+      "failed_requests": [],
       "alignment": {
+        "headerEdges": {
+          "left": 0,
+          "right": 1280,
+          "width": 1280
+        },
+        "headerHeight": 68,
+        "sections": [
+          {
+            "tag": "header",
+            "cls": "site-header",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-internal-hero",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "section",
+            "cls": "bp-section",
+            "id": "",
+            "content": {
+              "left": 0,
+              "right": 1280,
+              "width": 1280
+            }
+          },
+          {
+            "tag": "footer",
+            "cls": "footer",
+            "id": ""
+          }
+        ],
         "analysis": {
-          "refLeft": null,
-          "refRight": null,
+          "refLeft": 0,
+          "refRight": 1280,
           "mismatches": [],
           "mismatchCount": 0
         }
       },
-      "overflow": {},
-      "overflowEls": {},
+      "overflow": {
+        "1280": 0,
+        "768": 0,
+        "390": 0
+      },
+      "overflowEls": {
+        "768": [
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1457",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1457",
+          "strong.top-bar-brand-text L1280 R1457",
+          "button.mobile-menu-close L1478 R1512",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "span.mobile-nav-link L1241 R1512",
+          "span L1265 R1339"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R681",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R681",
+          "strong.top-bar-brand-text L516 R681",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
       "actions": [],
-      "screenshots": [],
-      "seo": {},
+      "screenshots": [
+        "404_1280_s00.jpg",
+        "404_1280_s01.jpg",
+        "404_1280_s02.jpg",
+        "404_1280_s03.jpg",
+        "404_768_fold.jpg",
+        "404_390_full.jpg"
+      ],
+      "seo": {
+        "lang": "vi",
+        "title": "404: Trang không tìm thấy | Phượng Hoàng",
+        "metaDescription": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.",
+        "canonical": "https://khktphuonghoang.com/404.html",
+        "og": [
+          "og:type",
+          "og:url",
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:image:width",
+          "og:image:height",
+          "og:locale",
+          "og:site_name"
+        ],
+        "twitter": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "hreflang": 4,
+        "h1": [
+          "Trang không tìm thấy"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "h1: Trang không tìm thấy",
+          "h2: Có thể bạn muốn tìm:",
+          "h3: Thiết bị điện an toàn thông minh",
+          "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
+          "h4: Liên hệ",
+          "h4: Chính sách và quy định",
+          "h4: Tải ứng dụng Phượng Hoàng"
+        ],
+        "imgsTotal": 5,
+        "imgsMissingAlt": 0,
+        "imgsBroken": 0,
+        "imgsNoDims": 0,
+        "headerHeight": 68,
+        "headerPosition": "fixed",
+        "bodyTextLen": 1584,
+        "emDashTitle": 0,
+        "emDashBody": 0,
+        "emDashMeta": 0,
+        "fontsCheck": [
+          "Plus Jakarta Sans=OK",
+          "JetBrains Mono=UNUSED",
+          "Noto Sans SC=UNUSED"
+        ],
+        "fallbackPanel": false,
+        "articleSem": {
+          "article": false,
+          "header": false,
+          "content": false,
+          "aside": false,
+          "related": false
+        }
+      },
       "headerStrips": [
         "404_header_1280.jpg",
         "404_header_390.jpg"
-      ],
-      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+      ]
     },
     {
       "name": "news-detail",

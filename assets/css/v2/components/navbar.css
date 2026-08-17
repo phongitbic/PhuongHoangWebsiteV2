@@ -25,6 +25,8 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--ph-space-md);
+  padding-top: 10px; /* 10px top padding keeps the bar from looking too tight on desktop */
+  padding-bottom: 10px; /* 10px bottom padding: mirrors the top so the bar breathes evenly on both sides */
 }
 
 @media (max-width: 767px) {
@@ -80,6 +82,10 @@
   font-weight: 400;
   color: var(--ph-text-muted);
   white-space: nowrap;
+  /* Nới nhẹ chữ cho thoáng, CHỈ tagline, không đụng dòng brand phía trên.
+     letter-spacing không đổi line box => khối 2 dòng giữ nguyên chiều cao,
+     title .top-bar-brand-text không dịch chuyển dù chỉ một pixel. */
+  letter-spacing: 0.03em;
 }
 
 /* Second line from desktop up; below that the brand line alone

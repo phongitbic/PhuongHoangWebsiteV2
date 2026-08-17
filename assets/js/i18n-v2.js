@@ -1,5 +1,5 @@
 /**
- * V2 i18n Engine: phong.html
+ * V2 i18n Engine: index.html
  * Minimal translation engine extracted from V1's phong.js.
  * Handles: header, footer, policy, lang translations for vi/en/zh.
  * Adapted from: www.khktphuonghoang.com/assets/js/phong.js
@@ -2787,7 +2787,7 @@ function setLanguage(lang) {
 
 /* Auto-init: apply saved language after header/footer injection */
 document.addEventListener('DOMContentLoaded', function () {
-  /* Wait for header/footer injection (inline script in phong.html runs synchronously
+  /* Wait for header/footer injection (inline script in index.html runs synchronously
      before DOMContentLoaded, so __PH_COMPONENTS__ injection has already happened) */
   var saved = loadLanguage();
   setLanguage(saved);

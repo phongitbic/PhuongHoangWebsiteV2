@@ -34,7 +34,7 @@ SHOTS = TMP / "screenshots"
 FINAL_SHOTS = OUT / "screenshots"
 
 FULL_PAGES = [
-    ("phong", "phong.html", True),
+    ("phong", "index.html", True),
     ("products", "products.html", True),
     ("product-detail", "product-detail.html?id=ind-001", True),
     ("product-detail-fallback", "product-detail.html?id=khong-ton-tai-xyz", True),
@@ -533,21 +533,24 @@ def header_strips(pw):
 
 def main():
     print("=== BROWSER AUDIT v2 ===")
-    st = http_status(BASE + "/phong.html")
+    st = http_status(BASE + "/index.html")
     if st is None:
         print("[LOI] Khong ket noi duoc %s" % BASE)
         print("      Hay mo Live Server (VS Code, nut Go Live, port 5500) roi chay lai.")
         sys.exit(1)
-    print("Live Server OK (phong.html -> %s)" % st)
+    print("Live Server OK (index.html -> %s)" % st)
     root_status = http_status(BASE + "/")
     print("Root '/' -> %s" % (root_status if root_status else "khong phan hoi"))
 
-    # P2.5: root phai redirect ve phong.html, khong duoc la directory listing
-    root_check = {"status": root_status, "redirectOk": False, "isListing": False}
+    # P2.5: root phai LA homepage (index.html), khong duoc la redirect file
+    #       hay directory listing. Homepage hop le: canonical tro ve root va
+    #       khong con meta-refresh redirect nao.
+    root_check = {"status": root_status, "homepageOk": False, "isListing": False}
     try:
         with urllib.request.urlopen(BASE + "/", timeout=5) as r:
             body = r.read(6000).decode("utf-8", "replace")
-        root_check["redirectOk"] = "phong.html" in body
+        root_check["homepageOk"] = ('href="https://khktphuonghoang.com/"' in body
+                                    and 'http-equiv="refresh"' not in body)
         root_check["isListing"] = ("Index of" in body) or ("Directory listing" in body)
         root_check["hasCanonicalRoot"] = 'href="https://khktphuonghoang.com/"' in body
     except Exception as e:
@@ -629,8 +632,8 @@ def main():
     print("Screenshots: %s (%d files)" % (FINAL_SHOTS, copied))
     # Root + sitemap verdicts
     rc = report["rootCheck"]
-    print("  ROOT '/'     status=%s redirect=%s listing=%s canonicalRoot=%s" %
-          (rc.get("status"), rc.get("redirectOk"), rc.get("isListing"), rc.get("hasCanonicalRoot")))
+    print("  ROOT '/'     status=%s homepage=%s listing=%s canonicalRoot=%s" %
+          (rc.get("status"), rc.get("homepageOk"), rc.get("isListing"), rc.get("hasCanonicalRoot")))
     sc = report["sitemapCheck"]
     print("  SITEMAP      status=%s urls=%d dupes=%d surgePresent=%s pd=%d nd=%d" %
           (sc.get("status"), sc.get("urlCount"), len(sc.get("dupes", [])),

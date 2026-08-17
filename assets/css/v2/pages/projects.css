@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    Projects Page Styles: Phượng Hoàng Design System
-   Matches phong.html: white/sage/navy/green palette
+   Matches index.html: white/sage/navy/green palette
    Flow-based layout, no absolute positioning, no dark sections
    Structure: Hero(+Stats) → Sectors → Filters → Project Grid → Support Strip → CTA
    ═══════════════════════════════════════════════════════ */
@@ -14,7 +14,7 @@
   background: var(--ph-bg-primary);
 }
 
-/* Subtle sage ambient: understated, matching phong.html hero language */
+/* Subtle sage ambient: understated, matching index.html hero language */
 .ph-proj-hero::before {
   content: '';
   position: absolute;

@@ -114,7 +114,7 @@ def main():
     print("=== PD MINI AUDIT v2 ===")
     import urllib.request
     try:
-        st = urllib.request.urlopen(BASE + "/phong.html", timeout=5).status
+        st = urllib.request.urlopen(BASE + "/index.html", timeout=5).status
     except Exception:
         print("[LOI] Live Server khong chay. Mo Live Server port 5500 truoc.")
         sys.exit(1)

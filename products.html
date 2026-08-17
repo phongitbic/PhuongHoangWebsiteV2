@@ -424,6 +424,7 @@ window._phPageMeta = {
 
       buildSidebar();
       renderProductCards(currentCategory);
+      _phProductsBooted = true;
     }
 
     /* DOM-ready guard: always wait for DOM to be fully parsed before rendering.
@@ -438,14 +439,34 @@ window._phPageMeta = {
       boot();
     }
 
-    /* Same DOM-ready guard for FAQ */
+    /* Same DOM-ready guard for FAQ. Pass the language i18n-v2.js already
+       applied (currentLang) so the initial FAQ render matches the saved
+       language instead of always starting in Vietnamese. */
     function bootFAQ() {
-      if (typeof initFAQ !== 'undefined') initFAQ({categories:['product','order','warranty']});
+      if (typeof initFAQ !== 'undefined') initFAQ({categories:['product','order','warranty'], lang:(typeof currentLang === 'string' && currentLang) ? currentLang : 'vi'});
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', bootFAQ);
     } else {
       bootFAQ();
+    }
+
+    /* ── Realtime language switch (same UX as index.html): i18n-v2.js
+       updatePage() only updates static [data-i18n] content. The sidebar and
+       product cards are JS-rendered, so they are re-rendered in the new
+       language here. The active category filter and the current sort order
+       are preserved (currentCategory unchanged; productData.products keeps
+       its order). faq.js re-renders the FAQ via its own wrapper. ── */
+    var _phProductsBooted = false;
+    var _phOrigSetLang = window.setLanguage;
+    if (typeof _phOrigSetLang === 'function') {
+      window.setLanguage = function(lang) {
+        _phOrigSetLang.call(window, lang);
+        if (_phProductsBooted) {
+          buildSidebar();
+          renderProductCards(currentCategory);
+        }
+      };
     }
   </script>
 </body>
