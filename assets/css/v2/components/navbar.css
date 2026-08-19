@@ -71,7 +71,9 @@
 .top-bar-brand-text {
   font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  /* All-caps enterprise brand: a touch more tracking keeps it airy and
+     legible without adding height or pushing the contact cluster. */
+  letter-spacing: 0.02em;
   color: var(--ph-text-primary);
   white-space: nowrap;
 }
@@ -136,13 +138,27 @@
   .top-bar-contact-label { display: none; }
 }
 
+/* Tablet/phones: the longer all-caps brand scales down and ellipsizes
+   rather than ever squeezing the contact cluster or overflowing.
+   Desktop keeps the full name at full size. */
+@media (max-width: 767px) {
+  .top-bar-brand { flex-shrink: 1; }
+  .top-bar-brand-texts { overflow: hidden; }
+  .top-bar-brand-text {
+    font-size: .8125rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 /* Phones: second hotline + its pipe hide; brand text shrinks and
    ellipsizes rather than ever causing horizontal overflow */
 @media (max-width: 479px) {
   .top-bar-contact-phone2 { display: none; }
   .top-bar-brand { gap: .5rem; flex-shrink: 1; }
   .top-bar-brand-logo { height: 1.5rem; } /* 24px */
-  .top-bar-brand-text { font-size: .8125rem; overflow: hidden; text-overflow: ellipsis; }
+  .top-bar-brand-text { font-size: .75rem; overflow: hidden; text-overflow: ellipsis; }
 }
 
 /* Email from tablet up; hotlines always visible (tap-to-call) */

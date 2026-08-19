@@ -82,6 +82,7 @@
   <link rel="stylesheet" href="assets/css/v2/design-system.css">
   <link rel="stylesheet" href="assets/css/v2/components/navbar.css">
   <link rel="stylesheet" href="assets/css/v2/components/buttons.css">
+  <link rel="stylesheet" href="assets/css/v2/components/faq.css">
   <link rel="stylesheet" href="assets/css/v2/components/footer.css">
   <link rel="stylesheet" href="assets/css/v2/components/blueprint.css">
   <link rel="stylesheet" href="assets/css/v2/pages/products.css">
@@ -165,18 +166,10 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="bp-reveal ph-prod-cta-sec">
-      <div class="container-wide ph-prod-cta-wrap">
-        <h2 class="ph-prod-cta-head" data-i18n="page_products.ctaHeading">Bạn cần tư vấn chọn sản phẩm phù hợp?</h2>
-        <p class="ph-prod-cta-desc" data-i18n="page_products.ctaDesc">Kỹ sư Phượng Hoàng tư vấn miễn phí giải pháp phù hợp với nhu cầu và ngân sách của bạn. Gọi ngay 1800 888 638.</p>
-        <a href="tel:1800888638" class="bp-btn-magnetic" data-i18n="page_products.ctaButton">Gọi 1800 888 638</a>
-        <p class="ph-cta-sub"><span data-i18n="page_products.ctaSub">Hoặc</span> <a href="contact.html" data-i18n="page_products.ctaSubLink">gửi yêu cầu tư vấn</a></p>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="bp-section-alt bp-reveal ph-faq-sec">
+    <!-- FAQ Section: nền trắng (bp-section) để xen kẽ đúng nhịp
+         SAGE browse → WHITE products → SAGE support strip → WHITE FAQ.
+         Trước đây bp-section-alt khiến 2 section SAGE liền nhau sau khi CTA bị xóa. -->
+    <section class="bp-section bp-reveal ph-faq-sec">
       <div class="container-wide">
         <div class="bp-section-header">
           <h2 class="bp-section-title" data-i18n="page_products.faqHeading">Câu hỏi thường gặp</h2>

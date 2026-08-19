@@ -85,11 +85,6 @@ main > section:first-child.bp-section.ph-about-hero {
 /* (inherited by split hero) */
 
 /* ── Open Letter Body ── */
-.ph-about-letter-title {
-  font: var(--ph-text-h3);
-  color: var(--ph-text-primary);
-  margin: 0 0 clamp(1rem, 2vw, 1.35rem);
-}
 .ph-about-letter-body p {
   color: var(--ph-text-secondary);
   font-size: .9375rem;
@@ -106,13 +101,31 @@ main > section:first-child.bp-section.ph-about-hero {
   font-size: 1.0625rem;
   font-weight: 500;
 }
-.ph-about-letter-body .ph-about-letter-note {
+/* Mission statement: prominent brand message closing the letter.
+   Mirrors the site's eyebrow-tag convention (ph-section-tag):
+   accent label on a subtle tint, display-font quote. */
+.ph-about-letter-body .ph-about-letter-mission {
   margin-top: 1.1rem;
-  padding-left: .875rem;
-  border-left: 2px solid var(--ph-border-default);
-  color: var(--ph-text-muted);
-  font-size: .8125rem;
-  line-height: 1.65;
+  padding: .9rem 1rem;
+  border-left: 3px solid var(--ph-accent);
+  background: var(--ph-accent-subtle);
+  border-radius: var(--ph-radius-sm);
+}
+.ph-about-letter-body .ph-about-letter-mission-label {
+  margin: 0 0 .3rem;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ph-accent);
+}
+.ph-about-letter-body .ph-about-letter-mission-quote {
+  margin: 0;
+  font-family: var(--ph-font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--ph-text-primary);
 }
 .ph-about-letter-sign {
   margin-top: 1.5rem;

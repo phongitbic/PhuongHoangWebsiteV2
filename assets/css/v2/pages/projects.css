@@ -8,7 +8,9 @@
 /* ═══════════ HERO: Clean split, flow-based, stats overlap
    First section: clears chrome (top bar + fixed header) ═══════════ */
 .ph-proj-hero {
-  padding: calc(var(--ph-header-h) + clamp(2rem, 3.5vw, 3rem)) 0 clamp(2rem, 3vw, 4rem);
+  /* Cap 2.75rem (44px) = chuẩn chung của site (news/certificates/phong hero):
+     68 + 44 = 112px từ header; cap cũ 3rem (48px) gây dư 4px trên viewport rộng */
+  padding: calc(var(--ph-header-h) + clamp(2rem, 3.5vw, 2.75rem)) 0 clamp(2rem, 3vw, 4rem);
   position: relative;
   overflow: hidden;
   background: var(--ph-bg-primary);
@@ -29,12 +31,14 @@
   z-index: 0;
 }
 
-/* Grid: content left, visual right: matching bp-hero-grid pattern */
+/* Grid: content left, visual right: matching bp-hero-grid pattern.
+   align-items: start -> badge/title/desc top-align với mép trên ảnh
+   (center cũ khiến text tụt xuống giữa cột ảnh cao hơn) */
 .ph-proj-hero-inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: clamp(2rem, 4vw, 3.5rem);
-  align-items: center;
+  align-items: start;
   position: relative;
   z-index: 1;
   max-width: 1280px;
@@ -116,6 +120,7 @@
   position: relative;
   z-index: 2;
   margin-top: -85px;
+  margin-left: 17%;
 }
 .ph-proj-stat {
   text-align: center;

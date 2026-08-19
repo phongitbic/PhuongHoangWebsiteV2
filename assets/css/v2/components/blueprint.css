@@ -395,6 +395,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Ảnh gốc 900x900 có ~57% nền trắng chết (chủ yếu phía trên); zoom 1.5
+     gốc 50% 58% cắt phần trắng thừa (còn ~32%), thiết bị + màn hình xanh
+     lấp khung (không đổi file ảnh, không crop vật lý) */
+  transform: scale(1.5);
+  transform-origin: 50% 58%;
 }
 
 @media (max-width: 1023px) {
@@ -462,15 +467,50 @@
   animation-delay: 250ms;
 }
 
+/* Headline mainline: one visual cluster "Khoảng 4.000 Vụ cháy".
+   Flex with baseline alignment so the prefix/suffix labels share the
+   number's baseline. Unit A (label + number) is nowrap; the suffix is
+   its own wrap unit, so on narrow screens the only allowed break is
+   before "Vụ cháy" (grouping preserved, never between label and number). */
+.bp-hero-mainline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.35em;
+  margin-bottom: 0.3em;
+}
+
+.bp-hero-mainline-unit {
+  display: inline-flex;
+  align-items: baseline;
+  column-gap: 0.3em;
+  white-space: nowrap;
+}
+
+.bp-hero-stat-label {
+  font-family: var(--ph-font-display);
+  font-size: clamp(1rem, 1.9vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ph-text-primary);
+}
+
+.bp-hero-stat-suffix {
+  /* Chỉ là anchor cho suffix "Vụ cháy", KHÔNG ghi đè typography:
+     kế thừa toàn bộ từ .bp-hero-stat-label (cùng element dùng cả 2 class).
+     Trước đây font-weight: 700 ở đây khiến "Vụ cháy" đậm hơn "Khoảng" (600). */
+}
+
 .bp-hero-stat {
-  display: block;
   font-size: clamp(2.75rem, 6vw, 4.5rem);
   font-weight: 700;
   line-height: 1;
   color: var(--ph-warning);
   letter-spacing: -0.04em;
-  margin-bottom: 0.15em;
   font-family: var(--ph-font-display);
+  white-space: nowrap;
 }
 
 .bp-hero-title-line {
@@ -482,6 +522,9 @@
   margin-top: 0.35em;
   color: var(--ph-accent-warm);
   font-weight: 600;
+  /* Ở 390px dòng này xuống 2 dòng với 2 từ mồ côi ("hiện sớm.")
+     -> balance chia đều thành 2 dòng chủ ý */
+  text-wrap: balance;
 }
 
 @keyframes bp-fade-in {
@@ -513,14 +556,6 @@
   gap: var(--ph-space-sm);
   animation: bp-fade-in 700ms var(--ph-ease-out) both;
   animation-delay: 550ms;
-}
-
-.bp-hero-channels {
-  display: flex;
-  align-items: center;
-  gap: var(--ph-space-sm);
-  font: var(--ph-text-body-sm);
-  color: var(--ph-text-muted);
 }
 
 .bp-hero-zalo,
@@ -1864,6 +1899,10 @@
   transform: translateY(-2px);
 }
 
+/* Uniform 220px frame; the white frame hugs each document (fit-content),
+   so portrait documents stay narrow and landscape ones stay wide - no big
+   empty side bands. Image keeps its real ratio via max-width/max-height:
+   no forced crop, no distortion, no letterbox. */
 .bp-cert-card-img {
   flex-shrink: 0;
   display: flex;
@@ -1873,18 +1912,19 @@
   border: 1px solid var(--ph-border-subtle);
   border-radius: var(--ph-radius-sm);
   overflow: hidden;
-  margin-bottom: var(--ph-space-sm);
+  margin: 0 auto var(--ph-space-sm);
   padding: 6px;
+  width: fit-content;
+  max-width: 100%;
+  height: 220px;
 }
 
-/* Frame hugs each document: uniform 180px height, width follows the image's
-   real ratio (portrait TCVN/CE/IEC stay ~3:4, landscape ISO fills 4:3) -
-   no forced crop, no letterbox bands. */
 .bp-cert-card-img img {
   display: block;
   width: auto;
-  height: 180px;
+  height: auto;
   max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
