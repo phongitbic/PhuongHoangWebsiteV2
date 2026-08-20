@@ -102,7 +102,6 @@ html:not([data-theme]) { visibility: hidden; }
   /* Z-Index Scale */
   --ph-z-base: 1;
   --ph-z-sticky: 10;
-  --ph-z-dropdown: 60;
   --ph-z-nav: 50;
   --ph-z-overlay: 80;
   --ph-z-modal: 100;

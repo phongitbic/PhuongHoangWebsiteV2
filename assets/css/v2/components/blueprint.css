@@ -1956,12 +1956,6 @@
   letter-spacing: -0.01em;
 }
 
-.bp-cert-why {
-  font: var(--ph-text-body-sm);
-  color: var(--ph-text-secondary);
-  line-height: 1.65;
-}
-
 .bp-cert-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;

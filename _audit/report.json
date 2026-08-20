@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19 15:16:13",
+  "generated": "2026-08-20 13:39:15",
   "base": "http://127.0.0.1:5500",
   "rootStatus": 200,
   "rootCheck": {
@@ -265,8 +265,8 @@
           "h3: Phiên bản Thương mại",
           "h3: Phiên bản Công nghiệp",
           "h2: Chứng nhận và tài liệu",
-          "h3: Tuyên bố phù hợp CE",
           "h3: Chứng nhận ISO/IEC 17025:2017",
+          "h3: Tuyên bố phù hợp CE",
           "h3: Bảo hiểm trách nhiệm sản phẩm",
           "h3: Bản quyền phần mềm VIO",
           "h2: Câu hỏi thường gặp",
@@ -282,7 +282,7 @@
         "imgsNoDims": 5,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 8101,
+        "bodyTextLen": 8102,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -361,17 +361,7 @@
           },
           {
             "tag": "section",
-            "cls": "bp-reveal ph-prod-cta-sec visible",
-            "id": "",
-            "content": {
-              "left": 0,
-              "right": 1280,
-              "width": 1280
-            }
-          },
-          {
-            "tag": "section",
-            "cls": "bp-section-alt bp-reveal ph-faq-sec visible",
+            "cls": "bp-section bp-reveal ph-faq-sec visible",
             "id": "",
             "content": {
               "left": 0,
@@ -457,7 +447,6 @@
         "products_1280_s03.jpg",
         "products_1280_s04.jpg",
         "products_1280_s05.jpg",
-        "products_1280_s06.jpg",
         "products_1280_full.jpg",
         "products_768_fold.jpg",
         "products_390_full.jpg"
@@ -502,7 +491,6 @@
           "h4: Công nghệ thông minh",
           "h4: Độ bền vượt trội",
           "h4: Hỗ trợ toàn diện",
-          "h2: Cần hỗ trợ chọn sản phẩm phù hợp?",
           "h2: Câu hỏi thường gặp",
           "h3: Thiết bị điện an toàn thông minh",
           "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
@@ -516,7 +504,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 8204,
+        "bodyTextLen": 7931,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -1070,16 +1058,6 @@
             }
           },
           {
-            "tag": "section",
-            "cls": "ph-proj-cta-sec bp-reveal visible",
-            "id": "",
-            "content": {
-              "left": 0,
-              "right": 1280,
-              "width": 1280
-            }
-          },
-          {
             "tag": "footer",
             "cls": "footer",
             "id": ""
@@ -1153,7 +1131,6 @@
         "projects_1280_s04.jpg",
         "projects_1280_s05.jpg",
         "projects_1280_s06.jpg",
-        "projects_1280_s07.jpg",
         "projects_1280_full.jpg",
         "projects_768_fold.jpg",
         "projects_390_full.jpg"
@@ -1208,7 +1185,6 @@
           "h4: An toàn tuyệt đối",
           "h4: Giám sát thông minh",
           "h4: Đội ngũ chuyên nghiệp",
-          "h2: Bạn có dự án cần bảo vệ an toàn điện?",
           "h3: Thiết bị điện an toàn thông minh",
           "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
           "h4: Liên hệ",
@@ -1221,7 +1197,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 4746,
+        "bodyTextLen": 4584,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -1264,13 +1240,13 @@
       ],
       "failed_requests": [
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
@@ -1755,7 +1731,6 @@
       "url": "http://127.0.0.1:5500/certificates.html",
       "status": 200,
       "console_errors": [
-        "Failed to load resource: net::ERR_NO_BUFFER_SPACE",
         "Failed to load resource: the server responded with a status of 404 (Not Found)",
         "Failed to load resource: the server responded with a status of 404 (Not Found)",
         "Failed to load resource: the server responded with a status of 404 (Not Found)",
@@ -1777,20 +1752,19 @@
         "Failed to load resource: the server responded with a status of 404 (Not Found)"
       ],
       "failed_requests": [
-        "FAILED http://127.0.0.1:5500/assets/css/v2/components/buttons.css",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
+        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
         "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
@@ -2004,10 +1978,7 @@
       "name": "news",
       "url": "http://127.0.0.1:5500/news.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -2199,11 +2170,7 @@
       "name": "contact",
       "url": "http://127.0.0.1:5500/contact.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -2381,7 +2348,7 @@
       ],
       "seo": {
         "lang": "vi",
-        "title": "Liên Hệ Phượng Hoàng | Hotline 1800 888 638 | Tư Vấn Miễn Phí",
+        "title": "Liên Hệ Phượng Hoàng: Hotline 1800 888 638 | Tư Vấn Miễn Phí",
         "metaDescription": "Liên hệ Phượng Hoàng: địa chỉ 30 Lý Thái Tổ, Bắc Ninh. Hotline 1800 888 638. Email info@khktphuonghoang.com. Tư vấn thiết bị chống giật, chống cháy điện miễn phí.",
         "canonical": "https://khktphuonghoang.com/contact.html",
         "og": [
@@ -2451,10 +2418,7 @@
       "name": "leakage-detector",
       "url": "http://127.0.0.1:5500/leakage-detector.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -2568,9 +2532,46 @@
         }
       },
       "overflow": {
-        "1280": 0
+        "1280": 0,
+        "768": 22,
+        "390": 0
       },
-      "overflowEls": {},
+      "overflowEls": {
+        "768": [
+          "div.top-bar-contact L338 R790",
+          "a.top-bar-contact-link L590 R790",
+          "span L612 R790",
+          "div.mobile-menu L1216 R1536",
+          "div.mobile-menu-header L1241 R1512",
+          "a.top-bar-brand L1241 R1531",
+          "img.top-bar-brand-logo L1241 R1270",
+          "span.top-bar-brand-texts L1280 R1531",
+          "strong.top-bar-brand-text L1280 R1531",
+          "button.mobile-menu-close L1531 R1565",
+          "ul.mobile-nav-list L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512",
+          "li L1241 R1512",
+          "a.mobile-nav-link L1241 R1512"
+        ],
+        "390": [
+          "div.mobile-menu L460 R780",
+          "div.mobile-menu-header L485 R756",
+          "a.top-bar-brand L485 R722",
+          "img.top-bar-brand-logo L485 R508",
+          "span.top-bar-brand-texts L516 R722",
+          "strong.top-bar-brand-text L516 R722",
+          "button.mobile-menu-close L722 R756",
+          "ul.mobile-nav-list L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "a.mobile-nav-link L485 R756",
+          "li L485 R756",
+          "span.mobile-nav-link L485 R756",
+          "span L509 R583"
+        ]
+      },
       "actions": [],
       "screenshots": [
         "leakage-detector_1280_s00.jpg",
@@ -2583,11 +2584,13 @@
         "leakage-detector_1280_s07.jpg",
         "leakage-detector_1280_s08.jpg",
         "leakage-detector_1280_s09.jpg",
-        "leakage-detector_1280_full.jpg"
+        "leakage-detector_1280_full.jpg",
+        "leakage-detector_768_fold.jpg",
+        "leakage-detector_390_full.jpg"
       ],
       "seo": {
         "lang": "vi",
-        "title": "Thiết bị phát hiện rò điện | Phượng Hoàng | Thiết bị điện an toàn thông minh",
+        "title": "Thiết bị phát hiện rò điện: Phượng Hoàng | Thiết bị điện an toàn thông minh",
         "metaDescription": "Thiết bị phát hiện rò điện của Phượng Hoàng: phát hiện sớm dòng rò, cảnh báo tức thời, giám sát từ xa. Bảo vệ an toàn cho người và thiết bị.",
         "canonical": "https://khktphuonghoang.com/leakage-detector.html",
         "og": [
@@ -2642,7 +2645,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 3927,
+        "bodyTextLen": 3944,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -2663,24 +2666,13 @@
       "headerStrips": [
         "leakage-detector_header_1280.jpg",
         "leakage-detector_header_390.jpg"
-      ],
-      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+      ]
     },
     {
       "name": "surge-protection",
       "url": "http://127.0.0.1:5500/surge-protection.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: getTranslation is not defined",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: getTranslation is not defined",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: getTranslation is not defined"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -2732,17 +2724,7 @@
           },
           {
             "tag": "section",
-            "cls": "bp-reveal ph-prod-cta-sec visible",
-            "id": "",
-            "content": {
-              "left": 0,
-              "right": 1280,
-              "width": 1280
-            }
-          },
-          {
-            "tag": "section",
-            "cls": "bp-section-alt bp-reveal ph-faq-sec visible",
+            "cls": "bp-section bp-reveal ph-faq-sec visible",
             "id": "",
             "content": {
               "left": 0,
@@ -2812,14 +2794,13 @@
         "surge-protection_1280_s03.jpg",
         "surge-protection_1280_s04.jpg",
         "surge-protection_1280_s05.jpg",
-        "surge-protection_1280_s06.jpg",
         "surge-protection_1280_full.jpg",
         "surge-protection_768_fold.jpg",
         "surge-protection_390_full.jpg"
       ],
       "seo": {
         "lang": "vi",
-        "title": "Sản Phẩm Thiết Bị Điện An Toàn | Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
+        "title": "Sản Phẩm Thiết Bị Điện An Toàn: Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
         "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly, dập hồ quang. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
         "canonical": "https://khktphuonghoang.com/products.html",
         "og": [
@@ -2847,11 +2828,12 @@
         "headings": [
           "h1: Danh mục",
           "h2: Danh mục",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản giao thông",
+          "h3: Thiết bị an toàn điện thông minh 220V phiên bản thương mại",
           "h4: Kiểm định nghiêm ngặt",
           "h4: Công nghệ thông minh",
           "h4: Độ bền vượt trội",
           "h4: Hỗ trợ toàn diện",
-          "h2: Bạn cần tư vấn chọn sản phẩm phù hợp?",
           "h2: Câu hỏi thường gặp",
           "h3: Thiết bị điện an toàn thông minh",
           "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
@@ -2859,13 +2841,13 @@
           "h4: Chính sách và quy định",
           "h4: Tải ứng dụng Phượng Hoàng"
         ],
-        "imgsTotal": 5,
+        "imgsTotal": 7,
         "imgsMissingAlt": 0,
         "imgsBroken": 0,
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 6545,
+        "bodyTextLen": 6851,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -2892,11 +2874,7 @@
       "name": "purchase-policy",
       "url": "http://127.0.0.1:5500/purchase-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -3080,7 +3058,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 3507,
+        "bodyTextLen": 3524,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -3107,11 +3085,7 @@
       "name": "warranty-policy",
       "url": "http://127.0.0.1:5500/warranty-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -3294,7 +3268,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2878,
+        "bodyTextLen": 2895,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -3321,11 +3295,7 @@
       "name": "exchange-policy",
       "url": "http://127.0.0.1:5500/exchange-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -3496,7 +3466,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2536,
+        "bodyTextLen": 2553,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -3523,11 +3493,7 @@
       "name": "shipping-policy",
       "url": "http://127.0.0.1:5500/shipping-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -3699,7 +3665,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2348,
+        "bodyTextLen": 2365,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -3726,11 +3692,7 @@
       "name": "payment-policy",
       "url": "http://127.0.0.1:5500/payment-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -3896,8 +3858,8 @@
         "headings": [
           "h1: Thanh toán linh hoạt, an toàn và minh bạch",
           "h2: 1. Phương thức thanh toán",
-          "h2: 3. Thanh toán theo tiến độ",
-          "h2: 2. Thông tin chuyển khoản",
+          "h2: 2. Thanh toán theo tiến độ",
+          "h2: 3. Thông tin chuyển khoản",
           "h2: 4. Lưu ý khi thanh toán",
           "h3: Chính sách liên quan",
           "h3: Thiết bị điện an toàn thông minh",
@@ -3912,7 +3874,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2632,
+        "bodyTextLen": 2649,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -3939,11 +3901,7 @@
       "name": "privacy-policy",
       "url": "http://127.0.0.1:5500/privacy-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -4103,7 +4061,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2607,
+        "bodyTextLen": 2624,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -4130,11 +4088,7 @@
       "name": "sales-policy",
       "url": "http://127.0.0.1:5500/sales-policy.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -4305,7 +4259,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2604,
+        "bodyTextLen": 2621,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -4332,11 +4286,7 @@
       "name": "404",
       "url": "http://127.0.0.1:5500/404.html",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'",
-        "PAGEERROR: Unexpected token ':'"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -4441,7 +4391,7 @@
       ],
       "seo": {
         "lang": "vi",
-        "title": "404 | Trang không tìm thấy | Phượng Hoàng",
+        "title": "404: Trang không tìm thấy | Phượng Hoàng",
         "metaDescription": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.",
         "canonical": "https://khktphuonghoang.com/404.html",
         "og": [
@@ -4481,7 +4431,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 1579,
+        "bodyTextLen": 1596,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -4508,14 +4458,7 @@
       "name": "news-detail",
       "url": "http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all",
       "status": 200,
-      "console_errors": [
-        "PAGEERROR: Unexpected token ':'",
-        "Failed to load news data: ReferenceError: getTranslation is not defined\n    at renderArticleDetail (http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:233:27)\n    at http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:334:35\n    at http://127.0.0.1:5500/assets/",
-        "PAGEERROR: Unexpected token ':'",
-        "Failed to load news data: ReferenceError: getTranslation is not defined\n    at renderArticleDetail (http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:233:27)\n    at http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:334:35\n    at http://127.0.0.1:5500/assets/",
-        "PAGEERROR: Unexpected token ':'",
-        "Failed to load news data: ReferenceError: getTranslation is not defined\n    at renderArticleDetail (http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:233:27)\n    at http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all:334:35\n    at http://127.0.0.1:5500/assets/"
-      ],
+      "console_errors": [],
       "failed_requests": [],
       "alignment": {
         "headerEdges": {
@@ -4539,6 +4482,11 @@
             "tag": "header",
             "cls": "article-header",
             "id": "articleContainer"
+          },
+          {
+            "tag": "section",
+            "cls": "article-content",
+            "id": "detailContent"
           },
           {
             "tag": "section",
@@ -4605,15 +4553,16 @@
         "news-detail_1280_s01.jpg",
         "news-detail_1280_s02.jpg",
         "news-detail_1280_s03.jpg",
+        "news-detail_1280_s04.jpg",
         "news-detail_1280_full.jpg",
         "news-detail_768_fold.jpg",
         "news-detail_390_full.jpg"
       ],
       "seo": {
         "lang": "vi",
-        "title": "Chi Tiết Bài Viết | Phượng Hoàng | Tin Tức An Toàn Điện",
-        "metaDescription": "Chi tiết bài viết từ Phượng Hoàng về thiết bị điện an toàn thông minh, giải pháp bảo vệ điện và công nghệ mới nhất.",
-        "canonical": "https://khktphuonghoang.com/news-detail.html",
+        "title": "Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạn: Phượng Hoàng | Tin Tức An Toàn Điện",
+        "metaDescription": "Khám phá công nghệ thiết bị điện an toàn thông minh thế hệ mới: giải pháp bảo vệ toàn diện cho gia đình và doanh nghiệp trước các nguy cơ quá tải, rò điện,",
+        "canonical": "https://khktphuonghoang.com/news-detail.html?id=news-001",
         "og": [
           "og:type",
           "og:url",
@@ -4638,22 +4587,34 @@
         "h1Count": 1,
         "headings": [
           "h1: Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạ",
+          "h2: Khái niệm thiết bị điện an toàn thông minh",
+          "h2: Sự khác biệt với thiết bị bảo vệ truyền thống",
+          "h2: Nguyên lý hoạt động chi tiết",
+          "h2: Lợi ích thiết thực cho hộ gia đình",
+          "h2: Ứng dụng cho doanh nghiệp và văn phòng",
+          "h2: Hướng dẫn lựa chọn thiết bị phù hợp",
+          "h2: Quy trình lắp đặt và vận hành",
+          "h3: Kết luận",
           "h4: Mục lục",
           "h4: Danh mục sản phẩm",
           "h2: Bài viết liên quan",
+          "h3: Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam",
+          "h3: Hướng dẫn chi tiết cách xử lý sự cố điện một cách an toàn trong gia đình",
+          "h3: Cách bảo vệ hệ thống điện trước sự cố chập cháy",
+          "h3: Những lưu ý quan trọng khi sử dụng thiết bị điện trong môi trường ẩm ướt",
           "h3: Thiết bị điện an toàn thông minh",
           "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
           "h4: Liên hệ",
           "h4: Chính sách và quy định",
           "h4: Tải ứng dụng Phượng Hoàng"
         ],
-        "imgsTotal": 6,
+        "imgsTotal": 14,
         "imgsMissingAlt": 0,
         "imgsBroken": 0,
-        "imgsNoDims": 0,
+        "imgsNoDims": 3,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 1919,
+        "bodyTextLen": 11131,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,

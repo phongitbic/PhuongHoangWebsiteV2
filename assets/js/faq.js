@@ -30,8 +30,8 @@ var phFaqData = {
       id: "faq-product-categories",
       category: "product",
       q: "Phượng Hoàng có những nhóm sản phẩm nào?",
-      a: "Phượng Hoàng cung cấp 4 nhóm thiết bị điện an toàn thông minh chính: (1) Thiết bị công nghiệp dành cho nhà máy, khu công nghiệp; (2) Thiết bị dân dụng bảo vệ an toàn điện cho hộ gia đình; (3) Thiết bị chống sốc cách ly ngăn chặn điện giật do chạm vào thiết bị rò điện; (4) Thiết bị dập hồ quang phát hiện và dập tắt hồ quang điện, phòng chống cháy nổ do sự cố điện.",
-      keywords: "nhóm sản phẩm Phượng Hoàng, thiết bị điện an toàn, danh mục sản phẩm, công nghiệp, dân dụng, chống sốc, dập hồ quang",
+      a: "Phượng Hoàng cung cấp 3 nhóm thiết bị điện an toàn thông minh chính: (1) Thiết bị công nghiệp dành cho nhà máy, khu công nghiệp; (2) Thiết bị dân dụng bảo vệ an toàn điện cho hộ gia đình; (3) Thiết bị chống sốc cách ly ngăn chặn điện giật do chạm vào thiết bị rò điện.",
+      keywords: "nhóm sản phẩm Phượng Hoàng, thiết bị điện an toàn, danh mục sản phẩm, công nghiệp, dân dụng, chống sốc",
       intent: "Commercial: khách hàng muốn biết danh mục sản phẩm trước khi mua",
       internalLink: "products.html",
       linkAnchor: "Xem danh mục sản phẩm đầy đủ"
@@ -223,8 +223,8 @@ var phFaqData = {
       id: "faq-product-categories",
       category: "product",
       q: "What product categories does Phuong Hoang offer?",
-      a: "Phuong Hoang provides 4 main categories of smart electrical safety equipment: (1) Industrial equipment for factories and industrial zones; (2) Residential equipment for electrical safety protection in households; (3) Isolation surge protection devices that prevent electric shock from contact with leaking equipment; (4) Arc fault protection devices that detect and extinguish electrical arcs to prevent fire hazards from electrical faults.",
-      keywords: "Phuong Hoang product categories, electrical safety equipment, product catalog, industrial, residential, surge, arc fault",
+      a: "Phuong Hoang provides 3 main categories of smart electrical safety equipment: (1) Industrial equipment for factories and industrial zones; (2) Residential equipment for electrical safety protection in households; (3) Isolation surge protection devices that prevent electric shock from contact with leaking equipment.",
+      keywords: "Phuong Hoang product categories, electrical safety equipment, product catalog, industrial, residential, surge",
       intent: "Commercial: customer wants to know product range before buying",
       internalLink: "products.html",
       linkAnchor: "View full product catalog"
@@ -416,8 +416,8 @@ var phFaqData = {
       id: "faq-product-categories",
       category: "product",
       q: "凤凰科技有哪些产品类别？",
-      a: "凤凰科技提供四大类智能用电安全设备：（1）工业设备，适用于工厂和工业园区；（2）民用设备，为家庭提供用电安全保护；（3）隔离电涌保护，防止因接触漏电设备而触电；（4）电弧故障保护，检测并熄灭电弧，防止电气故障引发的火灾危险。",
-      keywords: "凤凰科技产品类别, 用电安全设备, 产品目录, 工业, 民用, 电涌, 电弧",
+      a: "凤凰科技提供三大类智能用电安全设备：（1）工业设备，适用于工厂和工业园区；（2）民用设备，为家庭提供用电安全保护；（3）隔离电涌保护，防止因接触漏电设备而触电。",
+      keywords: "凤凰科技产品类别, 用电安全设备, 产品目录, 工业, 民用, 电涌",
       intent: "商业型：客户在购买前想了解产品范围",
       internalLink: "products.html",
       linkAnchor: "查看完整产品目录"

@@ -110,7 +110,6 @@
         <div class="ph-detail-gallery">
           <div class="ph-detail-main-img" onclick="openLightbox()">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Sản phẩm" id="mainImage" fetchpriority="high" width="600" height="600">
-            <span class="ph-gallery-badge in-stock" id="galleryBadge">Còn hàng</span>
           </div>
           <div class="ph-detail-thumbs" id="galleryThumbs"></div>
         </div>
@@ -376,17 +375,14 @@ window._phPageMeta = {
       if (!product) return;
       var allImages = buildImageList(product);
       var mainImg = document.getElementById('mainImage');
-      var badge = document.getElementById('galleryBadge');
       var thumbsContainer = document.getElementById('galleryThumbs');
       if (!allImages || allImages.length === 0) {
         if (mainImg) mainImg.src = productData.getPlaceholder(productData.t(product.name));
-        if (badge) { badge.textContent = productData.t(product.status); badge.className = 'ph-gallery-badge ' + (product.inStock ? 'in-stock' : 'out-of-stock'); }
         if (thumbsContainer) thumbsContainer.innerHTML = '';
         return;
       }
       var startIdx = currentImageIndex >= 0 && currentImageIndex < allImages.length ? currentImageIndex : 0;
       if (mainImg) mainImg.src = allImages[startIdx];
-      if (badge) { badge.textContent = productData.t(product.status); badge.className = 'ph-gallery-badge ' + (product.inStock ? 'in-stock' : 'out-of-stock'); }
       if (thumbsContainer) {
         thumbsContainer.innerHTML = '';
         for (var i = 0; i < allImages.length; i++) {
@@ -752,8 +748,6 @@ window._phPageMeta = {
       document.getElementById('infoCategory').textContent = cat ? productData.t(cat.name) : '';
       document.getElementById('infoTitle').textContent = name;
       document.getElementById('infoDesc').textContent = fullDesc;
-      var badge = document.getElementById('galleryBadge');
-      if (badge) badge.textContent = productData.t(product.status);
       if (product.models && product.models[currentModelIndex]) {
         var m = product.models[currentModelIndex];
         var selectedText = getTranslation('page_productDetail.selected');

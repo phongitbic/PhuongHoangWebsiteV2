@@ -49,7 +49,7 @@
 .ph-cert-std-desc { font-size: .75rem; color: var(--ph-text-secondary); line-height: 1.4; }
 
 /* ── Certificate Gallery Grid ── */
-/* 4 columns desktop → 2 tablet → 1 mobile; 8 cards = 2/4/8 balanced rows */
+/* 4 columns desktop → 2 tablet → 1 mobile; two 4-card rows (certifications + test reports) */
 .ph-cert-gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -62,6 +62,18 @@
   color: var(--ph-text-secondary);
   font-size: 1rem;
   line-height: 1.65;
+}
+
+/* ── Test-reports row heading (second row of the gallery section) ── */
+.ph-cert-reports-head {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+.ph-cert-reports-head h3 {
+  font: var(--ph-text-h4);
+  color: var(--ph-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
 }
 
 /* ── Card: framed document with certification seal accent ── */
@@ -162,11 +174,6 @@
   color: var(--ph-text-primary);
   margin-bottom: 0.25rem;
   font-size: 0.9375rem;
-}
-.ph-cert-info p {
-  font-size: 0.8125rem;
-  color: var(--ph-text-secondary);
-  line-height: 1.5;
 }
 
 /* ── Lightbox ── */

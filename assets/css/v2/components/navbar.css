@@ -1,6 +1,6 @@
 /* ================================
    Navbar: Phượng Hoàng V2
-   Top Bar, Header, Mega Menu, Mobile Menu,
+   Top Bar, Header, Mobile Menu,
    Language Switcher, Theme Switcher
    JS: menu.js, phong.js
    ================================ */
@@ -284,12 +284,7 @@
   .navbar-links { display: none; }
 }
 
-.nav-item {
-  position: relative;
-}
-
-.nav-link,
-.dropdown-toggle {
+.nav-link {
   color: var(--ph-text-secondary);
   text-decoration: none;
   /* +15% vs 0.8125rem base: roomier, still clearly navigation */
@@ -305,8 +300,7 @@
   position: relative;
 }
 
-.nav-link::after,
-.dropdown-toggle::after {
+.nav-link::after {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -319,129 +313,16 @@
 }
 
 .nav-link:hover::after,
-.dropdown-toggle:hover::after,
 .nav-link.active::after {
   transform: scaleX(1);
 }
 
-.nav-link:hover,
-.dropdown-toggle:hover,
-.dropdown-toggle.active {
+.nav-link:hover {
   color: var(--ph-accent);
 }
 
 .nav-link.active {
   color: var(--ph-accent);
-}
-
-.dropdown-toggle::before {
-  content: '▾';
-  display: inline-block;
-  margin-left: 4px;
-  font-size: 10px;
-  transition: transform 200ms var(--ph-ease-out);
-}
-.dropdown:hover .dropdown-toggle::before,
-.dropdown:focus-within .dropdown-toggle::before {
-  transform: rotate(180deg);
-}
-
-/* ── Mega Menu Dropdown ── */
-.dropdown-menu {
-  position: absolute;
-  top: calc(100% + 16px);
-  /* Anchored to the toggle's left edge: centered on the button clipped the
-     menu's left column off-screen at 1024-1279px viewports */
-  left: 0;
-  transform: translateY(-4px);
-  width: 540px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: var(--ph-space-sm);
-  background: var(--ph-surface-overlay);
-  border: 1px solid rgba(148, 166, 190, 0.10);
-  border-radius: var(--ph-radius-xl);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
-              0 0 0 1px rgba(255, 255, 255, 0.04) inset;
-  z-index: var(--ph-z-dropdown);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 200ms var(--ph-ease-out),
-              transform 250ms var(--ph-ease-out),
-              visibility 200ms;
-  pointer-events: none;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-/* Invisible hover bridge: keeps :hover continuous across the 16px gap */
-.dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -16px;
-  left: 0;
-  right: 0;
-  height: 16px;
-}
-
-[data-theme="light"] .dropdown-menu {
-  border-color: rgba(8, 51, 90, 0.08);
-  box-shadow: 0 16px 48px rgba(8, 51, 90, 0.10),
-              0 0 0 1px rgba(8, 51, 90, 0.04) inset;
-}
-
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.dropdown-item {
-  width: calc(50% - 3px);
-  display: flex;
-  align-items: flex-start;
-  gap: var(--ph-space-sm);
-  padding: var(--ph-space-sm);
-  border-radius: var(--ph-radius-md);
-  text-decoration: none;
-  color: var(--ph-text-secondary);
-  transition: background 150ms var(--ph-ease-out),
-              color 150ms var(--ph-ease-out);
-}
-
-.dropdown-item:hover {
-  background: var(--ph-accent-subtle);
-  color: var(--ph-accent);
-}
-
-.dropdown-item .dropdown-icon {
-  font-size: var(--ph-icon-lg);
-  flex-shrink: 0;
-  line-height: 1.2;
-}
-
-.dropdown-item .dropdown-label,
-.dropdown-item .dropdown-title {
-  font: var(--ph-text-body-sm);
-  font-weight: 600;
-  color: var(--ph-text-primary);
-  margin-bottom: 2px;
-  letter-spacing: -0.01em;
-}
-
-.dropdown-item .dropdown-desc {
-  font: var(--ph-text-caption);
-  font-weight: 400;
-  color: var(--ph-text-muted);
-}
-
-.dropdown-item .dropdown-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
 }
 
 /* ── Header Actions ── */
@@ -519,8 +400,7 @@
    source order decides the cascade). */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .navbar-links { gap: 8px; }
-  .nav-link,
-  .dropdown-toggle { font-size: 0.8125rem; }
+  .nav-link { font-size: 0.8125rem; }
   .header-inner { gap: 1.5rem; }
   .lang-btn { padding: 0 0.5rem; }
 }
