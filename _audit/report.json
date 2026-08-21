@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20 13:39:15",
+  "generated": "2026-08-21 08:09:34",
   "base": "http://127.0.0.1:5500",
   "rootStatus": 200,
   "rootCheck": {
@@ -10,10 +10,10 @@
   },
   "sitemapCheck": {
     "status": 200,
-    "urlCount": 40,
+    "urlCount": 41,
     "dupes": [],
     "surgePresent": true,
-    "pdCount": 6,
+    "pdCount": 7,
     "ndCount": 17
   },
   "pages": [
@@ -265,7 +265,7 @@
           "h3: Phiên bản Thương mại",
           "h3: Phiên bản Công nghiệp",
           "h2: Chứng nhận và tài liệu",
-          "h3: Chứng nhận ISO/IEC 17025:2017",
+          "h3: Bằng sáng chế thiết kế ngoại quan",
           "h3: Tuyên bố phù hợp CE",
           "h3: Bảo hiểm trách nhiệm sản phẩm",
           "h3: Bản quyền phần mềm VIO",
@@ -282,7 +282,7 @@
         "imgsNoDims": 5,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 8102,
+        "bodyTextLen": 7483,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -426,7 +426,7 @@
       "actions": [
         {
           "name": "category-filter",
-          "cardsBefore": 6,
+          "cardsBefore": 7,
           "cardsAfter": 3,
           "cat": "industrial",
           "status": "pass"
@@ -454,7 +454,7 @@
       "seo": {
         "lang": "vi",
         "title": "Sản Phẩm Thiết Bị Điện An Toàn: Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
-        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly, dập hồ quang. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
+        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
         "canonical": "https://khktphuonghoang.com/products.html",
         "og": [
           "og:type",
@@ -483,10 +483,11 @@
           "h2: Danh mục",
           "h3: Thiết bị an toàn điện thông minh 380V",
           "h3: Thiết bị an toàn điện thông minh 220V phiên bản giao thông",
-          "h3: Thiết bị an toàn điện thông minh 220V phiên bản công nghiệp",
+          "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
           "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
           "h3: Thiết bị an toàn điện thông minh 220V phiên bản thương mại",
           "h3: Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh",
+          "h3: Thiết bị điện an toàn thông minh loại dập hồ quang 220V",
           "h4: Kiểm định nghiêm ngặt",
           "h4: Công nghệ thông minh",
           "h4: Độ bền vượt trội",
@@ -498,13 +499,13 @@
           "h4: Chính sách và quy định",
           "h4: Tải ứng dụng Phượng Hoàng"
         ],
-        "imgsTotal": 11,
+        "imgsTotal": 12,
         "imgsMissingAlt": 0,
         "imgsBroken": 0,
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 7931,
+        "bodyTextLen": 8041,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -750,6 +751,7 @@
           "h4: Quản lý lịch sử sự cố",
           "h4: Giám sát từ xa",
           "h4: Đo lường điện chính xác",
+          "h4: Bảo vệ chống mất pha",
           "h2: Ứng dụng",
           "h4: Nhà máy / Xí nghiệp",
           "h4: Công trình xây dựng",
@@ -762,7 +764,7 @@
           "h4: Ngắt nguồn tự động",
           "h4: Giảm rủi ro vận hành",
           "h2: Sản phẩm liên quan",
-          "h3: Thiết bị an toàn điện thông minh 220V phiên bản công nghiệp",
+          "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
           "h3: Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp",
           "h3: Thiết bị điện an toàn thông minh",
           "h5: CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG",
@@ -779,7 +781,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 5679,
+        "bodyTextLen": 5758,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -1224,34 +1226,8 @@
       "name": "about-us",
       "url": "http://127.0.0.1:5500/about-us.html",
       "status": 200,
-      "console_errors": [
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      ],
-      "failed_requests": [
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp"
-      ],
+      "console_errors": [],
+      "failed_requests": [],
       "alignment": {
         "headerEdges": {
           "left": 0,
@@ -1441,10 +1417,10 @@
           "h3: Cam kết chất lượng",
           "h3: Hỗ trợ toàn diện",
           "h2: Chứng nhận chất lượng",
-          "h3: ISO 9001:2015",
-          "h3: Chứng nhận sản phẩm",
-          "h3: Tiêu chuẩn IEC",
-          "h3: Sở hữu trí tuệ",
+          "h3: Tuyên bố phù hợp CE",
+          "h3: Báo cáo thử nghiệm IEC 61008-1",
+          "h3: Báo cáo thử nghiệm IEC 60898-1",
+          "h3: Bằng sáng chế thiết kế ngoại quan",
           "h2: Giải pháp an toàn điện",
           "h3: Chống giật cách ly",
           "h3: Chống sét lan truyền",
@@ -1457,11 +1433,11 @@
         ],
         "imgsTotal": 13,
         "imgsMissingAlt": 0,
-        "imgsBroken": 4,
+        "imgsBroken": 0,
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 4794,
+        "bodyTextLen": 5086,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -1730,48 +1706,8 @@
       "name": "certificates",
       "url": "http://127.0.0.1:5500/certificates.html",
       "status": 200,
-      "console_errors": [
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      ],
-      "failed_requests": [
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-3.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-9.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-8.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-4.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-5.webp",
-        "404 http://127.0.0.1:5500/assets/images/certificates/cert-design-6.webp"
-      ],
+      "console_errors": [],
+      "failed_requests": [],
       "alignment": {
         "headerEdges": {
           "left": 0,
@@ -1901,7 +1837,7 @@
       "seo": {
         "lang": "vi",
         "title": "Chứng nhận sản phẩm | Phượng Hoàng",
-        "metaDescription": "Chứng nhận chất lượng sản phẩm Phượng Hoàng: chứng nhận công nghệ, bằng sáng chế, an toàn, triển khai, năng lực, uy tín. Mỗi thiết bị được kiểm định riêng trước khi giao.",
+        "metaDescription": "Chứng nhận và tài liệu sản phẩm Phượng Hoàng: tuyên bố phù hợp CE, bằng sáng chế thiết kế, bảo hiểm trách nhiệm sản phẩm, bản quyền phần mềm VIO và báo cáo thử nghiệm theo tiêu chuẩn IEC.",
         "canonical": "https://khktphuonghoang.com/certificates.html",
         "og": [
           "og:type",
@@ -1928,13 +1864,16 @@
         "headings": [
           "h1: Chứng nhận sản phẩm",
           "h2: Năng lực cốt lõi",
-          "h2: Danh mục chứng nhận",
-          "h3: Chứng nhận công nghệ",
-          "h3: Chứng nhận bằng sáng chế sản phẩm",
-          "h3: Chứng nhận an toàn",
-          "h3: Chứng nhận triển khai",
-          "h3: Chứng nhận năng lực",
-          "h3: Chứng nhận uy tín",
+          "h2: Chứng nhận và tài liệu",
+          "h3: Bản quyền phần mềm VIO",
+          "h3: Bảo hiểm trách nhiệm sản phẩm",
+          "h3: Tuyên bố phù hợp CE",
+          "h3: Bằng sáng chế thiết kế ngoại quan",
+          "h3: Báo cáo thử nghiệm",
+          "h3: Báo cáo thử nghiệm IEC 61009",
+          "h3: Báo cáo thử nghiệm IEC 61008",
+          "h3: Báo cáo thử nghiệm IEC 60947",
+          "h3: Báo cáo thử nghiệm kiểu loại",
           "h2: Quy trình kiểm định chất lượng",
           "h3: Kiểm định nguyên liệu đầu vào",
           "h3: Kiểm định tại phòng thí nghiệm độc lập",
@@ -1945,13 +1884,13 @@
           "h4: Chính sách và quy định",
           "h4: Tải ứng dụng Phượng Hoàng"
         ],
-        "imgsTotal": 12,
+        "imgsTotal": 14,
         "imgsMissingAlt": 0,
-        "imgsBroken": 6,
+        "imgsBroken": 0,
         "imgsNoDims": 1,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 2679,
+        "bodyTextLen": 2562,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -2801,7 +2740,7 @@
       "seo": {
         "lang": "vi",
         "title": "Sản Phẩm Thiết Bị Điện An Toàn: Chống Giật, Chống Cháy, Chống Sốc | Phượng Hoàng",
-        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly, dập hồ quang. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
+        "metaDescription": "Sản phẩm thiết bị điện an toàn Phượng Hoàng: chống giật, chống cháy điện, chống sốc cách ly. Giải pháp an toàn điện cho gia đình, văn phòng, nhà máy công nghiệp.",
         "canonical": "https://khktphuonghoang.com/products.html",
         "og": [
           "og:type",
@@ -2847,7 +2786,7 @@
         "imgsNoDims": 0,
         "headerHeight": 68,
         "headerPosition": "fixed",
-        "bodyTextLen": 6851,
+        "bodyTextLen": 6719,
         "emDashTitle": 0,
         "emDashBody": 0,
         "emDashMeta": 0,
@@ -4459,7 +4398,9 @@
       "url": "http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all",
       "status": 200,
       "console_errors": [],
-      "failed_requests": [],
+      "failed_requests": [
+        "FAILED http://127.0.0.1:5500/news-detail.html?id=news-001&page=1&category=all"
+      ],
       "alignment": {
         "headerEdges": {
           "left": 0,
@@ -4507,46 +4448,9 @@
         }
       },
       "overflow": {
-        "1280": 0,
-        "768": 22,
-        "390": 0
+        "1280": 0
       },
-      "overflowEls": {
-        "768": [
-          "div.top-bar-contact L338 R790",
-          "a.top-bar-contact-link L590 R790",
-          "span L612 R790",
-          "div.mobile-menu L1216 R1536",
-          "div.mobile-menu-header L1241 R1512",
-          "a.top-bar-brand L1241 R1531",
-          "img.top-bar-brand-logo L1241 R1270",
-          "span.top-bar-brand-texts L1280 R1531",
-          "strong.top-bar-brand-text L1280 R1531",
-          "button.mobile-menu-close L1531 R1565",
-          "ul.mobile-nav-list L1241 R1512",
-          "li L1241 R1512",
-          "a.mobile-nav-link L1241 R1512",
-          "li L1241 R1512",
-          "a.mobile-nav-link L1241 R1512"
-        ],
-        "390": [
-          "div.mobile-menu L460 R780",
-          "div.mobile-menu-header L485 R756",
-          "a.top-bar-brand L485 R722",
-          "img.top-bar-brand-logo L485 R508",
-          "span.top-bar-brand-texts L516 R722",
-          "strong.top-bar-brand-text L516 R722",
-          "button.mobile-menu-close L722 R756",
-          "ul.mobile-nav-list L485 R756",
-          "li L485 R756",
-          "a.mobile-nav-link L485 R756",
-          "li L485 R756",
-          "a.mobile-nav-link L485 R756",
-          "li L485 R756",
-          "span.mobile-nav-link L485 R756",
-          "span L509 R583"
-        ]
-      },
+      "overflowEls": {},
       "actions": [],
       "screenshots": [
         "news-detail_1280_s00.jpg",
@@ -4554,9 +4458,7 @@
         "news-detail_1280_s02.jpg",
         "news-detail_1280_s03.jpg",
         "news-detail_1280_s04.jpg",
-        "news-detail_1280_full.jpg",
-        "news-detail_768_fold.jpg",
-        "news-detail_390_full.jpg"
+        "news-detail_1280_full.jpg"
       ],
       "seo": {
         "lang": "vi",
@@ -4632,7 +4534,8 @@
           "related": true
         }
       },
-      "headerStrips": []
+      "headerStrips": [],
+      "loadError": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
     }
   ]
 }

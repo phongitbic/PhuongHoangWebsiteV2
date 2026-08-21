@@ -195,6 +195,7 @@ window._phPageMeta = {
         if (container) container.innerHTML = '<p class="ph-fallback-msg">' + getTranslation('page_newsDetail.fallbackMsg') + '</p>';
         var contentDiv = document.querySelector('.article-content');
         if (contentDiv) contentDiv.innerHTML = '';
+        _phNewsDetailBooted = true;
         return;
       }
 
@@ -278,7 +279,7 @@ window._phPageMeta = {
       var pageUrl = siteUrl + '/news-detail.html?id=' + id;
       var logoUrl = siteUrl + '/assets/logo/Logo.png';
 
-      var seoTitle = articleTitle + ': Phượng Hoàng | Tin Tức An Toàn Điện';
+      var seoTitle = articleTitle + (lang === 'vi' ? ': Phượng Hoàng | Tin Tức An Toàn Điện' : (lang === 'zh' ? '：凤凰科技 | 用电安全资讯' : ': Phuong Hoang | Electrical Safety News'));
       document.title = seoTitle;
 
       var shortDesc = (articleExcerpt || '').replace(/<[^>]*>/g, '').substring(0, 155).trim();
@@ -326,6 +327,9 @@ window._phPageMeta = {
       script.id = 'article-detail-schema';
       script.textContent = JSON.stringify(articleSchema);
       document.head.appendChild(script);
+
+      /* First paint done: language switches can now safely re-render */
+      _phNewsDetailBooted = true;
     }
 
     document.addEventListener('DOMContentLoaded', function() {
@@ -335,6 +339,22 @@ window._phPageMeta = {
         loadNewsData(function() { renderArticleDetail(); });
       }
     });
+
+    /* Realtime language switch (same pattern as products.html and news.html):
+       i18n-v2.js setLanguage() only runs updatePage(), which overwrites static
+       [data-i18n] elements. The article body, TOC, related cards and dynamic
+       SEO are JS-rendered by renderArticleDetail(), so re-run it in the new
+       language while preserving id/page/category from the URL. */
+    var _phNewsDetailBooted = false;
+    var _phNewsDetailOrigSetLang = window.setLanguage;
+    if (typeof _phNewsDetailOrigSetLang === 'function') {
+      window.setLanguage = function(lang) {
+        _phNewsDetailOrigSetLang.call(window, lang);
+        if (_phNewsDetailBooted && typeof renderArticleDetail === 'function') {
+          renderArticleDetail();
+        }
+      };
+    }
   </script>
 </body>
 </html>

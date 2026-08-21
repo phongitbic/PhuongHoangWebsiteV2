@@ -145,7 +145,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha (3P+N)' },
             { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 125A' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15 kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '2,5 kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat công nghiệp' },
@@ -167,7 +167,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha (3P+N)' },
             { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 250A' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '4,5kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat công nghiệp' },
@@ -189,7 +189,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha (3P+N)' },
             { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 400A' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '10,38kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat công nghiệp' },
@@ -211,7 +211,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha (3P+N)' },
             { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 630A' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '11kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat công nghiệp' },
@@ -233,7 +233,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha (3P+N)' },
             { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '1 - 800A' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '17kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Lắp tủ aptomat công nghiệp' },
@@ -253,97 +253,6 @@ var productData = {
         { step: 3, icon: '', title: { vi: 'Cách ly nguồn sự cố', en: 'Fault Isolation', zh: '故障隔离' }, desc: { vi: 'Hệ thống cách ly nguồn điện sự cố, bảo vệ các thiết bị khác trong hệ thống.', en: 'System isolates the faulty power source, protecting other equipment.', zh: '系统隔离故障电源，保护其他设备。' } },
         { step: 4, icon: '', title: { vi: 'Ngắt nguồn tự động', en: 'Auto Disconnect', zh: '自动断开' }, desc: { vi: 'Thiết bị tự động ngắt nguồn khi cần thiết, đảm bảo an toàn tuyệt đối.', en: 'Automatic power disconnection when necessary for absolute safety.', zh: '必要时自动断开电源，确保绝对安全。' } },
         { step: 5, icon: '', title: { vi: 'Giảm rủi ro vận hành', en: 'Operational Risk Reduced', zh: '降低运营风险' }, desc: { vi: 'Rủi ro sự cố điện được giảm thiểu, hệ thống vận hành an toàn và ổn định.', en: 'Electrical risks minimized, system operates safely and stably.', zh: '电气风险最小化，系统安全稳定运行。' } }
-      ]
-    },
-    {
-      id: 'ind-002',
-      category: 'surge',
-      sku: 'MB-2KW',
-      brand: 'Phượng Hoàng',
-      name: {
-        vi: 'Thiết bị an toàn điện thông minh 220V phiên bản giao thông',
-        en: '220V Smart Electrical Safety Device - Commercial Version',
-        zh: '220V智能电气安全设备 - 商业版'
-      },
-      shortDesc: {
-        vi: 'Thiết bị bảo vệ điện thông minh 220V cho đèn tín hiệu giao thông, đèn đường và trạm chờ xe buýt.',
-        en: '220V smart electrical protection device for traffic signal lights, street lights, and bus shelters.',
-        zh: '适用于交通信号灯、路灯和公交候车亭的220V智能电气保护设备。'
-      },
-      description: {
-        vi: 'Thiết bị an toàn điện thông minh 220V phiên bản giao thông dòng MB-2KW là giải pháp bảo vệ điện toàn diện cho các khu vực như đèn tín hiệu giao thông, đèn đường, trạm chờ xe bus và các địa điểm tiêu thụ điện khác. Tích hợp công nghệ dập hồ quang 220V tiên tiến, bảo vệ đa lớp chống điện giật, ngắn mạch, quá tải, quá áp, thấp áp, rò điện, ngập nước và chống sét lan truyền. Kết nối 4G cho phép giám sát và điều khiển từ xa qua ứng dụng điện thoại thông minh.',
-        en: 'The MB-2KW 220V smart electrical safety device - Commercial Version is a comprehensive protection solution for light industrial areas and small-scale commercial applications. It integrates advanced 220V arc suppression technology with multi-layer protection against electric shock, short circuit, overload, overvoltage, undervoltage, leakage, water immersion and surge. 4G connectivity enables remote monitoring and control via smartphone app.',
-        zh: 'MB-2KW 220V智能电气安全设备 - 商业版是轻工业区域和小型商业应用的全面保护解决方案。集成先进的220V灭弧技术和多层保护，防止触电、短路、过载、过压、欠压、漏电、浸水和浪涌。4G连接可通过智能手机应用进行远程监控和控制。'
-      },
-      specs: [
-        { label: { vi: 'Điện áp định mức', en: 'Rated Voltage', zh: '额定电压' }, value: '220V AC' },
-        { label: { vi: 'Công suất định mức', en: 'Rated Power', zh: '额定功率' }, value: '2KW (9A)' },
-        { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-        { label: { vi: 'Công nghệ', en: 'Technology', zh: '技术' }, value: 'Chống sốc điện cách ly' },
-        { label: { vi: 'Tiêu chuẩn', en: 'Standard', zh: '标准' }, value: 'IEC 61009-1 / IEC 60947-2' },
-        { label: { vi: 'Chế độ kết nối', en: 'Connectivity', zh: '连接' }, value: '4G / RS485' },
-        { label: { vi: 'Cấp bảo vệ', en: 'Protection Rating', zh: '防护等级' }, value: 'IP20' }
-      ],
-      mainImage: 'assets/images/products/processed/220_11zon.webp',
-      galleryImages: [
-        'assets/images/products/processed/220_11zon.webp'
-      ],
-      specsImage: 'assets/images/products/processed/220_11zon.webp',
-      price: 'Liên hệ báo giá',
-      status: { vi: 'Còn hàng', en: 'In Stock', zh: '有库存' },
-      inStock: true,
-      allFeatures: [
-        { icon: '', title: { vi: 'Chống điện giật', en: 'Shock Protection', zh: '触电保护' }, desc: { vi: 'Bảo vệ chống điện giật ngoài ý muốn trong mọi tình huống.', en: 'Protection against accidental electric shock in all situations.', zh: '在所有情况下防止意外触电。' } },
-        { icon: '', title: { vi: 'Dập hồ quang', en: 'Arc Suppression', zh: '灭弧' }, desc: { vi: 'Giảm hồ quang khi ngắn mạch dây pha và dây trung tính.', en: 'Reduces arcing during phase and neutral short circuits.', zh: '减少相线和中性线短路时的电弧。' } },
-        { icon: '', title: { vi: 'Chống cháy nổ', en: 'Fire Prevention', zh: '防火' }, desc: { vi: 'Phòng chống cháy nổ điện toàn diện.', en: 'Comprehensive electrical fire prevention.', zh: '全面的电气火灾预防。' } },
-        { icon: '', title: { vi: 'Che chắn rò điện', en: 'Leakage Shielding', zh: '漏电屏蔽' }, desc: { vi: 'Chức năng che chắn rò điện thông minh.', en: 'Smart leakage current shielding function.', zh: '智能漏电屏蔽功能。' } },
-        { icon: '', title: { vi: 'Bảo vệ quá/thấp áp', en: 'Voltage Protection', zh: '电压保护' }, desc: { vi: 'Bảo vệ quá áp và thấp áp tự động.', en: 'Automatic overvoltage and undervoltage protection.', zh: '自动过压和欠压保护。' } },
-        { icon: '', title: { vi: 'Chống ngập nước', en: 'Water Immersion', zh: '浸水保护' }, desc: { vi: 'Bảo vệ an toàn khi ngập nước và ẩm ướt.', en: 'Safety protection during water immersion and humidity.', zh: '浸水和潮湿时的安全保护。' } },
-        { icon: '', title: { vi: 'Phát hiện đường dây lão hóa', en: 'Old Wire Detection', zh: '旧线检测' }, desc: { vi: 'Phát hiện và bảo vệ đường dây cũ hỏng.', en: 'Detects and protects aging/damaged wiring.', zh: '检测和保护老化/损坏的线路。' } },
-        { icon: '', title: { vi: 'Cảnh báo sự cố', en: 'Fault Alert', zh: '故障报警' }, desc: { vi: 'Hệ thống cảnh báo sự cố tức thời.', en: 'Instant fault alert system.', zh: '即时故障报警系统。' } },
-        { icon: '', title: { vi: 'Bảo vệ quá tải', en: 'Overload Protection', zh: '过载保护' }, desc: { vi: 'Bảo vệ quá tải chính xác cao.', en: 'High-precision overload protection.', zh: '高精度过载保护。' } },
-        { icon: '', title: { vi: 'Chống sét', en: 'Surge Protection', zh: '浪涌保护' }, desc: { vi: 'Che chắn và chống sét hiệu quả.', en: 'Effective surge and lightning protection.', zh: '有效的浪涌和雷电保护。' } },
-        { icon: '', title: { vi: 'Tự động đóng cắt', en: 'Auto Reclose', zh: '自动重合' }, desc: { vi: 'Chức năng đóng cầu dao tự động.', en: 'Automatic circuit breaker reclose function.', zh: '自动断路器重合功能。' } },
-        { icon: '', title: { vi: 'Giám sát từ xa', en: 'Remote Monitor', zh: '远程监控' }, desc: { vi: 'Giám sát và điều khiển từ xa qua điện thoại di động, kết nối 4G.', en: 'Remote monitoring and control via mobile phone, 4G connectivity.', zh: '通过手机远程监控和控制，4G连接。' } }
-      ],
-      modelFeatures: {
-        'mb-2kw': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-      },
-      models: [
-        {
-          id: 'mb-2kw',
-          name: 'MB-2KW',
-          current: '2KW',
-          overloadRange: '1-9A',
-          desc: { vi: 'Phù hợp khu vực thương mại nhỏ, văn phòng, xưởng sản xuất quy mô nhỏ', en: 'Ideal for small commercial areas, offices, small-scale production workshops', zh: '适用于小型商业区域、办公室、小规模生产车间' },
-          image: 'assets/images/products/processed/220_11zon.webp',
-          specs: [
-            { label: { vi: 'Kiểu loại', en: 'Type', zh: '型号' }, value: '220V thiết bị thương mại thông minh' },
-            { label: { vi: 'Model', en: 'Model', zh: '型号' }, value: 'MB-2KW' },
-            { label: { vi: 'Kích thước', en: 'Dimensions', zh: '尺寸' }, value: 'Dài 66.3 × Rộng 20.8 × Cao 55.5 cm' },
-            { label: { vi: 'Điện áp đầu vào / đầu ra', en: 'Input / Output Voltage', zh: '输入/输出电压' }, value: '220V' },
-            { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha' },
-            { label: { vi: 'Công suất định mức', en: 'Rated Power', zh: '额定功率' }, value: '2KW (9A)' },
-            { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '20 kg' },
-            { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
-            { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
-            { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Treo tường' },
-            { label: { vi: 'Chế độ kết nối mạng', en: 'Network Connection', zh: '网络连接方式' }, value: '4G' }
-          ]
-        }
-      ],
-      applications: [
-        { icon: '', title: { vi: 'Đèn tí hiệu giao thông', en: 'Traffic Lights', zh: '交通灯' }, desc: { vi: 'Bảo vệ hệ thống điện cho xưởng sản xuất quy mô nhỏ và gia công.', en: 'Protect electrical systems in small-scale production and processing workshops.', zh: '保护小型生产和加工车间的电气系统。' } },
-        { icon: '', title: { vi: 'Dèn đường', en: 'Street Lights', zh: '路灯' }, desc: { vi: 'Giải pháp an toàn điện cho không gian văn phòng làm việc.', en: 'Electrical safety solutions for office workspaces.', zh: '为办公空间提供电气安全解决方案。' } },
-        { icon: '', title: { vi: 'Trạm chờ xe buýt', en: 'Bus Stop Shelters', zh: '公交车站 shelters' }, desc: { vi: 'An toàn điện cho các cửa hàng bán lẻ và dịch vụ.', en: 'Electrical safety for retail stores and service shops.', zh: '为零售店和服务店提供电气安全保护。' } },
-      ],
-      workingSteps: [
-        { step: 1, icon: '', title: { vi: 'Phát hiện sự cố', en: 'Fault Detection', zh: '故障检测' }, desc: { vi: 'Hệ thống MCU liên tục giám sát các thông số điện theo thời gian thực.', en: 'MCU system continuously monitors electrical parameters in real time.', zh: 'MCU系统持续实时监控电气参数。' } },
-        { step: 2, icon: '', title: { vi: 'Kích hoạt bảo vệ', en: 'Activate Protection', zh: '启动保护' }, desc: { vi: 'Khi phát hiện bất thường, MCU kích hoạt cơ chế bảo vệ tương ứng trong mili giây.', en: 'When anomaly is detected, MCU activates protection within milliseconds.', zh: '检测到异常时，MCU在毫秒内启动保护。' } },
-        { step: 3, icon: '', title: { vi: 'Cách ly nguồn điện', en: 'Power Isolation', zh: '电源隔离' }, desc: { vi: 'Hệ thống cách ly nguồn điện sự cố, bảo vệ thiết bị và con người.', en: 'System isolates the faulty power source, protecting equipment and people.', zh: '系统隔离故障电源，保护设备和人员。' } },
-        { step: 4, icon: '', title: { vi: 'Ngắt nguồn tự động', en: 'Auto Disconnect', zh: '自动断开' }, desc: { vi: 'Thiết bị tự động ngắt nguồn khi cần thiết, đảm bảo an toàn tuyệt đối.', en: 'Automatic disconnection when necessary for absolute safety.', zh: '必要时自动断开电源，确保绝对安全。' } },
-        { step: 5, icon: '', title: { vi: 'An toàn tối đa', en: 'Maximum Safety', zh: '最大安全' }, desc: { vi: 'Nguy cơ sự cố điện được giảm thiểu, không gian vận hành an toàn.', en: 'Electrical risks minimized, operational spaces remain safe.', zh: '电气风险最小化，操作空间保持安全。' } }
       ]
     },
     {
@@ -416,7 +325,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha' },
             { label: { vi: 'Công suất định mức', en: 'Rated Power', zh: '额定功率' }, value: '50KW (227A)' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '15kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '9,9kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Treo tường' },
@@ -438,7 +347,7 @@ var productData = {
             { label: { vi: 'Kiểu dây đấu nối', en: 'Wiring Type', zh: '接线方式' }, value: 'Ba pha' },
             { label: { vi: 'Công suất định mức', en: 'Rated Power', zh: '额定功率' }, value: '80KW (363A)' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '1,45 kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '9,9 kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Treo tường' },
@@ -648,8 +557,8 @@ var productData = {
         { icon: '', title: { vi: 'Chức năng bảo vệ đường dây cũ hỏng', en: 'Aging Line Protection', zh: '老化线路保护功能' }, desc: { vi: 'Phát hiện và cảnh báo đường dây cũ hỏng, giảm nguy cơ cháy nổ.', en: 'Detects and alerts on aging/damaged wiring to reduce fire risk.', zh: '检测和报警老化/损坏的线路，降低火灾风险。' } },
         { icon: '', title: { vi: 'Chức năng cảnh báo sự cố', en: 'Fault Alert Function', zh: '故障报警功能' }, desc: { vi: 'Hệ thống cảnh báo sự cố tức thời, giúp người dùng phản ứng nhanh.', en: 'Instant fault alert system for quick user response.', zh: '即时故障报警系统，帮助用户快速响应。' } },
         { icon: '', title: { vi: 'Chức năng bảo vệ quá tải chính xác', en: 'Precise Overload Protection', zh: '精准过载保护功能' }, desc: { vi: 'Đo lường và ngắt mạch chính xác khi dòng điện vượt quá mức tải định mức.', en: 'Measures and trips accurately when the current exceeds the rated load.', zh: '当电流超过额定负载时进行精确测量和切断。' } },
-        { icon: '', title: { vi: 'Chức năng che chắn sét đánh', en: 'Lightning Protection Shielding', zh: '屏蔽雷击功能' }, desc: { vi: 'Bảo vệ hệ thống điện khỏi xung sét và hiện tượng quá áp do thiên tai.', en: 'Protects the electrical system from lightning surges and storm overvoltage.', zh: '保护电气系统免受雷击浪涌和过电压的影响。' } },
-        { icon: '', title: { vi: 'Chức năng đóng cầu tự động', en: 'Auto-Reclosing Function', zh: '自动合闸功能' }, desc: { vi: 'Tự động đóng lại mạch điện sau khi sự cố được khắc phục an toàn.', en: 'Automatically recloses the circuit after the fault is safely resolved.', zh: '故障安全排除后自动合闸恢复供电。' } },
+        { icon: '', title: { vi: 'Chức năng chống sét', en: 'Lightning Protection Shielding', zh: '屏蔽雷击功能' }, desc: { vi: 'Bảo vệ hệ thống điện khỏi xung sét và hiện tượng quá áp do thiên tai.', en: 'Protects the electrical system from lightning surges and storm overvoltage.', zh: '保护电气系统免受雷击浪涌和过电压的影响。' } },
+        { icon: '', title: { vi: 'Chức năng đóng cầu dao tự động', en: 'Auto-Reclosing Function', zh: '自动合闸功能' }, desc: { vi: 'Tự động đóng lại mạch điện sau khi sự cố được khắc phục an toàn.', en: 'Automatically recloses the circuit after the fault is safely resolved.', zh: '故障安全排除后自动合闸恢复供电。' } },
         { icon: '', title: { vi: 'Chức năng giám sát và điều khiển từ xa qua điện thoại di động', en: 'Mobile Remote Monitoring & Control', zh: '手机远程监测及控制功能' }, desc: { vi: 'Theo dõi thông số và bật/tắt thiết bị từ xa qua ứng dụng di động.', en: 'Tracks parameters and controls device on/off remotely via mobile app.', zh: '通过移动应用程序远程监控参数和控制设备开/关。' } }
       ],
       modelFeatures: {
@@ -680,9 +589,12 @@ var productData = {
         }
       ],
       applications: [
-        { icon: '', title: { vi: 'Đèn tí hiệu giao thông', en: 'Traffic Lights', zh: '交通灯' }, desc: { vi: 'An toàn điện cho các cửa hàng bán lẻ và tạp hóa.', en: 'Electrical safety for retail stores and grocery shops.', zh: '为零售店和杂货店提供电气安全保护。' } },
-        { icon: '', title: { vi: 'Đèn đường', en: 'Street Lights', zh: '路灯' }, desc: { vi: 'Bảo vệ thiết bị điện trong môi trường ẩm ướt và nhiệt độ cao.', en: 'Protect electrical equipment in humid and high-temperature environments.', zh: '在潮湿和高温环境中保护电气设备。' } },
-        { icon: '', title: { vi: 'Trạm chờ xe buýt', en: 'Bus Stop Shelters', zh: '公交车站 shelters' }, desc: { vi: 'Giải pháp an toàn điện tối ưu cho các công trình, nhà ở và dự án quy mô nhỏ.', en: 'Optimal electrical safety solutions for small-scale buildings, homes, and projects.', zh: '为小型建筑、住宅和项目提供最佳的电气安全解决方案。' } }, { icon: '', title: { vi: 'Cơ sở kinh doanh nhỏ', en: 'Small Business', zh: '小型企业' }, desc: { vi: 'Bảo vệ tập trung cho khu vực thương mại và trung tâm mua sắm.', en: 'Centralized protection for commercial areas and shopping centers.', zh: '为商业区域和购物中心提供集中保护。' } }
+        { icon: '', title: { vi: 'Hồ bơi', en: 'Swimming Pools', zh: '游泳池' }, desc: { vi: 'An toàn điện cho các cửa hàng bán lẻ và tạp hóa.', en: 'Electrical safety for retail stores and grocery shops.', zh: '为零售店和杂货店提供电气安全保护。' } },
+        { icon: '', title: { vi: 'Trường học', en: 'Schools', zh: '学校' }, desc: { vi: 'Bảo vệ thiết bị điện trong môi trường ẩm ướt và nhiệt độ cao.', en: 'Protect electrical equipment in humid and high-temperature environments.', zh: '在潮湿和高温环境中保护电气设备。' } },
+        { icon: '', title: { vi: 'Văn phòng', en: 'Offices', zh: '办公室' }, desc: { vi: 'Giải pháp an toàn điện tối ưu cho các công trình, nhà ở và dự án quy mô nhỏ.', en: 'Optimal electrical safety solutions for small-scale buildings, homes, and projects.', zh: '为小型建筑、住宅和项目提供最佳的电气安全解决方案。' } },
+        { icon: '', title: { vi: 'Cơ sở kinh doanh nhỏ', en: 'Small Business', zh: '小型企业' }, desc: { vi: 'Bảo vệ tập trung cho khu vực thương mại và trung tâm mua sắm.', en: 'Centralized protection for commercial areas and shopping centers.', zh: '为商业区域和购物中心提供集中保护。' } },
+        { icon: '', title: { vi: 'Sân khấu tạm thời', en: 'Temporary Stages', zh: '临时舞台' }, desc: { vi: 'Bảo vệ an toàn điện cho các sân khấu tạm thời và sự kiện ngoài trời.', en: 'Electrical safety protection for temporary stages and outdoor events.', zh: '为临时舞台和户外活动提供电气安全保护。' } },
+        { icon: '', title: { vi: 'Các địa điểm sử dụng khác', en: 'Other Usage Locations', zh: '其他使用场所' }, desc: { vi: 'Bảo vệ an toàn điện cho các địa điểm sử dụng khác nhau.', en: 'Electrical safety protection for various usage locations.', zh: '为各种使用场所提供电气安全保护。' } }
       ],
       workingSteps: [
         { step: 1, icon: '', title: { vi: 'Phát hiện sự cố', en: 'Fault Detection', zh: '故障检测' }, desc: { vi: 'Hệ thống MCU liên tục giám sát các thông số điện theo thời gian thực.', en: 'MCU system continuously monitors electrical parameters in real time.', zh: 'MCU系统持续实时监控电气参数。' } },
@@ -741,8 +653,8 @@ var productData = {
         { icon: '', title: { vi: 'Bảo vệ đường dây cũ hỏng', en: 'Old Wire Detection', zh: '旧线检测保护' }, desc: { vi: 'Phát hiện và cảnh báo đường dây cũ hỏng, giảm nguy cơ cháy nổ.', en: 'Detects and alerts on aging/damaged wiring to reduce fire risk.', zh: '检测和报警老化/损坏的线路，降低火灾风险。' } },
         { icon: '', title: { vi: 'Cảnh báo sự cố', en: 'Fault Alert', zh: '故障报警' }, desc: { vi: 'Hệ thống cảnh báo sự cố tức thời qua ứng dụng di động.', en: 'Instant fault alert system via mobile app.', zh: '通过手机应用即时故障报警。' } },
         { icon: '', title: { vi: 'Bảo vệ quá tải chính xác', en: 'Precise Overload Protection', zh: '精确过载保护' }, desc: { vi: 'Bảo vệ quá tải với độ chính xác cao, ngắt mạch kịp thời.', en: 'High-precision overload protection with timely circuit disconnection.', zh: '高精度过载保护，及时断开电路。' } },
-        { icon: '', title: { vi: 'Che chắn sét đánh', en: 'Lightning Protection', zh: '雷电屏蔽' }, desc: { vi: 'Che chắn và bảo vệ thiết bị khỏi xung điện áp do sét đánh.', en: 'Shields and protects equipment from lightning surge voltages.', zh: '屏蔽和保护设备免受雷电浪涌电压影响。' } },
-        { icon: '', title: { vi: 'Đóng cầu tự động', en: 'Auto Reclose', zh: '自动重合' }, desc: { vi: 'Chức năng đóng cầu dao tự động sau khi sự cố được khắc phục.', en: 'Automatic circuit breaker reclose after fault resolution.', zh: '故障解决后自动重合断路器。' } },
+        { icon: '', title: { vi: 'Chống sét', en: 'Lightning Protection', zh: '雷电屏蔽' }, desc: { vi: 'Che chắn và bảo vệ thiết bị khỏi xung điện áp do sét đánh.', en: 'Shields and protects equipment from lightning surge voltages.', zh: '屏蔽和保护设备免受雷电浪涌电压影响。' } },
+        { icon: '', title: { vi: 'Đóng cầu dao tự động', en: 'Auto Reclose', zh: '自动重合' }, desc: { vi: 'Chức năng đóng cầu dao tự động sau khi sự cố được khắc phục.', en: 'Automatic circuit breaker reclose after fault resolution.', zh: '故障解决后自动重合断路器。' } },
         { icon: '', title: { vi: 'Ngắt tự động khi mất điện', en: 'Auto Shutdown on Power Loss', zh: '断电自动关闭' }, desc: { vi: 'Tự động ngắt thiết bị khi mất điện, đảm bảo an toàn khi có điện trở lại.', en: 'Automatic shutdown upon power loss for safety when power returns.', zh: '断电时自动关闭，确保恢复供电时的安全。' } },
         { icon: '', title: { vi: 'Giám sát & điều khiển từ xa', en: 'Remote Monitoring & Control', zh: '远程监控和控制' }, desc: { vi: 'Giám sát và điều khiển thiết bị từ xa qua ứng dụng điện thoại thông minh.', en: 'Remote monitoring and control via smartphone app.', zh: '通过智能手机应用进行远程监控和控制。' } },
         { icon: '', title: { vi: 'Điều khiển đầu ra 3 mạch vòng', en: '3-Branch Output Control', zh: '三路输出控制' }, desc: { vi: 'Điều khiển độc lập 3 khu vực trong nhà, tối ưu hóa quản lý điện năng.', en: 'Independent control of 3 areas in the house for optimized power management.', zh: '独立控制房屋的3个区域，优化用电管理。' } },
@@ -769,7 +681,7 @@ var productData = {
             { label: { vi: 'Số mạch nhánh', en: 'Number of Branches', zh: '支路数量' }, value: '3 mạch độc lập' },
             { label: { vi: 'Số chức năng', en: 'Number of Functions', zh: '功能数量' }, value: '14 chức năng' },
             { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
-            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '0,58 kg' },
+            { label: { vi: 'Trọng lượng', en: 'Weight', zh: '重量' }, value: '1 kg' },
             { label: { vi: 'Độ cao sử dụng', en: 'Operating Altitude', zh: '使用海拔' }, value: '0 - 5000m' },
             { label: { vi: 'Cách đấu dây', en: 'Wiring Method', zh: '接线方法' }, value: 'Nối tiếp' },
             { label: { vi: 'Phương thức lắp đặt', en: 'Installation Method', zh: '安装方式' }, value: 'Treo tường' },
@@ -808,7 +720,7 @@ var productData = {
         zh: '面向家庭的220V灭弧式智能电气安全设备，集成12项保护功能，提供4种型号：32A、45A、63A、100A。'
       },
       description: {
-        vi: 'Thiết bị điện an toàn thông minh loại dập hồ quang 220V dòng WDMA-32A là giải pháp bảo vệ điện cho hộ gia đình, tích hợp 12 chức năng bảo vệ gồm chống điện giật, giảm hồ quang khi ngắn mạch, phòng chống cháy nổ điện, che chắn rò điện, bảo vệ quá áp - thấp áp, bảo vệ khi ngập nước và ẩm ướt, bảo vệ đường dây cũ hỏng, cảnh báo sự cố, bảo vệ quá tải chính xác, che chắn sét đánh, đóng cầu tự động, giám sát và điều khiển từ xa qua điện thoại di động. Sản phẩm có 4 model: 32A, 45A, 63A, 100A, đấu nối một pha (dây pha - dây trung tính), lắp đặt trong tủ aptomat nhựa. Kết nối mạng 4G giúp theo dõi và điều khiển thiết bị từ xa, màn hình hiển thị độ phân giải 128 × 160.',
+        vi: 'Thiết bị điện an toàn thông minh loại dập hồ quang 220V dòng WDMA-32A là giải pháp bảo vệ điện cho hộ gia đình, tích hợp 12 chức năng bảo vệ gồm chống điện giật, giảm hồ quang khi ngắn mạch, phòng chống cháy nổ điện, che chắn rò điện, bảo vệ quá áp - thấp áp, bảo vệ khi ngập nước và ẩm ướt, bảo vệ đường dây cũ hỏng, cảnh báo sự cố, bảo vệ quá tải chính xác, chống sét, đóng cầu dao tự động, giám sát và điều khiển từ xa qua điện thoại di động. Sản phẩm có 4 model: 32A, 45A, 63A, 100A, đấu nối một pha (dây pha - dây trung tính), lắp đặt trong tủ aptomat nhựa. Kết nối mạng 4G giúp theo dõi và điều khiển thiết bị từ xa, màn hình hiển thị độ phân giải 128 × 160.',
         en: 'The WDMA-32A 220V smart electrical safety device - arc suppression type is a household protection solution integrating 12 protection functions, including shock protection, arc reduction on phase and neutral short circuit, electrical fire prevention, leakage shielding, overvoltage and undervoltage protection, water immersion and humidity protection, aging line protection, fault alert, precise overload protection, lightning shielding, auto reclose, and remote monitoring and control via mobile phone. It is available in 4 models: 32A, 45A, 63A and 100A, with single-phase wiring (phase - neutral), installed in plastic circuit breaker enclosures. 4G connectivity enables remote monitoring and control, with a 128 × 160 display.',
         zh: 'WDMA-32A系列220V灭弧式智能电气安全设备是面向家庭的保护解决方案，集成12项保护功能，包括意外触电保护、零火线短路减弱电弧、预防电气火灾、漏电屏蔽、过欠压保护、浸水潮湿保护、老化线路保护、故障报警、精准过载保护、屏蔽雷击、自动合闸以及手机远程监测及控制。提供4种型号：32A、45A、63A、100A，单相接线（火线-零线），安装于空开盒内。支持4G联网，可远程监测和控制，配备128×160点阵屏。'
       },
@@ -842,8 +754,8 @@ var productData = {
         { icon: '', title: { vi: 'Chức năng bảo vệ đường dây cũ hỏng', en: 'Aging Line Protection', zh: '老化线路保护功能' }, desc: { vi: 'Phát hiện và cảnh báo đường dây cũ hỏng, giảm nguy cơ cháy nổ.', en: 'Detects and alerts on aging/damaged wiring to reduce fire risk.', zh: '检测和报警老化/损坏的线路，降低火灾风险。' } },
         { icon: '', title: { vi: 'Chức năng cảnh báo sự cố', en: 'Fault Alert Function', zh: '故障报警功能' }, desc: { vi: 'Hệ thống cảnh báo sự cố tức thời, giúp người dùng phản ứng nhanh.', en: 'Instant fault alert system for quick user response.', zh: '即时故障报警系统，帮助用户快速响应。' } },
         { icon: '', title: { vi: 'Chức năng bảo vệ quá tải chính xác', en: 'Precise Overload Protection', zh: '精准过载保护功能' }, desc: { vi: 'Đo lường và ngắt mạch chính xác khi dòng điện vượt quá mức tải định mức.', en: 'Measures and trips accurately when the current exceeds the rated load.', zh: '当电流超过额定负载时进行精确测量和切断。' } },
-        { icon: '', title: { vi: 'Chức năng che chắn sét đánh', en: 'Lightning Protection Shielding', zh: '屏蔽雷击功能' }, desc: { vi: 'Bảo vệ hệ thống điện khỏi xung sét và hiện tượng quá áp do thiên tai.', en: 'Protects the electrical system from lightning surges and storm overvoltage.', zh: '保护电气系统免受雷击浪涌和过电压的影响。' } },
-        { icon: '', title: { vi: 'Chức năng đóng cầu tự động', en: 'Auto-Reclosing Function', zh: '自动合闸功能' }, desc: { vi: 'Tự động đóng lại mạch điện sau khi sự cố được khắc phục an toàn.', en: 'Automatically recloses the circuit after the fault is safely resolved.', zh: '故障安全排除后自动合闸恢复供电。' } },
+        { icon: '', title: { vi: 'Chống sét', en: 'Lightning Protection Shielding', zh: '屏蔽雷击功能' }, desc: { vi: 'Bảo vệ hệ thống điện khỏi xung sét và hiện tượng quá áp do thiên tai.', en: 'Protects the electrical system from lightning surges and storm overvoltage.', zh: '保护电气系统免受雷击浪涌和过电压的影响。' } },
+        { icon: '', title: { vi: 'Chức năng đóng cầu dao tự động', en: 'Auto-Reclosing Function', zh: '自动合闸功能' }, desc: { vi: 'Tự động đóng lại mạch điện sau khi sự cố được khắc phục an toàn.', en: 'Automatically recloses the circuit after the fault is safely resolved.', zh: '故障安全排除后自动合闸恢复供电。' } },
         { icon: '', title: { vi: 'Chức năng giám sát và điều khiển từ xa qua điện thoại di động', en: 'Mobile Remote Monitoring & Control', zh: '手机远程监测及控制功能' }, desc: { vi: 'Theo dõi thông số và bật/tắt thiết bị từ xa qua ứng dụng di động.', en: 'Tracks parameters and controls device on/off remotely via mobile app.', zh: '通过移动应用程序远程监控参数和控制设备开/关。' } }
       ],
       modelFeatures: {

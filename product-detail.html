@@ -147,18 +147,6 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 2: Key Benefits ===== -->
-    <section class="bp-section bp-section-alt bp-reveal" id="sectionBenefits">
-      <div class="container-wide">
-        <div class="bp-section-header">
-          <span class="ph-section-tag" data-i18n="page_productDetail.tagBenefits">Lợi ích chính</span>
-          <h2 data-i18n="page_productDetail.headingBenefits">Tại sao chọn sản phẩm này?</h2>
-          <p class="ph-detail-sub" data-i18n="page_productDetail.subBenefits">Những lợi ích vượt trội mang lại an toàn tối đa cho hệ thống điện của bạn</p>
-        </div>
-        <div class="ph-benefits-grid" id="benefitsGrid"></div>
-      </div>
-    </section>
-
     <!-- ===== SECTION 3: Technical Specs + Diagram ===== -->
     <section class="bp-section bp-reveal" id="sectionSpecsFull">
       <div class="container-wide">
@@ -532,37 +520,6 @@ window._phPageMeta = {
       }
     }
 
-    /* ── Key Benefits ── */
-    function renderBenefits(product) {
-      var container = document.getElementById('benefitsGrid');
-      var section = document.getElementById('sectionBenefits');
-      // Derive benefits from top-level description + specs
-      var benefits = [];
-      if (product.specs && product.specs.length >= 4) {
-        for (var i = 0; i < Math.min(product.specs.length, 6); i++) {
-          var s = product.specs[i];
-          var label = s.label ? (typeof s.label === 'object' ? productData.t(s.label) : s.label) : '';
-          var value = s.value || '';
-          if (label && value && value !== '---') {
-            benefits.push({ title: label, desc: value, icon: '' });
-          }
-        }
-      }
-      if (benefits.length === 0) {
-        if (section) section.style.display = 'none';
-        return;
-      }
-      if (section) section.style.display = '';
-      var html = '';
-      for (var j = 0; j < benefits.length; j++) {
-        var b = benefits[j];
-        html += '<div class="ph-benefit-card">';
-        html += '<span class="ph-benefit-icon">' + b.icon + '</span>';
-        html += '<div><h4>' + b.title + '</h4><p>' + b.desc + '</p></div>';
-        html += '</div>';
-      }
-      container.innerHTML = html;
-    }
     function renderApplications(product) {
       var container = document.getElementById('appsGrid');
       var section = document.getElementById('sectionApps');
@@ -593,7 +550,7 @@ window._phPageMeta = {
 
     /* ── Not Found Fallback (keeps h1, honest state, CTA back to catalog) ── */
     function renderNotFoundFallback() {
-      var hideIds = ['sectionBenefits', 'sectionSpecsFull', 'sectionFeatures', 'sectionApps', 'sectionWorking', 'sectionRelated'];
+      var hideIds = ['sectionSpecsFull', 'sectionFeatures', 'sectionApps', 'sectionWorking', 'sectionRelated'];
       for (var i = 0; i < hideIds.length; i++) {
         var sec = document.getElementById(hideIds[i]);
         if (sec) sec.style.display = 'none';
@@ -653,7 +610,6 @@ window._phPageMeta = {
       renderGallery(product);
       renderModels(product);
       renderQuickSpecs(product);
-      renderBenefits(product);
       renderSpecs(product);
       renderFeatures(product);
       renderApplications(product);
@@ -755,7 +711,6 @@ window._phPageMeta = {
         if (descEl) descEl.textContent = selectedText + ' ' + m.name + (m.desc ? ': ' + productData.t(m.desc) : '');
       }
       renderQuickSpecs(product);
-      renderBenefits(product);
       renderFeatures(product);
       renderWorkingSteps(product);
       renderSpecs(product);

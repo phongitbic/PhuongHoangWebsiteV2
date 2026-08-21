@@ -362,54 +362,6 @@
   margin: .35rem 0 0;
 }
 
-/* ═══════════ BENEFITS GRID ═══════════ */
-.ph-benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-.ph-benefit-card {
-  display: flex;
-  gap: .85rem;
-  padding: 1.1rem;
-  background: var(--ph-bg-primary);
-  border: 1px solid var(--ph-border-default);
-  border-radius: var(--ph-radius-md);
-  align-items: flex-start;
-  transition: transform var(--ph-duration-normal) var(--ph-ease-out),
-              box-shadow var(--ph-duration-normal) var(--ph-ease-out),
-              border-color var(--ph-duration-fast) var(--ph-ease-out);
-}
-.ph-benefit-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--ph-accent);
-  box-shadow: 0 6px 20px rgba(29,139,44,.06);
-}
-.ph-benefit-icon {
-  width: 36px; height: 36px;
-  border-radius: var(--ph-radius-sm);
-  background: var(--ph-accent-subtle);
-  color: var(--ph-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1rem;
-}
-.ph-benefit-card h4 {
-  font-family: var(--ph-font-display);
-  font-size: .875rem;
-  font-weight: 600;
-  color: var(--ph-text-primary);
-  margin: 0 0 .2rem;
-}
-.ph-benefit-card p {
-  font-size: .8125rem;
-  color: var(--ph-text-secondary);
-  line-height: 1.5;
-  margin: 0;
-}
-
 /* ═══════════ SPECS FULL ═══════════ */
 .ph-specs-full-grid {
   display: grid;
@@ -891,7 +843,6 @@
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 1024px) {
   .ph-detail-hero { gap: 2rem; }
-  .ph-benefits-grid { grid-template-columns: repeat(2, 1fr); }
   .ph-features-grid { grid-template-columns: repeat(2, 1fr); }
   .ph-apps-grid { grid-template-columns: repeat(2, 1fr); }
   .ph-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -917,12 +868,10 @@
   .ph-detail-cta-row { flex-direction: column; align-items: stretch; }
   .ph-btn-quote, .ph-btn-zalo { text-align: center; justify-content: center; }
 
-  /* Benefits/Features/Apps → 2 col */
-  .ph-benefits-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  /* Features/Apps → 2 col */
   .ph-features-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
   .ph-apps-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
   .ph-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
-  .ph-benefit-card { padding: .9rem; gap: .6rem; }
 
   /* Sticky bar visible */
   .ph-sticky-bar { display: flex; }
@@ -930,7 +879,6 @@
 
 @media (max-width: 480px) {
   .ph-quick-specs { grid-template-columns: 1fr; gap: .25rem; }
-  .ph-benefits-grid { grid-template-columns: 1fr; }
   .ph-features-grid { grid-template-columns: 1fr; }
   .ph-apps-grid { grid-template-columns: 1fr; }
   .ph-related-grid { grid-template-columns: 1fr; }

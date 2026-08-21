@@ -221,7 +221,18 @@ window._phPageMeta = {
       all: { vi: 'Tất cả sản phẩm', en: 'All Products', zh: '全部产品' },
       industrial: { vi: 'Thiết bị điện bản công nghiệp', en: 'Industrial Equipment', zh: '工业设备' },
       domestic: { vi: 'Thiết bị điện bản dân dụng', en: 'Domestic Equipment', zh: '民用设备' },
-      surge: { vi: 'Thiết bị điện bản thương mai', en: 'Surge & Isolation', zh: '电涌隔离保护' },
+      surge: { vi: 'Thiết bị điện bản thương mại', en: 'Surge & Isolation', zh: '电涌隔离保护' },
+    };
+
+    /* Descriptions for the virtual "all" category. Real categories
+       (industrial/domestic/surge) read their description straight from
+       productData.categories.description - single source of truth. */
+    var CAT_DESCS = {
+      all: {
+        vi: 'Toàn bộ thiết bị điện an toàn: chống giật, chống cháy, chống sốc cách ly.',
+        en: 'All electrical safety devices: shock prevention, fire protection, isolated surge protection.',
+        zh: '全部用电安全设备：防触电、防火、隔离防浪涌。'
+      }
     };
 
     var CAT_ICONS = { all: '', industrial: '', domestic: '', surge: '' };
@@ -233,6 +244,16 @@ window._phPageMeta = {
       var labels = CAT_LABELS[catId];
       if (!labels) return catId;
       return labels[lang] || labels.vi;
+    }
+
+    function getCategoryDesc(catId, lang) {
+      lang = lang || productData.getLang();
+      if (catId === 'all') {
+        return CAT_DESCS.all[lang] || CAT_DESCS.all.vi;
+      }
+      var cat = productData.getCategory(catId);
+      if (cat && cat.description) return productData.t(cat.description);
+      return '';
     }
 
     function getCategoryCount(catId) {
@@ -250,12 +271,15 @@ window._phPageMeta = {
         var cid = CAT_ORDER[i];
         var count = getCategoryCount(cid);
         var label = tCat(cid, lang);
+        var desc = getCategoryDesc(cid, lang);
         var icon = CAT_ICONS[cid];
         var activeClass = currentCategory === cid ? ' active' : '';
         html += '<button class="ph-sidebar-item' + activeClass + '" data-cat="' + cid + '" onclick="filterCategory(\'' + cid + '\',this)"';
         html += ' aria-current="' + (activeClass ? 'true' : 'false') + '">';
         if (icon) html += '<span class="ph-sidebar-icon">' + icon + '</span>';
-        html += '<span class="ph-sidebar-label">' + label + '</span>';
+        html += '<span class="ph-sidebar-label">' + label;
+        if (desc) html += '<span class="ph-sidebar-desc">' + desc + '</span>';
+        html += '</span>';
         html += '<span class="ph-sidebar-count">' + count + '</span>';
         html += '</button>';
       }

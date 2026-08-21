@@ -161,16 +161,20 @@
   .top-bar-brand-text { font-size: .75rem; overflow: hidden; text-overflow: ellipsis; }
 }
 
-/* Email from tablet up; hotlines always visible (tap-to-call) */
+/* Email from desktop up; hotlines always visible (tap-to-call).
+   At 768-1023 the contact cluster (2 hotlines + email) measures ~452px
+   and overflows the top bar by 22px at 768 (audit: top-bar-contact
+   L338 R790). Email joins the other desktop-only niceties (labels,
+   social, tagline) at >= 1024. */
 .top-bar-contact-email {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .top-bar-contact-email { display: inline-flex; }
 }
 
-/* ── Thin separators: email group from tablet, social from desktop ── */
+/* ── Thin separators: email group from desktop, social from desktop ── */
 .top-bar-sep {
   width: 1px;
   height: 12px;
@@ -179,7 +183,7 @@
 }
 
 .top-bar-sep-email { display: none; }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .top-bar-sep-email { display: block; }
 }
 
@@ -323,6 +327,74 @@
 
 .nav-link.active {
   color: var(--ph-accent);
+}
+
+/* ── Nav dropdown ("Sản phẩm") ──
+   Pure CSS hover + focus-within. The trigger stays a REAL link:
+   clicking "Sản phẩm" navigates straight to products.html with no
+   delay and no forced menu choice. The dropdown is a child of the
+   wrapper, so there is no hover gap - moving the pointer from the
+   link onto the panel keeps it open. Hidden below 1024px together
+   with .navbar-links (tablet/mobile use the hamburger submenu). */
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.nav-caret {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: .625rem;
+  line-height: 1;
+  color: var(--ph-text-muted);
+  transition: transform var(--ph-duration-fast) var(--ph-ease-out);
+}
+.nav-item:hover .nav-caret,
+.nav-item:focus-within .nav-caret {
+  transform: rotate(180deg);
+}
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 15rem;
+  padding: .375rem;
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+  background: var(--ph-bg-primary);
+  border: 1px solid var(--ph-divider);
+  border-radius: var(--ph-radius-sm);
+  box-shadow: var(--ph-shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity var(--ph-duration-fast) var(--ph-ease-out),
+              transform var(--ph-duration-fast) var(--ph-ease-out),
+              visibility var(--ph-duration-fast);
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-dropdown-link {
+  display: block;
+  padding: .55rem .75rem;
+  border-radius: calc(var(--ph-radius-sm) - .125rem);
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--ph-text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--ph-duration-fast) var(--ph-ease-out),
+              background var(--ph-duration-fast) var(--ph-ease-out);
+}
+.nav-dropdown-link:hover,
+.nav-dropdown-link:focus-visible {
+  color: var(--ph-accent);
+  background: var(--ph-accent-subtle);
 }
 
 /* ── Header Actions ── */

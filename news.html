@@ -201,9 +201,26 @@ window._phPageMeta = {
       initScrollRestore();
       loadNewsData(function() {
         renderNews();
+        _phNewsBooted = true;
         restoreScrollPosition();
       });
     });
+
+    /* Realtime language switch (same pattern as products.html): i18n-v2.js
+       setLanguage() only runs updatePage(), which overwrites static
+       [data-i18n] elements. News cards (featured, grid, latest sidebar,
+       pagination) are JS-rendered, so refreshNewsLanguage() re-renders them
+       in the new language while preserving the current category and page. */
+    var _phNewsBooted = false;
+    var _phNewsOrigSetLang = window.setLanguage;
+    if (typeof _phNewsOrigSetLang === 'function') {
+      window.setLanguage = function(lang) {
+        _phNewsOrigSetLang.call(window, lang);
+        if (_phNewsBooted && typeof refreshNewsLanguage === 'function') {
+          refreshNewsLanguage();
+        }
+      };
+    }
   </script>
 </body>
 </html>
