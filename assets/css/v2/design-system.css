@@ -9,6 +9,10 @@ html:not([data-theme]) { visibility: hidden; }
 
 /* ═══════════ CUSTOM PROPERTIES ═══════════ */
 :root {
+  /* Native rendering follows the theme (scrollbars, form controls, caret):
+     supplements the CSS variable system, does NOT replace it. */
+  color-scheme: dark;
+
   /* Typography: Plus Jakarta Sans (display + body), JetBrains Mono (data).
      Display switched from Outfit (2026-08-13): Outfit ships no vietnamese
      subset on Google Fonts, so headings rendered with mixed system-font
@@ -216,6 +220,8 @@ html:not([data-theme]) { visibility: hidden; }
 /* ═══════════ LIGHT THEME: Light Industrial / Premium Enterprise ═══════════ */
 /* Brand: navy #08335A · green #1D8B2C · white surfaces · cool-toned depth */
 [data-theme="light"] {
+  color-scheme: light;
+
   /* ── Brand Accent: Phượng Hoàng green ── */
   --ph-accent: #1D8B2C;
   --ph-accent-hover: #167a24;

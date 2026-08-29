@@ -170,9 +170,9 @@
                 <select id="cf-need" name="need" required aria-required="true">
                   <option value="" data-i18n="page_contact.formNeedDefault">Chọn nhu cầu của bạn...</option>
                   <option value="shock" data-i18n="page_contact.formNeedOpt1">Thiết bị chống giật</option>
-                  <option value="fire" data-i18n="page_contact.formNeedOpt2">Thiết bị chống cháy điện</option>
-                  <option value="arc" data-i18n="page_contact.formNeedOpt3">Thiết bị dập hồ quang</option>
-                  <option value="industrial" data-i18n="page_contact.formNeedOpt4">Dự án công nghiệp</option>
+                  <option value="fire" data-i18n="page_contact.formNeedOpt2">Thiết bị điện công nghiệp</option>
+                  <option value="arc" data-i18n="page_contact.formNeedOpt3">Thiết bị điện dân dụng</option>
+                  <option value="industrial" data-i18n="page_contact.formNeedOpt4">Thiết bị thương mại</option>
                   <option value="other" data-i18n="page_contact.formNeedOpt5">Khác</option>
                 </select>
                 <p class="ph-form-error" id="cf-need-error" role="alert" data-i18n="page_contact.formErrNeed">Vui lòng chọn nhu cầu.</p>
@@ -182,18 +182,19 @@
                 <textarea id="cf-msg" name="message" rows="4" required aria-required="true" minlength="10" data-i18n-placeholder="page_contact.formMsgPh" placeholder="Mô tả nhu cầu của bạn (tối thiểu 10 ký tự)..."></textarea>
                 <p class="ph-form-error" id="cf-msg-error" role="alert" data-i18n="page_contact.formErrMsg">Vui lòng mô tả nhu cầu của bạn (tối thiểu 10 ký tự).</p>
               </div>
+              <p class="ph-form-error" id="cf-submit-error" role="alert"></p>
               <button type="submit" class="bp-btn-magnetic ph-form-submit" id="cf-submit">
                 <span data-i18n="page_contact.formSubmit">Gửi yêu cầu</span>
-                <span class="ph-form-sending" data-i18n="page_contact.formSending" hidden>Đang soạn email...</span>
+                <span class="ph-form-sending" data-i18n="page_contact.formSending" hidden>Đang gửi yêu cầu...</span>
               </button>
-              <p class="ph-form-note" data-i18n="page_contact.formNote">Yêu cầu được soạn thành email gửi tới info@khktphuonghoang.com qua ứng dụng email của bạn. Thông tin của bạn được bảo mật.</p>
+              <p class="ph-form-note" data-i18n="page_contact.formNote">Yêu cầu sẽ được gửi trực tiếp đến đội ngũ Phượng Hoàng. Thông tin của bạn được bảo mật.</p>
             </form>
             <div class="ph-form-success" id="contactFormSuccess" role="status" aria-live="polite" hidden>
               <div class="ph-form-success-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-              <h3 data-i18n="page_contact.successTitle">Email đã được soạn xong!</h3>
-              <p data-i18n="page_contact.successDesc">Ứng dụng email của bạn đã được mở. Nếu email chưa tự mở, hãy dùng các kênh dưới đây.</p>
+              <h3 data-i18n="page_contact.successTitle">Yêu cầu đã được gửi thành công!</h3>
+              <p data-i18n="page_contact.successDesc">Đội ngũ Phượng Hoàng sẽ liên hệ với bạn trong giờ làm việc. Nếu cần gấp, hãy dùng các kênh dưới đây.</p>
               <div class="ph-success-actions">
-                <a href="#" id="cf-reopen" class="bp-btn-magnetic" data-i18n="page_contact.successReopen">Mở lại email</a>
+                <a href="#" id="cf-new-request" class="bp-btn-magnetic" data-i18n="page_contact.successNewRequest">Gửi yêu cầu khác</a>
                 <a href="https://zalo.me/0981019381" target="_blank" rel="noopener" class="ph-btn-zalo" data-i18n="page_contact.successZalo">Nhắn Zalo</a>
                 <a href="tel:1800888638" class="ph-btn-quote" data-i18n="page_contact.successCall">Gọi hotline</a>
               </div>
@@ -229,6 +230,7 @@ window._phPageMeta = {
   <script src="assets/js/i18n-v2.js"></script>
   <script src="assets/components/header.js"></script>
   <script src="assets/components/footer.js"></script>
+  <script src="assets/js/v2/contact-form.js"></script>
   <script>
     (function(){
       var h=document.getElementById('shared-header');
@@ -237,8 +239,8 @@ window._phPageMeta = {
       if(f&&window.__PH_COMPONENTS__&&window.__PH_COMPONENTS__.footer){f.innerHTML=window.__PH_COMPONENTS__.footer;}
     })();
 
-    /* Contact form: validate → compose mailto → open email client + show success state.
-       No HTTP submission; the request is sent via the user's own email app. */
+    /* Contact form: validate → gửi HTTP về Google Apps Script (PHForm) → Sheets + Telegram.
+       Lỗi mạng/lỗi server hiển thị inline, KHÔNG mất dữ liệu khách đã nhập. */
     (function(){
       var form = document.getElementById('contactForm');
       if (!form) return;
@@ -246,8 +248,8 @@ window._phPageMeta = {
       var submitBtn = document.getElementById('cf-submit');
       var submitLabel = submitBtn.querySelector('[data-i18n="page_contact.formSubmit"]');
       var sendingLabel = submitBtn.querySelector('.ph-form-sending');
-      var reopen = document.getElementById('cf-reopen');
-      var lastMailto = '';
+      var submitError = document.getElementById('cf-submit-error');
+      var newRequest = document.getElementById('cf-new-request');
 
       var FIELDS = {
         name:    { id: 'cf-name',  test: function(v){ return v.trim().length >= 2; } },
@@ -276,19 +278,53 @@ window._phPageMeta = {
         for (var k in FIELDS) showError(k, false);
       }
 
-      function buildMailto() {
-        var name = document.getElementById('cf-name').value.trim();
-        var phone = document.getElementById('cf-phone').value.trim();
-        var email = document.getElementById('cf-email').value.trim();
+      function showSubmitError(msg) {
+        if (!submitError) return;
+        submitError.textContent = msg;
+        submitError.style.display = 'block';
+        submitError.setAttribute('aria-invalid', 'true');
+      }
+
+      function clearSubmitError() {
+        if (!submitError) return;
+        submitError.style.display = '';
+        submitError.removeAttribute('aria-invalid');
+      }
+
+      function setSubmitting(on) {
+        submitBtn.disabled = on;
+        if (submitLabel) submitLabel.hidden = on;
+        if (sendingLabel) sendingLabel.hidden = !on;
+      }
+
+      function buildPayload() {
         var needSel = document.getElementById('cf-need');
-        var need = needSel.options[needSel.selectedIndex] ? needSel.options[needSel.selectedIndex].text : '';
-        var msg = document.getElementById('cf-msg').value.trim();
-        var body = 'Họ tên: ' + name + '\nSĐT: ' + phone + '\nEmail: ' + (email || '(không cung cấp)') + '\nNhu cầu: ' + need + '\nNội dung: ' + msg;
-        return 'mailto:info@khktphuonghoang.com?subject=' + encodeURIComponent('Yêu cầu tư vấn từ website: ' + name) + '&body=' + encodeURIComponent(body);
+        return {
+          type: needSel.options[needSel.selectedIndex] ? needSel.options[needSel.selectedIndex].text : '',
+          name: document.getElementById('cf-name').value.trim(),
+          phone: document.getElementById('cf-phone').value.trim(),
+          email: document.getElementById('cf-email').value.trim(),
+          company: '',
+          productName: '',
+          productId: '',
+          model: '',
+          quantity: '',
+          message: document.getElementById('cf-msg').value.trim(),
+          source: window.location.href
+        };
+      }
+
+      function showSuccess() {
+        form.reset();
+        clearSubmitError();
+        form.hidden = true;
+        success.hidden = false;
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
       form.addEventListener('submit', function(e){
         e.preventDefault();
+        if (submitBtn.disabled) return; /* chống double-submit (Enter trong input) */
         clearErrors();
         var firstBad = null;
         for (var k in FIELDS) {
@@ -297,22 +333,33 @@ window._phPageMeta = {
         }
         if (firstBad) { firstBad.focus(); return; }
 
-        lastMailto = buildMailto();
-        submitBtn.disabled = true;
-        if (submitLabel) submitLabel.hidden = true;
-        if (sendingLabel) sendingLabel.hidden = false;
+        clearSubmitError();
+        setSubmitting(true);
 
-        window.setTimeout(function(){
-          if (reopen) reopen.href = lastMailto;
-          form.hidden = true;
-          success.hidden = false;
-          if (submitLabel) submitLabel.hidden = false;
-          if (sendingLabel) sendingLabel.hidden = true;
-          submitBtn.disabled = false;
-          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          window.location.href = lastMailto;
-        }, 450);
+        window.PHForm.submit(buildPayload()).then(function () {
+          showSuccess();
+          setSubmitting(false);
+        }).catch(function (err) {
+          var fallback = (typeof getTranslation === 'function')
+            ? getTranslation('page_contact.formErrSubmit')
+            : 'Không thể gửi yêu cầu lúc này. Vui lòng thử lại hoặc gọi hotline 1800 888 638.';
+          var msg = (err && err.message && window.currentLang === 'vi') ? err.message : fallback;
+          showSubmitError(msg);
+          setSubmitting(false);
+          if (submitError) submitError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
       });
+
+      /* "Gửi yêu cầu khác": quay lại form, cho phép gửi tiếp. */
+      if (newRequest) {
+        newRequest.addEventListener('click', function(e){
+          e.preventDefault();
+          form.reset();
+          clearSubmitError();
+          success.hidden = true;
+          form.hidden = false;
+        });
+      }
 
       /* Clear error state as the user types */
       for (var k in FIELDS) {

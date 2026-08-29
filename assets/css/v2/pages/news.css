@@ -225,7 +225,7 @@
 .detail-breadcrumb { padding: 0 0 1.5rem; font-size: .875rem; color: var(--ph-text-muted); }
 .detail-breadcrumb a { color: var(--ph-text-secondary); text-decoration: none; }
 .detail-breadcrumb a:hover { color: var(--ph-accent); }
-.detail-breadcrumb .sep { margin: 0 .5rem; }
+.detail-breadcrumb .sep { margin: 0 .5rem; color: var(--ph-text-muted); /* explicit - keep "/" clearly visible (same pattern as product-detail breadcrumb) */ }
 
 /* Article header */
 .article-cover { aspect-ratio: 21/9; border-radius: var(--ph-radius-lg); overflow: hidden; background: var(--ph-surface-primary); margin-bottom: 1.5rem; }

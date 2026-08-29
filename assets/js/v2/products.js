@@ -1142,12 +1142,14 @@ var productData = {
 
       orderHTML += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">';
       orderHTML += '<div style="grid-column:1/-1;"><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">Họ và tên <span style="color:var(--color-warning);">*</span></label><input id="cf_name" type="text" placeholder="Nguyễn Văn A" style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;"></div>';
+      orderHTML += '<div style="grid-column:1/-1;"><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">' + getTranslation('page_productDetail.checkoutCompany') + '</label><input id="cf_company" type="text" placeholder="Công ty (không bắt buộc)" style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;"></div>';
       orderHTML += '<div><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">Số điện thoại <span style="color:var(--color-warning);">*</span></label><input id="cf_phone" type="tel" placeholder="09xx xxx xxx" style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;"></div>';
       orderHTML += '<div><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">Email</label><input id="cf_email" type="email" placeholder="email@example.com" style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;"></div>';
       orderHTML += '<div style="grid-column:1/-1;"><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">Địa chỉ</label><input id="cf_address" type="text" placeholder="Số nhà, đường, tỉnh/thành phố" style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;"></div>';
       orderHTML += '<div style="grid-column:1/-1;"><label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:4px;">Ghi chú</label><textarea id="cf_note" placeholder="Yêu cầu thêm về sản phẩm..." style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;resize:vertical;min-height:80px;"></textarea></div>';
       orderHTML += '</div>';
-      orderHTML += '<button onclick="productData.cart.submitCheckout()" style="width:100%;padding:14px;border:none;border-radius:999px;background:linear-gradient(135deg,var(--color-accent),#0099cc);color:var(--color-bg-primary);font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:var(--shadow-glow);">Gửi yêu cầu báo giá</button>';
+      orderHTML += '<p id="cf_submit_error" role="alert" style="display:none;color:var(--color-warning);font-size:13px;margin:0 0 12px;"></p>';
+      orderHTML += '<button id="cf_submit_btn" onclick="productData.cart.submitCheckout()" style="width:100%;padding:14px;border:none;border-radius:999px;background:linear-gradient(135deg,var(--color-accent),#0099cc);color:var(--color-bg-primary);font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:var(--shadow-glow);">' + getTranslation('page_productDetail.cartCheckout') + '</button>';
 
       body.innerHTML = orderHTML;
       var chkModal = document.getElementById('checkoutModal');
@@ -1155,40 +1157,77 @@ var productData = {
     },
 
     submitCheckout: function () {
+      const t = (key, fallback) => {
+        try { const v = getTranslation(key); return (v && v !== key) ? v : fallback; } catch (e) { return fallback; }
+      };
       const name = document.getElementById('cf_name')?.value?.trim();
       const phone = document.getElementById('cf_phone')?.value?.trim();
+      const errEl = document.getElementById('cf_submit_error');
+      const btn = document.getElementById('cf_submit_btn');
+      if (btn && btn.disabled) return; /* chống double-submit */
+      const showErr = function (msg) { if (errEl) { errEl.textContent = msg; errEl.style.display = 'block'; } };
+      const hideErr = function () { if (errEl) errEl.style.display = 'none'; };
       if (!name || !phone) {
-        alert('Vui lòng nhập họ tên và số điện thoại.');
+        showErr(t('page_productDetail.checkoutErrRequired', 'Vui lòng nhập họ tên và số điện thoại.'));
         return;
       }
-      var chkModal2 = document.getElementById('checkoutModal');
-      if (chkModal2) chkModal2.style.display = 'none';
-      // Order saved to localStorage for reference
-      try {
-        const orders = JSON.parse(localStorage.getItem('ph_checkout_orders') || '[]');
-        orders.unshift({
-          id: 'DH' + Date.now().toString(36).toUpperCase(),
-          date: new Date().toISOString(),
-          items: this.items.map(function (item) {
-            return { productId: item.productId, productName: item.productName, selectedModel: item.selectedModel, mainImage: item.mainImage, quantity: item.quantity, price: item.price };
-          }),
-          customer: {
-            name: document.getElementById('cf_name')?.value?.trim() || '',
-            phone: document.getElementById('cf_phone')?.value?.trim() || '',
-            email: document.getElementById('cf_email')?.value?.trim() || '',
-            address: document.getElementById('cf_address')?.value?.trim() || ''
-          }
-        });
-        // Keep only last 50 orders
-        if (orders.length > 50) orders.length = 50;
-        localStorage.setItem('ph_checkout_orders', JSON.stringify(orders));
-      } catch (e) {
-        console.warn('Failed to save checkout order to localStorage:', e);
+      hideErr();
+
+      const items = (this.items || []).map(function (item) {
+        return {
+          productName: item.productName || '',
+          productId: item.productId || '',
+          model: item.selectedModel || '',
+          quantity: String(item.quantity || 1)
+        };
+      });
+      if (!items.length) {
+        showErr(t('page_productDetail.checkoutErrSubmit', 'Giỏ hàng trống, không thể gửi yêu cầu.'));
+        return;
       }
 
-      var cfmModal = document.getElementById('confirmModal');
-      if (cfmModal) { cfmModal.style.display = 'flex'; cfmModal.style.opacity = '1'; cfmModal.style.visibility = 'visible'; }
-      productData.cart.clear();
+      // Address + note gộp vào Nội dung yêu cầu (cột 12 của Sheets)
+      const address = document.getElementById('cf_address')?.value?.trim() || '';
+      const note = document.getElementById('cf_note')?.value?.trim() || '';
+      const messageParts = [];
+      if (note) messageParts.push(note);
+      if (address) messageParts.push('Địa chỉ: ' + address);
+
+      const payload = {
+        type: t('page_productDetail.checkoutType', 'Báo giá'),
+        name: name,
+        phone: phone,
+        email: document.getElementById('cf_email')?.value?.trim() || '',
+        company: document.getElementById('cf_company')?.value?.trim() || '',
+        productName: items.map(function (i) { return i.productName; }).join('\n'),
+        productId: items.map(function (i) { return i.productId; }).join('\n'),
+        model: items.map(function (i) { return i.model; }).join('\n'),
+        quantity: items.map(function (i) { return i.quantity; }).join('\n'),
+        message: messageParts.join('\n'),
+        source: window.location.href
+      };
+
+      if (!window.PHForm || !window.PHForm.isConfigured()) {
+        showErr(t('page_productDetail.checkoutErrSubmit', 'Hệ thống chưa sẵn sàng nhận yêu cầu. Vui lòng thử lại sau hoặc gọi hotline 1800 888 638.'));
+        return;
+      }
+
+      if (btn) { btn.disabled = true; btn.textContent = t('page_productDetail.checkoutSending', 'Đang gửi...'); }
+
+      window.PHForm.submit(payload).then(function () {
+        const chkModal2 = document.getElementById('checkoutModal');
+        if (chkModal2) chkModal2.style.display = 'none';
+        const cfmModal = document.getElementById('confirmModal');
+        if (cfmModal) { cfmModal.style.display = 'flex'; cfmModal.style.opacity = '1'; cfmModal.style.visibility = 'visible'; }
+        productData.cart.clear();
+        if (btn) { btn.disabled = false; btn.textContent = t('page_productDetail.cartCheckout', 'Gửi yêu cầu báo giá'); }
+      }).catch(function (err) {
+        const msg = (err && err.message)
+          ? err.message
+          : t('page_productDetail.checkoutErrSubmit', 'Không thể gửi yêu cầu lúc này. Vui lòng thử lại hoặc gọi hotline 1800 888 638.');
+        showErr(msg);
+        if (btn) { btn.disabled = false; btn.textContent = t('page_productDetail.cartCheckout', 'Gửi yêu cầu báo giá'); }
+      });
     }
   }
 };
