@@ -1,0 +1,420 @@
+- generic [active] [ref=f348e1]:
+  - link "Bỏ qua nội dung":
+    - /url: "#main-content"
+  - generic [ref=f348e2]:
+    - generic [ref=f348e4]:
+      - link "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng PHOENIX SCIENCE & TECHNOLOGY Giải pháp an toàn điện thông minh" [ref=f348e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f348e6]
+        - generic [ref=f348e7]:
+          - strong [ref=f348e8]: PHOENIX SCIENCE & TECHNOLOGY
+          - generic [ref=f348e9]: Giải pháp an toàn điện thông minh
+      - generic [ref=f348e10]:
+        - 'link "Hotline: 0981 019 381" [ref=f348e11] [cursor=pointer]':
+          - /url: tel:+84981019381
+          - generic [ref=f348e14]: "Hotline:"
+          - generic [ref=f348e15]: 0981 019 381
+        - 'link "Hotline: 1800 888 638" [ref=f348e17] [cursor=pointer]':
+          - /url: tel:+841800888638
+          - generic [ref=f348e20]: 1800 888 638
+        - 'link "Email: info@khktphuonghoang.com" [ref=f348e22] [cursor=pointer]':
+          - /url: mailto:info@khktphuonghoang.com
+          - generic [ref=f348e26]: "Email:"
+          - generic [ref=f348e27]: info@khktphuonghoang.com
+        - generic [ref=f348e29]:
+          - link "Facebook" [ref=f348e30] [cursor=pointer]:
+            - /url: "#"
+          - link "TikTok" [ref=f348e33] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=f348e36] [cursor=pointer]:
+            - /url: "#"
+    - banner [ref=f348e39]:
+      - generic [ref=f348e40]:
+        - navigation "Điều hướng chính" [ref=f348e41]:
+          - link "Trang chủ" [ref=f348e42] [cursor=pointer]:
+            - /url: index.html
+          - link "Về chúng tôi" [ref=f348e43] [cursor=pointer]:
+            - /url: about-us.html
+          - link "Sản phẩm" [ref=f348e45] [cursor=pointer]:
+            - /url: products.html
+            - text: Sản phẩm
+            - generic [aria-hidden] [ref=f348e46]: ▾
+          - link "Nhà phân phối" [ref=f348e47] [cursor=pointer]:
+            - /url: distribution-system.html
+          - link "Chứng nhận" [ref=f348e48] [cursor=pointer]:
+            - /url: certificates.html
+          - link "Dự án" [ref=f348e49] [cursor=pointer]:
+            - /url: projects.html
+          - link "Tin tức" [ref=f348e50] [cursor=pointer]:
+            - /url: news.html
+          - link "Liên hệ" [ref=f348e51] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=f348e52]:
+          - generic [ref=f348e53]:
+            - button "中文" [ref=f348e54] [cursor=pointer]
+            - button "English" [ref=f348e55] [cursor=pointer]
+            - button "Tiếng Việt" [ref=f348e56] [cursor=pointer]
+          - button "Chuyển đổi giao diện sáng/tối" [ref=f348e58] [cursor=pointer]
+    - generic [ref=f348e61]:
+      - generic [ref=f348e62]:
+        - link "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng PHOENIX SCIENCE & TECHNOLOGY Giải pháp an toàn điện thông minh" [ref=f348e63] [cursor=pointer]:
+          - /url: index.html
+          - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f348e64]
+          - generic [ref=f348e65]:
+            - strong [ref=f348e66]: PHOENIX SCIENCE & TECHNOLOGY
+            - generic [ref=f348e67]: Giải pháp an toàn điện thông minh
+        - button "Đóng menu" [ref=f348e68] [cursor=pointer]: ×
+      - list [ref=f348e69]:
+        - listitem [ref=f348e70]:
+          - link "Trang chủ" [ref=f348e71] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f348e72]:
+          - link "Về chúng tôi" [ref=f348e73] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f348e74]:
+          - button "Sản phẩm ▾" [ref=f348e75] [cursor=pointer]:
+            - generic [ref=f348e76]: Sản phẩm
+            - generic [ref=f348e77]: ▾
+        - listitem [ref=f348e78]:
+          - link "Nhà phân phối" [ref=f348e79] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f348e80]:
+          - link "Chứng nhận" [ref=f348e81] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f348e82]:
+          - link "Dự án" [ref=f348e83] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f348e84]:
+          - link "Tin tức" [ref=f348e85] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f348e86]:
+          - link "Liên hệ" [ref=f348e87] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f348e88]:
+        - button "中文" [ref=f348e89] [cursor=pointer]
+        - button "English" [ref=f348e90] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f348e91] [cursor=pointer]
+  - main [ref=f348e92]:
+    - generic [ref=f348e94]:
+      - generic [ref=f348e95]:
+        - generic [ref=f348e96]:
+          - paragraph [ref=f348e97]: Về chúng tôi
+          - heading "Giải pháp an toàn điện thông minh" [level=1] [ref=f348e98]
+          - paragraph [ref=f348e99]: Chủ động phòng ngừa sự cố điện.
+          - paragraph [ref=f348e100]: Công ty TNHH Khoa học Kỹ thuật Phượng Hoàng đang triển khai giới thiệu và ứng dụng thiết bị điện an toàn thông minh, hướng tới phòng ngừa chủ động chập điện, rò điện, quá tải và các sự cố điện có thể dẫn đến cháy, nổ tại khu dân cư, cơ sở sản xuất và nhà máy. Trong giai đoạn đầu, Phượng Hoàng tập trung theo dõi khả năng vận hành thực tế, từng bước đánh giá và hoàn thiện giải pháp trước khi mở rộng ứng dụng.
+          - generic [ref=f348e101]:
+            - link "Tìm hiểu về chúng tôi" [ref=f348e102] [cursor=pointer]:
+              - /url: about-us.html
+            - link "Xem sản phẩm" [ref=f348e103] [cursor=pointer]:
+              - /url: products.html
+        - figure [ref=f348e105]:
+          - generic [ref=f348e106]:
+            - iframe [ref=f348e107]
+            - generic: Xem video giới thiệu
+      - list [ref=f348e108]:
+        - listitem [ref=f348e109]:
+          - generic [ref=f348e114]:
+            - strong [ref=f348e115]: An toàn điện chủ động
+            - paragraph [ref=f348e116]: Phòng ngừa chập điện, rò điện, quá tải và nguy cơ cháy nổ do sự cố điện.
+        - listitem [ref=f348e117]:
+          - generic [ref=f348e123]:
+            - strong [ref=f348e124]: Giải pháp thiết bị thông minh
+            - paragraph [ref=f348e125]: Giám sát và bảo vệ hệ thống điện cho khu dân cư, cơ sở sản xuất, nhà máy và xí nghiệp.
+        - listitem [ref=f348e126]:
+          - generic [ref=f348e130]:
+            - strong [ref=f348e131]: Nghiên cứu và phát triển
+            - paragraph [ref=f348e132]: Thiết bị đang được triển khai từng bước để theo dõi khả năng vận hành, thu thập dữ liệu và tiếp tục tối ưu.
+    - generic [ref=f348e133]:
+      - generic [ref=f348e134]:
+        - generic [ref=f348e135]:
+          - generic [ref=f348e136]: Theo Cục Cảnh sát PCCC
+          - heading "Khoảng 4.000 Vụ cháy do điện mỗi năm tại Việt Nam. An toàn điện bắt đầu từ phát hiện sớm." [level=2] [ref=f348e139]:
+            - generic [ref=f348e140]:
+              - generic [ref=f348e141]:
+                - generic [ref=f348e142]: Khoảng
+                - generic [ref=f348e143]: "4.000"
+              - generic [ref=f348e144]: Vụ cháy
+            - generic [ref=f348e145]: do điện mỗi năm tại Việt Nam.
+            - generic [ref=f348e146]: An toàn điện bắt đầu từ phát hiện sớm.
+          - paragraph [ref=f348e147]: "Hầu hết bắt đầu từ những sự cố nhỏ: rò điện, quá tải, chập mạch, mà thiết bị truyền thống chỉ phát hiện khi đã quá muộn. Phượng Hoàng phát hiện và ngắt trong 0,03 giây."
+          - link "Đăng ký khảo sát miễn phí" [ref=f348e149] [cursor=pointer]:
+            - /url: tel:1800888638
+        - figure [ref=f348e151]:
+          - img "Thiết bị bảo vệ điện Phượng Hoàng" [ref=f348e152]
+      - generic [ref=f348e154]:
+        - link "Hàng trăm công trình đã tin dùng" [ref=f348e155] [cursor=pointer]:
+          - /url: projects.html
+        - link "Bằng sáng chế thiết kế" [ref=f348e157] [cursor=pointer]:
+          - /url: "#certifications"
+        - generic [ref=f348e159]: Bảo hành 36 tháng
+        - generic [ref=f348e161]: Phục vụ khách hàng toàn quốc
+    - generic [ref=f348e164]:
+      - generic [ref=f348e165]:
+        - heading "Tại sao thiết bị truyền thống không đủ để bảo vệ bạn" [level=2] [ref=f348e167]
+        - generic [ref=f348e168]:
+          - generic [ref=f348e169]:
+            - generic [ref=f348e170]: Không có Phượng Hoàng
+            - list [ref=f348e171]:
+              - listitem [ref=f348e172]: × Ngắt điện sau 0,1-0,3 giây, khi sự cố đã xảy ra
+              - listitem [ref=f348e173]: × Chỉ phát hiện rò điện từ 30mA trở lên, bỏ sót rò nhỏ
+              - listitem [ref=f348e174]: × Không cảnh báo từ xa, bạn chỉ biết khi về nhà
+              - listitem [ref=f348e175]: × Không phân biệt được quá tải tạm thời và nguy hiểm thật
+              - listitem [ref=f348e176]: × Kiểm tra định kỳ 6 tháng, sự cố có thể xảy ra bất kỳ lúc nào
+          - generic [ref=f348e177]:
+            - generic [ref=f348e178]: Có Phượng Hoàng
+            - list [ref=f348e179]:
+              - listitem [ref=f348e180]: ✓ Ngắt ngay khi phát hiện sự cố, trước khi kịp gây hậu quả
+              - listitem [ref=f348e181]: ✓ Cảm biến độ nhạy 1mA, phát hiện rò điện siêu nhỏ
+              - listitem [ref=f348e182]: ✓ Thông báo tức thì qua điện thoại, mọi lúc mọi nơi
+              - listitem [ref=f348e183]: ✓ Hệ thống tự động phân tích và dự đoán nguy cơ
+              - listitem [ref=f348e184]: ✓ Giám sát liên tục 24/7, bạn yên tâm 365 ngày
+        - generic [ref=f348e185]:
+          - strong [ref=f348e186]: Phản hồi tức thì
+          - text: ", phát hiện và ngắt trước khi sự cố phát triển thành cháy. Một vụ cháy điện gây thiệt hại trung bình"
+          - strong [ref=f348e187]: 2-5 tỷ đồng
+          - text: cho nhà máy, và có thể
+          - strong [ref=f348e188]: mất trắng toàn bộ thiết bị
+          - text: với hộ kinh doanh nhỏ.
+      - img "Sơ đồ so sánh rủi ro cháy điện giữa Phượng Hoàng và thiết bị truyền thống" [ref=f348e190]
+    - generic [ref=f348e192]:
+      - generic [ref=f348e193]:
+        - generic [ref=f348e194]:
+          - heading "Có thể bạn đang băn khoăn" [level=2] [ref=f348e196]
+          - generic [ref=f348e197]:
+            - generic [ref=f348e198]:
+              - heading "Chi phí bao nhiêu?" [level=3] [ref=f348e199]
+              - paragraph [ref=f348e200]:
+                - text: Giải pháp cho hộ gia đình
+                - strong [ref=f348e201]: bắt đầu từ 8 triệu đồng
+                - text: . Với doanh nghiệp và nhà máy, chi phí tùy thuộc vào quy mô, chúng tôi báo giá cụ thể sau khi khảo sát miễn phí. Rẻ hơn rất nhiều so với thiệt hại của một vụ cháy.
+              - link "Gọi để nhận báo giá trong 5 phút →" [ref=f348e202] [cursor=pointer]:
+                - /url: tel:1800888638
+            - generic [ref=f348e203]:
+              - heading "Lắp đặt có phức tạp không?" [level=3] [ref=f348e204]
+              - paragraph [ref=f348e205]:
+                - text: Kỹ thuật viên của chúng tôi đến tận nơi, khảo sát và lắp đặt
+                - strong [ref=f348e206]: trong 30-60 phút
+                - text: . Bạn không cần chuẩn bị gì, chúng tôi lo toàn bộ.
+              - link "Nhắn Zalo đặt lịch khảo sát →" [ref=f348e207] [cursor=pointer]:
+                - /url: https://zalo.me/0981019381
+            - generic [ref=f348e208]:
+              - heading "Tôi được bảo hành như thế nào?" [level=3] [ref=f348e209]
+              - paragraph [ref=f348e210]:
+                - strong [ref=f348e211]: Bảo hành 36 tháng
+                - text: tùy sản phẩm, tính từ ngày giao hàng hoặc nghiệm thu. Bảo hành các lỗi kỹ thuật do nhà sản xuất. Hỗ trợ sửa chữa hoặc thay thế linh kiện lỗi.
+              - link "Xem chính sách bảo hành →" [ref=f348e212] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=f348e213]:
+              - heading "Có thật sự an toàn không?" [level=3] [ref=f348e214]
+              - paragraph [ref=f348e215]:
+                - text: Hồ sơ công khai gồm
+                - strong [ref=f348e216]: tuyên bố phù hợp CE, bằng sáng chế thiết kế ngoại quan và bảo hiểm trách nhiệm sản phẩm
+                - text: . Hàng trăm công trình trên toàn quốc đang sử dụng, từ nhà máy đến chung cư, trường học.
+              - link "Xem chứng nhận chất lượng →" [ref=f348e217] [cursor=pointer]:
+                - /url: "#certifications"
+        - img "Thiết bị bảo vệ điện Phượng Hoàng cho mọi công trình" [ref=f348e220]
+      - generic [ref=f348e222]:
+        - heading "Tôi cần loại nào?" [level=3] [ref=f348e223]
+        - paragraph [ref=f348e224]:
+          - text: Dân dụng, thương mại hay công nghiệp, tùy vào quy mô của bạn.
+          - strong [ref=f348e225]: Gọi 1800 888 638
+          - text: ", chúng tôi sẽ tư vấn loại phù hợp nhất trong 5 phút. Miễn phí. Không áp lực mua hàng."
+        - link "Gọi tư vấn miễn phí →" [ref=f348e226] [cursor=pointer]:
+          - /url: tel:1800888638
+    - generic [ref=f348e228]:
+      - heading "Dù bạn là ai, Phượng Hoàng đều có giải pháp" [level=2] [ref=f348e230]
+      - generic [ref=f348e231]:
+        - link "Gia đình Xem giải pháp dân dụng" [ref=f348e232] [cursor=pointer]:
+          - /url: "#tier-dan-dung"
+          - generic [ref=f348e238]: Gia đình
+          - generic [ref=f348e239]: Xem giải pháp dân dụng
+        - link "Quán, cửa hàng, xưởng nhỏ Xem giải pháp thương mại" [ref=f348e240] [cursor=pointer]:
+          - /url: "#tier-thuong-mai"
+          - generic [ref=f348e246]: Quán, cửa hàng, xưởng nhỏ
+          - generic [ref=f348e247]: Xem giải pháp thương mại
+        - link "Nhà hàng, quán cà phê Xem giải pháp thương mại" [ref=f348e248] [cursor=pointer]:
+          - /url: "#tier-thuong-mai"
+          - generic [ref=f348e253]: Nhà hàng, quán cà phê
+          - generic [ref=f348e254]: Xem giải pháp thương mại
+        - link "Nhà máy, khu công nghiệp Xem giải pháp công nghiệp" [ref=f348e255] [cursor=pointer]:
+          - /url: "#tier-cong-nghiep"
+          - generic [ref=f348e262]: Nhà máy, khu công nghiệp
+          - generic [ref=f348e263]: Xem giải pháp công nghiệp
+      - generic [ref=f348e264]:
+        - generic [ref=f348e265]:
+          - link "Xem tất cả thiết bị dân dụng" [ref=f348e267] [cursor=pointer]:
+            - /url: products.html?category=domestic
+            - img "Thiết bị bảo vệ điện dân dụng" [ref=f348e268]
+          - generic [ref=f348e269]:
+            - link [ref=f348e270] [cursor=pointer]:
+              - /url: products.html?category=domestic
+              - heading "Phiên bản Dân dụng" [level=3] [ref=f348e271]
+            - paragraph [ref=f348e272]: Cho căn hộ và nhà ở
+            - paragraph [ref=f348e273]: Ngăn cháy, chống giật, bảo vệ cả gia đình. Phù hợp căn hộ 2-4 phòng ngủ, kể cả nhà đang xây hoặc đã ở.
+            - generic [ref=f348e274]:
+              - generic [ref=f348e275]: Liên hệ báo giá
+              - generic [ref=f348e276]: 63A, 220V, 3 mạch nhánh
+            - link "Tư vấn giải pháp gia đình" [ref=f348e277] [cursor=pointer]:
+              - /url: tel:1800888638
+        - generic [ref=f348e278]:
+          - link "Xem tất cả thiết bị thương mại" [ref=f348e280] [cursor=pointer]:
+            - /url: products.html
+            - img "Thiết bị bảo vệ điện thương mại" [ref=f348e281]
+          - generic [ref=f348e282]:
+            - link [ref=f348e283] [cursor=pointer]:
+              - /url: products.html
+              - heading "Phiên bản Thương mại" [level=3] [ref=f348e284]
+            - paragraph [ref=f348e285]: Cửa hàng, văn phòng và xưởng nhỏ
+            - paragraph [ref=f348e286]: Bảo vệ thiết bị kinh doanh, từ tủ lạnh quán cà phê đến máy CNC xưởng nhỏ. Đáp ứng yêu cầu PCCC cho mặt bằng kinh doanh.
+            - generic [ref=f348e287]:
+              - generic [ref=f348e288]: Liên hệ báo giá
+              - generic [ref=f348e289]: 220/380V, 1 pha
+            - link "Nhận báo giá doanh nghiệp" [ref=f348e290] [cursor=pointer]:
+              - /url: contact.html
+        - generic [ref=f348e291]:
+          - link "Xem tất cả thiết bị công nghiệp" [ref=f348e293] [cursor=pointer]:
+            - /url: products.html?category=industrial
+            - img "Thiết bị bảo vệ điện công nghiệp" [ref=f348e294]
+          - generic [ref=f348e295]:
+            - link [ref=f348e296] [cursor=pointer]:
+              - /url: products.html?category=industrial
+              - heading "Phiên bản Công nghiệp" [level=3] [ref=f348e297]
+            - paragraph [ref=f348e298]: Cho nhà máy và khu công nghiệp
+            - paragraph [ref=f348e299]: Đạt chuẩn PCCC, không lo bị đình chỉ sản xuất. Chịu tải lớn, hoạt động liên tục 24/7. Chúng tôi khảo sát miễn phí, tích hợp vào hệ thống điện sẵn có, quản lý nhiều thiết bị cùng lúc.
+            - generic [ref=f348e300]:
+              - generic [ref=f348e301]: Liên hệ báo giá
+              - generic [ref=f348e302]: 125-800A, 380V, 3 pha
+            - link "Yêu cầu khảo sát miễn phí" [ref=f348e303] [cursor=pointer]:
+              - /url: tel:1800888638
+      - paragraph [ref=f348e305]:
+        - text: Không chắc chọn loại nào?
+        - link "Gọi 1800 888 638" [ref=f348e306] [cursor=pointer]:
+          - /url: tel:1800888638
+        - text: ", chúng tôi tư vấn miễn phí trong 5 phút."
+    - generic [ref=f348e308]:
+      - generic [ref=f348e309]:
+        - heading "Chứng nhận và tài liệu" [level=2] [ref=f348e310]
+        - paragraph [ref=f348e311]: Bằng sáng chế thiết kế ngoại quan, tuyên bố phù hợp CE, bảo hiểm trách nhiệm sản phẩm và bản quyền phần mềm VIO.
+      - generic [ref=f348e312]:
+        - generic [ref=f348e313]:
+          - generic [ref=f348e314]:
+            - button "Bằng sáng chế thiết kế ngoại quan thiết bị điện an toàn thông minh"
+          - heading "Bằng sáng chế thiết kế ngoại quan" [level=3] [ref=f348e316]
+        - generic [ref=f348e317]:
+          - generic [ref=f348e318]:
+            - button "Tuyên bố phù hợp CE"
+          - heading "Tuyên bố phù hợp CE" [level=3] [ref=f348e320]
+        - generic [ref=f348e321]:
+          - generic [ref=f348e322]:
+            - button "Bảo hiểm trách nhiệm sản phẩm"
+          - heading "Bảo hiểm trách nhiệm sản phẩm" [level=3] [ref=f348e324]
+        - generic [ref=f348e325]:
+          - generic [ref=f348e326]:
+            - button "Bản quyền phần mềm VIO"
+          - heading "Bản quyền phần mềm VIO" [level=3] [ref=f348e328]
+    - generic [ref=f348e330]:
+      - generic [ref=f348e331]:
+        - heading "Câu hỏi thường gặp" [level=2] [ref=f348e332]
+        - paragraph [ref=f348e333]: Giải đáp những thắc mắc phổ biến về thiết bị, lắp đặt và dịch vụ hỗ trợ.
+      - tablist "Câu hỏi thường gặp" [ref=f348e334]:
+        - generic [ref=f348e335]:
+          - tab "Thiết bị hoạt động như thế nào và bảo vệ những nguy cơ điện nào?" [selected] [ref=f348e336] [cursor=pointer]
+          - tabpanel "Thiết bị hoạt động như thế nào và bảo vệ những nguy cơ điện nào?" [ref=f348e339]:
+            - paragraph [ref=f348e340]: Thiết bị giám sát liên tục dòng điện trong hệ thống, phát hiện các bất thường như rò điện, quá tải, quá nhiệt và hồ quang điện. Khi phát hiện nguy cơ, thiết bị tự động ngắt mạch trước khi sự cố phát triển thành cháy nổ hoặc tai nạn điện.
+        - generic [ref=f348e341]:
+          - tab "Thiết bị có tương thích với hệ thống điện 220V/380V hiện tại không?" [ref=f348e342] [cursor=pointer]
+          - tabpanel "Thiết bị có tương thích với hệ thống điện 220V/380V hiện tại không?":
+            - paragraph [ref=f348e345]: Có. Phượng Hoàng cung cấp dòng sản phẩm cho cả hệ thống một pha 220V (dân dụng) và ba pha 380V (thương mại, công nghiệp). Thiết bị được thiết kế để đấu nối vào tủ điện hiện hữu, không cần cải tạo lớn.
+        - generic [ref=f348e346]:
+          - tab "Lắp đặt có phức tạp không? Có cần cải tạo lại hệ thống điện không?" [ref=f348e347] [cursor=pointer]
+          - tabpanel "Lắp đặt có phức tạp không? Có cần cải tạo lại hệ thống điện không?":
+            - paragraph [ref=f348e350]: Không cần cải tạo. Đội ngũ kỹ thuật của chúng tôi đến khảo sát trực tiếp và lắp đặt thiết bị vào tủ điện hiện có. Quy trình thường hoàn thành nhanh chóng, không gây gián đoạn sinh hoạt hoặc sản xuất.
+        - generic [ref=f348e351]:
+          - tab "Làm thế nào để chọn đúng model và công suất cho công trình của tôi?" [ref=f348e352] [cursor=pointer]
+          - tabpanel "Làm thế nào để chọn đúng model và công suất cho công trình của tôi?":
+            - paragraph [ref=f348e355]: "Chúng tôi cung cấp dịch vụ khảo sát miễn phí. Kỹ thuật viên sẽ đánh giá quy mô, loại hình và mức tiêu thụ điện của công trình để tư vấn giải pháp phù hợp nhất: dân dụng, thương mại hay công nghiệp."
+        - generic [ref=f348e356]:
+          - tab "Sản phẩm có chính sách bảo hành và hỗ trợ kỹ thuật như thế nào?" [ref=f348e357] [cursor=pointer]
+          - tabpanel "Sản phẩm có chính sách bảo hành và hỗ trợ kỹ thuật như thế nào?":
+            - paragraph [ref=f348e360]: Sản phẩm được bảo hành 36 tháng tùy dòng, áp dụng cho lỗi kỹ thuật từ nhà sản xuất. Trong suốt thời gian sử dụng, hỗ trợ kỹ thuật qua hotline 1800 888 638.
+        - generic [ref=f348e361]:
+          - tab "Có được khảo sát và tư vấn trước khi mua không?" [ref=f348e362] [cursor=pointer]
+          - tabpanel "Có được khảo sát và tư vấn trước khi mua không?":
+            - paragraph [ref=f348e365]: Có. Gọi 1800 888 638 hoặc để lại thông tin, chúng tôi sẽ đến khảo sát miễn phí, tư vấn giải pháp phù hợp và gửi báo giá. Không áp lực mua hàng.
+      - link "Bạn vẫn còn câu hỏi? Liên hệ với chúng tôi →" [ref=f348e366] [cursor=pointer]:
+        - /url: contact.html
+  - generic [ref=f348e367]:
+    - contentinfo [ref=f348e368]:
+      - generic [ref=f348e369]:
+        - generic [ref=f348e370]:
+          - generic [ref=f348e371]:
+            - generic [ref=f348e372]:
+              - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f348e373]
+              - heading "Thiết bị điện an toàn thông minh" [level=3] [ref=f348e374]
+            - heading "CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG" [level=5] [ref=f348e375]
+            - paragraph [ref=f348e376]: Ứng dụng giám sát và điều khiển điện thông minh giúp người dùng theo dõi thiết bị, nhận cảnh báo sớm và quản lý hệ thống an toàn từ xa.
+            - generic [ref=f348e377]:
+              - generic [ref=f348e378]: An toàn
+              - generic [ref=f348e379]: Từ xa
+              - generic [ref=f348e380]: Hiệu quả
+          - generic [ref=f348e382]:
+            - heading "Liên hệ" [level=4] [ref=f348e383]
+            - list [ref=f348e384]:
+              - listitem [ref=f348e385]:
+                - strong [ref=f348e386]: Địa chỉ
+                - text: ":"
+                - generic [ref=f348e387]: Tầng 3, số 30 Lý Thái Tổ, phường Kinh Bắc, tỉnh Bắc Ninh, Việt Nam
+              - listitem [ref=f348e388]:
+                - strong [ref=f348e389]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f348e390] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f348e391]:
+                - strong [ref=f348e392]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f348e393] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f348e394]:
+                - strong [ref=f348e395]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f348e396] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f348e398]:
+            - heading "Chính sách và quy định" [level=4] [ref=f348e399]
+            - list [ref=f348e400]:
+              - listitem [ref=f348e401]:
+                - link "Hướng dẫn mua hàng" [ref=f348e402] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f348e403]:
+                - link "Chính sách bảo hành" [ref=f348e404] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f348e405]:
+                - link "Chính sách đổi trả" [ref=f348e406] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f348e407]:
+                - link "Chính sách vận chuyển" [ref=f348e408] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f348e409]:
+                - link "Hướng dẫn thanh toán" [ref=f348e410] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f348e411]:
+                - link "Chính sách bán hàng" [ref=f348e412] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f348e413]:
+                - link "Chính sách bảo mật" [ref=f348e414] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f348e415]:
+          - heading "Tải ứng dụng Phượng Hoàng" [level=4] [ref=f348e416]
+          - paragraph [ref=f348e417]: Giám sát và điều khiển điện an toàn từ xa qua điện thoại
+          - generic [ref=f348e418]:
+            - generic [ref=f348e419]:
+              - img "QR tải ứng dụng Android Phượng Hoàng" [ref=f348e420]
+              - generic [ref=f348e421]: Android APK
+              - generic [ref=f348e422]: Android 6.0+
+            - generic [ref=f348e423]:
+              - img "QR dùng ứng dụng web Phượng Hoàng" [ref=f348e424]
+              - generic [ref=f348e425]: H5 Web App
+              - generic [ref=f348e426]: Không cần cài đặt
+      - paragraph [ref=f348e428]: © 2026 Cloud Control. Bảo lưu mọi quyền. | Quan sát điện trực quan, an toàn nhìn thấy
+    - link "Tư vấn miễn phí qua Zalo" [ref=f348e429] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

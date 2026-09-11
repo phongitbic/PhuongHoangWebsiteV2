@@ -101,18 +101,14 @@
       </div>
     </section>
 
-    <!-- Product Layout: Sidebar + Grid -->
+    <!-- Product Layout: Category tabs + Grid -->
     <section class="bp-section bp-reveal" id="ph-product-section">
     <div class="container-wide ph-products-layout">
-      <!-- Sidebar -->
+      <!-- Category tabs -->
       <aside class="ph-products-sidebar" id="phProductsSidebar">
         <h2 class="ph-sidebar-title" data-i18n="page_products.sidebarTitle">Danh mục</h2>
         <nav class="ph-sidebar-nav" id="phSidebarNav"></nav>
-        <!-- Mobile filter toggle -->
-        <button class="ph-sidebar-toggle" id="phSidebarToggle" onclick="toggleSidebar()" data-i18n-aria="page_products.filterLabel" aria-label="Lọc danh mục">
-          <span id="phSidebarToggleLabel" data-i18n="page_products.sidebarTitle">Danh mục</span>
-          <svg width="12" height="12" viewBox="0 0 12 12" class="ph-sidebar-arrow" id="phSidebarArrow"><path d="M1 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-        </button>
+        <p class="ph-category-description" id="phCategoryDescription"></p>
       </aside>
 
       <!-- Product Grid -->
@@ -235,7 +231,12 @@ window._phPageMeta = {
       }
     };
 
-    var CAT_ICONS = { all: '', industrial: '', domestic: '', surge: '' };
+    var CAT_ICONS = {
+      all: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
+      industrial: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6 3V9l6 4V5h6v16H3Z"/><path d="M7 17h2m3 0h2m3 0h2"/></svg>',
+      domestic: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v11h14V10M9 21v-7h6v7"/></svg>',
+      surge: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-8 12h7l-1 8 8-12h-7l1-8Z"/></svg>'
+    };
 
     var CAT_ORDER = ['all', 'industrial', 'domestic', 'surge'];
 
@@ -261,7 +262,12 @@ window._phPageMeta = {
       return productData.getByCategory(catId).length;
     }
 
-    /* ── Build vertical sidebar ── */
+    function updateCategoryDescription() {
+      var desc = document.getElementById('phCategoryDescription');
+      if (desc) desc.textContent = getCategoryDesc(currentCategory, productData.getLang());
+    }
+
+    /* ── Build category tabs ── */
     function buildSidebar() {
       var nav = document.getElementById('phSidebarNav');
       if (!nav) return;
@@ -271,19 +277,17 @@ window._phPageMeta = {
         var cid = CAT_ORDER[i];
         var count = getCategoryCount(cid);
         var label = tCat(cid, lang);
-        var desc = getCategoryDesc(cid, lang);
         var icon = CAT_ICONS[cid];
         var activeClass = currentCategory === cid ? ' active' : '';
         html += '<button class="ph-sidebar-item' + activeClass + '" data-cat="' + cid + '" onclick="filterCategory(\'' + cid + '\',this)"';
         html += ' aria-current="' + (activeClass ? 'true' : 'false') + '">';
         if (icon) html += '<span class="ph-sidebar-icon">' + icon + '</span>';
-        html += '<span class="ph-sidebar-label">' + label;
-        if (desc) html += '<span class="ph-sidebar-desc">' + desc + '</span>';
-        html += '</span>';
+        html += '<span class="ph-sidebar-label">' + label + '</span>';
         html += '<span class="ph-sidebar-count">' + count + '</span>';
         html += '</button>';
       }
       nav.innerHTML = html;
+      updateCategoryDescription();
     }
 
     /* ── Professional B2B Product Cards ── */
@@ -378,28 +382,16 @@ window._phPageMeta = {
     function filterCategory(catId, btn) {
       currentCategory = catId;
       var items = document.querySelectorAll('.ph-sidebar-item');
-      for (var i = 0; i < items.length; i++) { items[i].classList.remove('active'); }
-      if (btn) btn.classList.add('active');
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.remove('active');
+        items[i].setAttribute('aria-current', 'false');
+      }
+      if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-current', 'true');
+      }
+      updateCategoryDescription();
       renderProductCards(catId);
-      // Close mobile sidebar after selection
-      if (window.innerWidth <= 768) {
-        var sidebar = document.getElementById('phProductsSidebar');
-        var arrow = document.getElementById('phSidebarArrow');
-        if (sidebar) sidebar.classList.remove('open');
-        if (arrow) arrow.style.transform = '';
-      }
-    }
-
-    function toggleSidebar() {
-      var sidebar = document.getElementById('phProductsSidebar');
-      var arrow = document.getElementById('phSidebarArrow');
-      if (!sidebar) return;
-      sidebar.classList.toggle('open');
-      if (sidebar.classList.contains('open')) {
-        if (arrow) arrow.style.transform = 'rotate(180deg)';
-      } else {
-        if (arrow) arrow.style.transform = '';
-      }
     }
 
     /* ── Sort products ── */
@@ -451,6 +443,23 @@ window._phPageMeta = {
     } else {
       boot();
     }
+
+    /*
+     * Fallback: some browsers or injected scripts may change page state after
+     * initial load. If the URL contains a `category` query param we must
+     * ensure it is honoured — force the category after boot.
+     */
+    (function enforceUrlCategory() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var urlCat = params.get('category');
+        if (urlCat && CAT_ORDER.indexOf(urlCat) >= 0) {
+          currentCategory = urlCat;
+          buildSidebar();
+          renderProductCards(currentCategory);
+        }
+      } catch (e) { /* ignore */ }
+    })();
 
     /* Same DOM-ready guard for FAQ. Pass the language i18n-v2.js already
        applied (currentLang) so the initial FAQ render matches the saved

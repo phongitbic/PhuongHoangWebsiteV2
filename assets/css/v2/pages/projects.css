@@ -332,6 +332,7 @@
   justify-content: flex-start;
 }
 .ph-proj-filter-btn {
+  min-height: 44px;
   padding: .5rem 1.15rem;
   border: 1px solid var(--ph-border-default);
   border-radius: 99px;

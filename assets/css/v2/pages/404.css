@@ -30,7 +30,7 @@
 .quick-links { margin-top: 2.25rem; padding-top: 1.75rem; border-top: 1px solid var(--ph-border-default); }
 .quick-links h3 { font-size: .9375rem; font-weight: 600; margin-bottom: .875rem; color: var(--ph-text-secondary); }
 .quick-links-grid { display: flex; gap: .625rem; justify-content: center; flex-wrap: wrap; }
-.quick-link { padding: .5rem 1rem; border-radius: 8px; background: var(--ph-surface-secondary); border: 1px solid var(--ph-border-default); color: var(--ph-text-secondary); text-decoration: none; font-size: .8125rem; transition: background .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out); }
+.quick-link { display: inline-flex; align-items: center; min-height: 44px; padding: .5rem 1rem; border-radius: 8px; background: var(--ph-surface-secondary); border: 1px solid var(--ph-border-default); color: var(--ph-text-secondary); text-decoration: none; font-size: .8125rem; transition: background .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out); }
 .quick-link:hover { background: var(--ph-accent-subtle); border-color: var(--ph-accent); color: var(--ph-accent); }
 .quick-link:focus-visible { outline: 2px solid var(--ph-accent); outline-offset: 2px; }
 

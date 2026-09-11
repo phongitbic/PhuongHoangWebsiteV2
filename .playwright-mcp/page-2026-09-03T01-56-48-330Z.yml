@@ -1,0 +1,155 @@
+- generic [ref=f391e1]:
+  - link "Skip to content":
+    - /url: "#main-content"
+  - generic [ref=f391e2]:
+    - generic [ref=f391e4]:
+      - link [ref=f391e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f391e6]
+        - strong [ref=f391e8]: PHOENIX SCIENCE & TECHNOLOGY
+      - 'link "Hotline: 0981 019 381" [ref=f391e10] [cursor=pointer]':
+        - /url: tel:+84981019381
+        - generic [ref=f391e13]: 0981 019 381
+    - banner [ref=f391e14]:
+      - generic [ref=f391e15]:
+        - button "Open menu" [expanded] [ref=f391e16] [cursor=pointer]
+        - button "Toggle light/dark theme" [ref=f391e20] [cursor=pointer]
+    - generic [ref=f391e27]:
+      - generic [ref=f391e28]:
+        - link [ref=f391e29] [cursor=pointer]:
+          - /url: index.html
+          - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f391e30]
+          - strong [ref=f391e32]: PHOENIX SCIENCE & TECHNOLOGY
+        - button "Close menu" [active] [ref=f391e33] [cursor=pointer]: ×
+      - list [ref=f391e34]:
+        - listitem [ref=f391e35]:
+          - link "Home" [ref=f391e36] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f391e37]:
+          - link "About Us" [ref=f391e38] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f391e39]:
+          - button "Products ▾" [ref=f391e40] [cursor=pointer]:
+            - generic [ref=f391e41]: Products
+            - generic [ref=f391e42]: ▾
+        - listitem [ref=f391e43]:
+          - link "Distributors" [ref=f391e44] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f391e45]:
+          - link "Certificates" [ref=f391e46] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f391e47]:
+          - link "Projects" [ref=f391e48] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f391e49]:
+          - link "News" [ref=f391e50] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f391e51]:
+          - link "Contact" [ref=f391e52] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f391e53]:
+        - button "中文" [ref=f391e54] [cursor=pointer]
+        - button "English" [ref=f391e55] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f391e56] [cursor=pointer]
+  - main [ref=f391e57]:
+    - generic [ref=f391e61]:
+      - generic [ref=f391e65]: "404"
+      - heading "Page Not Found" [level=1] [ref=f391e67]
+    - generic [ref=f391e72]:
+      - paragraph [ref=f391e73]: The page you are looking for does not exist or has been moved elsewhere.
+      - paragraph [ref=f391e74]: The URL may have been mistyped or the page may have been removed. Please check again or contact us for assistance.
+      - generic [ref=f391e75]:
+        - link "Go to Homepage" [ref=f391e76] [cursor=pointer]:
+          - /url: index.html
+        - link "Contact Support" [ref=f391e77] [cursor=pointer]:
+          - /url: contact.html
+      - generic [ref=f391e78]:
+        - heading "You may be looking for:" [level=2] [ref=f391e79]
+        - generic [ref=f391e80]:
+          - link "Industrial Equipment" [ref=f391e81] [cursor=pointer]:
+            - /url: products.html?category=industrial
+          - link "Residential Equipment" [ref=f391e82] [cursor=pointer]:
+            - /url: products.html?category=domestic
+          - link "Surge Protection" [ref=f391e83] [cursor=pointer]:
+            - /url: products.html?category=surge
+          - link "Arc Fault Protection" [ref=f391e84] [cursor=pointer]:
+            - /url: products.html?category=arc
+          - link "Featured Projects" [ref=f391e85] [cursor=pointer]:
+            - /url: projects.html
+          - link "News" [ref=f391e86] [cursor=pointer]:
+            - /url: news.html
+  - generic [ref=f391e87]:
+    - contentinfo [ref=f391e88]:
+      - generic [ref=f391e89]:
+        - generic [ref=f391e90]:
+          - generic [ref=f391e91]:
+            - generic [ref=f391e92]:
+              - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f391e93]
+              - heading "Intelligent safety electrical equipment" [level=3] [ref=f391e94]
+            - heading "PHUONG HOANG SCIENCE AND TECHNOLOGY COMPANY LIMITED" [level=5] [ref=f391e95]
+            - paragraph [ref=f391e96]: An intelligent electrical monitoring and control application that helps users track devices, receive early warnings, and manage safety systems remotely.
+            - generic [ref=f391e97]:
+              - generic [ref=f391e98]: Safe
+              - generic [ref=f391e99]: Remote
+              - generic [ref=f391e100]: Efficient
+          - generic [ref=f391e102]:
+            - heading "Contact" [level=4] [ref=f391e103]
+            - list [ref=f391e104]:
+              - listitem [ref=f391e105]:
+                - strong [ref=f391e106]: Address
+                - text: ":"
+                - generic [ref=f391e107]: 3rd floor, 30 Ly Thai To, Kinh Bac Ward, Bac Ninh Province, Vietnam
+              - listitem [ref=f391e108]:
+                - strong [ref=f391e109]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f391e110] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f391e111]:
+                - strong [ref=f391e112]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f391e113] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f391e114]:
+                - strong [ref=f391e115]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f391e116] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f391e118]:
+            - heading "Policies and Regulations" [level=4] [ref=f391e119]
+            - list [ref=f391e120]:
+              - listitem [ref=f391e121]:
+                - link "Purchase guide" [ref=f391e122] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f391e123]:
+                - link "Warranty policy" [ref=f391e124] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f391e125]:
+                - link "Return policy" [ref=f391e126] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f391e127]:
+                - link "Shipping policy" [ref=f391e128] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f391e129]:
+                - link "Payment guide" [ref=f391e130] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f391e131]:
+                - link "Sales policy" [ref=f391e132] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f391e133]:
+                - link "Privacy policy" [ref=f391e134] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f391e135]:
+          - heading "Download Phuong Hoang App" [level=4] [ref=f391e136]
+          - paragraph [ref=f391e137]: Monitor and control electrical safety remotely via phone
+          - generic [ref=f391e138]:
+            - generic [ref=f391e139]:
+              - img "QR code for Android Phuong Hoang app" [ref=f391e140]
+              - generic [ref=f391e141]: Android APK
+              - generic [ref=f391e142]: Android 6.0+
+            - generic [ref=f391e143]:
+              - img "QR code for Phuong Hoang web app" [ref=f391e144]
+              - generic [ref=f391e145]: H5 Web App
+              - generic [ref=f391e146]: No installation required
+      - paragraph [ref=f391e148]: © 2026 Cloud Control. All rights reserved. | Visualize Power, See Safety
+    - link "Free consultation via Zalo" [ref=f391e149] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

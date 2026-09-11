@@ -165,6 +165,7 @@
   font-family: var(--ph-font-body);
   transition: filter var(--ph-duration-fast), transform var(--ph-duration-fast);
   box-shadow: 0 2px 10px rgba(29,139,44,.14);
+  min-height: 44px;
 }
 .ph-btn-quote:hover {
   filter: brightness(1.08);
@@ -186,6 +187,7 @@
   white-space: nowrap;
   font-family: var(--ph-font-body);
   transition: background var(--ph-duration-fast), color var(--ph-duration-fast);
+  min-height: 44px;
 }
 .ph-btn-zalo:hover {
   background: var(--ph-accent-subtle);

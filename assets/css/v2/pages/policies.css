@@ -162,6 +162,7 @@ main > section:first-child.bp-internal-hero {
 .ph-policy-nav-link {
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   padding: .42rem .95rem;
   border: 1px solid var(--ph-border-default);
   border-radius: 99px;

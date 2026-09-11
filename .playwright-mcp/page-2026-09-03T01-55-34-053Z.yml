@@ -1,0 +1,420 @@
+- generic [ref=f348e1]:
+  - link "Skip to content":
+    - /url: "#main-content"
+  - generic [ref=f348e2]:
+    - generic [ref=f348e4]:
+      - link "Phuong Hoang Science and Technology Co., Ltd. Logo PHOENIX SCIENCE & TECHNOLOGY Smart Electrical Safety Solutions" [ref=f348e438] [cursor=pointer]:
+        - /url: index.html
+        - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f348e439]
+        - generic [ref=f348e7]:
+          - strong [ref=f348e8]: PHOENIX SCIENCE & TECHNOLOGY
+          - generic [ref=f348e9]: Smart Electrical Safety Solutions
+      - generic [ref=f348e10]:
+        - 'link "Hotline: 0981 019 381" [ref=f348e11] [cursor=pointer]':
+          - /url: tel:+84981019381
+          - generic [ref=f348e14]: "Hotline:"
+          - generic [ref=f348e15]: 0981 019 381
+        - 'link "Hotline: 1800 888 638" [ref=f348e17] [cursor=pointer]':
+          - /url: tel:+841800888638
+          - generic [ref=f348e20]: 1800 888 638
+        - 'link "Email: info@khktphuonghoang.com" [ref=f348e22] [cursor=pointer]':
+          - /url: mailto:info@khktphuonghoang.com
+          - generic [ref=f348e26]: "Email:"
+          - generic [ref=f348e27]: info@khktphuonghoang.com
+        - generic [ref=f348e29]:
+          - link "Facebook" [ref=f348e30] [cursor=pointer]:
+            - /url: "#"
+          - link "TikTok" [ref=f348e33] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=f348e36] [cursor=pointer]:
+            - /url: "#"
+    - banner [ref=f348e39]:
+      - generic [ref=f348e40]:
+        - navigation "Primary navigation" [ref=f348e440]:
+          - link "Home" [ref=f348e441] [cursor=pointer]:
+            - /url: index.html
+          - link "About Us" [ref=f348e442] [cursor=pointer]:
+            - /url: about-us.html
+          - link "Products" [ref=f348e443] [cursor=pointer]:
+            - /url: products.html
+            - text: Products
+            - generic [aria-hidden] [ref=f348e46]: ▾
+          - link "Distributors" [ref=f348e444] [cursor=pointer]:
+            - /url: distribution-system.html
+          - link "Certificates" [ref=f348e445] [cursor=pointer]:
+            - /url: certificates.html
+          - link "Projects" [ref=f348e446] [cursor=pointer]:
+            - /url: projects.html
+          - link "News" [ref=f348e447] [cursor=pointer]:
+            - /url: news.html
+          - link "Contact" [ref=f348e448] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=f348e52]:
+          - generic [ref=f348e53]:
+            - button "中文" [ref=f348e54] [cursor=pointer]
+            - button "English" [active] [ref=f348e55] [cursor=pointer]
+            - button "Tiếng Việt" [ref=f348e56] [cursor=pointer]
+          - button "Toggle light/dark theme" [ref=f348e449] [cursor=pointer]
+    - generic [ref=f348e61]:
+      - generic [ref=f348e62]:
+        - link "Phuong Hoang Science and Technology Co., Ltd. Logo PHOENIX SCIENCE & TECHNOLOGY Smart Electrical Safety Solutions" [ref=f348e450] [cursor=pointer]:
+          - /url: index.html
+          - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f348e451]
+          - generic [ref=f348e65]:
+            - strong [ref=f348e66]: PHOENIX SCIENCE & TECHNOLOGY
+            - generic [ref=f348e67]: Smart Electrical Safety Solutions
+        - button "Close menu" [ref=f348e452] [cursor=pointer]: ×
+      - list [ref=f348e69]:
+        - listitem [ref=f348e70]:
+          - link "Home" [ref=f348e453] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f348e72]:
+          - link "About Us" [ref=f348e454] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f348e74]:
+          - button "Products ▾" [ref=f348e455] [cursor=pointer]:
+            - generic [ref=f348e76]: Products
+            - generic [ref=f348e77]: ▾
+        - listitem [ref=f348e78]:
+          - link "Distributors" [ref=f348e456] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f348e80]:
+          - link "Certificates" [ref=f348e457] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f348e82]:
+          - link "Projects" [ref=f348e458] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f348e84]:
+          - link "News" [ref=f348e459] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f348e86]:
+          - link "Contact" [ref=f348e460] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f348e88]:
+        - button "中文" [ref=f348e89] [cursor=pointer]
+        - button "English" [ref=f348e90] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f348e91] [cursor=pointer]
+  - main [ref=f348e92]:
+    - generic [ref=f348e94]:
+      - generic [ref=f348e95]:
+        - generic [ref=f348e96]:
+          - paragraph [ref=f348e97]: About us
+          - heading "Smart electrical safety solutions" [level=1] [ref=f348e461]
+          - paragraph [ref=f348e99]: Proactively preventing electrical incidents.
+          - paragraph [ref=f348e100]: Phuong Hoang Science & Technology Co., Ltd. is introducing smart electrical safety devices, aiming to proactively prevent short circuits, earth leakage, overloads and electrical incidents that can lead to fire and explosion in residential areas, production facilities and factories. In this early phase, Phuong Hoang is focused on monitoring real-world operation, gradually evaluating and refining the solution before expanding its application.
+          - generic [ref=f348e101]:
+            - link "Learn about us" [ref=f348e462] [cursor=pointer]:
+              - /url: about-us.html
+            - link "View products" [ref=f348e463] [cursor=pointer]:
+              - /url: products.html
+        - figure [ref=f348e105]:
+          - generic [ref=f348e106]:
+            - iframe [ref=f348e107]
+            - generic: Watch the introduction video
+      - list [ref=f348e108]:
+        - listitem [ref=f348e109]:
+          - generic [ref=f348e114]:
+            - strong [ref=f348e115]: Proactive electrical safety
+            - paragraph [ref=f348e116]: Prevents short circuits, earth leakage, overloads and fire risks caused by electrical incidents.
+        - listitem [ref=f348e117]:
+          - generic [ref=f348e123]:
+            - strong [ref=f348e124]: Smart device solutions
+            - paragraph [ref=f348e125]: Monitors and protects electrical systems in residential areas, production facilities, factories and enterprises.
+        - listitem [ref=f348e126]:
+          - generic [ref=f348e130]:
+            - strong [ref=f348e131]: Research and development
+            - paragraph [ref=f348e132]: The devices are being rolled out step by step to monitor operation, collect data, and continue optimizing.
+    - generic [ref=f348e133]:
+      - generic [ref=f348e134]:
+        - generic [ref=f348e135]:
+          - generic [ref=f348e136]: According to the Fire Police Department
+          - heading "About 4.000 fires caused by electricity each year in Vietnam. Electrical safety starts with early detection." [level=2] [ref=f348e464]:
+            - generic [ref=f348e140]:
+              - generic [ref=f348e141]:
+                - generic [ref=f348e142]: About
+                - generic [ref=f348e143]: "4.000"
+              - generic [ref=f348e144]: fires
+            - generic [ref=f348e145]: caused by electricity each year in Vietnam.
+            - generic [ref=f348e146]: Electrical safety starts with early detection.
+          - paragraph [ref=f348e147]: "Most start from small faults: leakage, overload, short circuit, that traditional devices only detect when it's already too late. Phuong Hoang detects and cuts off in 0.03 seconds."
+          - link "Register for a Free Survey" [ref=f348e465] [cursor=pointer]:
+            - /url: tel:1800888638
+        - figure [ref=f348e151]:
+          - img "Phuong Hoang electrical protection device" [ref=f348e466]
+      - generic [ref=f348e154]:
+        - link "Hundreds of installations trusted" [ref=f348e467] [cursor=pointer]:
+          - /url: projects.html
+        - link "Design patent" [ref=f348e468] [cursor=pointer]:
+          - /url: "#certifications"
+        - generic [ref=f348e159]: 36-month warranty
+        - generic [ref=f348e161]: Serving customers nationwide
+    - generic [ref=f348e164]:
+      - generic [ref=f348e165]:
+        - heading "Why traditional devices aren't enough to protect you" [level=2] [ref=f348e469]
+        - generic [ref=f348e168]:
+          - generic [ref=f348e169]:
+            - generic [ref=f348e170]: Without Phuong Hoang
+            - list [ref=f348e171]:
+              - listitem [ref=f348e172]: × Cuts power after 0.1-0.3s, after the fault has already occurred
+              - listitem [ref=f348e173]: × Only detects leakage from 30mA, misses small leaks
+              - listitem [ref=f348e174]: × No remote alerts, you only know when you get home
+              - listitem [ref=f348e175]: × Cannot distinguish temporary overload from real danger
+              - listitem [ref=f348e176]: × 6-month periodic checks, faults can occur at any time
+          - generic [ref=f348e177]:
+            - generic [ref=f348e178]: With Phuong Hoang
+            - list [ref=f348e179]:
+              - listitem [ref=f348e180]: ✓ Cuts power immediately upon fault detection, before consequences develop
+              - listitem [ref=f348e181]: ✓ 1mA sensitivity sensor, detects micro-leakage
+              - listitem [ref=f348e182]: ✓ Instant phone notifications, anytime, anywhere
+              - listitem [ref=f348e183]: ✓ System automatically analyzes and predicts risks
+              - listitem [ref=f348e184]: ✓ Continuous 24/7 monitoring, peace of mind 365 days a year
+        - generic [ref=f348e185]:
+          - strong [ref=f348e186]: Instant Response
+          - text: ", detects and cuts off before the fault develops into a fire. An electrical fire causes average damage of"
+          - strong [ref=f348e187]: 2-5 billion VND
+          - text: for a factory, and can
+          - strong [ref=f348e188]: destroy all equipment entirely
+          - text: for small businesses.
+      - img "Phuong Hoang vs traditional electrical fire risk comparison diagram" [ref=f348e470]
+    - generic [ref=f348e192]:
+      - generic [ref=f348e193]:
+        - generic [ref=f348e194]:
+          - heading "You Might Be Wondering" [level=2] [ref=f348e471]
+          - generic [ref=f348e197]:
+            - generic [ref=f348e198]:
+              - heading "How much does it cost?" [level=3] [ref=f348e472]
+              - paragraph [ref=f348e200]:
+                - text: Household solutions
+                - strong [ref=f348e201]: start from 8 million VND
+                - text: . For businesses and factories, cost depends on scale, we provide a specific quote after a free survey. Much cheaper than the damage from a fire.
+              - link "Call for a quote in 5 minutes →" [ref=f348e473] [cursor=pointer]:
+                - /url: tel:1800888638
+            - generic [ref=f348e203]:
+              - heading "Is installation complicated?" [level=3] [ref=f348e474]
+              - paragraph [ref=f348e205]:
+                - text: Our technicians come to your location, survey and install
+                - strong [ref=f348e206]: within 30-60 minutes
+                - text: . You don't need to prepare anything, we handle everything.
+              - link "Message Zalo to schedule a survey →" [ref=f348e475] [cursor=pointer]:
+                - /url: https://zalo.me/0981019381
+            - generic [ref=f348e208]:
+              - heading "How does warranty work?" [level=3] [ref=f348e476]
+              - paragraph [ref=f348e210]:
+                - strong [ref=f348e211]: 36-month warranty
+                - text: depending on product, from delivery or acceptance date. Covers manufacturer technical defects. Support for repair or replacement of faulty components.
+              - link "View warranty policy →" [ref=f348e477] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=f348e213]:
+              - heading "Is it really safe?" [level=3] [ref=f348e478]
+              - paragraph [ref=f348e215]:
+                - text: Publicly available documents include the
+                - strong [ref=f348e216]: CE Declaration of Conformity, design patent, and product liability insurance
+                - text: . Hundreds of installations nationwide are using them, from factories to apartments and schools.
+              - link "View quality certifications →" [ref=f348e479] [cursor=pointer]:
+                - /url: "#certifications"
+        - img "Phuong Hoang electrical safety device, protection for every project" [ref=f348e480]
+      - generic [ref=f348e222]:
+        - heading "Which type do I need?" [level=3] [ref=f348e481]
+        - paragraph [ref=f348e224]:
+          - text: Residential, commercial, or industrial, depending on your scale.
+          - strong [ref=f348e225]: Call 1800 888 638
+          - text: ", we'll advise on the most suitable type in 5 minutes. Free. No purchase pressure."
+        - link "Call for free consultation →" [ref=f348e482] [cursor=pointer]:
+          - /url: tel:1800888638
+    - generic [ref=f348e228]:
+      - heading "Whoever you are, Phuong Hoang has a solution" [level=2] [ref=f348e483]
+      - generic [ref=f348e231]:
+        - link "Family View residential solutions" [ref=f348e484] [cursor=pointer]:
+          - /url: "#tier-dan-dung"
+          - generic [ref=f348e238]: Family
+          - generic [ref=f348e239]: View residential solutions
+        - link "Shops, Stores, Small Workshops View commercial solutions" [ref=f348e485] [cursor=pointer]:
+          - /url: "#tier-thuong-mai"
+          - generic [ref=f348e246]: Shops, Stores, Small Workshops
+          - generic [ref=f348e247]: View commercial solutions
+        - link "Restaurants, Coffee Shops View commercial solutions" [ref=f348e486] [cursor=pointer]:
+          - /url: "#tier-thuong-mai"
+          - generic [ref=f348e253]: Restaurants, Coffee Shops
+          - generic [ref=f348e254]: View commercial solutions
+        - link "Factories, Industrial Parks View industrial solutions" [ref=f348e487] [cursor=pointer]:
+          - /url: "#tier-cong-nghiep"
+          - generic [ref=f348e262]: Factories, Industrial Parks
+          - generic [ref=f348e263]: View industrial solutions
+      - generic [ref=f348e264]:
+        - generic [ref=f348e265]:
+          - link "View all residential devices" [ref=f348e488] [cursor=pointer]:
+            - /url: products.html?category=domestic
+            - img "Residential electrical protection device" [ref=f348e489]
+          - generic [ref=f348e269]:
+            - link [ref=f348e490] [cursor=pointer]:
+              - /url: products.html?category=domestic
+              - heading "Residential Edition" [level=3] [ref=f348e491]
+            - paragraph [ref=f348e272]: For apartments and homes
+            - paragraph [ref=f348e273]: Fire prevention, shock protection, safeguarding the whole family. Suitable for 2-4 bedroom apartments, whether under construction or already occupied.
+            - generic [ref=f348e274]:
+              - generic [ref=f348e275]: Contact for Pricing
+              - generic [ref=f348e276]: 63A, 220V, 3 branch circuits
+            - link "Consult family solution" [ref=f348e492] [cursor=pointer]:
+              - /url: tel:1800888638
+        - generic [ref=f348e278]:
+          - link "View all commercial devices" [ref=f348e493] [cursor=pointer]:
+            - /url: products.html
+            - img "Commercial electrical protection device" [ref=f348e494]
+          - generic [ref=f348e282]:
+            - link [ref=f348e495] [cursor=pointer]:
+              - /url: products.html
+              - heading "Commercial Edition" [level=3] [ref=f348e496]
+            - paragraph [ref=f348e285]: Stores, offices, and small workshops
+            - paragraph [ref=f348e286]: Protect business equipment, from coffee shop refrigerators to small-workshop CNC machines. Meets fire safety requirements for commercial premises.
+            - generic [ref=f348e287]:
+              - generic [ref=f348e288]: Contact for quote
+              - generic [ref=f348e289]: 220/380V, 1 Phase
+            - link "Get business quote" [ref=f348e497] [cursor=pointer]:
+              - /url: contact.html
+        - generic [ref=f348e291]:
+          - link "View all industrial devices" [ref=f348e498] [cursor=pointer]:
+            - /url: products.html?category=industrial
+            - img "Industrial electrical protection device" [ref=f348e499]
+          - generic [ref=f348e295]:
+            - link [ref=f348e500] [cursor=pointer]:
+              - /url: products.html?category=industrial
+              - heading "Industrial Edition" [level=3] [ref=f348e501]
+            - paragraph [ref=f348e298]: For factories and industrial parks
+            - paragraph [ref=f348e299]: Meets fire safety standards, no risk of production shutdown. Withstands heavy loads, operates continuously 24/7. We provide free surveys, integrate into existing electrical systems, and manage multiple devices simultaneously.
+            - generic [ref=f348e300]:
+              - generic [ref=f348e301]: Contact for quote
+              - generic [ref=f348e302]: 125-800A, 380V, 3 Phase
+            - link "Request free survey" [ref=f348e502] [cursor=pointer]:
+              - /url: tel:1800888638
+      - paragraph [ref=f348e305]:
+        - text: Not sure which type to choose?
+        - link "Call 1800 888 638" [ref=f348e503] [cursor=pointer]:
+          - /url: tel:1800888638
+        - text: ", we'll advise you free in 5 minutes."
+    - generic [ref=f348e308]:
+      - generic [ref=f348e309]:
+        - heading "Certifications & Documents" [level=2] [ref=f348e504]
+        - paragraph [ref=f348e311]: Design patent, CE Declaration of Conformity, product liability insurance, and VIO software copyright.
+      - generic [ref=f348e312]:
+        - generic [ref=f348e313]:
+          - generic [ref=f348e314]:
+            - button "Design patent for smart electrical safety device"
+          - heading "Design Patent" [level=3] [ref=f348e505]
+        - generic [ref=f348e317]:
+          - generic [ref=f348e318]:
+            - button "CE Declaration of Conformity"
+          - heading "CE Declaration of Conformity" [level=3] [ref=f348e506]
+        - generic [ref=f348e321]:
+          - generic [ref=f348e322]:
+            - button "Product Liability Insurance"
+          - heading "Product Liability Insurance" [level=3] [ref=f348e507]
+        - generic [ref=f348e325]:
+          - generic [ref=f348e326]:
+            - button "VIO Software Copyright"
+          - heading "VIO Software Copyright" [level=3] [ref=f348e508]
+    - generic [ref=f348e330]:
+      - generic [ref=f348e331]:
+        - heading "Frequently Asked Questions" [level=2] [ref=f348e509]
+        - paragraph [ref=f348e333]: Answers to common questions about our devices, installation, and support services.
+      - tablist "Frequently Asked Questions" [ref=f348e510]:
+        - generic [ref=f348e335]:
+          - tab "How does the device work? What electrical risks does it protect against?" [selected] [ref=f348e511] [cursor=pointer]
+          - tabpanel "How does the device work? What electrical risks does it protect against?" [ref=f348e512]:
+            - paragraph [ref=f348e340]: The device continuously monitors current flow in your electrical system, detecting anomalies such as leakage, overload, overheating, and arc faults. When a risk is detected, it automatically cuts off the circuit before the incident develops into a fire or electrical accident.
+        - generic [ref=f348e341]:
+          - tab "Is the device compatible with existing 220V/380V electrical systems?" [ref=f348e513] [cursor=pointer]
+          - tabpanel "Is the device compatible with existing 220V/380V electrical systems?":
+            - paragraph [ref=f348e345]: Yes. Phuong Hoang offers product lines for both single-phase 220V (residential) and three-phase 380V (commercial, industrial) systems. Devices are designed to integrate into existing distribution panels without major modifications.
+        - generic [ref=f348e346]:
+          - tab "Is installation complicated? Does it require rewiring?" [ref=f348e514] [cursor=pointer]
+          - tabpanel "Is installation complicated? Does it require rewiring?":
+            - paragraph [ref=f348e350]: No rewiring required. Our technical team visits your site for assessment and installs the device into your existing distribution panel. The process is typically quick, with no disruption to daily life or operations.
+        - generic [ref=f348e351]:
+          - tab "How do I choose the right model and capacity for my project?" [ref=f348e515] [cursor=pointer]
+          - tabpanel "How do I choose the right model and capacity for my project?":
+            - paragraph [ref=f348e355]: "We offer free site surveys. A technician will assess your project size, type, and electrical load to recommend the most suitable solution: residential, commercial, or industrial."
+        - generic [ref=f348e356]:
+          - tab "What warranty and technical support policies are provided?" [ref=f348e516] [cursor=pointer]
+          - tabpanel "What warranty and technical support policies are provided?":
+            - paragraph [ref=f348e360]: Products carry a 36-month warranty depending on the series, covering manufacturer technical defects. Ongoing technical support is available via the hotline 1800 888 638 throughout your usage period.
+        - generic [ref=f348e361]:
+          - tab "Can I get a survey and consultation before purchasing?" [ref=f348e517] [cursor=pointer]
+          - tabpanel "Can I get a survey and consultation before purchasing?":
+            - paragraph [ref=f348e365]: Yes. Call 1800 888 638 or leave your details, we will visit your site for a free survey, recommend suitable options, and provide a quote. No purchase pressure.
+      - link "Still have questions? Contact us →" [ref=f348e518] [cursor=pointer]:
+        - /url: contact.html
+  - generic [ref=f348e367]:
+    - contentinfo [ref=f348e368]:
+      - generic [ref=f348e369]:
+        - generic [ref=f348e370]:
+          - generic [ref=f348e371]:
+            - generic [ref=f348e372]:
+              - img "Phuong Hoang Science and Technology Co., Ltd. Logo" [ref=f348e519]
+              - heading "Intelligent safety electrical equipment" [level=3] [ref=f348e520]
+            - heading "PHUONG HOANG SCIENCE AND TECHNOLOGY COMPANY LIMITED" [level=5] [ref=f348e521]
+            - paragraph [ref=f348e376]: An intelligent electrical monitoring and control application that helps users track devices, receive early warnings, and manage safety systems remotely.
+            - generic [ref=f348e377]:
+              - generic [ref=f348e378]: Safe
+              - generic [ref=f348e379]: Remote
+              - generic [ref=f348e380]: Efficient
+          - generic [ref=f348e382]:
+            - heading "Contact" [level=4] [ref=f348e522]
+            - list [ref=f348e384]:
+              - listitem [ref=f348e385]:
+                - strong [ref=f348e386]: Address
+                - text: ":"
+                - generic [ref=f348e387]: 3rd floor, 30 Ly Thai To, Kinh Bac Ward, Bac Ninh Province, Vietnam
+              - listitem [ref=f348e388]:
+                - strong [ref=f348e389]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f348e390] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f348e391]:
+                - strong [ref=f348e392]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f348e393] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f348e394]:
+                - strong [ref=f348e395]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f348e396] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f348e398]:
+            - heading "Policies and Regulations" [level=4] [ref=f348e523]
+            - list [ref=f348e400]:
+              - listitem [ref=f348e401]:
+                - link "Purchase guide" [ref=f348e524] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f348e403]:
+                - link "Warranty policy" [ref=f348e525] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f348e405]:
+                - link "Return policy" [ref=f348e526] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f348e407]:
+                - link "Shipping policy" [ref=f348e527] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f348e409]:
+                - link "Payment guide" [ref=f348e528] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f348e411]:
+                - link "Sales policy" [ref=f348e529] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f348e413]:
+                - link "Privacy policy" [ref=f348e530] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f348e415]:
+          - heading "Download Phuong Hoang App" [level=4] [ref=f348e531]
+          - paragraph [ref=f348e417]: Monitor and control electrical safety remotely via phone
+          - generic [ref=f348e418]:
+            - generic [ref=f348e419]:
+              - img "QR code for Android Phuong Hoang app" [ref=f348e532]
+              - generic [ref=f348e421]: Android APK
+              - generic [ref=f348e422]: Android 6.0+
+            - generic [ref=f348e423]:
+              - img "QR code for Phuong Hoang web app" [ref=f348e533]
+              - generic [ref=f348e425]: H5 Web App
+              - generic [ref=f348e426]: No installation required
+      - paragraph [ref=f348e428]: © 2026 Cloud Control. All rights reserved. | Visualize Power, See Safety
+    - link "Free consultation via Zalo" [ref=f348e534] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

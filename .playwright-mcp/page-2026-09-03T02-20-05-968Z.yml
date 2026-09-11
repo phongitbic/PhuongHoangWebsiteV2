@@ -1,0 +1,418 @@
+- generic [ref=f875e1]:
+  - link "Bỏ qua nội dung":
+    - /url: "#main-content"
+  - generic [ref=f875e2]:
+    - generic [ref=f875e4]:
+      - link "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng PHOENIX SCIENCE & TECHNOLOGY Giải pháp an toàn điện thông minh" [ref=f875e373] [cursor=pointer]:
+        - /url: index.html
+        - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f875e374]
+        - generic [ref=f875e7]:
+          - strong [ref=f875e8]: PHOENIX SCIENCE & TECHNOLOGY
+          - generic [ref=f875e375]: Giải pháp an toàn điện thông minh
+      - generic [ref=f875e9]:
+        - 'link "Hotline: 0981 019 381" [ref=f875e376] [cursor=pointer]':
+          - /url: tel:+84981019381
+          - generic [ref=f875e377]: "Hotline:"
+          - generic [ref=f875e13]: 0981 019 381
+        - 'link "Hotline: 1800 888 638" [ref=f875e379] [cursor=pointer]':
+          - /url: tel:+841800888638
+          - generic [ref=f875e382]: 1800 888 638
+        - 'link "Email: info@khktphuonghoang.com" [ref=f875e384] [cursor=pointer]':
+          - /url: mailto:info@khktphuonghoang.com
+          - generic [ref=f875e388]: "Email:"
+          - generic [ref=f875e389]: info@khktphuonghoang.com
+        - generic [ref=f875e391]:
+          - link "Facebook" [ref=f875e392] [cursor=pointer]:
+            - /url: "#"
+          - link "TikTok" [ref=f875e395] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=f875e398] [cursor=pointer]:
+            - /url: "#"
+    - banner [ref=f875e14]:
+      - generic [ref=f875e15]:
+        - navigation "Điều hướng chính" [ref=f875e401]:
+          - link "Trang chủ" [ref=f875e402] [cursor=pointer]:
+            - /url: index.html
+          - link "Về chúng tôi" [ref=f875e403] [cursor=pointer]:
+            - /url: about-us.html
+          - link "Sản phẩm" [ref=f875e405] [cursor=pointer]:
+            - /url: products.html
+            - text: Sản phẩm
+            - generic [aria-hidden] [ref=f875e406]: ▾
+          - link "Nhà phân phối" [ref=f875e407] [cursor=pointer]:
+            - /url: distribution-system.html
+          - link "Chứng nhận" [ref=f875e408] [cursor=pointer]:
+            - /url: certificates.html
+          - link "Dự án" [ref=f875e409] [cursor=pointer]:
+            - /url: projects.html
+          - link "Tin tức" [ref=f875e410] [cursor=pointer]:
+            - /url: news.html
+          - link "Liên hệ" [ref=f875e411] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=f875e18]:
+          - generic [ref=f875e412]:
+            - button "中文" [ref=f875e413] [cursor=pointer]
+            - button "English" [ref=f875e414] [cursor=pointer]
+            - button "Tiếng Việt" [active] [ref=f875e415] [cursor=pointer]
+          - button "Chuyển đổi giao diện sáng/tối" [ref=f875e416] [cursor=pointer]
+    - generic [ref=f875e27]:
+      - generic [ref=f875e28]:
+        - link "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng PHOENIX SCIENCE & TECHNOLOGY Giải pháp an toàn điện thông minh" [ref=f875e417] [cursor=pointer]:
+          - /url: index.html
+          - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f875e418]
+          - generic [ref=f875e31]:
+            - strong [ref=f875e32]: PHOENIX SCIENCE & TECHNOLOGY
+            - generic [ref=f875e419]: Giải pháp an toàn điện thông minh
+        - button "Đóng menu" [ref=f875e420] [cursor=pointer]: ×
+      - list [ref=f875e34]:
+        - listitem [ref=f875e35]:
+          - link "Trang chủ" [ref=f875e421] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f875e37]:
+          - link "Về chúng tôi" [ref=f875e422] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f875e39]:
+          - button "Sản phẩm ▾" [ref=f875e423] [cursor=pointer]:
+            - generic [ref=f875e41]: Sản phẩm
+            - generic [ref=f875e42]: ▾
+        - listitem [ref=f875e43]:
+          - link "Nhà phân phối" [ref=f875e424] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f875e45]:
+          - link "Chứng nhận" [ref=f875e425] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f875e47]:
+          - link "Dự án" [ref=f875e426] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f875e49]:
+          - link "Tin tức" [ref=f875e427] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f875e51]:
+          - link "Liên hệ" [ref=f875e428] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f875e53]:
+        - button "中文" [ref=f875e54] [cursor=pointer]
+        - button "English" [ref=f875e55] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f875e56] [cursor=pointer]
+  - main [ref=f875e57]:
+    - heading "Danh mục" [level=1] [ref=f875e429]
+    - generic [ref=f875e62]:
+      - complementary [ref=f875e63]:
+        - heading "Danh mục" [level=2] [ref=f875e430]
+        - navigation [ref=f875e431]:
+          - 'button "Tất cả sản phẩm Toàn bộ thiết bị điện an toàn: chống giật, chống cháy, chống sốc cách ly. 6" [ref=f875e432] [cursor=pointer]':
+            - generic [ref=f875e433]:
+              - text: Tất cả sản phẩm
+              - generic [ref=f875e434]: "Toàn bộ thiết bị điện an toàn: chống giật, chống cháy, chống sốc cách ly."
+            - generic [ref=f875e435]: "6"
+          - button "Thiết bị điện bản công nghiệp Giải pháp bảo vệ điện toàn diện cho nhà máy, xí nghiệp và khu công nghiệp. 3" [ref=f875e436] [cursor=pointer]:
+            - generic [ref=f875e437]:
+              - text: Thiết bị điện bản công nghiệp
+              - generic [ref=f875e438]: Giải pháp bảo vệ điện toàn diện cho nhà máy, xí nghiệp và khu công nghiệp.
+            - generic [ref=f875e439]: "3"
+          - button "Thiết bị điện bản dân dụng Thiết bị bảo vệ điện thông minh cho hộ gia đình và chung cư. 2" [ref=f875e440] [cursor=pointer]:
+            - generic [ref=f875e441]:
+              - text: Thiết bị điện bản dân dụng
+              - generic [ref=f875e442]: Thiết bị bảo vệ điện thông minh cho hộ gia đình và chung cư.
+            - generic [ref=f875e443]: "2"
+          - button "Thiết bị điện bản thương mại Bảo vệ thiết bị điện khỏi xung điện áp và sốc điện nguy hiểm. 1" [ref=f875e444] [cursor=pointer]:
+            - generic [ref=f875e445]:
+              - text: Thiết bị điện bản thương mại
+              - generic [ref=f875e446]: Bảo vệ thiết bị điện khỏi xung điện áp và sốc điện nguy hiểm.
+            - generic [ref=f875e447]: "1"
+      - generic [ref=f875e68]:
+        - generic [ref=f875e69]:
+          - generic [ref=f875e70]: Hiển thị 6 sản phẩm
+          - generic [ref=f875e71]:
+            - generic [ref=f875e72]: "Sắp xếp:"
+            - combobox "Sắp xếp:" [ref=f875e448] [cursor=pointer]:
+              - option "Mới nhất" [selected]
+              - option "Tên A-Z"
+              - option "Tên Z-A"
+        - generic [ref=f875e74]:
+          - link "Thiết bị an toàn điện thông minh 380V Thiết bị an toàn điện Công nghiệp 5 mẫu Thiết bị an toàn điện thông minh 380V Thiết bị bảo vệ điện 3 pha thông minh cho hệ thống công nghiệp, tích hợp giám sát từ xa và bảo vệ đa lớp. 380V AC 3 pha 50 Hz IEC 61439 Xem chi tiết →" [ref=f875e449] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-001
+            - img "Thiết bị an toàn điện thông minh 380V" [ref=f875e451]
+            - generic [ref=f875e452]:
+              - generic [ref=f875e453]:
+                - generic [ref=f875e454]: Thiết bị an toàn điện Công nghiệp
+                - generic [ref=f875e455]: 5 mẫu
+              - heading "Thiết bị an toàn điện thông minh 380V" [level=3] [ref=f875e456]
+              - paragraph [ref=f875e457]: Thiết bị bảo vệ điện 3 pha thông minh cho hệ thống công nghiệp, tích hợp giám sát từ xa và bảo vệ đa lớp.
+              - generic [ref=f875e458]:
+                - generic [ref=f875e459]: 380V AC 3 pha
+                - generic [ref=f875e460]: 50 Hz
+                - generic [ref=f875e461]: IEC 61439
+              - generic [ref=f875e462]: Xem chi tiết →
+          - link "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp Thiết bị an toàn điện Công nghiệp 2 mẫu Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp Thiết bị bảo vệ điện thông minh 380V cho khu vực trường học, bệnh viện, nhà máy, đơn vị/công trình công cộng. 380V AC 3 pha 50 Hz Chống sốc điện cách ly Xem chi tiết →" [ref=f875e463] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-003
+            - img "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp" [ref=f875e465]
+            - generic [ref=f875e466]:
+              - generic [ref=f875e467]:
+                - generic [ref=f875e468]: Thiết bị an toàn điện Công nghiệp
+                - generic [ref=f875e469]: 2 mẫu
+              - heading "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp" [level=3] [ref=f875e470]
+              - paragraph [ref=f875e471]: Thiết bị bảo vệ điện thông minh 380V cho khu vực trường học, bệnh viện, nhà máy, đơn vị/công trình công cộng.
+              - generic [ref=f875e472]:
+                - generic [ref=f875e473]: 380V AC 3 pha
+                - generic [ref=f875e474]: 50 Hz
+                - generic [ref=f875e475]: Chống sốc điện cách ly
+              - generic [ref=f875e476]: Xem chi tiết →
+          - link "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp Thiết bị an toàn điện Công nghiệp 3 mẫu Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp Thiết bị bảo vệ điện 3 pha thông minh 380V cho khu vực công nghiệp, tích hợp chống giật, chống rò, quá tải và dập hồ quang. 380V AC 3 pha 50 Hz Dập hồ quang 380V / MCU Xem chi tiết →" [ref=f875e477] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-004
+            - img "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp" [ref=f875e479]
+            - generic [ref=f875e480]:
+              - generic [ref=f875e481]:
+                - generic [ref=f875e482]: Thiết bị an toàn điện Công nghiệp
+                - generic [ref=f875e483]: 3 mẫu
+              - heading "Thiết bị an toàn điện thông minh 380V phiên bản công nghiệp" [level=3] [ref=f875e484]
+              - paragraph [ref=f875e485]: Thiết bị bảo vệ điện 3 pha thông minh 380V cho khu vực công nghiệp, tích hợp chống giật, chống rò, quá tải và dập hồ quang.
+              - generic [ref=f875e486]:
+                - generic [ref=f875e487]: 380V AC 3 pha
+                - generic [ref=f875e488]: 50 Hz
+                - generic [ref=f875e489]: Dập hồ quang 380V / MCU
+              - generic [ref=f875e490]: Xem chi tiết →
+          - link "Thiết bị an toàn điện thông minh 220V phiên bản thương mại Thiết bị chống sốc điện cách ly 1 mẫu Thiết bị an toàn điện thông minh 220V phiên bản thương mại Thiết bị bảo vệ điện thông minh 220V cho khu vực thương mại, tích hợp chống giật, chống rò, quá tải và dập hồ quang. 220V AC 10kW (45A) 50 Hz Xem chi tiết →" [ref=f875e491] [cursor=pointer]:
+            - /url: product-detail.html?id=arc-004
+            - img "Thiết bị an toàn điện thông minh 220V phiên bản thương mại" [ref=f875e493]
+            - generic [ref=f875e494]:
+              - generic [ref=f875e495]:
+                - generic [ref=f875e496]: Thiết bị chống sốc điện cách ly
+                - generic [ref=f875e497]: 1 mẫu
+              - heading "Thiết bị an toàn điện thông minh 220V phiên bản thương mại" [level=3] [ref=f875e498]
+              - paragraph [ref=f875e499]: Thiết bị bảo vệ điện thông minh 220V cho khu vực thương mại, tích hợp chống giật, chống rò, quá tải và dập hồ quang.
+              - generic [ref=f875e500]:
+                - generic [ref=f875e501]: 220V AC
+                - generic [ref=f875e502]: 10kW (45A)
+                - generic [ref=f875e503]: 50 Hz
+              - generic [ref=f875e504]: Xem chi tiết →
+          - link "Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh Thiết bị an toàn điện Dân dụng 1 mẫu Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh Thiết bị bảo vệ điện thông minh 220V 3 mạch nhánh, phiên bản 63A, tích hợp 14 chức năng bảo vệ toàn diện. 220V AC 63A 3 mạch nhánh Xem chi tiết →" [ref=f875e505] [cursor=pointer]:
+            - /url: product-detail.html?id=dom-001
+            - img "Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh" [ref=f875e507]
+            - generic [ref=f875e508]:
+              - generic [ref=f875e509]:
+                - generic [ref=f875e510]: Thiết bị an toàn điện Dân dụng
+                - generic [ref=f875e511]: 1 mẫu
+              - heading "Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh" [level=3] [ref=f875e512]
+              - paragraph [ref=f875e513]: Thiết bị bảo vệ điện thông minh 220V 3 mạch nhánh, phiên bản 63A, tích hợp 14 chức năng bảo vệ toàn diện.
+              - generic [ref=f875e514]:
+                - generic [ref=f875e515]: 220V AC
+                - generic [ref=f875e516]: 63A
+                - generic [ref=f875e517]: 3 mạch nhánh
+              - generic [ref=f875e518]: Xem chi tiết →
+          - 'link "Thiết bị điện an toàn thông minh loại dập hồ quang 220V Thiết bị an toàn điện Dân dụng 4 mẫu Thiết bị điện an toàn thông minh loại dập hồ quang 220V Thiết bị bảo vệ điện an toàn thông minh loại dập hồ quang 220V cho hộ gia đình, tích hợp 12 chức năng bảo vệ, có 4 model: 32A, 45A, 63A, 100A. 220V AC 32A - 100A Dập hồ quang 220V Xem chi tiết →" [ref=f875e519] [cursor=pointer]':
+            - /url: product-detail.html?id=dom-002
+            - img "Thiết bị điện an toàn thông minh loại dập hồ quang 220V" [ref=f875e521]
+            - generic [ref=f875e522]:
+              - generic [ref=f875e523]:
+                - generic [ref=f875e524]: Thiết bị an toàn điện Dân dụng
+                - generic [ref=f875e525]: 4 mẫu
+              - heading "Thiết bị điện an toàn thông minh loại dập hồ quang 220V" [level=3] [ref=f875e526]
+              - paragraph [ref=f875e527]: "Thiết bị bảo vệ điện an toàn thông minh loại dập hồ quang 220V cho hộ gia đình, tích hợp 12 chức năng bảo vệ, có 4 model: 32A, 45A, 63A, 100A."
+              - generic [ref=f875e528]:
+                - generic [ref=f875e529]: 220V AC
+                - generic [ref=f875e530]: 32A - 100A
+                - generic [ref=f875e531]: Dập hồ quang 220V
+              - generic [ref=f875e532]: Xem chi tiết →
+    - generic [ref=f875e161]:
+      - generic [ref=f875e162]:
+        - heading "Kiểm định nghiêm ngặt" [level=4] [ref=f875e533]
+        - paragraph [ref=f875e167]: Mỗi thiết bị được kiểm tra riêng trước khi xuất kho. Đạt chuẩn ISO 9001:2015.
+      - generic [ref=f875e168]:
+        - heading "Công nghệ thông minh" [level=4] [ref=f875e534]
+        - paragraph [ref=f875e177]: Tích hợp IoT và giám sát từ xa qua ứng dụng di động. Cảnh báo sự cố tức thời.
+      - generic [ref=f875e178]:
+        - heading "Độ bền vượt trội" [level=4] [ref=f875e535]
+        - paragraph [ref=f875e183]: Thiết kế theo tiêu chuẩn công nghiệp. Hoạt động ổn định trong điều kiện khắc nghiệt.
+      - generic [ref=f875e184]:
+        - heading "Hỗ trợ toàn diện" [level=4] [ref=f875e536]
+        - paragraph [ref=f875e192]: Tư vấn, khảo sát, lắp đặt, đào tạo và bảo trì. Đồng hành trọn vòng đời sản phẩm.
+    - generic [ref=f875e194]:
+      - generic [ref=f875e195]:
+        - heading "Câu hỏi thường gặp" [level=2] [ref=f875e537]
+        - paragraph [ref=f875e197]: Giải đáp thắc mắc về sản phẩm, đặt hàng và chính sách bảo hành thiết bị điện an toàn Phượng Hoàng.
+      - generic [ref=f875e198]:
+        - button "Tất cả" [ref=f875e538] [cursor=pointer]
+        - button "Sản phẩm" [ref=f875e539] [cursor=pointer]
+        - button "Đặt hàng" [ref=f875e540] [cursor=pointer]
+        - button "Bảo hành" [ref=f875e541] [cursor=pointer]
+      - generic [ref=f875e203]:
+        - generic [ref=f875e542]:
+          - button "Q Thiết bị chống sét lan truyền bảo vệ thiết bị điện như thế nào? ▼" [ref=f875e543] [cursor=pointer]:
+            - generic [ref=f875e544]: Q
+            - generic [ref=f875e545]: Thiết bị chống sét lan truyền bảo vệ thiết bị điện như thế nào?
+            - generic [ref=f875e546]: ▼
+          - generic [ref=f875e548]:
+            - paragraph [ref=f875e549]: Thiết bị chống sét lan truyền (SPD) của Phượng Hoàng hoạt động như một lá chắn bảo vệ. Khi có xung điện áp đột ngột (do sét đánh hoặc đóng cắt thiết bị), SPD sẽ nhanh chóng dẫn dòng xung xuống đất, ngăn không cho điện áp cao xâm nhập vào thiết bị điện của bạn. Điều này giúp bảo vệ TV, tủ lạnh, máy tính, máy móc công nghiệp khỏi hư hỏng do quá áp.
+            - paragraph [ref=f875e550]:
+              - link "Xem thiết bị chống sét lan truyền →" [ref=f875e551] [cursor=pointer]:
+                - /url: products.html?category=surge
+        - generic [ref=f875e552]:
+          - button "Q Phượng Hoàng có những nhóm sản phẩm nào? ▼" [ref=f875e553] [cursor=pointer]:
+            - generic [ref=f875e554]: Q
+            - generic [ref=f875e555]: Phượng Hoàng có những nhóm sản phẩm nào?
+            - generic [ref=f875e556]: ▼
+          - generic [ref=f875e558]:
+            - paragraph [ref=f875e559]: "Phượng Hoàng cung cấp 3 nhóm thiết bị điện an toàn thông minh chính: (1) Thiết bị công nghiệp dành cho nhà máy, khu công nghiệp; (2) Thiết bị dân dụng bảo vệ an toàn điện cho hộ gia đình; (3) Thiết bị chống sốc cách ly ngăn chặn điện giật do chạm vào thiết bị rò điện."
+            - paragraph [ref=f875e560]:
+              - link "Xem danh mục sản phẩm đầy đủ →" [ref=f875e561] [cursor=pointer]:
+                - /url: products.html
+        - generic [ref=f875e562]:
+          - button "Q Thiết bị điện an toàn dùng cho nhà máy khác gì so với hộ gia đình? ▼" [ref=f875e563] [cursor=pointer]:
+            - generic [ref=f875e564]: Q
+            - generic [ref=f875e565]: Thiết bị điện an toàn dùng cho nhà máy khác gì so với hộ gia đình?
+            - generic [ref=f875e566]: ▼
+          - generic [ref=f875e568]:
+            - paragraph [ref=f875e569]: Thiết bị công nghiệp của Phượng Hoàng được thiết kế để chịu tải lớn hơn, hoạt động liên tục trong môi trường khắc nghiệt (nhiệt độ cao, bụi, rung động) và thường tích hợp khả năng giám sát từ xa. Thiết bị dân dụng tập trung vào tính dễ lắp đặt, nhỏ gọn và bảo vệ các thiết bị gia dụng thông thường. Cả hai dòng đều đáp ứng tiêu chuẩn an toàn điện và được kiểm tra chất lượng trước khi giao đến khách hàng.
+            - paragraph [ref=f875e570]:
+              - link "Xem thiết bị công nghiệp và dân dụng →" [ref=f875e571] [cursor=pointer]:
+                - /url: products.html
+        - generic [ref=f875e572]:
+          - button "Q Thời gian bảo hành thiết bị điện Phượng Hoàng là bao lâu? ▼" [ref=f875e573] [cursor=pointer]:
+            - generic [ref=f875e574]: Q
+            - generic [ref=f875e575]: Thời gian bảo hành thiết bị điện Phượng Hoàng là bao lâu?
+            - generic [ref=f875e576]: ▼
+          - generic [ref=f875e578]:
+            - paragraph [ref=f875e579]: Thời gian bảo hành tiêu chuẩn của Phượng Hoàng là từ 12 đến 24 tháng, tùy theo từng dòng sản phẩm cụ thể. Thời hạn bảo hành được tính từ ngày giao hàng hoặc ngày nghiệm thu công trình. Một số sản phẩm còn có gói bảo hành mở rộng theo thỏa thuận trong hợp đồng.
+            - paragraph [ref=f875e580]:
+              - link "Xem chi tiết chính sách bảo hành →" [ref=f875e581] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e582]:
+          - button "Q Điều kiện để được bảo hành miễn phí là gì? ▼" [ref=f875e583] [cursor=pointer]:
+            - generic [ref=f875e584]: Q
+            - generic [ref=f875e585]: Điều kiện để được bảo hành miễn phí là gì?
+            - generic [ref=f875e586]: ▼
+          - generic [ref=f875e588]:
+            - paragraph [ref=f875e589]: "Để được bảo hành miễn phí, sản phẩm cần đáp ứng các điều kiện: (1) Còn trong thời hạn bảo hành và còn nguyên tem, phiếu bảo hành; (2) Lỗi thuộc về kỹ thuật do nhà sản xuất, không phải do tác động bên ngoài; (3) Khách hàng cung cấp được thông tin mua hàng hợp lệ. Các trường hợp hư hỏng do sử dụng sai hướng dẫn, tự ý tháo lắp, hoặc thiên tai sẽ không được áp dụng bảo hành miễn phí."
+            - paragraph [ref=f875e590]:
+              - link "Xem toàn bộ điều kiện bảo hành →" [ref=f875e591] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e592]:
+          - button "Q Quy trình gửi bảo hành thiết bị như thế nào? ▼" [ref=f875e593] [cursor=pointer]:
+            - generic [ref=f875e594]: Q
+            - generic [ref=f875e595]: Quy trình gửi bảo hành thiết bị như thế nào?
+            - generic [ref=f875e596]: ▼
+          - generic [ref=f875e598]:
+            - paragraph [ref=f875e599]: "Quy trình bảo hành của Phượng Hoàng gồm 3 bước đơn giản: Bước 1: Liên hệ hotline 1800 888 638 hoặc Zalo 0981019381 để thông báo tình trạng lỗi; Bước 2: Gửi sản phẩm về trung tâm bảo hành hoặc yêu cầu kỹ thuật viên kiểm tra tại chỗ (tùy theo thỏa thuận); Bước 3: Nhận lại thiết bị sau khi hoàn tất sửa chữa hoặc thay thế linh kiện."
+            - paragraph [ref=f875e600]:
+              - link "Xem quy trình bảo hành chi tiết →" [ref=f875e601] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e602]:
+          - button "Q Có những phương thức thanh toán nào khi mua thiết bị điện Phượng Hoàng? ▼" [ref=f875e603] [cursor=pointer]:
+            - generic [ref=f875e604]: Q
+            - generic [ref=f875e605]: Có những phương thức thanh toán nào khi mua thiết bị điện Phượng Hoàng?
+            - generic [ref=f875e606]: ▼
+          - generic [ref=f875e608]:
+            - paragraph [ref=f875e609]: "Phượng Hoàng hỗ trợ các phương thức thanh toán linh hoạt: (1) Chuyển khoản ngân hàng theo thông tin trên hợp đồng; (2) Thanh toán tiền mặt trực tiếp tại showroom hoặc khi giao hàng (COD); (3) Các phương thức khác theo thỏa thuận giữa hai bên. Mọi giao dịch đều được thực hiện minh bạch và an toàn."
+            - paragraph [ref=f875e610]:
+              - link "Xem hướng dẫn thanh toán chi tiết →" [ref=f875e611] [cursor=pointer]:
+                - /url: payment-policy.html
+        - generic [ref=f875e612]:
+          - button "Q Làm sao để đặt mua thiết bị điện an toàn của Phượng Hoàng? ▼" [ref=f875e613] [cursor=pointer]:
+            - generic [ref=f875e614]: Q
+            - generic [ref=f875e615]: Làm sao để đặt mua thiết bị điện an toàn của Phượng Hoàng?
+            - generic [ref=f875e616]: ▼
+          - generic [ref=f875e618]:
+            - paragraph [ref=f875e619]: "Bạn có thể đặt mua thiết bị điện an toàn Phượng Hoàng qua các kênh: Gọi hotline 1800 888 638 để được tư vấn và đặt hàng trực tiếp; Nhắn tin qua Zalo 0981019381; Gửi email đến khktphuonghoang.hr@gmail.com; Đến trực tiếp văn phòng tại Tầng 3, số 30 Lý Thái Tổ, Bắc Ninh; Hoặc liên hệ nhà phân phối gần nhất trong mạng lưới toàn quốc của chúng tôi."
+            - paragraph [ref=f875e620]:
+              - link "Xem hướng dẫn mua hàng →" [ref=f875e621] [cursor=pointer]:
+                - /url: purchase-policy.html
+        - generic [ref=f875e622]:
+          - button "Q Thời gian giao hàng thiết bị điện là bao lâu? ▼" [ref=f875e623] [cursor=pointer]:
+            - generic [ref=f875e624]: Q
+            - generic [ref=f875e625]: Thời gian giao hàng thiết bị điện là bao lâu?
+            - generic [ref=f875e626]: ▼
+          - generic [ref=f875e628]:
+            - paragraph [ref=f875e629]: Phượng Hoàng giao hàng trên toàn quốc. Thời gian giao hàng cụ thể phụ thuộc vào vị trí của bạn và loại sản phẩm đặt mua. Đối với các đơn hàng tiêu chuẩn, thời gian vận chuyển thường từ 2-5 ngày làm việc. Bạn có thể kiểm tra tình trạng hàng hóa khi nhận và có quyền từ chối nhận hàng nếu sản phẩm không đúng với đơn đặt.
+            - paragraph [ref=f875e630]:
+              - link "Xem chính sách vận chuyển →" [ref=f875e631] [cursor=pointer]:
+                - /url: shipping-policy.html
+        - generic [ref=f875e632]:
+          - button "Q Tôi có thể đổi hoặc trả thiết bị đã mua không? ▼" [ref=f875e633] [cursor=pointer]:
+            - generic [ref=f875e634]: Q
+            - generic [ref=f875e635]: Tôi có thể đổi hoặc trả thiết bị đã mua không?
+            - generic [ref=f875e636]: ▼
+          - generic [ref=f875e638]:
+            - paragraph [ref=f875e639]: "Có. Phượng Hoàng áp dụng chính sách đổi trả cho các sản phẩm gặp lỗi kỹ thuật từ nhà sản xuất hoặc không đúng với mô tả đơn hàng. Điều kiện đổi trả bao gồm: sản phẩm còn nguyên vẹn, đầy đủ phụ kiện và trong thời gian quy định. Vui lòng liên hệ hotline 1800 888 638 để được hướng dẫn quy trình đổi trả cụ thể."
+            - paragraph [ref=f875e640]:
+              - link "Xem chính sách đổi trả chi tiết →" [ref=f875e641] [cursor=pointer]:
+                - /url: exchange-policy.html
+      - generic [ref=f875e304]:
+        - paragraph [ref=f875e305]: Chưa tìm được câu trả lời?
+        - link "Gửi câu hỏi" [ref=f875e642] [cursor=pointer]:
+          - /url: contact.html
+  - generic [ref=f875e307]:
+    - contentinfo [ref=f875e308]:
+      - generic [ref=f875e309]:
+        - generic [ref=f875e310]:
+          - generic [ref=f875e311]:
+            - generic [ref=f875e312]:
+              - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f875e643]
+              - heading "Thiết bị điện an toàn thông minh" [level=3] [ref=f875e644]
+            - heading "CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG" [level=5] [ref=f875e645]
+            - paragraph [ref=f875e316]: Ứng dụng giám sát và điều khiển điện thông minh giúp người dùng theo dõi thiết bị, nhận cảnh báo sớm và quản lý hệ thống an toàn từ xa.
+            - generic [ref=f875e317]:
+              - generic [ref=f875e318]: An toàn
+              - generic [ref=f875e319]: Từ xa
+              - generic [ref=f875e320]: Hiệu quả
+          - generic [ref=f875e322]:
+            - heading "Liên hệ" [level=4] [ref=f875e646]
+            - list [ref=f875e324]:
+              - listitem [ref=f875e325]:
+                - strong [ref=f875e326]: Địa chỉ
+                - text: ":"
+                - generic [ref=f875e327]: Tầng 3, số 30 Lý Thái Tổ, phường Kinh Bắc, tỉnh Bắc Ninh, Việt Nam
+              - listitem [ref=f875e328]:
+                - strong [ref=f875e329]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f875e330] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f875e331]:
+                - strong [ref=f875e332]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f875e333] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f875e334]:
+                - strong [ref=f875e335]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f875e336] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f875e338]:
+            - heading "Chính sách và quy định" [level=4] [ref=f875e647]
+            - list [ref=f875e340]:
+              - listitem [ref=f875e341]:
+                - link "Hướng dẫn mua hàng" [ref=f875e648] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f875e343]:
+                - link "Chính sách bảo hành" [ref=f875e649] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f875e345]:
+                - link "Chính sách đổi trả" [ref=f875e650] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f875e347]:
+                - link "Chính sách vận chuyển" [ref=f875e651] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f875e349]:
+                - link "Hướng dẫn thanh toán" [ref=f875e652] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f875e351]:
+                - link "Chính sách bán hàng" [ref=f875e653] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f875e353]:
+                - link "Chính sách bảo mật" [ref=f875e654] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f875e355]:
+          - heading "Tải ứng dụng Phượng Hoàng" [level=4] [ref=f875e655]
+          - paragraph [ref=f875e357]: Giám sát và điều khiển điện an toàn từ xa qua điện thoại
+          - generic [ref=f875e358]:
+            - generic [ref=f875e359]:
+              - img "QR tải ứng dụng Android Phượng Hoàng" [ref=f875e656]
+              - generic [ref=f875e361]: Android APK
+              - generic [ref=f875e362]: Android 6.0+
+            - generic [ref=f875e363]:
+              - img "QR dùng ứng dụng web Phượng Hoàng" [ref=f875e657]
+              - generic [ref=f875e365]: H5 Web App
+              - generic [ref=f875e366]: Không cần cài đặt
+      - paragraph [ref=f875e368]: © 2026 Cloud Control. Bảo lưu mọi quyền. | Quan sát điện trực quan, an toàn nhìn thấy
+    - link "Tư vấn miễn phí qua Zalo" [ref=f875e658] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

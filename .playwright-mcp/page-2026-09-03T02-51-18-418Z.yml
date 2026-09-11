@@ -1,0 +1,318 @@
+- generic [active] [ref=f933e1]:
+  - link "Bỏ qua nội dung":
+    - /url: "#main-content"
+  - generic [ref=f933e2]:
+    - generic [ref=f933e4]:
+      - link [ref=f933e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f933e6]
+        - strong [ref=f933e8]: PHOENIX SCIENCE & TECHNOLOGY
+      - 'link "Hotline: 0981 019 381" [ref=f933e10] [cursor=pointer]':
+        - /url: tel:+84981019381
+        - generic [ref=f933e13]: 0981 019 381
+    - banner [ref=f933e14]:
+      - generic [ref=f933e15]:
+        - button "Mở menu" [ref=f933e16] [cursor=pointer]
+        - button "Chuyển đổi giao diện sáng/tối" [ref=f933e20] [cursor=pointer]
+    - generic [ref=f933e23]:
+      - generic [ref=f933e24]:
+        - link [ref=f933e25] [cursor=pointer]:
+          - /url: index.html
+          - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f933e26]
+          - strong [ref=f933e28]: PHOENIX SCIENCE & TECHNOLOGY
+        - button "Đóng menu" [ref=f933e29] [cursor=pointer]: ×
+      - list [ref=f933e30]:
+        - listitem [ref=f933e31]:
+          - link "Trang chủ" [ref=f933e32] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f933e33]:
+          - link "Về chúng tôi" [ref=f933e34] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f933e35]:
+          - button "Sản phẩm ▾" [ref=f933e36] [cursor=pointer]:
+            - generic [ref=f933e37]: Sản phẩm
+            - generic [ref=f933e38]: ▾
+        - listitem [ref=f933e39]:
+          - link "Nhà phân phối" [ref=f933e40] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f933e41]:
+          - link "Chứng nhận" [ref=f933e42] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f933e43]:
+          - link "Dự án" [ref=f933e44] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f933e45]:
+          - link "Tin tức" [ref=f933e46] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f933e47]:
+          - link "Liên hệ" [ref=f933e48] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f933e49]:
+        - button "中文" [ref=f933e50] [cursor=pointer]
+        - button "English" [ref=f933e51] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f933e52] [cursor=pointer]
+  - main [ref=f933e53]:
+    - article [ref=f933e54]:
+      - navigation "breadcrumb" [ref=f933e55]:
+        - link "Trang chủ" [ref=f933e56] [cursor=pointer]:
+          - /url: index.html
+        - text: /
+        - link "Tin tức" [ref=f933e57] [cursor=pointer]:
+          - /url: news.html
+        - text: "/ Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạn"
+      - generic [ref=f933e58]:
+        - 'img "Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạn" [ref=f933e60]'
+        - generic [ref=f933e61]:
+          - generic [ref=f933e62]: An toàn điện
+          - generic [ref=f933e63]: 15/07/2026
+          - generic [ref=f933e64]: 12 phút đọc
+        - 'heading "Thiết bị điện an toàn thông minh: Giải pháp bảo vệ toàn diện cho ngôi nhà của bạn" [level=1] [ref=f933e65]'
+        - generic [ref=f933e66]: "Khám phá công nghệ thiết bị điện an toàn thông minh thế hệ mới: giải pháp bảo vệ toàn diện cho gia đình và doanh nghiệp trước các nguy cơ quá tải, rò điện, hồ quang và cháy nổ. Từ nguyên lý hoạt động đến hướng dẫn lựa chọn và lắp đặt, bài viết cung cấp kiến thức đầy đủ giúp bạn đưa ra quyết định sáng suốt."
+      - generic [ref=f933e67]:
+        - region "Nội dung bài viết" [ref=f933e68]:
+          - heading "Khái niệm thiết bị điện an toàn thông minh" [level=2] [ref=f933e69]
+          - paragraph [ref=f933e70]: Thiết bị điện an toàn thông minh là giải pháp công nghệ cao tích hợp vi xử lý (MCU), cảm biến thông minh và kết nối không dây (4G/Wi-Fi), cho phép giám sát, phát hiện và xử lý các sự cố điện trong thời gian thực. Không giống như các thiết bị bảo vệ truyền thống chỉ hoạt động thụ động khi sự cố đã xảy ra, thiết bị thông minh liên tục theo dõi và phân tích các thông số điện để đưa ra cảnh báo sớm và tự động can thiệp khi cần thiết.
+          - paragraph [ref=f933e71]:
+            - text: "Cốt lõi của thiết bị điện an toàn thông minh nằm ở ba yếu tố:"
+            - strong [ref=f933e72]: cảm biến chính xác
+            - text: ": đo lường liên tục dòng điện, điện áp, công suất, dòng rò và nhiệt độ;"
+            - strong [ref=f933e73]: xử lý thông minh
+            - text: ": phân tích dữ liệu theo thời gian thực để phát hiện bất thường; và"
+            - strong [ref=f933e74]: kết nối từ xa
+            - text: ": cho phép người dùng giám sát và điều khiển qua ứng dụng di động mọi lúc mọi nơi."
+          - paragraph [ref=f933e75]: Trong bối cảnh nhu cầu sử dụng điện ngày càng tăng cao và các vụ cháy nổ do điện vẫn diễn ra thường xuyên tại Việt Nam (hơn 2.000 vụ mỗi năm), thiết bị điện an toàn thông minh đã trở thành giải pháp tất yếu để bảo vệ con người và tài sản.
+          - figure "Thiết bị điện thông minh trong tủ điện gia đình" [ref=f933e76]:
+            - img "Thiết bị điện thông minh trong tủ điện gia đình" [ref=f933e77]
+          - heading "Sự khác biệt với thiết bị bảo vệ truyền thống" [level=2] [ref=f933e79]
+          - paragraph [ref=f933e80]: Thiết bị bảo vệ truyền thống như aptomat (MCB) và cầu chì chỉ có chức năng ngắt mạch khi xảy ra quá tải hoặc ngắn mạch. Tuy nhiên, chúng hoàn toàn "mù" trước các dấu hiệu bất thường tiềm ẩn như dòng rò nhỏ, nhiệt độ tăng dần tại điểm tiếp xúc, điện áp dao động nhẹ, hay hồ quang điện nối tiếp.
+          - paragraph [ref=f933e81]: "Ngược lại, thiết bị thông minh có khả năng vượt trội:"
+          - list [ref=f933e82]:
+            - listitem [ref=f933e83]:
+              - strong [ref=f933e84]: Đo lường liên tục 24/7
+              - text: ": tần suất lấy mẫu 100-1000 lần/giây, không bỏ sót bất kỳ biến động nào."
+            - listitem [ref=f933e85]:
+              - strong [ref=f933e86]: Ghi nhận lịch sử vận hành
+              - text: ": lưu trữ dữ liệu chi tiết trong 6-12 tháng trên cloud, cho phép phân tích xu hướng dài hạn."
+            - listitem [ref=f933e87]:
+              - strong [ref=f933e88]: Phân tích và dự đoán thông minh
+              - text: ": thuật toán AI nhận diện các mẫu bất thường, dự báo nguy cơ trước khi sự cố xảy ra với độ chính xác lên đến 95%."
+            - listitem [ref=f933e89]:
+              - strong [ref=f933e90]: Cảnh báo chủ động đa kênh
+              - text: ": gửi thông báo tức thời qua ứng dụng di động, SMS và email khi phát hiện dấu hiệu nguy hiểm."
+            - listitem [ref=f933e91]:
+              - strong [ref=f933e92]: Điều khiển từ xa
+              - text: ": bật/tắt thiết bị, cấu hình ngưỡng cảnh báo, đặt lịch hoạt động: tất cả qua ứng dụng trên điện thoại."
+            - listitem [ref=f933e93]:
+              - strong [ref=f933e94]: Tự động hóa phản ứng
+              - text: ": khi phát hiện sự cố nghiêm trọng, thiết bị tự động ngắt mạch trong vài mili giây, nhanh hơn bất kỳ phản ứng nào của con người."
+          - figure "So sánh thiết bị bảo vệ thông minh và truyền thống" [ref=f933e95]:
+            - img "So sánh thiết bị bảo vệ thông minh và truyền thống"
+          - heading "Nguyên lý hoạt động chi tiết" [level=2] [ref=f933e97]
+          - paragraph [ref=f933e98]: "Thiết bị điện an toàn thông minh hoạt động dựa trên ba tầng xử lý chính, tạo thành một hệ thống khép kín từ thu thập dữ liệu đến phản hồi:"
+          - paragraph [ref=f933e99]:
+            - strong [ref=f933e100]: "Tầng 1: Thu thập dữ liệu:"
+            - text: "Các cảm biến tích hợp trong thiết bị liên tục đo lường các thông số điện với tần suất lấy mẫu cao (từ 100 đến 1000 lần mỗi giây). Các thông số bao gồm: dòng điện (A) trên từng pha, điện áp (V), công suất tiêu thụ (kW), hệ số công suất (PF), dòng rò (mA), và nhiệt độ tại các điểm tiếp xúc (°C). Mỗi cảm biến được hiệu chuẩn tại nhà máy với sai số dưới 1%."
+          - paragraph [ref=f933e101]:
+            - strong [ref=f933e102]: "Tầng 2: Xử lý và phân tích:"
+            - text: "Vi xử lý MCU 32-bit nhận dữ liệu thô từ cảm biến và áp dụng các thuật toán phân tích đa lớp để phát hiện bất thường. Hệ thống có khả năng phân biệt giữa các loại sự cố khác nhau: quá tải, ngắn mạch, rò điện, quá nhiệt, quá áp/thấp áp, và đặc biệt là hồ quang điện: loại sự cố nguy hiểm nhất mà thiết bị truyền thống không thể phát hiện."
+          - paragraph [ref=f933e103]:
+            - strong [ref=f933e104]: "Tầng 3: Phản hồi và cảnh báo:"
+            - text: "Khi phát hiện bất thường vượt ngưỡng an toàn, thiết bị thực hiện đồng thời hai hành động: (1) kích hoạt relay ngắt mạch với thời gian đáp ứng dưới 50ms để bảo vệ hệ thống, và (2) gửi cảnh báo chi tiết đến máy chủ đám mây qua kết nối 4G hoặc Wi-Fi, từ đó chuyển tiếp đến ứng dụng di động của người dùng."
+          - heading "Lợi ích thiết thực cho hộ gia đình" [level=2] [ref=f933e105]
+          - paragraph [ref=f933e106]: "Đối với hộ gia đình, thiết bị điện an toàn thông minh mang lại những lợi ích vượt xa việc chỉ bảo vệ chống cháy nổ:"
+          - list [ref=f933e107]:
+            - listitem [ref=f933e108]:
+              - strong [ref=f933e109]: "An toàn tuyệt đối cho gia đình:"
+              - text: "Bảo vệ toàn diện chống quá tải, ngắn mạch, rò điện, quá áp, thấp áp và hồ quang điện: tất cả trong một thiết bị. Đặc biệt quan trọng với gia đình có trẻ nhỏ và người già."
+            - listitem [ref=f933e110]:
+              - strong [ref=f933e111]: "Tiết kiệm điện thông minh:"
+              - text: Theo dõi mức tiêu thụ điện theo thời gian thực, xác định thiết bị "ngốn" điện nhất. Nhiều hộ gia đình ghi nhận giảm 15-25% hóa đơn tiền điện sau khi lắp đặt thiết bị giám sát thông minh.
+            - listitem [ref=f933e112]:
+              - strong [ref=f933e113]: "An tâm khi vắng nhà:"
+              - text: Dù đang đi làm, du lịch hay công tác, bạn vẫn có thể kiểm tra tình trạng điện của ngôi nhà qua điện thoại. Khi có sự cố, hệ thống tự động ngắt và gửi cảnh báo ngay lập tức.
+            - listitem [ref=f933e114]:
+              - strong [ref=f933e115]: "Phát hiện sớm thiết bị hư hỏng:"
+              - text: Khi một thiết bị điện bắt đầu có dấu hiệu bất thường (dòng điện tăng, rò điện nhỏ), hệ thống sẽ cảnh báo trước khi thiết bị hỏng hẳn hoặc gây cháy.
+          - figure "Tủ điện thông minh trong gia đình hiện đại" [ref=f933e116]:
+            - img "Tủ điện thông minh trong gia đình hiện đại"
+          - heading "Ứng dụng cho doanh nghiệp và văn phòng" [level=2] [ref=f933e118]
+          - heading "Hướng dẫn lựa chọn thiết bị phù hợp" [level=2] [ref=f933e119]
+          - paragraph [ref=f933e120]: "Không phải mọi thiết bị thông minh đều giống nhau. Dưới đây là các tiêu chí quan trọng khi lựa chọn:"
+          - list [ref=f933e121]:
+            - listitem [ref=f933e122]:
+              - strong [ref=f933e123]: "Xác định nhu cầu bảo vệ:"
+              - text: Bạn cần bảo vệ những gì? Chỉ chống giật (RCD)? Chống quá tải + ngắn mạch (MCB)? Hay bảo vệ toàn diện bao gồm hồ quang (AFDD)?
+            - listitem [ref=f933e124]:
+              - strong [ref=f933e125]: "Loại kết nối:"
+              - text: Wi-Fi phù hợp với hộ gia đình (tận dụng mạng sẵn có). 4G phù hợp với doanh nghiệp và nhà máy (ổn định hơn, hoạt động ngay cả khi mất điện mạng Wi-Fi).
+            - listitem [ref=f933e126]:
+              - strong [ref=f933e127]: "Ứng dụng di động:"
+              - text: Tải thử ứng dụng miễn phí trước khi mua. Giao diện có trực quan không? Có hỗ trợ tiếng Việt không? Cảnh báo có chi tiết và dễ hiểu không?
+            - listitem [ref=f933e128]:
+              - strong [ref=f933e129]: "Chứng nhận và tiêu chuẩn:"
+              - text: Ưu tiên thiết bị có chứng nhận IEC 62606 (AFDD), IEC 61008 (RCD), IEC 60898 (MCB).
+            - listitem [ref=f933e130]:
+              - strong [ref=f933e131]: "Hỗ trợ sau bán hàng:"
+              - text: Nhà cung cấp có đội ngũ kỹ thuật tại Việt Nam không? Thời gian bảo hành bao lâu? Có hỗ trợ cài đặt từ xa không?
+          - figure "Các tiêu chí lựa chọn thiết bị bảo vệ điện" [ref=f933e132]:
+            - img "Các tiêu chí lựa chọn thiết bị bảo vệ điện"
+          - heading "Quy trình lắp đặt và vận hành" [level=2] [ref=f933e134]
+          - paragraph [ref=f933e135]: "Lắp đặt thiết bị điện an toàn thông minh không phức tạp như bạn nghĩ, nhưng cần tuân thủ quy trình chuẩn để đảm bảo an toàn và hiệu quả:"
+          - paragraph [ref=f933e136]:
+            - strong [ref=f933e137]: "Bước 1: Chuẩn bị:"
+            - text: "Tắt nguồn điện tổng trước khi thực hiện bất kỳ thao tác nào. Kiểm tra không gian trong tủ điện: thiết bị thông minh thường lớn hơn MCB truyền thống (khoảng 2-3 module DIN)."
+          - paragraph [ref=f933e138]:
+            - strong [ref=f933e139]: "Bước 2: Lắp đặt vật lý:"
+            - text: "Gắn thiết bị lên thanh ray DIN trong tủ điện. Đấu nối dây theo sơ đồ hướng dẫn: dây pha (L), dây trung tính (N) và dây tiếp địa (PE) vào đúng vị trí. Siết chặt các ốc vít với lực vặn khoảng 2-3 N·m."
+          - paragraph [ref=f933e140]:
+            - strong [ref=f933e141]: "Bước 3: Cấu hình:"
+            - text: "Bật nguồn, mở ứng dụng trên điện thoại, quét mã QR trên thiết bị để kết nối. Cấu hình các thông số: ngưỡng dòng định mức, ngưỡng dòng rò, ngưỡng quá áp/thấp áp, và ngưỡng nhiệt độ cảnh báo."
+          - paragraph [ref=f933e142]:
+            - strong [ref=f933e143]: "Bước 4: Kiểm tra:"
+            - text: "Nhấn nút TEST trên thiết bị để xác nhận chức năng ngắt hoạt động. Kiểm tra dữ liệu hiển thị trên ứng dụng: các thông số phải nằm trong phạm vi bình thường. Gửi lệnh bật/tắt từ xa qua ứng dụng để xác nhận kết nối hoạt động."
+          - generic [ref=f933e144]:
+            - strong [ref=f933e145]: LƯU Ý AN TOÀN
+            - paragraph [ref=f933e146]: Mọi công việc liên quan đến điện phải được thực hiện bởi thợ điện có chuyên môn. Ngắt nguồn điện trước khi kiểm tra hoặc sửa chữa.
+          - generic [ref=f933e147]:
+            - heading "Kết luận" [level=3] [ref=f933e148]
+            - paragraph [ref=f933e149]: "Thiết bị điện an toàn thông minh không còn là công nghệ xa xỉ: nó đã trở thành giải pháp thiết yếu cho mọi gia đình và doanh nghiệp trong thời đại số. Từ khả năng phát hiện sớm các sự cố tiềm ẩn, giám sát từ xa 24/7, đến tự động ngắt mạch và cảnh báo tức thời, thiết bị thông minh mang lại mức độ bảo vệ vượt trội mà thiết bị truyền thống không thể sánh được. Đầu tư vào thiết bị điện an toàn thông minh chính là đầu tư vào sự an toàn và an tâm lâu dài. Liên hệ Phượng Hoàng ngay hôm nay để được tư vấn giải pháp phù hợp nhất cho bạn."
+        - complementary [ref=f933e150]:
+          - generic [ref=f933e151]:
+            - heading "Mục lục" [level=4] [ref=f933e152]
+            - list [ref=f933e153]:
+              - listitem [ref=f933e154]:
+                - link "Khái niệm thiết bị điện an toàn thông minh" [ref=f933e155] [cursor=pointer]:
+                  - /url: "#smart-definition"
+              - listitem [ref=f933e156]:
+                - link "Sự khác biệt với thiết bị bảo vệ truyền thống" [ref=f933e157] [cursor=pointer]:
+                  - /url: "#smart-vs-traditional"
+              - listitem [ref=f933e158]:
+                - link "Nguyên lý hoạt động chi tiết" [ref=f933e159] [cursor=pointer]:
+                  - /url: "#smart-principle"
+              - listitem [ref=f933e160]:
+                - link "Lợi ích thiết thực cho hộ gia đình" [ref=f933e161] [cursor=pointer]:
+                  - /url: "#smart-home-benefits"
+              - listitem [ref=f933e162]:
+                - link "Ứng dụng cho doanh nghiệp và văn phòng" [ref=f933e163] [cursor=pointer]:
+                  - /url: "#smart-business-benefits"
+              - listitem [ref=f933e164]:
+                - link "Hướng dẫn lựa chọn thiết bị phù hợp" [ref=f933e165] [cursor=pointer]:
+                  - /url: "#smart-selection"
+              - listitem [ref=f933e166]:
+                - link "Quy trình lắp đặt và vận hành" [ref=f933e167] [cursor=pointer]:
+                  - /url: "#smart-installation"
+          - generic [ref=f933e168]:
+            - heading "Danh mục sản phẩm" [level=4] [ref=f933e169]
+            - paragraph [ref=f933e170]: 4 danh mục chính, đáp ứng mọi nhu cầu bảo vệ an toàn điện.
+            - link "Công nghiệp" [ref=f933e171] [cursor=pointer]:
+              - /url: products.html?category=industrial
+            - link "Dân dụng" [ref=f933e172] [cursor=pointer]:
+              - /url: products.html?category=domestic
+            - link "Chống sốc cách ly" [ref=f933e173] [cursor=pointer]:
+              - /url: products.html?category=surge
+            - link "Dập hồ quang" [ref=f933e174] [cursor=pointer]:
+              - /url: products.html?category=arc
+          - link "← Quay lại Tin tức" [ref=f933e175] [cursor=pointer]:
+            - /url: news.html?page=1&category=all
+      - region [ref=f933e176]:
+        - heading "Bài viết liên quan" [level=2] [ref=f933e177]
+        - generic [ref=f933e178]:
+          - link [ref=f933e179] [cursor=pointer]:
+            - /url: news-detail.html?id=news-011&page=1&category=all
+            - img "Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam" [ref=f933e181]
+            - generic [ref=f933e182]:
+              - heading "Tiềm ẩn nguy cơ mất an toàn điện từ nồm ẩm ở miền Bắc Việt Nam" [level=3] [ref=f933e183]
+              - paragraph [ref=f933e184]: "Phân tích chuyên sâu về tác động của hiện tượng nồm ẩm đặc trưng miền Bắc Việt Nam đến hệ thống điện gia đình: từ cơ chế ngưng tụ hơi nước gây rò điện, oxy hóa đầu nối, đến nguy cơ chập cháy tiềm ẩn. Bài viết cung cấp các biện pháp phòng ngừa và xử lý an toàn trong mùa nồm, giúp bảo vệ gia đình trước những nguy cơ khó nhìn thấy bằng mắt thường."
+          - link [ref=f933e185] [cursor=pointer]:
+            - /url: news-detail.html?id=news-012&page=1&category=all
+            - img "Hướng dẫn chi tiết cách xử lý sự cố điện một cách an toàn trong gia đình" [ref=f933e187]
+            - generic [ref=f933e188]:
+              - heading "Hướng dẫn chi tiết cách xử lý sự cố điện một cách an toàn trong gia đình" [level=3] [ref=f933e189]
+              - paragraph [ref=f933e190]: "Hướng dẫn toàn diện về cách nhận biết và xử lý an toàn các sự cố điện thường gặp trong gia đình: từ mất điện, nhảy aptomat, chập điện, mùi khét đến thiết bị hoạt động bất thường. Bài viết phân định rõ ràng giữa những việc người dùng có thể tự kiểm tra an toàn và những tình huống bắt buộc phải gọi thợ điện chuyên nghiệp, giúp bạn bảo vệ bản thân và gia đình."
+          - link [ref=f933e191] [cursor=pointer]:
+            - /url: news-detail.html?id=news-013&page=1&category=all
+            - img "Cách bảo vệ hệ thống điện trước sự cố chập cháy" [ref=f933e193]
+            - generic [ref=f933e194]:
+              - heading "Cách bảo vệ hệ thống điện trước sự cố chập cháy" [level=3] [ref=f933e195]
+              - paragraph [ref=f933e196]: "Hướng dẫn toàn diện về các biện pháp bảo vệ hệ thống điện khỏi nguy cơ chập cháy: từ việc lựa chọn thiết bị bảo vệ phù hợp (MCB, RCD, AFDD), kiểm tra và bảo trì định kỳ, đến phát hiện sớm các dấu hiệu nguy hiểm. Bài viết phân tích các nguyên nhân gây chập cháy phổ biến nhất và giải pháp phòng ngừa dựa trên tiêu chuẩn TCVN và IEC, giúp bảo vệ an toàn cho ngôi nhà và người thân của bạn."
+          - link [ref=f933e197] [cursor=pointer]:
+            - /url: news-detail.html?id=news-014&page=1&category=all
+            - img "Những lưu ý quan trọng khi sử dụng thiết bị điện trong môi trường ẩm ướt" [ref=f933e199]
+            - generic [ref=f933e200]:
+              - heading "Những lưu ý quan trọng khi sử dụng thiết bị điện trong môi trường ẩm ướt" [level=3] [ref=f933e201]
+              - paragraph [ref=f933e202]: Hướng dẫn chi tiết về việc sử dụng an toàn thiết bị điện trong các môi trường ẩm ướt như phòng tắm, nhà bếp, khu giặt là, và không gian ngoài trời. Bài viết giải thích ý nghĩa của chỉ số IP (Ingress Protection), các quy định về vùng an toàn điện trong phòng tắm theo TCVN 7447, và các biện pháp bảo vệ thiết thực giúp ngăn ngừa tai nạn điện trong môi trường có nước và độ ẩm cao.
+  - generic [ref=f933e203]:
+    - contentinfo [ref=f933e204]:
+      - generic [ref=f933e205]:
+        - generic [ref=f933e206]:
+          - generic [ref=f933e207]:
+            - generic [ref=f933e208]:
+              - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f933e209]
+              - heading "Thiết bị điện an toàn thông minh" [level=3] [ref=f933e210]
+            - heading "CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG" [level=5] [ref=f933e211]
+            - paragraph [ref=f933e212]: Ứng dụng giám sát và điều khiển điện thông minh giúp người dùng theo dõi thiết bị, nhận cảnh báo sớm và quản lý hệ thống an toàn từ xa.
+            - generic [ref=f933e213]:
+              - generic [ref=f933e214]: An toàn
+              - generic [ref=f933e215]: Từ xa
+              - generic [ref=f933e216]: Hiệu quả
+          - generic [ref=f933e218]:
+            - heading "Liên hệ" [level=4] [ref=f933e219]
+            - list [ref=f933e220]:
+              - listitem [ref=f933e221]:
+                - strong [ref=f933e222]: Địa chỉ
+                - text: ":"
+                - generic [ref=f933e223]: Tầng 3, số 30 Lý Thái Tổ, phường Kinh Bắc, tỉnh Bắc Ninh, Việt Nam
+              - listitem [ref=f933e224]:
+                - strong [ref=f933e225]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f933e226] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f933e227]:
+                - strong [ref=f933e228]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f933e229] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f933e230]:
+                - strong [ref=f933e231]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f933e232] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f933e234]:
+            - heading "Chính sách và quy định" [level=4] [ref=f933e235]
+            - list [ref=f933e236]:
+              - listitem [ref=f933e237]:
+                - link "Hướng dẫn mua hàng" [ref=f933e238] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f933e239]:
+                - link "Chính sách bảo hành" [ref=f933e240] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f933e241]:
+                - link "Chính sách đổi trả" [ref=f933e242] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f933e243]:
+                - link "Chính sách vận chuyển" [ref=f933e244] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f933e245]:
+                - link "Hướng dẫn thanh toán" [ref=f933e246] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f933e247]:
+                - link "Chính sách bán hàng" [ref=f933e248] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f933e249]:
+                - link "Chính sách bảo mật" [ref=f933e250] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f933e251]:
+          - heading "Tải ứng dụng Phượng Hoàng" [level=4] [ref=f933e252]
+          - paragraph [ref=f933e253]: Giám sát và điều khiển điện an toàn từ xa qua điện thoại
+          - generic [ref=f933e254]:
+            - generic [ref=f933e255]:
+              - img "QR tải ứng dụng Android Phượng Hoàng" [ref=f933e256]
+              - generic [ref=f933e257]: Android APK
+              - generic [ref=f933e258]: Android 6.0+
+            - generic [ref=f933e259]:
+              - img "QR dùng ứng dụng web Phượng Hoàng" [ref=f933e260]
+              - generic [ref=f933e261]: H5 Web App
+              - generic [ref=f933e262]: Không cần cài đặt
+      - paragraph [ref=f933e264]: © 2026 Cloud Control. Bảo lưu mọi quyền. | Quan sát điện trực quan, an toàn nhìn thấy
+    - link "Tư vấn miễn phí qua Zalo" [ref=f933e265] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

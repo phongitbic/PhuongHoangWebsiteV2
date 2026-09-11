@@ -1,0 +1,155 @@
+- generic [ref=f391e1]:
+  - link "跳至内容":
+    - /url: "#main-content"
+  - generic [ref=f391e2]:
+    - generic [ref=f391e4]:
+      - link [ref=f391e158] [cursor=pointer]:
+        - /url: index.html
+        - img "凤凰科技有限责任公司标志" [ref=f391e159]
+        - strong [ref=f391e8]: PHOENIX SCIENCE & TECHNOLOGY
+      - 'link "热线电话: 0981 019 381" [ref=f391e160] [cursor=pointer]':
+        - /url: tel:+84981019381
+        - generic [ref=f391e13]: 0981 019 381
+    - banner [ref=f391e14]:
+      - generic [ref=f391e15]:
+        - button "打开菜单" [active] [ref=f391e161] [cursor=pointer]
+        - button "切换明暗主题" [ref=f391e162] [cursor=pointer]
+    - generic [ref=f391e27]:
+      - generic [ref=f391e28]:
+        - link [ref=f391e163] [cursor=pointer]:
+          - /url: index.html
+          - img "凤凰科技有限责任公司标志" [ref=f391e164]
+          - strong [ref=f391e32]: PHOENIX SCIENCE & TECHNOLOGY
+        - button "关闭菜单" [ref=f391e165] [cursor=pointer]: ×
+      - list [ref=f391e34]:
+        - listitem [ref=f391e35]:
+          - link "首页" [ref=f391e166] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f391e37]:
+          - link "关于我们" [ref=f391e167] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f391e39]:
+          - button "产品 ▾" [expanded] [ref=f391e168] [cursor=pointer]:
+            - generic [ref=f391e41]: 产品
+            - generic [ref=f391e42]: ▾
+        - listitem [ref=f391e43]:
+          - link "分销商" [ref=f391e169] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f391e45]:
+          - link "证书" [ref=f391e170] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f391e47]:
+          - link "工程" [ref=f391e171] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f391e49]:
+          - link "新闻" [ref=f391e172] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f391e51]:
+          - link "联系" [ref=f391e173] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f391e53]:
+        - button "中文" [ref=f391e54] [cursor=pointer]
+        - button "English" [ref=f391e55] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f391e56] [cursor=pointer]
+  - main [ref=f391e57]:
+    - generic [ref=f391e61]:
+      - generic [ref=f391e65]: "404"
+      - heading "页面未找到" [level=1] [ref=f391e174]
+    - generic [ref=f391e72]:
+      - paragraph [ref=f391e73]: 您要查找的页面不存在或已被移动。
+      - paragraph [ref=f391e74]: URL可能输入错误或页面已被删除。请重新检查，或如需帮助请联系我们。
+      - generic [ref=f391e75]:
+        - link "返回首页" [ref=f391e175] [cursor=pointer]:
+          - /url: index.html
+        - link "联系支持" [ref=f391e176] [cursor=pointer]:
+          - /url: contact.html
+      - generic [ref=f391e78]:
+        - heading "您可能在寻找：" [level=2] [ref=f391e177]
+        - generic [ref=f391e80]:
+          - link "工业设备" [ref=f391e178] [cursor=pointer]:
+            - /url: products.html?category=industrial
+          - link "民用设备" [ref=f391e179] [cursor=pointer]:
+            - /url: products.html?category=domestic
+          - link "防浪涌保护" [ref=f391e180] [cursor=pointer]:
+            - /url: products.html?category=surge
+          - link "电弧保护" [ref=f391e181] [cursor=pointer]:
+            - /url: products.html?category=arc
+          - link "典型工程" [ref=f391e182] [cursor=pointer]:
+            - /url: projects.html
+          - link "新闻" [ref=f391e183] [cursor=pointer]:
+            - /url: news.html
+  - generic [ref=f391e87]:
+    - contentinfo [ref=f391e88]:
+      - generic [ref=f391e89]:
+        - generic [ref=f391e90]:
+          - generic [ref=f391e91]:
+            - generic [ref=f391e92]:
+              - img "凤凰科技有限责任公司标志" [ref=f391e184]
+              - heading "智能安全电气设备" [level=3] [ref=f391e185]
+            - heading "凤凰科技有限责任公司" [level=5] [ref=f391e186]
+            - paragraph [ref=f391e96]: 应用智能电力监测与控制，帮助用户实时掌握设备状态、及时收到预警并远程管理安全系统。
+            - generic [ref=f391e97]:
+              - generic [ref=f391e98]: 安全
+              - generic [ref=f391e99]: 远程
+              - generic [ref=f391e100]: 高效
+          - generic [ref=f391e102]:
+            - heading "联系" [level=4] [ref=f391e187]
+            - list [ref=f391e104]:
+              - listitem [ref=f391e105]:
+                - strong [ref=f391e106]: 地址
+                - text: ":"
+                - generic [ref=f391e107]: 越南北宁省 Kinh Bac 区 Lý Thái Tổ大街 30号 3楼
+              - listitem [ref=f391e108]:
+                - strong [ref=f391e109]: 邮件
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f391e110] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f391e111]:
+                - strong [ref=f391e112]: 热线
+                - text: ":"
+                - link "1800 888 638" [ref=f391e113] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f391e114]:
+                - strong [ref=f391e115]: 热线
+                - text: ":"
+                - link "0981 019 381" [ref=f391e116] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f391e118]:
+            - heading "政策与规定" [level=4] [ref=f391e188]
+            - list [ref=f391e120]:
+              - listitem [ref=f391e121]:
+                - link "购买指南" [ref=f391e189] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f391e123]:
+                - link "保修政策" [ref=f391e190] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f391e125]:
+                - link "退换规定" [ref=f391e191] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f391e127]:
+                - link "运输政策" [ref=f391e192] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f391e129]:
+                - link "付款指南" [ref=f391e193] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f391e131]:
+                - link "销售政策" [ref=f391e194] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f391e133]:
+                - link "隐私政策" [ref=f391e195] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f391e135]:
+          - heading "下载凤凰科技应用" [level=4] [ref=f391e196]
+          - paragraph [ref=f391e137]: 通过手机远程监控和控制用电安全
+          - generic [ref=f391e138]:
+            - generic [ref=f391e139]:
+              - img "安卓凤凰科技应用二维码" [ref=f391e197]
+              - generic [ref=f391e141]: 安卓APK
+              - generic [ref=f391e142]: 安卓6.0+
+            - generic [ref=f391e143]:
+              - img "凤凰科技网页应用二维码" [ref=f391e198]
+              - generic [ref=f391e145]: H5网页应用
+              - generic [ref=f391e146]: 无需安装
+      - paragraph [ref=f391e148]: © 2026 云控用电安全. All rights reserved. | 用电可视化 安全看得见
+    - link "通过Zalo免费咨询" [ref=f391e199] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

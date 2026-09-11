@@ -394,15 +394,10 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  /* Ảnh gốc 900x900 có ~57% nền trắng chết (chủ yếu phía trên); zoom 1.5
-     gốc 50% 58% cắt phần trắng thừa (còn ~32%), thiết bị + màn hình xanh
-     lấp khung (không đổi file ảnh, không crop vật lý) */
-  transform: scale(1.5);
-  transform-origin: 50% 58%;
+  object-fit: contain;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .bp-hero-grid {
     grid-template-columns: 1fr;
     gap: clamp(1.5rem, 4vw, 2rem);

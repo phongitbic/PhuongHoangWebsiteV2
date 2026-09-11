@@ -1,0 +1,355 @@
+- generic [active] [ref=f875e1]:
+  - link "跳至内容":
+    - /url: "#main-content"
+  - generic [ref=f875e2]:
+    - generic [ref=f875e4]:
+      - link [ref=f875e5] [cursor=pointer]:
+        - /url: index.html
+        - img "凤凰科技有限责任公司标志" [ref=f875e6]
+        - strong [ref=f875e8]: PHOENIX SCIENCE & TECHNOLOGY
+      - 'link "热线电话: 0981 019 381" [ref=f875e10] [cursor=pointer]':
+        - /url: tel:+84981019381
+        - generic [ref=f875e13]: 0981 019 381
+    - banner [ref=f875e14]:
+      - generic [ref=f875e15]:
+        - button "打开菜单" [ref=f875e16] [cursor=pointer]
+        - button "切换明暗主题" [ref=f875e20] [cursor=pointer]
+    - generic [ref=f875e27]:
+      - generic [ref=f875e28]:
+        - link [ref=f875e29] [cursor=pointer]:
+          - /url: index.html
+          - img "凤凰科技有限责任公司标志" [ref=f875e30]
+          - strong [ref=f875e32]: PHOENIX SCIENCE & TECHNOLOGY
+        - button "关闭菜单" [ref=f875e33] [cursor=pointer]: ×
+      - list [ref=f875e34]:
+        - listitem [ref=f875e35]:
+          - link "首页" [ref=f875e36] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f875e37]:
+          - link "关于我们" [ref=f875e38] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f875e39]:
+          - button "产品 ▾" [ref=f875e40] [cursor=pointer]:
+            - generic [ref=f875e41]: 产品
+            - generic [ref=f875e42]: ▾
+        - listitem [ref=f875e43]:
+          - link "分销商" [ref=f875e44] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f875e45]:
+          - link "证书" [ref=f875e46] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f875e47]:
+          - link "工程" [ref=f875e48] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f875e49]:
+          - link "新闻" [ref=f875e50] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f875e51]:
+          - link "联系" [ref=f875e52] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f875e53]:
+        - button "中文" [ref=f875e54] [cursor=pointer]
+        - button "English" [ref=f875e55] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f875e56] [cursor=pointer]
+  - main [ref=f875e57]:
+    - heading "产品分类" [level=1] [ref=f875e60]
+    - generic [ref=f875e62]:
+      - complementary [ref=f875e63]:
+        - button "筛选分类" [ref=f875e64] [cursor=pointer]:
+          - generic [ref=f875e65]: 分类
+      - generic [ref=f875e68]:
+        - generic [ref=f875e69]:
+          - generic [ref=f875e70]: 显示 6 个产品
+          - generic [ref=f875e71]:
+            - generic [ref=f875e72]: "排序:"
+            - combobox "排序:" [ref=f875e73] [cursor=pointer]:
+              - option "最新" [selected]
+              - option "名称 A-Z"
+              - option "名称 Z-A"
+        - generic [ref=f875e74]:
+          - link "380V智能电气安全设备 工业电气安全设备 5 个型号 380V智能电气安全设备 用于工业系统的智能三相电气保护设备，带远程监控和多层保护。 380V AC 3 pha 50 Hz IEC 61439 查看详情 →" [ref=f875e75] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-001
+            - img "380V智能电气安全设备" [ref=f875e77]
+            - generic [ref=f875e78]:
+              - generic [ref=f875e79]:
+                - generic [ref=f875e80]: 工业电气安全设备
+                - generic [ref=f875e81]: 5 个型号
+              - heading "380V智能电气安全设备" [level=3] [ref=f875e82]
+              - paragraph [ref=f875e83]: 用于工业系统的智能三相电气保护设备，带远程监控和多层保护。
+              - generic [ref=f875e84]:
+                - generic [ref=f875e85]: 380V AC 3 pha
+                - generic [ref=f875e86]: 50 Hz
+                - generic [ref=f875e87]: IEC 61439
+              - generic [ref=f875e88]: 查看详情 →
+          - link "380V智能电气安全设备 - 工业版 工业电气安全设备 2 个型号 380V智能电气安全设备 - 工业版 适用于学校、医院、工厂和公共工程的380V智能电气保护设备。 380V AC 3 pha 50 Hz Chống sốc điện cách ly 查看详情 →" [ref=f875e89] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-003
+            - img "380V智能电气安全设备 - 工业版" [ref=f875e91]
+            - generic [ref=f875e92]:
+              - generic [ref=f875e93]:
+                - generic [ref=f875e94]: 工业电气安全设备
+                - generic [ref=f875e95]: 2 个型号
+              - heading "380V智能电气安全设备 - 工业版" [level=3] [ref=f875e96]
+              - paragraph [ref=f875e97]: 适用于学校、医院、工厂和公共工程的380V智能电气保护设备。
+              - generic [ref=f875e98]:
+                - generic [ref=f875e99]: 380V AC 3 pha
+                - generic [ref=f875e100]: 50 Hz
+                - generic [ref=f875e101]: Chống sốc điện cách ly
+              - generic [ref=f875e102]: 查看详情 →
+          - link "380V智能电气安全设备 - 工业版 工业电气安全设备 3 个型号 380V智能电气安全设备 - 工业版 适用于工业区域的380V智能三相电气保护设备，具有触电保护、漏电保护、过载和灭弧功能。 380V AC 3 pha 50 Hz Dập hồ quang 380V / MCU 查看详情 →" [ref=f875e103] [cursor=pointer]:
+            - /url: product-detail.html?id=ind-004
+            - img "380V智能电气安全设备 - 工业版" [ref=f875e105]
+            - generic [ref=f875e106]:
+              - generic [ref=f875e107]:
+                - generic [ref=f875e108]: 工业电气安全设备
+                - generic [ref=f875e109]: 3 个型号
+              - heading "380V智能电气安全设备 - 工业版" [level=3] [ref=f875e110]
+              - paragraph [ref=f875e111]: 适用于工业区域的380V智能三相电气保护设备，具有触电保护、漏电保护、过载和灭弧功能。
+              - generic [ref=f875e112]:
+                - generic [ref=f875e113]: 380V AC 3 pha
+                - generic [ref=f875e114]: 50 Hz
+                - generic [ref=f875e115]: Dập hồ quang 380V / MCU
+              - generic [ref=f875e116]: 查看详情 →
+          - link "220V智能电气安全设备 - 商业版 电涌防护与隔离设备 1 个型号 220V智能电气安全设备 - 商业版 适用于商业区域的220V智能电气保护设备，具有触电保护、漏电保护、过载和灭弧功能。 220V AC 10kW (45A) 50 Hz 查看详情 →" [ref=f875e117] [cursor=pointer]:
+            - /url: product-detail.html?id=arc-004
+            - img "220V智能电气安全设备 - 商业版" [ref=f875e119]
+            - generic [ref=f875e120]:
+              - generic [ref=f875e121]:
+                - generic [ref=f875e122]: 电涌防护与隔离设备
+                - generic [ref=f875e123]: 1 个型号
+              - heading "220V智能电气安全设备 - 商业版" [level=3] [ref=f875e124]
+              - paragraph [ref=f875e125]: 适用于商业区域的220V智能电气保护设备，具有触电保护、漏电保护、过载和灭弧功能。
+              - generic [ref=f875e126]:
+                - generic [ref=f875e127]: 220V AC
+                - generic [ref=f875e128]: 10kW (45A)
+                - generic [ref=f875e129]: 50 Hz
+              - generic [ref=f875e130]: 查看详情 →
+          - link "220V智能电气安全设备 - 3支路版 民用电气安全设备 1 个型号 220V智能电气安全设备 - 3支路版 220V智能电气保护设备，3支路，63A版本，集成14项全面保护功能。 220V AC 63A 3 mạch nhánh 查看详情 →" [ref=f875e131] [cursor=pointer]:
+            - /url: product-detail.html?id=dom-001
+            - img "220V智能电气安全设备 - 3支路版" [ref=f875e133]
+            - generic [ref=f875e134]:
+              - generic [ref=f875e135]:
+                - generic [ref=f875e136]: 民用电气安全设备
+                - generic [ref=f875e137]: 1 个型号
+              - heading "220V智能电气安全设备 - 3支路版" [level=3] [ref=f875e138]
+              - paragraph [ref=f875e139]: 220V智能电气保护设备，3支路，63A版本，集成14项全面保护功能。
+              - generic [ref=f875e140]:
+                - generic [ref=f875e141]: 220V AC
+                - generic [ref=f875e142]: 63A
+                - generic [ref=f875e143]: 3 mạch nhánh
+              - generic [ref=f875e144]: 查看详情 →
+          - link "220V灭弧式智能电气安全设备 民用电气安全设备 4 个型号 220V灭弧式智能电气安全设备 面向家庭的220V灭弧式智能电气安全设备，集成12项保护功能，提供4种型号：32A、45A、63A、100A。 220V AC 32A - 100A Dập hồ quang 220V 查看详情 →" [ref=f875e145] [cursor=pointer]:
+            - /url: product-detail.html?id=dom-002
+            - img "220V灭弧式智能电气安全设备" [ref=f875e147]
+            - generic [ref=f875e148]:
+              - generic [ref=f875e149]:
+                - generic [ref=f875e150]: 民用电气安全设备
+                - generic [ref=f875e151]: 4 个型号
+              - heading "220V灭弧式智能电气安全设备" [level=3] [ref=f875e152]
+              - paragraph [ref=f875e153]: 面向家庭的220V灭弧式智能电气安全设备，集成12项保护功能，提供4种型号：32A、45A、63A、100A。
+              - generic [ref=f875e154]:
+                - generic [ref=f875e155]: 220V AC
+                - generic [ref=f875e156]: 32A - 100A
+                - generic [ref=f875e157]: Dập hồ quang 220V
+              - generic [ref=f875e158]: 查看详情 →
+    - generic [ref=f875e161]:
+      - generic [ref=f875e162]:
+        - heading "严格测试" [level=4] [ref=f875e166]
+        - paragraph [ref=f875e167]: 每台设备在出厂前都经过单独测试。符合ISO 9001:2015标准。
+      - generic [ref=f875e168]:
+        - heading "智能技术" [level=4] [ref=f875e176]
+        - paragraph [ref=f875e177]: 通过移动应用程序集成物联网和远程监控。即时故障报警。
+      - generic [ref=f875e178]:
+        - heading "卓越耐用" [level=4] [ref=f875e182]
+        - paragraph [ref=f875e183]: 按照工业标准设计。在恶劣条件下稳定运行。
+      - generic [ref=f875e184]:
+        - heading "全面支持" [level=4] [ref=f875e191]
+        - paragraph [ref=f875e192]: 咨询、勘察、安装、培训和维护。全程产品生命周期支持。
+    - generic [ref=f875e194]:
+      - generic [ref=f875e195]:
+        - heading "常见问题" [level=2] [ref=f875e196]
+        - paragraph [ref=f875e197]: 解答关于凤凰科技用电安全设备的产品、订购和保修政策的疑问。
+      - generic [ref=f875e198]:
+        - button "全部" [ref=f875e199] [cursor=pointer]
+        - button "产品" [ref=f875e200] [cursor=pointer]
+        - button "订购" [ref=f875e201] [cursor=pointer]
+        - button "保修" [ref=f875e202] [cursor=pointer]
+      - generic [ref=f875e203]:
+        - generic [ref=f875e204]:
+          - button "Q 电涌保护器如何保护我的电气设备？ ▼" [ref=f875e205] [cursor=pointer]:
+            - generic [ref=f875e206]: Q
+            - generic [ref=f875e207]: 电涌保护器如何保护我的电气设备？
+            - generic [ref=f875e208]: ▼
+          - generic [ref=f875e210]:
+            - paragraph [ref=f875e211]: 凤凰科技的电涌保护器（SPD）如同防护盾牌。当出现突然的电压尖峰（由雷击或设备开关引起）时，SPD会迅速将电涌电流导向大地，阻止高电压进入您的电气设备。这样可以保护电视、冰箱、电脑和工业机械免受过压损坏。
+            - paragraph [ref=f875e212]:
+              - link "查看电涌保护器 →" [ref=f875e213] [cursor=pointer]:
+                - /url: products.html?category=surge
+        - generic [ref=f875e214]:
+          - button "Q 凤凰科技有哪些产品类别？ ▼" [ref=f875e215] [cursor=pointer]:
+            - generic [ref=f875e216]: Q
+            - generic [ref=f875e217]: 凤凰科技有哪些产品类别？
+            - generic [ref=f875e218]: ▼
+          - generic [ref=f875e220]:
+            - paragraph [ref=f875e221]: 凤凰科技提供三大类智能用电安全设备：（1）工业设备，适用于工厂和工业园区；（2）民用设备，为家庭提供用电安全保护；（3）隔离电涌保护，防止因接触漏电设备而触电。
+            - paragraph [ref=f875e222]:
+              - link "查看完整产品目录 →" [ref=f875e223] [cursor=pointer]:
+                - /url: products.html
+        - generic [ref=f875e224]:
+          - button "Q 工业用电安全设备与家用设备有什么不同？ ▼" [ref=f875e225] [cursor=pointer]:
+            - generic [ref=f875e226]: Q
+            - generic [ref=f875e227]: 工业用电安全设备与家用设备有什么不同？
+            - generic [ref=f875e228]: ▼
+          - generic [ref=f875e230]:
+            - paragraph [ref=f875e231]: 凤凰科技的工业设备设计用于承受更大负载，在恶劣环境（高温、粉尘、振动）下连续运行，通常还集成远程监控功能。民用设备注重安装简便、结构紧凑，保护标准家用电器。两类产品均符合电气安全标准，在交付前经过质量检测。
+            - paragraph [ref=f875e232]:
+              - link "浏览工业与民用设备 →" [ref=f875e233] [cursor=pointer]:
+                - /url: products.html
+        - generic [ref=f875e234]:
+          - button "Q 凤凰科技设备的保修期是多长？ ▼" [ref=f875e235] [cursor=pointer]:
+            - generic [ref=f875e236]: Q
+            - generic [ref=f875e237]: 凤凰科技设备的保修期是多长？
+            - generic [ref=f875e238]: ▼
+          - generic [ref=f875e240]:
+            - paragraph [ref=f875e241]: 凤凰科技的标准保修期为12至24个月，具体取决于产品线。保修期从交货日期或项目验收日期开始计算。部分产品线还可根据合同约定提供延长保修服务。
+            - paragraph [ref=f875e242]:
+              - link "查看完整保修政策 →" [ref=f875e243] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e244]:
+          - button "Q 免费保修需要满足哪些条件？ ▼" [ref=f875e245] [cursor=pointer]:
+            - generic [ref=f875e246]: Q
+            - generic [ref=f875e247]: 免费保修需要满足哪些条件？
+            - generic [ref=f875e248]: ▼
+          - generic [ref=f875e250]:
+            - paragraph [ref=f875e251]: 享受免费保修服务需满足以下条件：（1）产品仍在保修期内，保修标签和保修卡完好无损；（2）故障属于制造缺陷，非外部因素造成；（3）您能提供有效的购买信息。因使用不当、未经授权的维修或自然灾害造成的损坏不在免费保修范围内。
+            - paragraph [ref=f875e252]:
+              - link "查看全部保修条件 →" [ref=f875e253] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e254]:
+          - button "Q 保修流程是怎样的？ ▼" [ref=f875e255] [cursor=pointer]:
+            - generic [ref=f875e256]: Q
+            - generic [ref=f875e257]: 保修流程是怎样的？
+            - generic [ref=f875e258]: ▼
+          - generic [ref=f875e260]:
+            - paragraph [ref=f875e261]: 凤凰科技的保修流程包含3个简单步骤：第一步：拨打热线 1800 888 638 或通过 Zalo 0981019381 报告故障情况；第二步：将产品送至服务中心，或根据约定要求技术人员上门检查；第三步：维修或更换部件完成后收回设备。
+            - paragraph [ref=f875e262]:
+              - link "查看详细保修流程 →" [ref=f875e263] [cursor=pointer]:
+                - /url: warranty-policy.html
+        - generic [ref=f875e264]:
+          - button "Q 购买凤凰科技设备有哪些付款方式？ ▼" [ref=f875e265] [cursor=pointer]:
+            - generic [ref=f875e266]: Q
+            - generic [ref=f875e267]: 购买凤凰科技设备有哪些付款方式？
+            - generic [ref=f875e268]: ▼
+          - generic [ref=f875e270]:
+            - paragraph [ref=f875e271]: 凤凰科技提供灵活的付款方式：（1）根据合同信息进行银行转账；（2）在展厅直接支付现金或货到付款（COD）；（3）双方协商的其他方式。所有交易均透明、安全地进行。
+            - paragraph [ref=f875e272]:
+              - link "查看付款指南 →" [ref=f875e273] [cursor=pointer]:
+                - /url: payment-policy.html
+        - generic [ref=f875e274]:
+          - button "Q 如何订购凤凰科技的用电安全设备？ ▼" [ref=f875e275] [cursor=pointer]:
+            - generic [ref=f875e276]: Q
+            - generic [ref=f875e277]: 如何订购凤凰科技的用电安全设备？
+            - generic [ref=f875e278]: ▼
+          - generic [ref=f875e280]:
+            - paragraph [ref=f875e281]: 您可以通过多种渠道订购凤凰科技用电安全设备：拨打热线 1800 888 638 进行咨询并直接下单；通过 Zalo 0981019381 发送消息；发送邮件至 khktphuonghoang.hr@gmail.com；前往越南北宁市李太祖街30号三楼办公室；或联系我们在全国网络中最近的经销商。
+            - paragraph [ref=f875e282]:
+              - link "查看购买指南 →" [ref=f875e283] [cursor=pointer]:
+                - /url: purchase-policy.html
+        - generic [ref=f875e284]:
+          - button "Q 配送需要多长时间？ ▼" [ref=f875e285] [cursor=pointer]:
+            - generic [ref=f875e286]: Q
+            - generic [ref=f875e287]: 配送需要多长时间？
+            - generic [ref=f875e288]: ▼
+          - generic [ref=f875e290]:
+            - paragraph [ref=f875e291]: 凤凰科技提供全国配送服务。实际配送时间取决于您的位置和订购的产品类型。标准订单通常需要2-5个工作日。您可以在收货时检查货物，如产品与订单不符，有权拒绝签收。
+            - paragraph [ref=f875e292]:
+              - link "查看配送政策 →" [ref=f875e293] [cursor=pointer]:
+                - /url: shipping-policy.html
+        - generic [ref=f875e294]:
+          - button "Q 购买后可以退换设备吗？ ▼" [ref=f875e295] [cursor=pointer]:
+            - generic [ref=f875e296]: Q
+            - generic [ref=f875e297]: 购买后可以退换设备吗？
+            - generic [ref=f875e298]: ▼
+          - generic [ref=f875e300]:
+            - paragraph [ref=f875e301]: 可以。凤凰科技对存在制造缺陷或与订单描述不符的产品实行退换政策。退换条件包括：产品完好无损、配件齐全且在规定时间内。请拨打热线 1800 888 638 获取具体退换流程指导。
+            - paragraph [ref=f875e302]:
+              - link "查看退换政策 →" [ref=f875e303] [cursor=pointer]:
+                - /url: exchange-policy.html
+      - generic [ref=f875e304]:
+        - paragraph [ref=f875e305]: 没有找到答案？
+        - link "提交问题" [ref=f875e306] [cursor=pointer]:
+          - /url: contact.html
+  - generic [ref=f875e307]:
+    - contentinfo [ref=f875e308]:
+      - generic [ref=f875e309]:
+        - generic [ref=f875e310]:
+          - generic [ref=f875e311]:
+            - generic [ref=f875e312]:
+              - img "凤凰科技有限责任公司标志" [ref=f875e313]
+              - heading "智能安全电气设备" [level=3] [ref=f875e314]
+            - heading "凤凰科技有限责任公司" [level=5] [ref=f875e315]
+            - paragraph [ref=f875e316]: 应用智能电力监测与控制，帮助用户实时掌握设备状态、及时收到预警并远程管理安全系统。
+            - generic [ref=f875e317]:
+              - generic [ref=f875e318]: 安全
+              - generic [ref=f875e319]: 远程
+              - generic [ref=f875e320]: 高效
+          - generic [ref=f875e322]:
+            - heading "联系" [level=4] [ref=f875e323]
+            - list [ref=f875e324]:
+              - listitem [ref=f875e325]:
+                - strong [ref=f875e326]: 地址
+                - text: ":"
+                - generic [ref=f875e327]: 越南北宁省 Kinh Bac 区 Lý Thái Tổ大街 30号 3楼
+              - listitem [ref=f875e328]:
+                - strong [ref=f875e329]: 邮件
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f875e330] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f875e331]:
+                - strong [ref=f875e332]: 热线
+                - text: ":"
+                - link "1800 888 638" [ref=f875e333] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f875e334]:
+                - strong [ref=f875e335]: 热线
+                - text: ":"
+                - link "0981 019 381" [ref=f875e336] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f875e338]:
+            - heading "政策与规定" [level=4] [ref=f875e339]
+            - list [ref=f875e340]:
+              - listitem [ref=f875e341]:
+                - link "购买指南" [ref=f875e342] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f875e343]:
+                - link "保修政策" [ref=f875e344] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f875e345]:
+                - link "退换规定" [ref=f875e346] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f875e347]:
+                - link "运输政策" [ref=f875e348] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f875e349]:
+                - link "付款指南" [ref=f875e350] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f875e351]:
+                - link "销售政策" [ref=f875e352] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f875e353]:
+                - link "隐私政策" [ref=f875e354] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f875e355]:
+          - heading "下载凤凰科技应用" [level=4] [ref=f875e356]
+          - paragraph [ref=f875e357]: 通过手机远程监控和控制用电安全
+          - generic [ref=f875e358]:
+            - generic [ref=f875e359]:
+              - img "安卓凤凰科技应用二维码" [ref=f875e360]
+              - generic [ref=f875e361]: 安卓APK
+              - generic [ref=f875e362]: 安卓6.0+
+            - generic [ref=f875e363]:
+              - img "凤凰科技网页应用二维码" [ref=f875e364]
+              - generic [ref=f875e365]: H5网页应用
+              - generic [ref=f875e366]: 无需安装
+      - paragraph [ref=f875e368]: © 2026 云控用电安全. All rights reserved. | 用电可视化 安全看得见
+    - link "通过Zalo免费咨询" [ref=f875e369] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381

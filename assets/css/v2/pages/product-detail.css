@@ -170,6 +170,7 @@
   gap: .4rem;
 }
 .ph-model-btn {
+  min-height: 44px;
   padding: .45rem .85rem;
   border: 1px solid var(--ph-border-default);
   border-radius: var(--ph-radius-sm);
@@ -254,7 +255,7 @@
   overflow: hidden;
 }
 .ph-qty-box button {
-  width: 34px; height: 38px;
+  width: 44px; height: 44px;
   border: none;
   background: var(--ph-surface-primary);
   color: var(--ph-text-primary);
@@ -269,7 +270,7 @@
 }
 .ph-qty-box button:hover { background: var(--ph-accent-subtle); color: var(--ph-accent); }
 .ph-qty-box input {
-  width: 42px; height: 38px;
+  width: 44px; height: 44px;
   border: none;
   border-left: 1px solid var(--ph-border-default);
   border-right: 1px solid var(--ph-border-default);
@@ -729,7 +730,7 @@
   color: var(--ph-text-primary);
 }
 .ph-modal-close-inline {
-  width: 32px; height: 32px;
+  width: 44px; height: 44px;
   border-radius: var(--ph-radius-full);
   border: none;
   background: none;
@@ -766,6 +767,7 @@
   gap: .5rem;
 }
 .ph-modal-btn-secondary {
+  min-height: 44px;
   padding: .5rem 1rem;
   border: 1px solid var(--ph-border-default);
   border-radius: var(--ph-radius-sm);
@@ -779,12 +781,14 @@
 }
 .ph-modal-btn-secondary:hover { border-color: var(--ph-accent); color: var(--ph-accent); }
 .ph-modal-btn-accent {
+  min-height: 44px;
   font-size: .875rem;
   padding: .55rem 1.2rem;
   text-decoration: none;
   cursor: pointer;
 }
 .ph-modal-btn-outline {
+  min-height: 44px;
   padding: .5rem 1.25rem;
   border: 1px solid var(--ph-accent);
   border-radius: var(--ph-radius-sm);

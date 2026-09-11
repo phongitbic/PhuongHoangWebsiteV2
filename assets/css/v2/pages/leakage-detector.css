@@ -71,11 +71,11 @@
 
 /* FAQ section embedded in page */
 .ld-faq-filters { display: flex; flex-wrap: wrap; gap: .375rem; justify-content: center; margin-bottom: 1.5rem; }
-.ld-faq-filter-btn { padding: .4rem .9rem; border: 1px solid var(--ph-border-default); border-radius: 99px; background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .8125rem; font-weight: 500; cursor: pointer; transition: background-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); font-family: inherit; white-space: nowrap; }
+.ld-faq-filter-btn { min-height: 44px; padding: .4rem .9rem; border: 1px solid var(--ph-border-default); border-radius: 99px; background: var(--ph-surface-primary); color: var(--ph-text-secondary); font-size: .8125rem; font-weight: 500; cursor: pointer; transition: background-color .2s var(--ph-ease-out), color .2s var(--ph-ease-out), border-color .2s var(--ph-ease-out); font-family: inherit; white-space: nowrap; }
 .ld-faq-filter-btn:hover { border-color: var(--ph-accent); color: var(--ph-accent); }
 .ld-faq-filter-btn.active { background: var(--ph-accent); color: var(--ph-text-on-accent); border-color: var(--ph-accent); }
 .ld-faq-search { margin-bottom: 1rem; text-align: center; }
-.ld-faq-search input { width: 100%; max-width: 480px; padding: .7rem 1rem; border-radius: 99px; border: 1px solid var(--ph-border-default); background: var(--ph-surface-primary); color: var(--ph-text-primary); font-size: .875rem; font-family: inherit; outline: none; transition: border-color .2s; }
+.ld-faq-search input { width: 100%; min-height: 44px; max-width: 480px; padding: .7rem 1rem; border-radius: 99px; border: 1px solid var(--ph-border-default); background: var(--ph-surface-primary); color: var(--ph-text-primary); font-size: .875rem; font-family: inherit; outline: none; transition: border-color .2s; }
 .ld-faq-search input:focus { border-color: var(--ph-accent); }
 .ld-faq-list { display: grid; gap: .75rem; max-width: 800px; margin: 0 auto; }
 .ld-faq-item { background: var(--ph-surface-primary); border: 1px solid var(--ph-border-default); border-radius: var(--ph-radius-md); overflow: hidden; transition: border-color .2s; }

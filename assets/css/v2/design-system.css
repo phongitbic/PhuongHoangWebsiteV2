@@ -314,6 +314,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--ph-chrome-h) + 16px);
+  overflow-x: clip;
 }
 
 body {
@@ -339,7 +341,16 @@ ul, ol { list-style: none; }
 button, input, select, textarea { font: inherit; color: inherit; border: none; background: none; outline: none; }
 button { cursor: pointer; }
 
-h1, h2, h3, h4, h5, h6 { font: inherit; color: inherit; }
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+  color: inherit;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+/* Keep long translated labels, specifications and contact details inside
+   their columns without changing the underlying copy. */
+:where(p, li, dd, dt, td, th, label) { overflow-wrap: break-word; }
 
 /* ═══════════ FOCUS ═══════════ */
 :focus-visible { outline: none; box-shadow: var(--ph-focus-ring); border-radius: 2px; }

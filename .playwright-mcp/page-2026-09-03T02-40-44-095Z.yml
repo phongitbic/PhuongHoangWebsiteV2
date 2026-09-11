@@ -1,0 +1,237 @@
+- generic [active] [ref=f899e1]:
+  - link "Bỏ qua nội dung":
+    - /url: "#main-content"
+  - generic [ref=f899e2]:
+    - generic [ref=f899e4]:
+      - link [ref=f899e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f899e6]
+        - strong [ref=f899e8]: PHOENIX SCIENCE & TECHNOLOGY
+      - 'link "Hotline: 0981 019 381" [ref=f899e10] [cursor=pointer]':
+        - /url: tel:+84981019381
+        - generic [ref=f899e13]: 0981 019 381
+    - banner [ref=f899e14]:
+      - generic [ref=f899e15]:
+        - button "Mở menu" [ref=f899e16] [cursor=pointer]
+        - button "Chuyển đổi giao diện sáng/tối" [ref=f899e20] [cursor=pointer]
+    - generic [ref=f899e23]:
+      - generic [ref=f899e24]:
+        - link [ref=f899e25] [cursor=pointer]:
+          - /url: index.html
+          - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f899e26]
+          - strong [ref=f899e28]: PHOENIX SCIENCE & TECHNOLOGY
+        - button "Đóng menu" [ref=f899e29] [cursor=pointer]: ×
+      - list [ref=f899e30]:
+        - listitem [ref=f899e31]:
+          - link "Trang chủ" [ref=f899e32] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f899e33]:
+          - link "Về chúng tôi" [ref=f899e34] [cursor=pointer]:
+            - /url: about-us.html
+        - listitem [ref=f899e35]:
+          - button "Sản phẩm ▾" [ref=f899e36] [cursor=pointer]:
+            - generic [ref=f899e37]: Sản phẩm
+            - generic [ref=f899e38]: ▾
+        - listitem [ref=f899e39]:
+          - link "Nhà phân phối" [ref=f899e40] [cursor=pointer]:
+            - /url: distribution-system.html
+        - listitem [ref=f899e41]:
+          - link "Chứng nhận" [ref=f899e42] [cursor=pointer]:
+            - /url: certificates.html
+        - listitem [ref=f899e43]:
+          - link "Dự án" [ref=f899e44] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f899e45]:
+          - link "Tin tức" [ref=f899e46] [cursor=pointer]:
+            - /url: news.html
+        - listitem [ref=f899e47]:
+          - link "Liên hệ" [ref=f899e48] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=f899e49]:
+        - button "中文" [ref=f899e50] [cursor=pointer]
+        - button "English" [ref=f899e51] [cursor=pointer]
+        - button "Tiếng Việt" [ref=f899e52] [cursor=pointer]
+  - main [ref=f899e53]:
+    - generic [ref=f899e56]:
+      - generic [ref=f899e57]:
+        - generic [ref=f899e58]:
+          - generic [ref=f899e59]: Thư ngỏ
+          - heading "Về Phượng Hoàng" [level=1] [ref=f899e60]
+        - generic [ref=f899e61]:
+          - paragraph [ref=f899e62]: Kính gửi Quý khách hàng và đối tác,
+          - paragraph [ref=f899e63]: Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng chuyên nghiên cứu, phát triển và chuyển giao các giải pháp, thiết bị điện an toàn thông minh trên nền tảng khoa học công nghệ tiên tiến.
+          - paragraph [ref=f899e64]: Trong đời sống, sản xuất và kinh doanh, các sự cố như rò điện, chập cháy, quá tải hay hồ quang điện luôn tiềm ẩn nguy cơ đe dọa trực tiếp đến tính mạng con người và gây thiệt hại nghiêm trọng về tài sản. Phượng Hoàng ra đời từ nhu cầu cấp thiết đó, với định hướng chủ động phát hiện, kiểm soát và ngăn ngừa rủi ro điện trước khi sự cố xảy ra.
+          - paragraph [ref=f899e65]: Chúng tôi phát triển các giải pháp giám sát và bảo vệ điện thông minh, giúp phát hiện sớm nguy cơ, cô lập sự cố kịp thời và nâng cao hiệu quả quản lý, vận hành hệ thống điện. Bằng năng lực công nghệ, tinh thần trách nhiệm và định hướng phát triển bền vững, Phượng Hoàng mong muốn đồng hành cùng doanh nghiệp, nhà máy, cơ sở sản xuất và các hộ gia đình. Mục tiêu chung là xây dựng một môi trường sử dụng điện an toàn, chủ động và hiệu quả.
+          - generic [ref=f899e66]:
+            - paragraph [ref=f899e67]: Sứ mệnh của chúng tôi
+            - paragraph [ref=f899e68]: Mang điện an toàn đến nhân loại.
+        - generic [ref=f899e69]:
+          - paragraph [ref=f899e70]: Trân trọng,
+          - paragraph [ref=f899e71]: Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng
+      - 'img "Công ty Phượng Hoàng: Thiết bị điện an toàn" [ref=f899e73]'
+    - generic [ref=f899e75]:
+      - heading "Sứ mệnh & Tầm nhìn" [level=2] [ref=f899e77]
+      - generic [ref=f899e78]:
+        - generic [ref=f899e79]:
+          - heading "Tầm nhìn" [level=3] [ref=f899e80]
+          - paragraph [ref=f899e81]: "Trở thành doanh nghiệp tiên phong trong lĩnh vực thiết bị điện an toàn thông minh tại Việt Nam, mang đến giải pháp bảo vệ toàn diện cho mọi công trình: từ hộ gia đình đến nhà máy công nghiệp."
+        - generic [ref=f899e82]:
+          - heading "Sứ mệnh" [level=3] [ref=f899e83]
+          - paragraph [ref=f899e84]: Nghiên cứu, phát triển và cung cấp các giải pháp an toàn điện thông minh, giúp người dùng giám sát và điều khiển hệ thống điện từ xa, ngăn chặn sự cố trước khi gây hậu quả nghiêm trọng.
+    - generic [ref=f899e86]:
+      - heading "Giá trị cốt lõi" [level=2] [ref=f899e88]
+      - generic [ref=f899e89]:
+        - generic [ref=f899e90]:
+          - heading "An toàn" [level=3] [ref=f899e94]
+          - paragraph [ref=f899e95]: An toàn là nguyên tắc hàng đầu trong mọi quyết định thiết kế và sản xuất. Mỗi sản phẩm được kiểm định nghiêm ngặt trước khi đến tay khách hàng.
+        - generic [ref=f899e96]:
+          - heading "Đổi mới" [level=3] [ref=f899e104]
+          - paragraph [ref=f899e105]: Liên tục nghiên cứu và ứng dụng công nghệ mới vào sản phẩm, giúp khách hàng tiếp cận giải pháp an toàn điện tiên tiến nhất.
+        - generic [ref=f899e106]:
+          - heading "Chất lượng" [level=3] [ref=f899e111]
+          - paragraph [ref=f899e112]: "Quy trình kiểm soát chất lượng 3 lớp: đầu vào, phòng thí nghiệm độc lập, trước xuất kho. Cam kết sản phẩm đạt chuẩn quốc tế."
+        - generic [ref=f899e113]:
+          - heading "Trách nhiệm" [level=3] [ref=f899e117]
+          - paragraph [ref=f899e118]: Đồng hành cùng khách hàng từ khảo sát, thiết kế, lắp đặt đến bảo trì. Chúng tôi chịu trách nhiệm về sự an toàn của công trình bạn.
+        - generic [ref=f899e119]:
+          - heading "Phát triển bền vững" [level=3] [ref=f899e126]
+          - paragraph [ref=f899e127]: Xây dựng mối quan hệ lâu dài với khách hàng và đối tác, phát triển bền vững dựa trên nền tảng tin cậy và chất lượng.
+    - generic [ref=f899e129]:
+      - heading "Tại sao nên lựa chọn Phượng Hoàng" [level=2] [ref=f899e131]
+      - generic [ref=f899e132]:
+        - generic [ref=f899e133]:
+          - generic [ref=f899e134]: "01"
+          - generic [ref=f899e135]:
+            - heading "Đội ngũ chuyên môn" [level=3] [ref=f899e136]
+            - paragraph [ref=f899e137]: Kỹ sư am hiểu sâu cả lý thuyết lẫn thực tiễn ngành điện công nghiệp và dân dụng. Liên tục cập nhật công nghệ và tiêu chuẩn mới nhất.
+        - generic [ref=f899e138]:
+          - generic [ref=f899e139]: "02"
+          - generic [ref=f899e140]:
+            - heading "Cam kết chất lượng" [level=3] [ref=f899e141]
+            - paragraph [ref=f899e142]: "Quy trình kiểm soát chặt chẽ: kiểm định 3 lớp: đầu vào, phòng thí nghiệm độc lập, trước xuất kho. Sản phẩm đạt chuẩn ISO, TCVN, CE, IEC."
+        - generic [ref=f899e143]:
+          - generic [ref=f899e144]: "03"
+          - generic [ref=f899e145]:
+            - heading "Hỗ trợ toàn diện" [level=3] [ref=f899e146]
+            - paragraph [ref=f899e147]: "Từ khảo sát, thiết kế, lắp đặt, đào tạo vận hành đến bảo trì và hỗ trợ kỹ thuật khẩn cấp: chúng tôi đồng hành cùng bạn trong toàn bộ hành trình."
+    - generic [ref=f899e149]:
+      - generic [ref=f899e150]:
+        - generic [ref=f899e151]: Chứng nhận
+        - heading "Chứng nhận chất lượng" [level=2] [ref=f899e152]
+        - paragraph [ref=f899e153]: Mỗi sản phẩm được kiểm định nghiêm ngặt và chứng nhận bởi các tổ chức kiểm định độc lập theo tiêu chuẩn quốc tế.
+      - generic [ref=f899e154]:
+        - generic [ref=f899e155]:
+          - img "Tuyên bố phù hợp CE" [ref=f899e156]
+          - heading "Tuyên bố phù hợp CE" [level=3] [ref=f899e157]
+          - paragraph [ref=f899e158]: Thiết bị điện an toàn thông minh đạt Chỉ thị điện áp thấp 2014/35/EU của Liên minh châu Âu.
+        - generic [ref=f899e159]:
+          - img "Báo cáo thử nghiệm IEC 61008-1" [ref=f899e160]
+          - heading "Báo cáo thử nghiệm IEC 61008-1" [level=3] [ref=f899e161]
+          - paragraph [ref=f899e162]: Cầu dao chống rò RCCB thử nghiệm theo IEC 61008-1:2024 tại phòng thí nghiệm Shenzhen CTG.
+        - generic [ref=f899e163]:
+          - img "Báo cáo thử nghiệm IEC 60898-1" [ref=f899e164]
+          - heading "Báo cáo thử nghiệm IEC 60898-1" [level=3] [ref=f899e165]
+          - paragraph [ref=f899e166]: Cầu dao bảo vệ quá dòng MCB thử nghiệm theo IEC 60898-1:2015+A1:2019 tại phòng thí nghiệm Shenzhen CTG.
+        - generic [ref=f899e167]:
+          - img "Bằng sáng chế thiết kế ngoại quan" [ref=f899e168]
+          - heading "Bằng sáng chế thiết kế ngoại quan" [level=3] [ref=f899e169]
+          - paragraph [ref=f899e170]: Thiết kế sản phẩm được bảo hộ bởi Cục Sở hữu Trí tuệ Quốc gia Trung Quốc (CNIPA).
+    - generic [ref=f899e172]:
+      - generic [ref=f899e173]:
+        - generic [ref=f899e174]: Sản phẩm
+        - heading "Giải pháp an toàn điện" [level=2] [ref=f899e175]
+        - paragraph [ref=f899e176]: Giải pháp bảo vệ điện toàn diện cho công nghiệp, dân dụng và các công trình thương mại.
+      - generic [ref=f899e177]:
+        - link [ref=f899e178] [cursor=pointer]:
+          - /url: products.html?category=industrial
+          - img "Thiết bị điện bản công nghiệp" [ref=f899e180]
+          - generic [ref=f899e181]:
+            - heading "Thiết bị điện bản công nghiệp" [level=3] [ref=f899e182]
+            - paragraph [ref=f899e183]: Giải pháp bảo vệ điện toàn diện cho nhà máy, xí nghiệp và khu công nghiệp.
+        - link [ref=f899e184] [cursor=pointer]:
+          - /url: products.html?category=domestic
+          - img "Thiết bị điện bản dân dụng" [ref=f899e186]
+          - generic [ref=f899e187]:
+            - heading "Thiết bị điện bản dân dụng" [level=3] [ref=f899e188]
+            - paragraph [ref=f899e189]: Thiết bị bảo vệ điện thông minh cho hộ gia đình và chung cư.
+        - link [ref=f899e190] [cursor=pointer]:
+          - /url: products.html?category=surge
+          - img "Thiết bị điện bản thương mại" [ref=f899e192]
+          - generic [ref=f899e193]:
+            - heading "Thiết bị điện bản thương mại" [level=3] [ref=f899e194]
+            - paragraph [ref=f899e195]: Bảo vệ thiết bị điện khỏi xung điện áp và sốc điện nguy hiểm.
+  - generic [ref=f899e196]:
+    - contentinfo [ref=f899e197]:
+      - generic [ref=f899e198]:
+        - generic [ref=f899e199]:
+          - generic [ref=f899e200]:
+            - generic [ref=f899e201]:
+              - img "Logo Công ty TNHH Khoa Học Kỹ Thuật Phượng Hoàng" [ref=f899e202]
+              - heading "Thiết bị điện an toàn thông minh" [level=3] [ref=f899e203]
+            - heading "CÔNG TY TNHH KHOA HỌC KỸ THUẬT PHƯỢNG HOÀNG" [level=5] [ref=f899e204]
+            - paragraph [ref=f899e205]: Ứng dụng giám sát và điều khiển điện thông minh giúp người dùng theo dõi thiết bị, nhận cảnh báo sớm và quản lý hệ thống an toàn từ xa.
+            - generic [ref=f899e206]:
+              - generic [ref=f899e207]: An toàn
+              - generic [ref=f899e208]: Từ xa
+              - generic [ref=f899e209]: Hiệu quả
+          - generic [ref=f899e211]:
+            - heading "Liên hệ" [level=4] [ref=f899e212]
+            - list [ref=f899e213]:
+              - listitem [ref=f899e214]:
+                - strong [ref=f899e215]: Địa chỉ
+                - text: ":"
+                - generic [ref=f899e216]: Tầng 3, số 30 Lý Thái Tổ, phường Kinh Bắc, tỉnh Bắc Ninh, Việt Nam
+              - listitem [ref=f899e217]:
+                - strong [ref=f899e218]: Email
+                - text: ":"
+                - link "info@khktphuonghoang.com" [ref=f899e219] [cursor=pointer]:
+                  - /url: mailto:info@khktphuonghoang.com
+              - listitem [ref=f899e220]:
+                - strong [ref=f899e221]: Hotline
+                - text: ":"
+                - link "1800 888 638" [ref=f899e222] [cursor=pointer]:
+                  - /url: tel:+841800888638
+              - listitem [ref=f899e223]:
+                - strong [ref=f899e224]: Hotline
+                - text: ":"
+                - link "0981 019 381" [ref=f899e225] [cursor=pointer]:
+                  - /url: tel:+84981019381
+          - generic [ref=f899e227]:
+            - heading "Chính sách và quy định" [level=4] [ref=f899e228]
+            - list [ref=f899e229]:
+              - listitem [ref=f899e230]:
+                - link "Hướng dẫn mua hàng" [ref=f899e231] [cursor=pointer]:
+                  - /url: purchase-policy.html
+              - listitem [ref=f899e232]:
+                - link "Chính sách bảo hành" [ref=f899e233] [cursor=pointer]:
+                  - /url: warranty-policy.html
+              - listitem [ref=f899e234]:
+                - link "Chính sách đổi trả" [ref=f899e235] [cursor=pointer]:
+                  - /url: exchange-policy.html
+              - listitem [ref=f899e236]:
+                - link "Chính sách vận chuyển" [ref=f899e237] [cursor=pointer]:
+                  - /url: shipping-policy.html
+              - listitem [ref=f899e238]:
+                - link "Hướng dẫn thanh toán" [ref=f899e239] [cursor=pointer]:
+                  - /url: payment-policy.html
+              - listitem [ref=f899e240]:
+                - link "Chính sách bán hàng" [ref=f899e241] [cursor=pointer]:
+                  - /url: sales-policy.html
+              - listitem [ref=f899e242]:
+                - link "Chính sách bảo mật" [ref=f899e243] [cursor=pointer]:
+                  - /url: privacy-policy.html
+        - generic [ref=f899e244]:
+          - heading "Tải ứng dụng Phượng Hoàng" [level=4] [ref=f899e245]
+          - paragraph [ref=f899e246]: Giám sát và điều khiển điện an toàn từ xa qua điện thoại
+          - generic [ref=f899e247]:
+            - generic [ref=f899e248]:
+              - img "QR tải ứng dụng Android Phượng Hoàng" [ref=f899e249]
+              - generic [ref=f899e250]: Android APK
+              - generic [ref=f899e251]: Android 6.0+
+            - generic [ref=f899e252]:
+              - img "QR dùng ứng dụng web Phượng Hoàng" [ref=f899e253]
+              - generic [ref=f899e254]: H5 Web App
+              - generic [ref=f899e255]: Không cần cài đặt
+      - paragraph [ref=f899e257]: © 2026 Cloud Control. Bảo lưu mọi quyền. | Quan sát điện trực quan, an toàn nhìn thấy
+    - link "Tư vấn miễn phí qua Zalo" [ref=f899e258] [cursor=pointer]:
+      - /url: https://zalo.me/0981019381
