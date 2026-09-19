@@ -33,11 +33,11 @@ main > section:first-child.bp-section.ph-about-hero {
   justify-content: center;
 }
 .ph-about-hero-visual img {
-  width: 100%;
+  width: min(100%, 480px);
   height: auto;
   border-radius: var(--ph-radius-lg);
-  object-fit: cover;
-  aspect-ratio: 3/2;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
 }
 
 /* ── About Page Cards ── */
@@ -282,9 +282,6 @@ main > section:first-child.bp-section.ph-about-hero {
   .ph-about-hero-visual {
     max-width: 400px;
     margin: 0 auto;
-  }
-  .ph-about-hero-visual img {
-    aspect-ratio: 16/10;
   }
   .ph-about-products-strip {
     grid-template-columns: 1fr;
