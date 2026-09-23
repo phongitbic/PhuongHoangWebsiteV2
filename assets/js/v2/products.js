@@ -613,17 +613,17 @@ var productData = {
       name: {
         vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh',
         en: '220V Smart Electrical Safety Device - 3-Branch Version',
-        zh: '220V智能电气安全设备 - 3支路版'
+        zh: '220V智能电气安全设备 - 3回路版'
       },
       shortDesc: {
         vi: 'Thiết bị bảo vệ điện thông minh 220V 3 mạch nhánh, phiên bản 63A, tích hợp 14 chức năng bảo vệ toàn diện.',
         en: '220V smart electrical protection device with 3 branches, 63A version, integrating 14 comprehensive protection functions.',
-        zh: '220V智能电气保护设备，3支路，63A版本，集成14项全面保护功能。'
+        zh: '220V智能电气保护设备，3回路，63A版本，集成14项全面保护功能。'
       },
       description: {
         vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh KHKT-63A là giải pháp bảo vệ điện toàn diện cho hộ gia đình và căn hộ. Với 14 chức năng bảo vệ tích hợp, thiết bị giúp bảo vệ an toàn cho người sử dụng và thiết bị điện trong mọi tình huống. Phiên bản 3 mạch nhánh cho phép điều khiển độc lập 3 khu vực trong nhà. Kết nối 4G cho phép giám sát và điều khiển từ xa qua ứng dụng điện thoại thông minh.',
         en: 'The KHKT-63A 220V smart electrical safety device - 3-Branch Version is a comprehensive protection solution for homes and apartments. With 14 integrated protection functions, it ensures safety for users and electrical equipment in all situations. The 3-branch version allows independent control of 3 areas in the house. 4G connectivity enables remote monitoring and control via smartphone app.',
-        zh: 'KHKT-63A 220V智能电气安全设备 - 3支路版是家庭和公寓的全面保护解决方案。集成14项保护功能，确保用户和电气设备的安全。3支路版本可独立控制房屋的3个区域。4G连接可通过智能手机应用进行远程监控和控制。'
+        zh: 'KHKT-63A 220V智能电气安全设备 - 3回路版是家庭和公寓的全面保护解决方案。集成14项保护功能，确保用户和电气设备的安全。3回路版本可独立控制房屋的3个区域。4G连接可通过智能手机应用进行远程监控和控制。'
       },
       specs: [
         { label: { vi: 'Điện áp định mức', en: 'Rated Voltage', zh: '额定电压' }, value: '220V AC' },
@@ -691,7 +691,7 @@ var productData = {
       ],
       applications: [
         { icon: '', title: { vi: 'Hộ gia đình', en: 'Households', zh: '家庭' }, desc: { vi: 'Bảo vệ hệ thống điện toàn diện cho hộ gia đình và căn hộ chung cư.', en: 'Comprehensive electrical protection for households and apartments.', zh: '为家庭和公寓提供全面电气保护。' } },
-        { icon: '', title: { vi: 'Căn hộ chung cư', en: 'Apartments', zh: '公寓' }, desc: { vi: 'Giải pháp an toàn điện cho căn hộ chung cư với 3 mạch nhánh độc lập.', en: 'Electrical safety for apartments with 3 independent branches.', zh: '为公寓提供3个独立支路的电气安全解决方案。' } },
+        { icon: '', title: { vi: 'Căn hộ chung cư', en: 'Apartments', zh: '公寓' }, desc: { vi: 'Giải pháp an toàn điện cho căn hộ chung cư với 3 mạch nhánh độc lập.', en: 'Electrical safety for apartments with 3 independent branches.', zh: '为公寓提供3个独立回路的电气安全解决方案。' } },
         { icon: '', title: { vi: 'Cửa hàng nhỏ', en: 'Small Shops', zh: '小商店' }, desc: { vi: 'Bảo vệ thiết bị điện cho cửa hàng và văn phòng nhỏ.', en: 'Protect electrical equipment in small shops and offices.', zh: '为小商店和小型办公室提供电气设备保护。' } },
         { icon: '', title: { vi: 'Nhà trọ / Phòng cho thuê', en: 'Rental Units', zh: '出租房' }, desc: { vi: 'An toàn điện cho nhà trọ và phòng cho thuê với khả năng quản lý từ xa.', en: 'Electrical safety for rental units with remote management capability.', zh: '为出租房提供电气安全保护和远程管理能力。' } }
       ],
