@@ -611,24 +611,24 @@ var productData = {
       sku: 'KHKT-63A',
       brand: 'Phượng Hoàng',
       name: {
-        vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh',
+        vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch điện',
         en: '220V Smart Electrical Safety Device - 3-Branch Version',
         zh: '220V智能电气安全设备 - 3回路版'
       },
       shortDesc: {
-        vi: 'Thiết bị bảo vệ điện thông minh 220V 3 mạch nhánh, phiên bản 63A, tích hợp 14 chức năng bảo vệ toàn diện.',
+        vi: 'Thiết bị bảo vệ điện thông minh 220V 3 mạch điện, phiên bản 63A, tích hợp 14 chức năng bảo vệ toàn diện.',
         en: '220V smart electrical protection device with 3 branches, 63A version, integrating 14 comprehensive protection functions.',
         zh: '220V智能电气保护设备，3回路，63A版本，集成14项全面保护功能。'
       },
       description: {
-        vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh KHKT-63A là giải pháp bảo vệ điện toàn diện cho hộ gia đình và căn hộ. Với 14 chức năng bảo vệ tích hợp, thiết bị giúp bảo vệ an toàn cho người sử dụng và thiết bị điện trong mọi tình huống. Phiên bản 3 mạch nhánh cho phép điều khiển độc lập 3 khu vực trong nhà. Kết nối 4G cho phép giám sát và điều khiển từ xa qua ứng dụng điện thoại thông minh.',
+        vi: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch điện KHKT-63A là giải pháp bảo vệ điện toàn diện cho hộ gia đình và căn hộ. Với 14 chức năng bảo vệ tích hợp, thiết bị giúp bảo vệ an toàn cho người sử dụng và thiết bị điện trong mọi tình huống. Phiên bản 3 mạch điện cho phép điều khiển độc lập 3 khu vực trong nhà. Kết nối 4G cho phép giám sát và điều khiển từ xa qua ứng dụng điện thoại thông minh.',
         en: 'The KHKT-63A 220V smart electrical safety device - 3-Branch Version is a comprehensive protection solution for homes and apartments. With 14 integrated protection functions, it ensures safety for users and electrical equipment in all situations. The 3-branch version allows independent control of 3 areas in the house. 4G connectivity enables remote monitoring and control via smartphone app.',
         zh: 'KHKT-63A 220V智能电气安全设备 - 3回路版是家庭和公寓的全面保护解决方案。集成14项保护功能，确保用户和电气设备的安全。3回路版本可独立控制房屋的3个区域。4G连接可通过智能手机应用进行远程监控和控制。'
       },
       specs: [
         { label: { vi: 'Điện áp định mức', en: 'Rated Voltage', zh: '额定电压' }, value: '220V AC' },
         { label: { vi: 'Dòng điện định mức', en: 'Rated Current', zh: '额定电流' }, value: '63A' },
-        { label: { vi: 'Số mạch nhánh', en: 'Number of Branches', zh: '支路数量' }, value: '3 mạch nhánh' },
+        { label: { vi: 'Số mạch nhánh', en: 'Number of Branches', zh: '支路数量' }, value: '3 mạch điện' },
         { label: { vi: 'Số chức năng', en: 'Number of Functions', zh: '功能数量' }, value: '14 chức năng' },
         { label: { vi: 'Tần số', en: 'Frequency', zh: '频率' }, value: '50 Hz' },
         { label: { vi: 'Công nghệ', en: 'Technology', zh: '技术' }, value: 'MCU vi xử lý thông minh' },

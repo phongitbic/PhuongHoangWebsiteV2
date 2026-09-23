@@ -2301,7 +2301,7 @@ introPoint3Desc: 'Thiết bị đang được triển khai từng bước để 
       sidebarProductsHeading: 'Sản phẩm nổi bật',
       sidebarProductsSub: 'Thiết bị an toàn điện thông minh cho gia đình và công nghiệp.',
       sidebarProduct1Name: 'Thiết bị an toàn điện thông minh 380V',
-      sidebarProduct2Name: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch nhánh',
+      sidebarProduct2Name: 'Thiết bị điện an toàn thông minh 220V phiên bản 3 mạch điện',
       sidebarProduct3Name: 'Thiết bị an toàn điện thông minh 220V phiên bản thương mại',
       sidebarAllProducts: 'Xem tất cả sản phẩm',
       sidebarLatestHeading: 'Bài viết mới nhất',
